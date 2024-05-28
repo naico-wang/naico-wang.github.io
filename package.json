@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --cname naico.wang",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
