@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: ':title - Naico.Wang',
+  titleTemplate: ':title - Naico.Wang',
   description: 'Naico\'s Blog',
   base: '/',
   lang: 'en-US',
@@ -28,10 +28,19 @@ export default defineConfig({
     hostname: 'https://naico.wang'
   },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    siteTitle: false,
+    logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Dropdown',
+        items: [
+          { text: 'Examples', link: '/markdown-examples' },
+          { text: 'Home', link: '/' },
+          { text: 'Examples', link: '/markdown-examples' }
+        ]
+      },
+
     ],
 
     sidebar: [
