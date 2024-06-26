@@ -10,8 +10,9 @@ const dynamicSideBar = generateSidebar([
     capitalizeFirst: true,
     hyphenToSpace: true,
     underscoreToSpace: true,
-    useTitleFromFileHeading: false,
-    debugPrint: true,
+    useTitleFromFrontmatter: true,
+    useFolderLinkFromIndexFile: true,
+    debugPrint: false,
     collapsed: true
   }
 ])
