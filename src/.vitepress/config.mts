@@ -1,6 +1,22 @@
 import { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar'
 
-// https://vitepress.dev/reference/site-config
+const dynamicSideBar = generateSidebar([
+  {
+    documentRootPath: '/src/pages/blog/',
+    resolvePath: '/blog/',
+    folderLinkNotIncludesFileName: true,
+    includeFolderIndexFile: true,
+    capitalizeFirst: true,
+    hyphenToSpace: true,
+    underscoreToSpace: true,
+    useTitleFromFileHeading: false,
+    sortMenusByFrontmatterOrder: true,
+    debugPrint: true,
+    collapsed: true
+  }
+])
+
 export default defineConfig({
   titleTemplate: ':title - Naico.Wang',
   description: 'Naico\'s Blog',
@@ -8,41 +24,32 @@ export default defineConfig({
   lang: 'en-US',
   srcDir: './pages',
   outDir: '../site',
-  assetsDir: 'static',
+  lastUpdated: true,
+  cleanUrls: true,
   sitemap: {
     hostname: 'https://naico.wang'
   },
   themeConfig: {
-    siteTitle: 'Naive',
-    logo: '/logo.svg',
+    siteTitle: '学习，提高知识水平',
+    logo: '/icon-logo.svg',
     search: {
       provider: 'local'
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Dropdown',
-        items: [
-          { text: 'Examples', link: '/markdown-examples' },
-          { text: 'Home', link: '/' },
-          { text: 'Examples', link: '/markdown-examples' }
-        ]
-      },
+      { text: 'About Me', link: '/about' },
+      { text: 'Blogs', link: '/blog'},
 
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: dynamicSideBar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+    footer: {
+      message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      copyright: 'Copyright © 2019-present <a href="https://github.com/yyx990803">Evan You</a>'
+    }
   }
 })
