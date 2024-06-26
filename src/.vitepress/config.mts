@@ -6,20 +6,6 @@ export default defineConfig({
   description: 'Naico\'s Blog',
   base: '/',
   lang: 'en-US',
-  head: [
-    [
-      'link',
-      { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
-    ],
-    [
-      'link',
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-    ],
-    [
-      'link',
-      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
-    ]
-  ],
   srcDir: './pages',
   outDir: '../site',
   assetsDir: 'static',
@@ -27,8 +13,11 @@ export default defineConfig({
     hostname: 'https://naico.wang'
   },
   themeConfig: {
-    siteTitle: false,
-    logo: '/logo.png',
+    siteTitle: 'Naive',
+    logo: '/logo.svg',
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
