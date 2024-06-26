@@ -15,4 +15,3 @@
 npm-debug.log*
 /site
 /src/.vitepress/cache
-package-lock.json
