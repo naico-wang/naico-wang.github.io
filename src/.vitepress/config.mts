@@ -11,13 +11,13 @@ const dynamicSideBar = generateSidebar([
     hyphenToSpace: true,
     underscoreToSpace: true,
     useTitleFromFileHeading: false,
-    sortMenusByFrontmatterOrder: true,
     debugPrint: true,
     collapsed: true
   }
 ])
 
 export default defineConfig({
+  title: 'Naico Wang',
   titleTemplate: ':title - Naico.Wang',
   description: 'Naico\'s Blog',
   base: '/',
@@ -35,21 +35,26 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'About Me', link: '/about' },
-      { text: 'Blogs', link: '/blog'},
-
-    ],
-
+    nav: [{
+      text: 'Home',
+      link: '/'
+    }, {
+      text: 'Blogs',
+      link: '/blog'
+    }, {
+      text: 'About Me',
+      link: '/about'
+    }],
     sidebar: dynamicSideBar,
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
+    socialLinks: [{
+      icon: 'github',
+      link: 'https://github.com/naico-wang'
+    }],
     footer: {
-      message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-      copyright: 'Copyright © 2019-present <a href="https://github.com/yyx990803">Evan You</a>'
+      message: 'Powered by <a href="https://vitepress.dev/">VitePress</a>. ' +
+        'Local CMS By <a href="https://github.com/huyikai">Huyikai</a>.',
+      copyright: 'Hosted on <a href="https://pages.github.com/">GitPages</a>. ' +
+        'Copyright © 2024 <a href="https://github.com/naico-wang">Naico Wang</a>'
     }
   }
 })
