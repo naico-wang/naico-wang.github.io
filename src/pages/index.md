@@ -1,12 +1,12 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: 'HomePage'
+title: '首页'
 
 hero:
   name: "苟利国家生死以"
   text: "岂因祸福避趋之"
-  tagline: '与君共勉'
+  tagline: <p align=right>by 林则徐</p><hr>
   image:
     src: /icon-logo.svg
     alt: 膜蛤
@@ -17,31 +17,17 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/naico-wang/naico-wang.github.io
---- 
-
-## 关于我
-- 定居**上海**
-- **非典型码农**
-- **.NET Engineer** + **Front-end Engineer** = **_Full-Stack Engineer_**.
-- **用过很多语言**
-  - ~~ASP~~/ASP.NET/.NET Code
-  - HTML5/CSS3
-  - JavaScript/Nodejs
-  - Nextjs/Nuxtjs
-  - React/Vue
-  - **Java新手**
-  - WeChat/AliPay/TikTok - Mini Programs
-- **做过很多行业**
-  - 地产中介软件
-  - 软件研发/外包
-  - 咨询(人力资源咨询)/投资(养老金投资)
-  - 奢侈品电商
-- **政府认证失业人员**
-
-## 关于这个网站
-
-- 用Vue经典的VitePress搭建
-  - VitePress Repo: [https://vitepress.dev/](https://vitepress.dev/)
-- 内置了LocalCMS，可以网页编辑md内容
-  - By huyikai
-  - Repo: [https://github.com/huyikai/local-cms](https://github.com/huyikai/local-cms)
+features:
+  - icon:
+      src: /icon-location.svg
+    title: Introduction<hr />
+    details: "· <em>Former Engineering Lead</em><br>· <em>Programming Enthusiast</em><br>· <em>Bon Vivant</em><br>· <em>Residing in Shanghai, China</em><br>"
+  - icon:
+      src: /icon-programming.svg
+    title: Technical Skills<hr />
+    details: "· <em>HTML5/CSS/JavaScript</em><br>· <em>.NET Core/ASP.NET/Java</em><br>· <em>React/Vue/Nodejs</em><br>· <em>WeChat/Ali/TikTok MiniPrograms</em><br>"
+  - icon:
+      src: /icon-project.svg
+    title: Roles<hr />
+    details: "· <em>Engineering Lead</em><br>· <em>Scrum Master/Agile Coach</em><br>· <em>Project Management</em><br>· <em>System Design and Architect</em><br>"
+---
