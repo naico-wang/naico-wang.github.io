@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: '首页'
+title: 'HomePage'
 
 hero:
   name: "苟利国家生死以"
@@ -10,10 +10,16 @@ hero:
   image:
     src: /icon-logo.svg
     alt: 膜蛤
+  actions:
+    - theme: brand
+      text: My Blogs
+      link: /blog
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/naico-wang/naico-wang.github.io
 --- 
 
 ## 关于我
-
 - 定居**上海**
 - **非典型码农**
 - **.NET Engineer** + **Front-end Engineer** = **_Full-Stack Engineer_**.

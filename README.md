@@ -14,15 +14,21 @@ If you want to create your own website using GitPages, please follow this steps:
 
 ##### Create your own GitPages Repo 
 
-> https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site
+```shell
+https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site
+```
 
 ##### Install VitePress
 
-> npm add -D vitepress
+```shell
+npm add -D vitepress
+```
 
 ##### Init Your Own VitePress Site and Complete the steps
 
-> npx vitepress init
+```shell
+npx vitepress init
+```
 
 For more configuration and usage, please refer to VitePress official website.
 
