@@ -6,7 +6,7 @@ title: '首页'
 hero:
   name: "苟利国家生死以"
   text: "岂因祸福避趋之"
-  tagline: <p align=right>by 林则徐</p><hr>
+  tagline: <hr>
   image:
     src: /icon-logo.svg
     alt: 膜蛤
