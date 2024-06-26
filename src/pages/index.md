@@ -6,7 +6,7 @@ title: '首页'
 hero:
   name: "苟利国家生死以"
   text: "岂因祸福避趋之"
-  tagline: <hr>
+  tagline: "Naico (Hongyu) Wang"
   image:
     src: /icon-logo.svg
     alt: 膜蛤
