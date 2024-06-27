@@ -13,7 +13,7 @@ const dynamicSideBar = generateSidebar([
     useTitleFromFrontmatter: true,
     useFolderLinkFromIndexFile: true,
     debugPrint: false,
-    collapsed: true
+    collapsed: false
   }
 ])
 
