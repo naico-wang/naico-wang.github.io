@@ -58,13 +58,6 @@ const computedYearMap = computed(()=> {
 .date {
   text-align: right;
 }
-a:link, a:visited {
-  color: var(--vp-c-text-1);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
 </style>
 <div v-for="year in yearList" :key="year">
   <div :class="$style.title">{{ year }} 年</div>
