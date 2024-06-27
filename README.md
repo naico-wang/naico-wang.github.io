@@ -1,5 +1,7 @@
 # Introduction
+
 [![pages-build-deployment](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/pages/pages-build-deployment)
+[![Deploy GitPages](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/deploy.yml)
 
 ## About This Repo
 
