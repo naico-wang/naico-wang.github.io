@@ -33,12 +33,33 @@ const computedYearMap = computed(()=> {
 .item_row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  /* height: 30px; */
 }
 .content {
   list-style-type: square;
   display: flex;
 }
-a:link {
+.link {
+  flex: 1;
+  padding-left: 8px;
+}
+.tag {
+  line-height: 20px;
+  padding: 2px 5px;
+  font-size: 12px;
+  /* font-weight: bold; */
+  /* color: var(--vp-c-sponsor); */
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 6px;
+  border: solid 1px var(--docsearch-text-color);
+}
+.date {
+  text-align: right;
+}
+a:link, a:visited {
+  color: var(--vp-c-text-1);
   text-decoration: none;
 }
 a:hover {
@@ -50,8 +71,9 @@ a:hover {
 <ul>
   <li v-for="(article, index2) in computedYearMap[year]" :key="index2" :class="$style.item">
     <div :class="$style.item_row">
-      <a :href="article.url" class="">{{article.title}}</a>
-      <div class="" >{{article.date.string}}</div>
+      <span :class="$style.tag">{{article.tag}}</span>
+      <a :href="article.url" :class="$style.link">{{article.title}}</a>
+      <div :class="$style.date">{{article.date.string}}</div>
     </div>
   </li>
 </ul>
