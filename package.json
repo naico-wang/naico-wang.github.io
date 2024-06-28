@@ -10,6 +10,7 @@
     "cms": "node node_modules/@huyikai/local-cms/cms.js src"
   },
   "dependencies": {
+    "@giscus/vue": "^3.0.0",
     "@huyikai/local-cms": "^0.0.27",
     "@types/node": "^20.14.9"
   }
