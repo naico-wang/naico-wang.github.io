@@ -17,7 +17,7 @@ export { data }
 const arraySearchDirs = ['./blog/*/*.md','./blog/*/*/*.md','./blog/*/*/*/*.md']
 
 export default createContentLoader(arraySearchDirs, {
-  transform(raw): data {
+  transform(raw): any {
   const postMap = {}
   const yearMap = {}
   const posts = raw
