@@ -14,7 +14,7 @@ declare const data: Post[]
 
 export { data }
 
-const arraySearchDirs = ['./blog/*/*.md','./blog/*/*/*.md']
+const arraySearchDirs = ['./blog/*/*.md','./blog/*/*/*.md','./blog/*/*/*/*.md']
 
 export default createContentLoader(arraySearchDirs, {
   transform(raw): data {

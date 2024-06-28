@@ -59,12 +59,33 @@ export default defineConfig({
     socialLinks: [{
       icon: 'github',
       link: 'https://github.com/naico-wang'
+    }, {
+      icon: 'linkedin',
+      link: 'https://www.linkedin.com/in/naico-hongyu-wang-49554891/'
     }],
     footer: {
       message: 'Powered by <a href="https://vitepress.dev/">VitePress</a>. ' +
         'Local CMS By <a href="https://github.com/huyikai">Huyikai</a>.',
       copyright: 'Hosted on <a href="https://pages.github.com/">GitPages</a>. ' +
         'Copyright © 2024 <a href="https://github.com/naico-wang">Naico Wang</a>'
-    }
+    },
+    outline: {
+      label: '页面导航'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'short',
+        forceLocale: true
+      }
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+    returnToTopLabel: '回顶部',
+    sidebarMenuLabel: '菜单',
+    externalLinkIcon: true
   }
 })
