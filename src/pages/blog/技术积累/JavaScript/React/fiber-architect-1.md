@@ -1,9 +1,9 @@
 ---
-title: 深入理解React Fiber架构
+title: 深入学习React Fiber（一）
 date: 2023-06-28
 ---
 
-# 深入学习React Fiber
+# 深入学习React Fiber（一）
 
 :::info 目录
 [[toc]]
