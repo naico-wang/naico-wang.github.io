@@ -4,9 +4,9 @@ date: 2024-05-20
 ---
 # 工厂方法设计模式
 ::: info Reference:
-原文地址：https://refactoringguru.cn/design-patterns/factory-method
+原文地址：[https://refactoringguru.cn/design-patterns/factory-method](https://refactoringguru.cn/design-patterns/factory-method)
 
-亦称：虚拟构造函数、Virtual Constructor、Factory Method
+亦称：虚拟构造函数、Virtual Constructor、Factory Method，属于**创建型模式**
 :::
 
 [[toc]]
