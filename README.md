@@ -1,6 +1,5 @@
 # Introduction
 
-[![pages-build-deployment](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/pages/pages-build-deployment)
 [![Deploy GitPages](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/naico-wang/naico-wang.github.io/actions/workflows/deploy.yml)
 
 ## About This Repo
@@ -34,6 +33,10 @@ npx vitepress init
 ```
 
 For more configuration and usage, please refer to VitePress official website.
+
+## How To Add Discussion using Giscus?
+
+Please refer to this doc: [Add giscus to VitePress](https://naico.wang/blog/%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/how-to-add-giscus)
 
 ## Contact Me
 
