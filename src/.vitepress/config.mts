@@ -39,6 +39,10 @@ export default defineConfig({
       detailsLabel: '详细信息'
     }
   },
+  head: [[
+    'meta',
+    { name: 'msvalidate.01', content: '8BBB0831B708566918ED021266BE0405' }
+  ]],
   themeConfig: {
     siteTitle: '学习，提高知识水平',
     logo: '/icon-logo.svg',
