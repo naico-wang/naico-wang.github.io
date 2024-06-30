@@ -17,6 +17,7 @@ const { hasSidebar } = useSidebar()
         Copyright © 2024 <a href="https://github.com/naico-wang">Naico Wang</a>
       </p>
       <p class="statics">
+        Statics By 
         <a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3ItqjsY11mrrfGg3">
           <img class="staticimg" src="https://sdk.51.la/icon/2-1.png" alt="51la统计" />
         </a>
@@ -63,13 +64,19 @@ const { hasSidebar } = useSidebar()
 .message,
 .copyright,
 .statics {
-  line-height: 24px;
-  font-size: 14px;
-  font-weight: 500;
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 400;
   color: var(--vp-c-text-2);
 }
 
+.statics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .staticimg {
-  margin: 12px auto 0;
+  margin-left: 6px;
 }
 </style>

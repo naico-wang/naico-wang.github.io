@@ -50,7 +50,7 @@ export default defineConfig({
   ]],
   themeConfig: {
     siteTitle: '提高知识水平',
-    logo: '/icon-logo.svg',
+    logo: '/icons/icon-logo.svg',
     search: {
       provider: 'local'
     },
