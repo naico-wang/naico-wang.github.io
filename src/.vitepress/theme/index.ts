@@ -10,5 +10,5 @@ export default {
     return h(DefaultTheme.Layout, null, {
         'doc-after': () => h(GiscusComment),
     });
-},
+  },
 }
