@@ -118,16 +118,13 @@ const onTagSelect = (e) => currentTag.setTag(e);
 }
 
 .item_link,
-.item_link:visited,
+.item_link:link,
 .item_link:visited {
-  text-decoration: none !important;
-  color: var(--vp-c-indigo-3);
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
 }
 .item_link:hover {
   text-decoration: underline;
-  color: var(--vp-c-brand-1);
 }
 
 </style>
