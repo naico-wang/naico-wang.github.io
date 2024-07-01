@@ -19,7 +19,7 @@ const dynamicSideBar = generateSidebar([
 ])
 
 export default defineConfig({
-  title: 'Naico Wang',
+  title: '苟利国家生死以，岂因祸福避趋之',
   titleTemplate: ':title - Naico.Wang',
   description: 'Naico\'s Blog',
   base: '/',
