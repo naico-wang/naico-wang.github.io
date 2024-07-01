@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: '首页'
+title: '苟利国家生死以,岂因祸福避趋之'
 
 hero:
   name: "苟利国家生死以"
