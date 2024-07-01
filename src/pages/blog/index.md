@@ -117,15 +117,15 @@ const onTagSelect = (e) => currentTag.setTag(e);
   color: var(--vp-c-bg-soft);
 }
 
-.vp-doc a.item_link,
-.vp-doc a.item_link:visited,
-.vp-doc a.item_link:visited {
+.item_link,
+.item_link:visited,
+.item_link:visited {
   text-decoration: none;
   color: var(--vp-c-indigo-3);
   font-size: 18px;
   font-weight: bold;
 }
-.vp-doc a.item_link:hover {
+.item_link:hover {
   text-decoration: underline;
   color: var(--vp-c-brand-1);
 }
