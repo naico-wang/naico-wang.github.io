@@ -54,24 +54,16 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    nav: [{
-      text: 'Home',
-      link: '/'
-    }, {
-      text: 'Blogs',
-      link: '/blog'
-    }, {
-      text: 'About Me',
-      link: '/about'
-    }],
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Blogs', link: '/blog' },
+      { text: 'About Me', link: '/about' }
+    ],
     sidebar: dynamicSideBar,
-    socialLinks: [{
-      icon: 'github',
-      link: 'https://github.com/naico-wang'
-    }, {
-      icon: 'linkedin',
-      link: 'https://www.linkedin.com/in/naico-hongyu-wang-49554891/'
-    }],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/naico-wang' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/naico-hongyu-wang-49554891/' }
+    ],
     outline: {
       label: '页面导航'
     },
@@ -93,14 +85,11 @@ export default defineConfig({
   },
   vite: {
     resolve: {
-      alias: [
-        {
-          find: /^.*\/VPFooter\.vue$/,
-          replacement: fileURLToPath(
-            new URL('./theme/components/CustomFooter.vue', import.meta.url)
-          )
-        }
-      ]
+      alias: [{
+        find: /^.*\/VPFooter\.vue$/,
+        replacement: fileURLToPath(
+          new URL('./theme/components/CustomFooter.vue', import.meta.url)
+        )}]
     }
   }
 })
