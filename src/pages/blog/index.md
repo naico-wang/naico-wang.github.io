@@ -130,9 +130,11 @@ const onTagSelect = (e) => currentTag.setTag(e);
   .item_link:link,
   .item_link:visited {
     font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
   }
   .item_link:hover {
+    font-weight: bold;
     text-decoration: underline;
   }
 
