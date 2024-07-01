@@ -1,73 +1,164 @@
 ---
 layout: doc
----
-# 文章列表 :eyes:
+title: '文章列表'
 ---
 <script setup>
-import { computed } from 'vue';
+import { computed, reactive } from 'vue';
 import { data } from '../../.vitepress/theme/posts.data.mts';
 
-const { yearMap, postMap } = data;
-const yearList = Object.keys(yearMap).sort((a, b) => b - a);
-const computedYearMap = computed(()=> {
-  let result = {};
-  
-  for(let key in yearMap) {
-    result[key] = yearMap[key].map(url => postMap[url])
+const ALL_TAG_VALUE = 'all'
+const currentTag = reactive({
+  value: ALL_TAG_VALUE,
+  setTag(tag) {
+    this.value = tag;
   }
-
-  return result
 });
+const { posts, tags } = data;
+const pageData = computed(() => {
+  return currentTag.value === ALL_TAG_VALUE ? posts : posts.filter(_ => _.tag === currentTag.value)
+})
+
+const onTagSelect = (e) => currentTag.setTag(e);
+
 </script>
-<style module>
-.title {
-  font-size: 24px;
-  line-height: 48px;
-  font-weight: bold;
-  font-style: italic;
-}
-.item {
-  margin: 0;
-  padding: 0;
-}
-.item_row {
+
+<style lang="scss" module>
+.tag_list {
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
-  /* height: 30px; */
+  flex-wrap: wrap;
+
+  .tag_item {
+    margin-top: 0;
+    background-color: var(--vp-c-indigo-soft);
+    font-weight: bold;
+    color: var(--vp-c-text-1);
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 12px;
+
+    &:hover {
+      background: var(--vp-c-indigo-1);
+      color: var(--vp-c-bg-soft);
+      transition: all, .3s
+    }
+
+    &.current {
+      background: var(--vp-c-indigo-1);
+      color: var(--vp-c-bg-soft);
+      transition: all, .3s;
+    }
+  }
 }
-.content {
-  list-style-type: square;
-  display: flex;
-}
-.link {
-  flex: 1;
-  padding-left: 8px;
-}
-.tag {
-  line-height: 20px;
-  padding: 2px 5px;
-  font-size: 12px;
-  /* font-weight: bold; */
-  /* color: var(--vp-c-sponsor); */
-  background-color: var(--vp-c-bg-soft);
-  border-radius: 6px;
-  border: solid 1px var(--docsearch-text-color);
-}
+
 .date {
   text-align: right;
 }
+
+.pagetitle {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+.pagetags {
+  display: flex;
+}
+
+.item_wrapper {
+  padding: 0;
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #dedfe0;
+  box-shadow: 1px 1px 1px #e2e2e3;
+  margin-bottom: 12px;
+
+  .item_title {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #e2e2e3;
+    padding: 20px;
+  }
+
+  .item_desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: var(--vp-c-text-2);
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  .tag {
+    margin-left: 12px;
+    font-size: 12px;
+    background-color: var(--vp-c-indigo-soft);  
+    color: var(--vp-c-text-1);
+    padding: 0 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+      background: var(--vp-c-indigo-1);
+      color: var(--vp-c-bg-soft);
+      transition: all, .3s;
+    }
+  }
+}
+
+.currenttag {
+  background: var(--vp-c-indigo-1);
+  color: var(--vp-c-bg-soft);
+}
+
+a.item_link,
+a.item_link:visited,
+a.item_link:visited {
+  text-decoration: none;
+  color: var(--vp-c-indigo-3);
+  font-size: 18px;
+  font-weight: bold;
+}
+a.item_link:hover {
+  text-decoration: underline;
+  color: var(--vp-c-brand-1);
+}
+
 </style>
-<div v-for="year in yearList" :key="year">
-  <div :class="$style.title">{{ year }} 年</div>
-<ul>
-  <li v-for="(article, index2) in computedYearMap[year]" :key="index2" :class="$style.item">
-    <div :class="$style.item_row">
-      <span :class="$style.tag">{{article.tag}}</span>
-      <a :href="article.url" :class="$style.link">{{article.title}}</a>
-      <div :class="$style.date">{{article.date.string}}</div>
+<section :class="$style.pagetitle">本站文章列表</section>
+<section :class="$style.pagetags">
+  <div :class="$style.tag_list">
+    <span
+      :class="[$style.tag_item, currentTag.value === 'all' ? $style.current : '']"
+      @click="onTagSelect('all')"
+    >
+      全部
+    </span>
+    <span
+      :class="[$style.tag_item, currentTag.value === tags ? $style.current : '']"
+      v-for="(tags, idx) in tags"
+      :key="idx"
+      @click="onTagSelect(tags)"
+    >
+      {{tags}}
+    </span>
+  </div>
+</section>
+<hr />
+<section>
+  <div v-for="(article, index) in pageData" :key="index" :class="$style.item_wrapper">
+    <div :class="$style.item_title">
+      <a :href="article.url" :class="$style.item_link">{{article.title}}</a>
     </div>
-  </li>
-</ul>
-</div>
+    <div :class="$style.item_desc">
+      <div :class="$style.date">{{article.date.string}}</div>
+      <span :class="$style.tag" @click="onTagSelect(article.tag)">{{article.tag}}</span>
+    </div>
+  </div>
+</section>

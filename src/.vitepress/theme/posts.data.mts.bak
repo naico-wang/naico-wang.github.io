@@ -18,7 +18,8 @@ const arraySearchDirs = ['./blog/*/*.md','./blog/*/*/*.md','./blog/*/*/*/*.md']
 
 export default createContentLoader(arraySearchDirs, {
   transform(raw): any {
-  const tags: string[] = []
+  const postMap = {}
+  const yearMap = {}
   const posts = raw
    .map(({ url, frontmatter }) => {
     const tagList = url.split('/')
@@ -31,18 +32,23 @@ export default createContentLoader(arraySearchDirs, {
      abstract: frontmatter.abstract,
      tag
     }
-
-    if (!tags.includes(tag)) {
-      tags.push(tag)
-    }
+    postMap[result.url] = result
 
     return result
    })
    .sort((a, b) => b.date.time - a.date.time)
 
+  posts.forEach((item) => {
+   const year = new Date(item.date.time).getFullYear()
+   if (!yearMap[year]) {
+    yearMap[year] = []
+   }
+   yearMap[year].push(item.url)
+  })
+
   return {
-    posts,
-    tags
+   yearMap,
+   postMap
   }
  }
 })

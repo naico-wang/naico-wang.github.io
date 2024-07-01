@@ -26,7 +26,7 @@ export default defineConfig({
   lang: 'en-US',
   srcDir: './pages',
   outDir: '../site',
-  lastUpdated: true,
+  lastUpdated: false,
   cleanUrls: true,
   sitemap: {
     hostname: 'https://naico.wang'
@@ -72,12 +72,14 @@ export default defineConfig({
       formatOptions: {
         dateStyle: 'short',
         timeStyle: 'short',
-        forceLocale: true
+        forceLocale: true,
       }
     },
     docFooter: {
-      prev: '上一篇',
-      next: '下一篇'
+      prev: false,
+      next: false
+      // prev: '上一篇',
+      // next: '下一篇'
     },
     returnToTopLabel: '回顶部',
     sidebarMenuLabel: '菜单',
