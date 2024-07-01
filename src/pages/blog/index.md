@@ -24,7 +24,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
 
 <style lang="scss" module>
   .main {
-    padding: 48px 32px 0;
+    padding: 48px 32px;
     max-width: 788px;
     margin: 0 auto;
 
