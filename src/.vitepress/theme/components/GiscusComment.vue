@@ -5,7 +5,7 @@ import { useRoute, useData } from 'vitepress';
 const route = useRoute();
 const { isDark } = useData();
 const { path, component: { name: pageName } } = route;
-const shouldShowComment = pageName !== 'blog/index.md';
+const shouldShowComment = pageName !== 'blog/index.md' && pageName !== 'blog/about.md';
 </script>
 
 <template>
