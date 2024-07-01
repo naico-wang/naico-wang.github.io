@@ -120,7 +120,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
 .item_link,
 .item_link:visited,
 .item_link:visited {
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--vp-c-indigo-3);
   font-size: 18px;
   font-weight: bold;
