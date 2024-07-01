@@ -14,6 +14,7 @@ const currentTag = reactive({
   }
 });
 const { posts, tags } = data;
+console.log(posts)
 const pageData = computed(() => {
   return currentTag.value === ALL_TAG_VALUE ? posts : posts.filter(_ => _.tag === currentTag.value)
 })
@@ -24,12 +25,12 @@ const onTagSelect = (e) => currentTag.setTag(e);
 
 <style lang="scss" module>
   .main {
-    padding: 48px 32px;
+    padding: 48px 32px 96px;
     max-width: 788px;
     margin: 0 auto;
 
     & .listwrap {
-      margin-top: 24px;
+      padding-top: 12px;
     }
   }
   .tag_list {
@@ -84,7 +85,8 @@ const onTagSelect = (e) => currentTag.setTag(e);
     background-color: #fff;
     border: 1px solid #dedfe0;
     box-shadow: 1px 1px 1px #e2e2e3;
-    margin-bottom: 12px;
+    margin-top: 20px;
+    box-sizing: border-box;
 
     .item_title {
       display: flex;
@@ -100,6 +102,13 @@ const onTagSelect = (e) => currentTag.setTag(e);
       color: var(--vp-c-text-2);
       font-size: 14px;
       box-sizing: border-box;
+      background-color: var(--vp-c-indigo-soft);
+      border-radius: 0 0 16px 16px;
+    }
+
+    .item_abstract {
+      padding: 20px;
+      color: grey;
     }
 
     .tag {
@@ -164,6 +173,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
       <div :class="$style.item_title">
         <a :href="article.url" :class="$style.item_link">{{article.title}}</a>
       </div>
+      <div v-show="article.abstract" :class="$style.item_abstract">{{article.abstract}}</div>
       <div :class="$style.item_desc">
         <div :class="$style.date">{{article.date.string}}</div>
         <span :class="$style.tag" @click="onTagSelect(article.tag)">{{article.tag}}</span>

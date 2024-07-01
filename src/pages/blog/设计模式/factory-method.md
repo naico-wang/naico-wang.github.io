@@ -1,6 +1,7 @@
 ---
 title: 工厂方法设计模式
 date: 2024-05-20
+abstract: 亦称：虚拟构造函数、Virtual Constructor、Factory Method，属于创建型模式
 ---
 # 工厂方法设计模式
 ::: info Reference:

@@ -1,6 +1,7 @@
 ---
 title: 深入学习React Fiber（一）
 date: 2023-06-28
+abstract: 深入学习React系列的第一篇，也是Fiber架构的第一篇。
 ---
 
 # 深入学习React Fiber（一）
