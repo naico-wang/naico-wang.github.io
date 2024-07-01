@@ -4,12 +4,11 @@ import { useRoute, useData } from 'vitepress';
 
 const route = useRoute();
 const { isDark } = useData();
-const { path, component: { name: pageName } } = route;
-const shouldShowComment = pageName !== 'blog/index.md' && pageName !== 'blog/about.md';
+const { path } = route;
 </script>
 
 <template>
-  <div style="margin-top: 24px" v-show="shouldShowComment">
+  <div style="margin-top: 24px">
     <Giscus
       id="comments"
       repo="naico-wang/naico-wang.github.io"

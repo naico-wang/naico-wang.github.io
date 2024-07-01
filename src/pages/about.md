@@ -1,6 +1,7 @@
 ---
-#layout: doc
+layout: home
 title: 'About Me'
+sidebar: true
 ---
 
 # 做个自我介绍吧，关于我，关于网站的
