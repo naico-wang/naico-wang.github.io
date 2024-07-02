@@ -7,7 +7,7 @@ abstract: 组合模式是一种结构型设计模式，你可以使用它将对�
 # 【结构型模式】组合模式
 
 ::: info Reference:
-原文地址：[https://refactoringguru.cn/design-patterns/bridge](https://refactoringguru.cn/design-patterns/bridge)
+原文地址：[https://refactoringguru.cn/design-patterns/composite](https://refactoringguru.cn/design-patterns/composite)
 
 亦称：对象树、Object Tree、Composite，属于**结构型模式**。
 :::
