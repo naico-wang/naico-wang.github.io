@@ -7,13 +7,8 @@ const dynamicSideBar = generateSidebar([
   {
     documentRootPath: '/src/pages/blog/',
     resolvePath: '/blog/',
-    folderLinkNotIncludesFileName: true,
-    includeFolderIndexFile: true,
     capitalizeFirst: true,
-    hyphenToSpace: true,
-    underscoreToSpace: true,
     useTitleFromFrontmatter: true,
-    useFolderLinkFromIndexFile: true,
     debugPrint: false,
     collapsed: false
   }
