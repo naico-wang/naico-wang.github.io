@@ -7,8 +7,16 @@ const { isDark } = useData();
 const { path } = route;
 </script>
 
+<style scoped>
+section {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: solid 1px var(--vp-local-search-result-border);
+}
+</style>
+
 <template>
-  <div style="margin-top: 24px">
+  <section>
     <Giscus
       id="comments"
       repo="naico-wang/naico-wang.github.io"
@@ -25,5 +33,7 @@ const { path } = route;
       :theme="isDark ? 'dark' : 'light'"
       :key="path"
     />
-  </div>
+  </section>
 </template>
+
+## onTagSelect

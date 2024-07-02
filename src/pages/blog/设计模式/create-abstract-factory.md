@@ -1,10 +1,10 @@
 ---
-title: 抽象工厂模式
+title: 【创建型】抽象工厂模式
 date: 2024-05-19
 abstract: 抽象工厂模式是一种创建型设计模式， 它能创建一系列相关的对象， 而无需指定其具体类。
 ---
 
-# 抽象工厂模式
+# 【创建型】抽象工厂模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/abstract-factory](https://refactoringguru.cn/design-patterns/abstract-factory)

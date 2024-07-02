@@ -1,10 +1,10 @@
 ---
-title: 生成器模式
+title: 【创建型】生成器模式
 date: 2024-05-18
 abstract: 亦称：建造者模式、Builder，属于创建型模式.
 ---
 
-# 生成器模式
+# 【创建型】生成器模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/builder](https://refactoringguru.cn/design-patterns/builder)
