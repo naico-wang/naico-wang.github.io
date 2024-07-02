@@ -7,10 +7,12 @@ interface Post {
     time: number
     string: string
   }
-  excerpt: string | undefined
+  abstract: string | undefined
 }
 
-declare const data: Post[]
+type Tags = string[]
+
+declare const data: { posts: Post[], tags: Tags}
 
 export { data }
 
@@ -35,7 +37,7 @@ export default createContentLoader(arraySearchDirs, {
     if (!tags.includes(tag)) {
       tags.push(tag)
     }
-
+    
     return result
    })
    .sort((a, b) => b.date.time - a.date.time)

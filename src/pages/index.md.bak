@@ -1,11 +1,22 @@
 ---
+# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: 'About Me'
-sidebar: true
+title: '苟利国家生死以,岂因祸福避趋之'
 
 hero:
-  name: "Naico (Hongyu) Wang"
-  tagline: "· SE & Tech Lead <br />· FrontEnd Architect<br />· @Shanghai<br />"
+  name: "苟利国家生死以"
+  text: "岂因祸福避趋之"
+  tagline: "Naico (Hongyu) Wang"
+  image:
+    src: /icons/icon-logo.svg
+    alt: 膜蛤
+  actions:
+    - theme: brand
+      text: My Blogs
+      link: /blog
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/naico-wang/naico-wang.github.io
 features:
   - icon:
       src: /icons/icon-pc.svg
@@ -29,17 +40,6 @@ features:
     details: "· <em>Software Industry</em><br>· <em>Real Estate Agency Industry</em><br>· <em>Insurance & Investment</em><br>· <em>Luxury E-commerce</em><br>"
   - icon:
       src: /icons/icon-project.svg
-    title: Contact Me<hr />
-    details: "· <em>naico.hy.wang@gmail.com</em><br>· <em>https://github.com/naico-wang</em><br>· <em>https://www.linkedin.com/in/naico-hongyu-wang-49554891/</em><br>"
+    title: Expected<hr />
+    details: "· <em>Be an Experienced Architect</em><br>· <em>Java Expert</em><br>· <em>More Industry Experiences</em><br>· <em>WLB</em><br>"
 ---
-
-## 关于这个网站
-
-- 用Vue经典的VitePress搭建
-  - VitePress Repo: [https://vitepress.dev/](https://vitepress.dev/)
-- 内置了LocalCMS，可以网页编辑md内容
-  - By huyikai
-  - Repo: [https://github.com/huyikai/local-cms](https://github.com/huyikai/local-cms)
-- 内置了 giscus app 作为网站的评论系统
-  - Repo: [https://github.com/apps/giscus](https://github.com/apps/giscus)
-  - 相关教程我也发出来了，具体看这里 [how-to-add-giscus](https://naico.wang/blog/胡言乱语/how-to-add-giscus)
