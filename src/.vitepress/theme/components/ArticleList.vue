@@ -76,7 +76,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
     border-radius: 16px;
     background-color: #fff;
     border: 1px solid #dedfe0;
-    box-shadow: 1px 1px 1px #e2e2e3;
+    box-shadow: 5px 5px 10px #e2e2e3;
     margin-top: 20px;
     box-sizing: border-box;
 
