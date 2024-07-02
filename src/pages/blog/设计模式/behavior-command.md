@@ -7,7 +7,7 @@ abstract: 命令模式是一种行为设计模式，它可将请求转换为一�
 # 【行为模式】命令模式
 
 ::: info Reference:
-原文地址：[https://refactoringguru.cn/design-patterns/chain-of-responsibility](https://refactoringguru.cn/design-patterns/chain-of-responsibility)
+原文地址：[https://refactoringguru.cn/design-patterns/command](https://refactoringguru.cn/design-patterns/command)
 
 亦称：动作、事务、Action、Transaction、Command，属于**行为模式**。
 :::
