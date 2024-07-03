@@ -10,7 +10,7 @@ const dynamicSideBar = generateSidebar([
     capitalizeFirst: true,
     useTitleFromFrontmatter: true,
     debugPrint: false,
-    collapsed: false
+    collapsed: true
   }
 ])
 
