@@ -1,10 +1,10 @@
 ---
-title: 【行为模式】备忘录模式
+title: 行为模式 之 备忘录模式
 date: 2024-05-19
 abstract: 备忘录模式是一种行为设计模式，允许在不暴露对象实现细节的情况下保存和恢复对象之前的状态。
 ---
 
-# 【行为模式】备忘录模式
+# 行为模式 之 备忘录模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/memento](https://refactoringguru.cn/design-patterns/memento)

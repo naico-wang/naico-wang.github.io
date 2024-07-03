@@ -1,10 +1,10 @@
 ---
-title: 【行为模式】命令模式
+title: 行为模式 之 命令模式
 date: 2024-05-19
 abstract: 命令模式是一种行为设计模式，它可将请求转换为一个包含与请求相关的所有信息的独立对象。该转换让你能根据不同的请求将方法参数化、延迟请求执行或将其放入队列中，且能实现可撤销操作。
 ---
 
-# 【行为模式】命令模式
+# 行为模式 之 命令模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/command](https://refactoringguru.cn/design-patterns/command)

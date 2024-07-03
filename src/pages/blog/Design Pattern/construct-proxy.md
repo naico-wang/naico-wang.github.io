@@ -1,10 +1,10 @@
 ---
-title: 【结构型】代理模式
+title: 结构型 之 代理模式
 date: 2024-05-19
 abstract: 代理模式是一种结构型设计模式，让你能够提供对象的替代品或其占位符。代理控制着对于原对象的访问，并允许在将请求提交给对象前后进行一些处理。
 ---
 
-# 【结构型模式】代理模式
+# 结构型模式 之 代理模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/proxy](https://refactoringguru.cn/design-patterns/proxy)

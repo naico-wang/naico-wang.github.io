@@ -9,13 +9,6 @@ hero:
   image:
     src: /icons/icon-logo.svg
     alt: 膜蛤
-  actions:
-    - theme: brand
-      text: Atricle List
-      link: /blog
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/naico-wang/naico-wang.github.io
 features:
   - title: Introduction<hr />
     details: "· <em>Former Engineering Lead</em><br>· <em>Programming Enthusiast</em><br>· <em>Residing in Shanghai, China</em><br>"
@@ -28,6 +21,6 @@ features:
 <script setup>
   import ArticleList from '../.vitepress/theme/components/ArticleList.vue'
 </script>
-<section style="margin-top: 24px;">
+<section style="margin-top: 32px;">
   <ArticleList :display-count='8' />
 </section>

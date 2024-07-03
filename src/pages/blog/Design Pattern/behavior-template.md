@@ -1,10 +1,10 @@
 ---
-title: 【行为模式】模板方法模式
+title: 行为模式 之 模板方法模式
 date: 2024-05-19
 abstract: 模板方法模式是一种行为设计模式，它在超类中定义了一个算法的框架，允许子类在不修改结构的情况下重写算法的特定步骤。
 ---
 
-# 【行为模式】模板方法模式
+# 行为模式 之 模板方法模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/template-method](https://refactoringguru.cn/design-patterns/template-method)

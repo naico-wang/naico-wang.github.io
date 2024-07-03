@@ -1,10 +1,10 @@
 ---
-title: 【行为模式】责任链模式
+title: 行为模式 之 责任链模式
 date: 2024-05-19
 abstract: 责任链模式是一种行为设计模式，允许你将请求沿着处理者链进行发送。收到请求后，每个处理者均可对请求进行处理，或将其传递给链上的下个处理者。
 ---
 
-# 【行为模式】责任链模式
+# 行为模式 之 责任链模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/chain-of-responsibility](https://refactoringguru.cn/design-patterns/chain-of-responsibility)

@@ -1,10 +1,10 @@
 ---
-title: 【结构型】享元模式
+title: 结构型 之 享元模式
 date: 2024-05-19
 abstract: 享元模式是一种结构型设计模式，它摒弃了在每个对象中保存所有数据的方式，通过共享多个对象所共有的相同状态，让你能在有限的内存容量中载入更多对象。
 ---
 
-# 【结构型模式】享元模式
+# 结构型模式 之 享元模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/flyweight](https://refactoringguru.cn/design-patterns/flyweight)

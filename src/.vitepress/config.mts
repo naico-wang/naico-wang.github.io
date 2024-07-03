@@ -7,10 +7,10 @@ const dynamicSideBar = generateSidebar([
   {
     documentRootPath: '/src/pages/blog/',
     resolvePath: '/blog/',
-    capitalizeFirst: true,
     useTitleFromFrontmatter: true,
+    sortMenusByFrontmatterDate: true,
     debugPrint: false,
-    collapsed: true
+    collapsed: false
   }
 ])
 

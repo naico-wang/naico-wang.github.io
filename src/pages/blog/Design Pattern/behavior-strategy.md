@@ -1,10 +1,10 @@
 ---
-title: 【行为模式】策略模式
+title: 行为模式 之 策略模式
 date: 2024-05-19
 abstract: 策略模式是一种行为设计模式，它能让你定义一系列算法，并将每种算法分别放入独立的类中，以使算法的对象能够相互替换。
 ---
 
-# 【行为模式】策略模式
+# 行为模式 之 策略模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/strategy](https://refactoringguru.cn/design-patterns/strategy)

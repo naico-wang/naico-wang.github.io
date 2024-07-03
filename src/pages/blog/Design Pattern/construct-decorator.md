@@ -1,10 +1,10 @@
 ---
-title: 【结构型】装饰模式
+title: 结构型 之 装饰模式
 date: 2024-05-19
 abstract: 装饰模式是一种结构型设计模式，允许你通过将对象放入包含行为的特殊封装对象中来为原对象绑定新的行为。
 ---
 
-# 【结构型模式】装饰模式
+# 结构型模式 之 装饰模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/decorator](https://refactoringguru.cn/design-patterns/decorator)
