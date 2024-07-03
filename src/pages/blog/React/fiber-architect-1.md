@@ -369,11 +369,11 @@ Renderer（渲染器） 工作的阶段被称为 commit 阶段。它会把 rende
 
 ### 时间分片
 
-在[浏览器架构](../Networking/browser-architect)一文中我们讲过现代浏览器由 1 个主要进程、一个 GPU 进程、多个渲染进程、多个插件进程、多个网络进程、多个音频进程、存储进程构成
+在[浏览器架构](../Web/browser-architect)一文中我们讲过现代浏览器由 1 个主要进程、一个 GPU 进程、多个渲染进程、多个插件进程、多个网络进程、多个音频进程、存储进程构成
 
-在[进程与线程](../Networking/browser-related)一文中我们介绍了进程和线程的关系。进程时应用程序创建的实例，而线程依托于进程
+在[进程与线程](../Web/browser-related)一文中我们介绍了进程和线程的关系。进程时应用程序创建的实例，而线程依托于进程
 
-再加上我们在[浏览器的渲染原理](../Networking/browser-related)中所说，浏览器渲染分为三个步骤，解析、渲染、绘制
+再加上我们在[浏览器的渲染原理](../Web/browser-related)中所说，浏览器渲染分为三个步骤，解析、渲染、绘制
 
 解析：HTML、CSS、JavaScript 被解析，HTML 被解析为 DOM 树，CSS 被解析成 CSS 规则数，JavaScript 通过 DOM API 和 CSSOM API 来操作  DOM Tree 和 CSS Rule Tree
 
