@@ -1,8 +1,9 @@
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import { h } from 'vue';
 import GiscusComment from './components/GiscusComment.vue';
 
 import './custom.css'
+import './miSans.css'
 
 export default {
   ...DefaultTheme,

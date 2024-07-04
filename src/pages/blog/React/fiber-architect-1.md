@@ -109,7 +109,7 @@ React 团队考虑到浏览器兼容性以及 requestIdleCallback 的触发频�
 
 ##### 调度器的优先级
 
-React 中调度器的不同优先级极其排序
+React 中调度器的不同优先级及其排序
 
 - Immediate：最高优先级，会马上执行的不能中断
 - UserBlocking：一般用户交互结果，需要及时反馈
