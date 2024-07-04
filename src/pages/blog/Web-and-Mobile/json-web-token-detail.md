@@ -26,7 +26,7 @@ JWT的声明一般被用来在身份提供者和服务提供者间传递被认�
 
 一个我们常用的JWT是这样的：
 
-```jwt
+```json
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5haWNvIFdhbmciLCJlbWFpbCI6Im5haWNvLmh5LndhbmdAZ21haWwuY29tIiwiaWF0IjoxNTE2MjM5MDIyfQ.Vm1S5UyONoN9xybM72_c01qyNi8tvfTeA4Oe8eWzZuQ
 ```
 
