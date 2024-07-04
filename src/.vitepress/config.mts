@@ -10,7 +10,7 @@ const dynamicSideBar = generateSidebar([
     useTitleFromFrontmatter: true,
     sortMenusByFrontmatterDate: true,
     debugPrint: false,
-    collapsed: false
+    collapsed: true
   }
 ])
 
