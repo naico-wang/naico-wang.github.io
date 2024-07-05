@@ -1,5 +1,5 @@
 :root {
-  --vp-font-family-base: MiSans;
+  --vp-font-family-base: "Manrope",Arial,Helvetica Neue,Helvetica,sans-serif;
   --vp-font-family-mono: JetBrainsMono;
   --vp-nav-logo-height: 30px;
   --vp-home-hero-name-color: transparent;
@@ -13,12 +13,12 @@
 @font-face {
   font-display: swap;
   font-family: JetBrainsMono;
-  src: url(/fonts/JetBrainsMono.woff2) format("truetype");
+  src: url(/fonts/english/JetBrainsMono.woff2) format("truetype");
 }
 
 @font-face {
   font-display: swap;
   font-family: DroidSansMono;
-  src: url(/fonts/DroidSansMono.woff2) format("truetype");
+  src: url(/fonts/english/DroidSansMono.woff2) format("truetype");
 }
 
