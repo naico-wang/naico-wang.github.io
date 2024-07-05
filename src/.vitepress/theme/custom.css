@@ -1,9 +1,13 @@
 :root {
-  --vp-font-family-base: "Manrope", "OPPOSans",'Pingfang SC', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --vp-font-family-base: "MiSans", Helvetica, sans-serif;
   --vp-font-family-mono: JetBrainsMono;
   --vp-nav-logo-height: 30px;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 .VPNavBarSearch, .VPContent {
@@ -22,62 +26,4 @@
   font-display: swap;
   font-family: DroidSansMono;
   src: url(/fonts/DroidSansMono.woff2) format('truetype');
-}
-
-/*  HUAWEI Fonts*/
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope-ExtraLight.woff2') format('woff2');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('/fonts/Manrope-ExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap
 }

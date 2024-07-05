@@ -3,7 +3,7 @@ import { h } from 'vue';
 import GiscusComment from './components/GiscusComment.vue';
 
 import './custom.css'
-// import './font-oppo.css'
+import './font-misans.css'
 
 export default {
   ...DefaultTheme,
