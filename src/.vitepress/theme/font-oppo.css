@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "OPPOSans";
+  src: url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Bold.woff2)
+      format("woff2"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Bold.woff)
+      format("woff"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Bold.ttf)
+      format("truetype");
+  font-variation-settings: "wght" 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Medium.woff2)
+      format("woff2"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Medium.woff)
+      format("woff"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Medium.ttf)
+      format("truetype");
+  font-variation-settings: "wght" 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Regular.woff2)
+      format("woff2"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Regular.woff)
+      format("woff"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans3.0cn-Regular.ttf)
+      format("truetype");
+  font-variation-settings: "wght" 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-B.woff2)
+      format("woff2"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-B.woff)
+      format("woff"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-B.ttf)
+      format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-M.woff2)
+      format("woff2"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-M.woff)
+      format("woff"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-M.ttf)
+      format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-R.woff2)
+      format("woff2"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-R.woff)
+      format("woff"),
+    url(https://www.oppo.com/content/dam/statics/fonts/cn/OPPOSans-R.ttf)
+      format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
