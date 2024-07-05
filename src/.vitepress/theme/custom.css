@@ -10,15 +10,3 @@
   flex-grow: 0 !important;
 }
 
-@font-face {
-  font-display: swap;
-  font-family: JetBrainsMono;
-  src: url(/fonts/english/JetBrainsMono.woff2) format("truetype");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: DroidSansMono;
-  src: url(/fonts/english/DroidSansMono.woff2) format("truetype");
-}
-
