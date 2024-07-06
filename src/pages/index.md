@@ -11,11 +11,11 @@ hero:
     alt: 膜蛤
 features:
   - title: Introduction<hr />
-    details: "· <em>Former Engineering Lead</em><br>· <em>Programming Enthusiast</em><br>· <em>Residing in Shanghai, China</em><br>"
+    details: "· <strong>Former Engineering Lead</strong><br>· <strong>Programming Enthusiast</strong><br>· <strong>Base in Shanghai, China</strong><br>"
   - title: Technical Skills<hr />
-    details: "· <em>React/Vue/Nodejs</em><br>· <em>.NET Core/ASP.NET/Java</em><br>· <em>WeChat/Ali/TikTok MPs</em><br>"
+    details: "· <strong>React/Vue/Nodejs</strong><br>· <strong>.NET Core/ASP.NET/Java</strong><br>· <strong>WeChat/Ali/TikTok MPs</strong><br>"
   - title: Roles<hr />
-    details: "· <em>Engineering Lead</em><br>· <em>PMP/PMP-ACP</em><br>· <em>System Design and Architect</em><br>"
+    details: "· <strong>Engineering Lead</strong><br>· <strong>PMP/PMP-ACP</strong><br>· <strong>System Design and Architect</strong><br>"
 ---
 
 <script setup>
