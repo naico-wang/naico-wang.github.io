@@ -10,27 +10,27 @@ features:
   - icon:
       src: /icons/icon-pc.svg
     title: Introduction<hr />
-    details: "· <strong>Former Engineering Lead</em><br>· <strong>Programming Enthusiast</em><br>· <strong>Bon Vivant</em><br>· <strong>Residing in Shanghai, China</em><br>"
+    details: "· Former Engineering Lead<br />· Programming Enthusiast<br />· Bon Vivant<br />· Residing in Shanghai, China<br />"
   - icon:
       src: /icons/icon-leaf.svg
     title: Technical Skills<hr />
-    details: "· <strong>HTML5/CSS/JavaScript</em><br>· <strong>.NET Core/ASP.NET/Java</em><br>· <strong>React/Vue/Nodejs</em><br>· <strong>WeChat/Ali/TikTok MiniPrograms</em><br>"
+    details: "· HTML5/CSS/JavaScript<br />· .NET Core/ASP.NET/Java<br />· React/Vue/Nodejs<br />· WeChat/Ali/TikTok MiniPrograms<br />"
   - icon:
       src: /icons/icon-feature.svg
     title: Roles<hr />
-    details: "· <strong>Engineering Lead</em><br>· <strong>Scrum Master/Agile Coach</em><br>· <strong>Project Management</em><br>· <strong>System Design and Architect</em><br>"
+    details: "· Engineering Lead<br />· Scrum Master/Agile Coach<br />· Project Management<br />· System Design and Architect<br />"
   - icon:
       src: /icons/icon-location.svg
     title: Hobbies<hr />
-    details: "· <strong>League of Legends</em><br>· <strong>Running @ 5/10km</em><br>· <strong>Reading and Learning</em><br>· <strong>Electronics enthusiasts</em><br>"
+    details: "· League of Legends<br />· Running @ 5/10km<br />· Reading and Learning<br />· Electronics enthusiasts<br />"
   - icon:
       src: /icons/icon-program.svg
     title: Industries Served<hr />
-    details: "· <strong>Software Industry</em><br>· <strong>Real Estate Agency Industry</em><br>· <strong>Insurance & Investment</em><br>· <strong>Luxury E-commerce</em><br>"
+    details: "· Software Industry<br />· Real Estate Agency Industry<br />· Insurance & Investment<br />· Luxury E-commerce<br />"
   - icon:
       src: /icons/icon-project.svg
     title: Contact Me<hr />
-    details: "· <strong>naico.hy.wang@gmail.com</em><br>· <strong>https://github.com/naico-wang</em><br>· <strong>https://www.linkedin.com/in/naico-hongyu-wang-49554891/</em><br>"
+    details: "· naico.hy.wang@gmail.com<br />· https://github.com/naico-wang<br />· https://www.linkedin.com/in/naico-hongyu-wang-49554891/<br />"
 ---
 
 ## 关于这个网站
