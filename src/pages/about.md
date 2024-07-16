@@ -4,7 +4,7 @@ title: 'About Me'
 sidebar: true
 
 hero:
-  name: "Naico (Hongyu) Wang"
+  name: "Hongyu Wang"
   tagline: "· SE & Tech Lead <br />· FrontEnd Architect<br />· @Shanghai<br />"
 features:
   - icon:
