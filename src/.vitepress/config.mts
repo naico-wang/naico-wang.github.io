@@ -38,6 +38,9 @@ export default defineConfig({
   },
   head: [[
     'meta',
+    { name: 'referrer', content: 'no-referrer' }
+  ], [
+    'meta',
     { name: 'msvalidate.01', content: '8BBB0831B708566918ED021266BE0405' }
   ], [
     'script',
