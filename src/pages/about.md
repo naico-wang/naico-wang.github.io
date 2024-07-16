@@ -10,27 +10,27 @@ features:
   - icon:
       src: /icons/icon-pc.svg
     title: Introduction<hr />
-    details: "· <em>Former Engineering Lead</em><br>· <em>Programming Enthusiast</em><br>· <em>Bon Vivant</em><br>· <em>Residing in Shanghai, China</em><br>"
+    details: "· <strong>Former Engineering Lead</em><br>· <strong>Programming Enthusiast</em><br>· <strong>Bon Vivant</em><br>· <strong>Residing in Shanghai, China</em><br>"
   - icon:
       src: /icons/icon-leaf.svg
     title: Technical Skills<hr />
-    details: "· <em>HTML5/CSS/JavaScript</em><br>· <em>.NET Core/ASP.NET/Java</em><br>· <em>React/Vue/Nodejs</em><br>· <em>WeChat/Ali/TikTok MiniPrograms</em><br>"
+    details: "· <strong>HTML5/CSS/JavaScript</em><br>· <strong>.NET Core/ASP.NET/Java</em><br>· <strong>React/Vue/Nodejs</em><br>· <strong>WeChat/Ali/TikTok MiniPrograms</em><br>"
   - icon:
       src: /icons/icon-feature.svg
     title: Roles<hr />
-    details: "· <em>Engineering Lead</em><br>· <em>Scrum Master/Agile Coach</em><br>· <em>Project Management</em><br>· <em>System Design and Architect</em><br>"
+    details: "· <strong>Engineering Lead</em><br>· <strong>Scrum Master/Agile Coach</em><br>· <strong>Project Management</em><br>· <strong>System Design and Architect</em><br>"
   - icon:
       src: /icons/icon-location.svg
     title: Hobbies<hr />
-    details: "· <em>League of Legends</em><br>· <em>Running @ 5/10km</em><br>· <em>Reading and Learning</em><br>· <em>Electronics enthusiasts</em><br>"
+    details: "· <strong>League of Legends</em><br>· <strong>Running @ 5/10km</em><br>· <strong>Reading and Learning</em><br>· <strong>Electronics enthusiasts</em><br>"
   - icon:
       src: /icons/icon-program.svg
     title: Industries Served<hr />
-    details: "· <em>Software Industry</em><br>· <em>Real Estate Agency Industry</em><br>· <em>Insurance & Investment</em><br>· <em>Luxury E-commerce</em><br>"
+    details: "· <strong>Software Industry</em><br>· <strong>Real Estate Agency Industry</em><br>· <strong>Insurance & Investment</em><br>· <strong>Luxury E-commerce</em><br>"
   - icon:
       src: /icons/icon-project.svg
     title: Contact Me<hr />
-    details: "· <em>naico.hy.wang@gmail.com</em><br>· <em>https://github.com/naico-wang</em><br>· <em>https://www.linkedin.com/in/naico-hongyu-wang-49554891/</em><br>"
+    details: "· <strong>naico.hy.wang@gmail.com</em><br>· <strong>https://github.com/naico-wang</em><br>· <strong>https://www.linkedin.com/in/naico-hongyu-wang-49554891/</em><br>"
 ---
 
 ## 关于这个网站

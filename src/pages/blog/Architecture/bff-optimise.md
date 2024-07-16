@@ -1,5 +1,5 @@
 ---
-title: BFF治理与优化实践(转载)
+title: BFF治理与优化实践
 date: 2024-07-01
 abstract: 转载自https://www.maguangguang.xyz/bff-governance，结合一个典型案例的BFF治理思考
 ---
