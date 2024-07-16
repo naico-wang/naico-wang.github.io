@@ -30,7 +30,7 @@ features:
   - icon:
       src: /icons/icon-project.svg
     title: Contact Me<hr />
-    details: "· naico.hy.wang@gmail.com<br />· https://github.com/naico-wang<br />· https://www.linkedin.com/in/naico-hongyu-wang-49554891/<br />"
+    details: "· Email: naico.hy.wang@gmail.com<br />· https://github.com/naico-wang<br />· https://www.linkedin.com/in/naico-hongyu-wang-49554891/<br />"
 ---
 
 ## 关于这个网站
