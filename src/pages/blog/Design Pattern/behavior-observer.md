@@ -1,10 +1,10 @@
 ---
-title: 行为模式 之 观察者模式
+title: 行为模式 - 观察者模式
 date: 2024-05-19
 abstract: 观察者模式是一种行为设计模式，允许你定义一种订阅机制，可在对象事件发生时通知多个“观察”该对象的其他对象。
 ---
 
-# 行为模式 之 观察者模式
+# 行为模式 - 观察者模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/observer](https://refactoringguru.cn/design-patterns/observer)

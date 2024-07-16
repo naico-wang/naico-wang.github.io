@@ -1,10 +1,10 @@
 ---
-title: 创建型 之 单例模式
+title: 创建型 - 单例模式
 date: 2024-05-19
 abstract: 单例模式是一种创建型设计模式， 让你能够保证一个类只有一个实例， 并提供一个访问该实例的全局节点。
 ---
 
-# 创建型 之 单例模式
+# 创建型 - 单例模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/singleton](https://refactoringguru.cn/design-patterns/singleton)

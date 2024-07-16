@@ -1,10 +1,10 @@
 ---
-title: 结构型 之 组合模式
+title: 结构型 - 组合模式
 date: 2024-05-19
 abstract: 组合模式是一种结构型设计模式，你可以使用它将对象组合成树状结构，并且能像使用独立对象一样使用它们。
 ---
 
-# 结构型模式 之 组合模式
+# 结构型模式 - 组合模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/composite](https://refactoringguru.cn/design-patterns/composite)

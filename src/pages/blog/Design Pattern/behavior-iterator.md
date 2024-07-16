@@ -1,10 +1,10 @@
 ---
-title: 行为模式 之 迭代器模式
+title: 行为模式 - 迭代器模式
 date: 2024-05-19
 abstract: 迭代器模式是一种行为设计模式，让你能在不暴露集合底层表现形式（列表、栈和树等）的情况下遍历集合中所有的元素。
 ---
 
-# 行为模式 之 迭代器模式
+# 行为模式 - 迭代器模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/iterator](https://refactoringguru.cn/design-patterns/iterator)

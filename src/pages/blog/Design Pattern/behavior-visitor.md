@@ -1,10 +1,10 @@
 ---
-title: 行为模式 之 访问者模式
+title: 行为模式 - 访问者模式
 date: 2024-05-19
 abstract: 访问者模式是一种行为设计模式，它能将算法与其所作用的对象隔离开来。
 ---
 
-# 行为模式 之 访问者模式
+# 行为模式 - 访问者模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/visitor](https://refactoringguru.cn/design-patterns/visitor)

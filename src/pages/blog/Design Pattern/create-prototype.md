@@ -1,10 +1,10 @@
 ---
-title: 创建型 之 原型模式
+title: 创建型 - 原型模式
 date: 2024-05-19
 abstract: 原型模式是一种创建型设计模式， 使你能够复制已有对象， 而又无需使代码依赖它们所属的类。
 ---
 
-# 创建型 之 原型模式
+# 创建型 - 原型模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/prototype](https://refactoringguru.cn/design-patterns/prototype)

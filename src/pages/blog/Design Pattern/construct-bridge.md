@@ -1,10 +1,10 @@
 ---
-title: 结构型 之 桥接模式
+title: 结构型 - 桥接模式
 date: 2024-05-19
 abstract: 桥接模式是一种结构型设计模式，可将一个大类或一系列紧密相关的类拆分为抽象和实现两个独立的层次结构，从而能在开发时分别使用。
 ---
 
-# 结构型模式 之 桥接模式
+# 结构型模式 - 桥接模式
 
 ::: info Reference:
 原文地址：[https://refactoringguru.cn/design-patterns/bridge](https://refactoringguru.cn/design-patterns/bridge)
