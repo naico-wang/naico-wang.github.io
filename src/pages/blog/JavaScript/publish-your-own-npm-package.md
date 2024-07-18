@@ -128,7 +128,7 @@ npm search package-name
 
 - 更新 `.gitignore` 文件，将不需要跟踪的文件添加到这个文件夹：
 
-```ignore
+```json
 # webstorm
 .idea
 # Node Modules
