@@ -95,5 +95,6 @@ export default defineConfig({
           new URL('./theme/components/CustomFooter.vue', import.meta.url)
         )}]
     }
-  }
+  },
+  metaChunk: true
 })
