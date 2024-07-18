@@ -37,6 +37,9 @@ export default defineConfig({
     }
   },
   head: [[
+    'link',
+    { rel: 'icon', href: '/favicon.ico' }
+  ],[
     'meta',
     { name: 'referrer', content: 'no-referrer' }
   ], [
