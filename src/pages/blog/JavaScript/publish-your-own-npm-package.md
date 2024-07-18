@@ -114,7 +114,7 @@ npm search package-name
 > - **include**：指定要编译的目录。
 > - **exclude**：指定不编译的目录。node_modules 和 __tests__ 只是在开发阶段使用，构建阶段无需编译。
 >
-> 更多详细的配置请参考这里： https://link.juejin.cn/?target=https%3A%2F%2Fwww.typescriptlang.org%2Fdocs%2Fhandbook%2Fcompiler-options.html
+> 更多详细的配置请参考这里：https://www.typescriptlang.org/docs/handbook/compiler-options.html
 
 - 创建 `src` 文件夹，在其下新建一个 `index.ts`，把你要发布的包的内容放进去，这里源码我就不加了。
 
