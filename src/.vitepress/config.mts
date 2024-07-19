@@ -67,7 +67,8 @@ export default defineConfig({
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/naico-hongyu-wang-49554891/' }
     ],
     outline: {
-      label: '页面导航'
+      label: '页面导航',
+      level: 'deep'
     },
     lastUpdated: {
       text: '最后更新于',
