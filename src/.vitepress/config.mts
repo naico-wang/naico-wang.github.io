@@ -68,7 +68,7 @@ export default defineConfig({
     ],
     outline: {
       label: '页面导航',
-      level: 'deep'
+      level: [ 2, 4 ]
     },
     lastUpdated: {
       text: '最后更新于',
