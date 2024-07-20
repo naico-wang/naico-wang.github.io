@@ -1,6 +1,6 @@
 :root {
   --vp-font-family-base: "MiSans", Helvetica, sans-serif;
-  --vp-font-family-mono: "JetBrainsMono";
+  /*--vp-font-family-mono: "JetBrainsMono";*/
   --vp-nav-logo-height: 30px;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
@@ -12,12 +12,4 @@
 
 .VPNavBarSearch, .VPContent {
   flex-grow: 0 !important;
-}
-
-/* English Fonts */
-
-@font-face {
-  font-display: swap;
-  font-family: JetBrainsMono;
-  src: url(/fonts/JetBrainsMono.woff2) format('truetype');
 }
