@@ -37,9 +37,14 @@ features:
 
 - 用Vue经典的VitePress搭建
   - VitePress Repo: [https://vitepress.dev/](https://vitepress.dev/)
+
 - 内置了LocalCMS，可以网页编辑md内容
   - By huyikai
   - Repo: [https://github.com/huyikai/local-cms](https://github.com/huyikai/local-cms)
+
 - 内置了 giscus app 作为网站的评论系统
   - Repo: [https://github.com/apps/giscus](https://github.com/apps/giscus)
   - 相关教程我也发出来了，具体看这里 [how-to-add-giscus](https://naico.wang/blog/Engineering/how-to-add-giscus)
+
+- 内置了 `PlantUML` 渲染插件
+  - Repo: https://www.npmjs.com/package/markdown-it-plantuml
