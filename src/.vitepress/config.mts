@@ -2,6 +2,7 @@ import path from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
+import markdownItPlantuml from 'markdown-it-plantuml'
 
 const dynamicSideBar = generateSidebar([
   {
@@ -34,6 +35,9 @@ export default defineConfig({
       dangerLabel: '危险',
       infoLabel: '信息',
       detailsLabel: '详细信息'
+    },
+    config: (md) => {
+      md.use(markdownItPlantuml)
     }
   },
   head: [[
