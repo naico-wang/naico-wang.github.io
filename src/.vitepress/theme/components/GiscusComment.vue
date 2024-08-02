@@ -35,5 +35,3 @@ section {
     />
   </section>
 </template>
-
-## onTagSelect

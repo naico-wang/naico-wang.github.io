@@ -1,11 +1,7 @@
 ---
 layout: home
 title: 'About Me'
-sidebar: true
 
-hero:
-  name: "Hongyu Wang"
-  tagline: "· SE & Tech Lead <br />· FrontEnd Architect<br />· @Shanghai<br />"
 features:
   - icon:
       src: /icons/icon-pc.svg
