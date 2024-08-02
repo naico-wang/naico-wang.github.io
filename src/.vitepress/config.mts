@@ -1,4 +1,3 @@
-import path from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
@@ -56,7 +55,7 @@ export default defineConfig({
   ]],
   themeConfig: {
     siteTitle: 'naico.wang',
-    logo: '/icons/icon-logo.svg',
+    logo: '/icons/website-logo.png',
     search: {
       provider: 'local'
     },
