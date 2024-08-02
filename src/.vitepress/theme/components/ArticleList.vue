@@ -13,7 +13,7 @@ const currentTag = reactive({
     this.value = tag;
   }
 });
-const { posts, tags } = data;
+const { posts, tags, postCount } = data;
 const pageData = computed(() => {
   return currentTag.value === ALL_TAG_VALUE ? props.displayCount ? posts.slice(0, props.displayCount) : posts : posts.filter(_ => _.tag === currentTag.value)
 })
@@ -106,7 +106,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
     .tag {
       margin-left: 12px;
       font-size: 12px;
-      background-color: var(--vp-c-indigo-soft);  
+      background-color: var(--vp-c-indigo-soft);
       color: var(--vp-c-text-1);
       padding: 0 8px;
       font-size: 12px;
@@ -148,15 +148,15 @@ const onTagSelect = (e) => currentTag.setTag(e);
           :class="[$style.tag_item, currentTag.value === 'all' ? $style.current : '']"
           @click="onTagSelect('all')"
         >
-          全部
+          全部 ({{ postCount }})
         </span>
         <span
-          :class="[$style.tag_item, currentTag.value === tags ? $style.current : '']"
-          v-for="(tags, idx) in tags"
+          :class="[$style.tag_item, currentTag.value === tag ? $style.current : '']"
+          v-for="(tag, idx) in tags"
           :key="idx"
-          @click="onTagSelect(tags)"
+          @click="onTagSelect(tag)"
         >
-          {{tags}}
+          {{tag}}
         </span>
       </div>
     </section>

@@ -21,6 +21,7 @@ const arraySearchDirs = ['./blog/*/*.md','./blog/*/*/*.md','./blog/*/*/*/*.md']
 export default createContentLoader(arraySearchDirs, {
   transform(raw): any {
   const tags: string[] = []
+  const postCount = (raw || []).length
   const posts = raw
    .map(({ url, frontmatter }) => {
     const tagList = url.split('/')
@@ -37,14 +38,15 @@ export default createContentLoader(arraySearchDirs, {
     if (!tags.includes(tag)) {
       tags.push(tag)
     }
-    
+
     return result
    })
    .sort((a, b) => b.date.time - a.date.time)
 
   return {
     posts,
-    tags
+    tags,
+    postCount
   }
  }
 })
@@ -53,7 +55,7 @@ function formatDate(raw: string): Post['date'] {
   const date = new Date(raw)
 
   date.setUTCHours(12)
-  
+
   return {
     time: +date,
     string: date.toLocaleDateString('zh-CN', {

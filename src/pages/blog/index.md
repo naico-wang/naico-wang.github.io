@@ -3,9 +3,7 @@ layout: page
 title: '文章列表'
 ---
 <script setup>
-import { computed, reactive } from 'vue';
-import ArticleList from '../../.vitepress/theme/components/ArticleList.vue'
-
+import ArticleList from '../../.vitepress/theme/components/ArticleList.vue';
 </script>
 
 <style lang="scss" module>
