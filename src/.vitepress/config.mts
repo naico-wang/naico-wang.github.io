@@ -36,7 +36,13 @@ export default defineConfig({
       detailsLabel: '详细信息'
     },
     config: (md) => {
-      md.use(markdownItPlantuml)
+      md.use(markdownItPlantuml);
+      md.use(markdownItPlantuml, {
+        openMarker: '```wbs',
+        closeMarker: '```',
+        diagramName: 'wbs',
+        imageFormat: 'svg',
+      })
     }
   },
   head: [[
