@@ -9,7 +9,7 @@ import ArticleList from '../../.vitepress/theme/components/ArticleList.vue';
 <style lang="scss" module>
   .main {
     padding: 48px 32px 96px;
-    max-width: 788px;
+    max-width: 900px;
     margin: 0 auto;
 
     .pagetitle {
