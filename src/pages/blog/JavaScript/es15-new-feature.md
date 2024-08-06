@@ -6,9 +6,9 @@ abstract: 2024年:又是一个带来全新JS特性升级的不可思议的年份
 
 # ES15(2024) 中5个令人惊叹的新JavaScript特性
 
-2024年:又是一个带来全新JS特性升级的不可思议的年份,ES15推出。
+2024年：又是一个带来全新JS特性升级的不可思议的年份，ES15推出。
 
-从复杂的**异步特性**到**语法糖数组**和**现代正则表达式**, JavaScript 编码现在比以往任何时候都更简单、更快捷。
+从复杂的**异步特性**到**语法糖数组**和**现代正则表达式**，JavaScript 编码现在比以往任何时候都更简单、更快捷。
 
 ## 原生数组分组终于到来
 
@@ -31,11 +31,11 @@ const groupedByColor = Object.groupBy(
 console.log(groupedByColor);
 ```
 
-字面意思就是让恐龙级的 `Lodash` 库失去了最后的存在理由 - 再也不需要了!
+字面意思就是让恐龙级的 `Lodash` 库失去了最后的存在理由 - 再也不需要了！
 
-我原本期待一个新的实例方法,比如`Array.prototype.groupBy`,但不知什么原因他们把它做成了静态方法。
+我原本期待一个新的实例方法，比如`Array.prototype.groupBy`，但不知什么原因他们把它做成了静态方法。
 
-然后我们还有`Map.groupBy`来用对象键进行分组:
+然后我们还有`Map.groupBy`来用对象键进行分组：
 
 ```javascript
 const array = [1, 2, 3, 4, 5];
@@ -54,7 +54,7 @@ Map.groupBy(array, (num, index) => {
 
 `Promise.withResolvers()`
 
-从外部解决promises是很普遍的需求,在此之前我们不得不使用 `Deferred` 类来实现:
+从外部解决promises是很普遍的需求，在此之前我们不得不使用 `Deferred` 类来实现:
 
 ```javascript
 class Deferred {
