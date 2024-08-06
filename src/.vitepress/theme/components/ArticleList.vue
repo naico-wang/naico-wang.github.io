@@ -109,7 +109,6 @@ const onTagSelect = (e) => currentTag.setTag(e);
       background-color: var(--vp-c-indigo-soft);
       color: var(--vp-c-text-1);
       padding: 0 8px;
-      font-size: 12px;
       border-radius: 6px;
       cursor: pointer;
 
@@ -133,8 +132,10 @@ const onTagSelect = (e) => currentTag.setTag(e);
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    color: var(--vp-c-brand-1);
   }
   .item_link:hover {
+    color: var(--vp-c-brand-1);
     font-weight: bold;
     text-decoration: underline;
   }
