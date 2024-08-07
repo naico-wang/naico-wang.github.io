@@ -77,7 +77,7 @@ Coding <mark>Beauty</mark> Website
 
 `<wbr>`告诉浏览器，"你只能在这里和那里断开文本"，这样浏览器就不会随意地在关键词中断开。
 
-这就是为什么它叫`wbr` -- `Word BReak Opportunity`（单词断开机会）
+这就是为什么它叫`wbr` -- `Word Break Opportunity`（单词断开机会）
 
 ```html
 <p>this-is-a-very-long-text-created-to-test-the-wbr-tag</p>
