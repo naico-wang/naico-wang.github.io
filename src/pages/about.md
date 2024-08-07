@@ -29,6 +29,10 @@ features:
     details: "· Email: naico.hy.wang@gmail.com<br />· https://github.com/naico-wang<br />· https://www.linkedin.com/in/naico-hongyu-wang-49554891/<br />"
 ---
 
+## 更多关于我的信息请查阅个人小程序
+
+![小程序码](/public/icons/minip-qrcode.jpg)
+
 ## 关于这个网站
 
 - 用Vue经典的VitePress搭建
