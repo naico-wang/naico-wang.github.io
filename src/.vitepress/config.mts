@@ -1,5 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
-import { Content, defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 import markdownItPlantuml from 'markdown-it-plantuml'
 
@@ -8,7 +8,7 @@ const dynamicSideBar = generateSidebar([
     documentRootPath: '/src/pages/blog/',
     resolvePath: '/blog/',
     useTitleFromFrontmatter: true,
-    sortMenusByFrontmatterDate: true,
+    sortMenusByFrontmatterDate: false,
     debugPrint: false,
     collapsed: true
   }
