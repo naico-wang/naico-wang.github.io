@@ -59,7 +59,7 @@ export default defineConfig({
     { property: 'og:description', content: 'Naico Wang\'s Blog' }
   ],[
     'meta',
-    { property: 'og:image', content: '/icons/website-logo-full.png' }
+    { property: 'og:image', content: 'https://naico.wang/icons/website-logo-full.png' }
   ],[
     'meta',
     { property: 'og:url', content: 'https://naico.wang' }
