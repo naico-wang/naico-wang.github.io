@@ -1,5 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vitepress'
+import { Content, defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 import markdownItPlantuml from 'markdown-it-plantuml'
 
@@ -48,6 +48,21 @@ export default defineConfig({
   head: [[
     'link',
     { rel: 'icon', href: '/favicon.ico' }
+  ],[
+    'meta',
+    { property: 'og:type', content: 'website' }
+  ],[
+    'meta',
+    { property: 'og:title', content: 'Naico Wang\'s Blog' }
+  ],[
+    'meta',
+    { property: 'og:description', content: 'Naico Wang\'s Blog' }
+  ],[
+    'meta',
+    { property: 'og:image', content: '/icons/website-logo-full.png' }
+  ],[
+    'meta',
+    { property: 'og:url', content: 'https://naico.wang' }
   ],[
     'meta',
     { name: 'referrer', content: 'no-referrer' }
