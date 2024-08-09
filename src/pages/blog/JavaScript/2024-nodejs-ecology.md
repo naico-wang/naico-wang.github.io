@@ -15,7 +15,7 @@ abstract: 2024年，nodejs 在 Javascript 运行时中仍然占据着霸主的�
 Handle the authentication of users for web applications
 
 ```wbs
-* Authentication
+*[#SkyBlue] Authentication
 ** passport
 ** express-session
 ** grant
@@ -27,7 +27,7 @@ Handle the authentication of users for web applications
 Restrict user actions according to various access control patterns
 
 ```wbs
-* Authorization
+*[#SkyBlue] Authorization
 ** @casl/ability
 ** oso
 ** casbin
@@ -39,7 +39,7 @@ Restrict user actions according to various access control patterns
 Run code benchmarks in Node.js and analyze results
 
 ```wbs
-* Benchmarking
+*[#SkyBlue] Benchmarking
 ** benchmark
 ** tinybench
 ** benny
@@ -50,7 +50,7 @@ Run code benchmarks in Node.js and analyze results
 Write automated tests that run in real-world browser environments
 
 ```wbs
-* Browser Testing
+*[#SkyBlue] Browser Testing
 ** puppeteer
 ** @playwright/test
 ** selenium-webdriver
@@ -65,7 +65,7 @@ Write automated tests that run in real-world browser environments
 Manage codebases containing multiple distinct projects (Monorepos)
 
 ```wbs
-* Build Systems
+*[#SkyBlue] Build Systems
 ** lerna
 ** nx
 ** turbo
@@ -79,7 +79,7 @@ Manage codebases containing multiple distinct projects (Monorepos)
 Bundle an application's source code into a single file. Mostly used for frontend apps to minimize network requests
 
 ```wbs
-* Bundlers
+*[#SkyBlue] Bundlers
 ** webpack
 ** vite
 ** parcel
@@ -93,7 +93,7 @@ Bundle an application's source code into a single file. Mostly used for frontend
 Analyze and visualize code complexity to help you refactor (legacy) codebases
 
 ```wbs
-* Code Complexity
+*[#SkyBlue] Code Complexity
 ** plato
 ** code-complexity
 ** es6-plato
@@ -106,7 +106,7 @@ Analyze and visualize code complexity to help you refactor (legacy) codebases
 Generate a visual graph of your code's internal dependencies
 
 ```wbs
-* Code Graphs
+*[#SkyBlue] Code Graphs
 ** madge
 ** dependency-cruiser
 ```
@@ -116,7 +116,7 @@ Generate a visual graph of your code's internal dependencies
 Format code and fix problems before shipping to production
 
 ```wbs
-* Code Linters & Formatters
+*[#SkyBlue] Code Linters & Formatters
 ** prettier
 ** eslint
 ** @typescript-eslint/eslint-plugin
@@ -131,7 +131,7 @@ Format code and fix problems before shipping to production
 Create interactive command line tools by asking for user input
 
 ```wbs
-* Command Line Prompts
+*[#SkyBlue] Command Line Prompts
 ** inquirer
 ** prompts
 ** @inquirer/prompts
@@ -143,7 +143,7 @@ Create interactive command line tools by asking for user input
 Create beautiful command line tools
 
 ```wbs
-* Command Line Styling
+*[#SkyBlue] Command Line Styling
 ** chalk
 ** colors
 ** ink
@@ -157,7 +157,7 @@ Create beautiful command line tools
 Use Node.js to create powerful command line applications
 
 ```wbs
-* Command Line Utilities
+*[#SkyBlue] Command Line Utilities
 ** commander
 ** yargs
 ** minimist
@@ -171,7 +171,7 @@ Use Node.js to create powerful command line applications
 Load environment variables and configure your applications
 
 ```wbs
-* Configuration Management
+*[#SkyBlue] Configuration Management
 ** dotenv
 ** rc
 ** config
@@ -184,7 +184,7 @@ Load environment variables and configure your applications
 Create and manage content seamlessly using Node.js-based CMS solutions
 
 ```wbs
-* Content Management Systems
+*[#SkyBlue] Content Management Systems
 ** @strapi/strapi
 ** ghost
 ** directus
@@ -199,7 +199,7 @@ Create and manage content seamlessly using Node.js-based CMS solutions
 Work with CSV files from Node.js
 
 ```wbs
-* CSV Parsers
+*[#SkyBlue] CSV Parsers
 ** papaparse
 ** csv-parse
 ** csvtojson
@@ -214,7 +214,7 @@ Work with CSV files from Node.js
 A more intuitive approach to dates and times than the standard library
 
 ```wbs
-* Date & Time
+*[#SkyBlue] Date & Time
 **[#pink] moment (Deprecated)
 ** dayjs
 ** date-fns
@@ -226,7 +226,7 @@ A more intuitive approach to dates and times than the standard library
 Review outdated dependencies and manually (or automatically) update them
 
 ```wbs
-* Dependency Management
+*[#SkyBlue] Dependency Management
 ** renovate
 ** npm-check-updates
 ** npm-check
@@ -241,7 +241,7 @@ Review outdated dependencies and manually (or automatically) update them
 Send emails with ease from Node.js
 
 ```wbs
-* Email Delivery
+*[#SkyBlue] Email Delivery
 ** nodemailer
 ** email-templates
 ** emailjs
@@ -253,7 +253,7 @@ Send emails with ease from Node.js
 Parse and write excel spreadsheets in Node.js
 
 ```wbs
-* Excel Spreadsheets
+*[#SkyBlue] Excel Spreadsheets
 ** xlsx
 ** exceljs
 ** node-xlsx
@@ -264,7 +264,7 @@ Parse and write excel spreadsheets in Node.js
 Handle file uploads in Node.js applications
 
 ```wbs
-* File Uploads
+*[#SkyBlue] File Uploads
 ** multer
 ** formidable
 ** busboy
@@ -277,7 +277,7 @@ Handle file uploads in Node.js applications
 Quickly develop full-stack applications with these batteries-included frameworks
 
 ```wbs
-* Full-stack Frameworks
+*[#SkyBlue] Full-stack Frameworks
 ** @nestjs/core
 ** meteor
 ** sails
@@ -294,7 +294,7 @@ Quickly develop full-stack applications with these batteries-included frameworks
 Easily find and extract the data you need from HTML
 
 ```wbs
-* HTML Scrapers
+*[#SkyBlue] HTML Scrapers
 ** jsdom
 ** cheerio
 ** @mozilla/readability
@@ -307,7 +307,7 @@ Easily find and extract the data you need from HTML
 Send network requests and fetch data from external APIs
 
 ```wbs
-* HTTP Clients
+*[#SkyBlue] HTTP Clients
 ** axios
 **[#pink] request (Deprecated)
 ** node-fetch
@@ -322,7 +322,7 @@ Send network requests and fetch data from external APIs
 Minimalist frameworks based around HTTP verbs and routes
 
 ```wbs
-* HTTP Frameworks
+*[#SkyBlue] HTTP Frameworks
 ** express
 ** koa
 ** fastify
@@ -340,7 +340,7 @@ Minimalist frameworks based around HTTP verbs and routes
 Mock network requests and test modules in isolation
 
 ```wbs
-* HTTP Mocking
+*[#SkyBlue] HTTP Mocking
 ** superagent
 ** msw
 ** nock
@@ -353,7 +353,7 @@ Mock network requests and test modules in isolation
 Resize, crop and convert images to various formats
 
 ```wbs
-* Image Processing
+*[#SkyBlue] Image Processing
 ** sharp
 ** jimp
 ** gm
@@ -367,7 +367,7 @@ Resize, crop and convert images to various formats
 Schedule and process CPU intensive tasks off the main thread
 
 ```wbs
-* Job Queues
+*[#SkyBlue] Job Queues
 ** bull
 ** kue
 ** agenda
@@ -382,7 +382,7 @@ Schedule and process CPU intensive tasks off the main thread
 Use JSON Schema language to validate user input and anything else
 
 ```wbs
-* JSON Schema Validators
+*[#SkyBlue] JSON Schema Validators
 ** ajv
 ** jsonschema
 ** is-my-json-valid
@@ -397,7 +397,7 @@ Use JSON Schema language to validate user input and anything else
 Sign and verify JWTs in Node.js
 
 ```wbs
-* JSON Web Token (JWT)
+*[#SkyBlue] JSON Web Token (JWT)
 ** jsonwebtoken
 ** jose
 ** jwt-decode
@@ -410,7 +410,7 @@ Sign and verify JWTs in Node.js
 Log events to help you debug problems in your application
 
 ```wbs
-* Logging
+*[#SkyBlue] Logging
 ** winston
 ** pino
 **[#pink] npmlog(Deprecated)
@@ -425,7 +425,7 @@ Log events to help you debug problems in your application
 MongoDB clients for Node.js
 
 ```wbs
-* MongoDB Clients
+*[#SkyBlue] MongoDB Clients
 ** mongoose
 ** mongodb
 ```
@@ -435,7 +435,7 @@ MongoDB clients for Node.js
 Node.js drivers for MySQL
 
 ```wbs
-* MySQL Clients
+*[#SkyBlue] MySQL Clients
 ** mysql
 ** mysql2
 ```
@@ -445,7 +445,7 @@ Node.js drivers for MySQL
 Map SQL database tables to JavaScript objects
 
 ```wbs
-* Object-relational Mapping (ORM)
+*[#SkyBlue] Object-relational Mapping (ORM)
 ** typeorm
 ** sequelize
 ** prisma
@@ -460,7 +460,7 @@ Map SQL database tables to JavaScript objects
 Simple and intuitive validation with object schemas
 
 ```wbs
-* Object Schema Validators
+*[#SkyBlue] Object Schema Validators
 ** validator
 ** zod
 ** joi
@@ -473,7 +473,7 @@ Simple and intuitive validation with object schemas
 Automate your package release workflow
 
 ```wbs
-* Package Publishing
+*[#SkyBlue] Package Publishing
 ** semantic-release
 **[#pink] standard-version (Deprecated)
 ** release-it
@@ -485,7 +485,7 @@ Automate your package release workflow
 Package a Node.js application into a single executable file
 
 ```wbs
-* Package to Executable
+*[#SkyBlue] Package to Executable
 ** bun
 ** pkg
 ** nexe
@@ -497,7 +497,7 @@ Package a Node.js application into a single executable file
 Generate PDF files with Node.js
 
 ```wbs
-* PDF Generation
+*[#SkyBlue] PDF Generation
 ** jspdf
 ** pdfmake
 ** pdfkit
@@ -510,7 +510,7 @@ Generate PDF files with Node.js
 Interact with PostgreSQL databases from Node.js
 
 ```wbs
-* PostgreSQL Clients
+*[#SkyBlue] PostgreSQL Clients
 ** pg
 ** postgres
 ** slonik
@@ -522,7 +522,7 @@ Interact with PostgreSQL databases from Node.js
 Programmatically generate QR codes in Node.js
 
 ```wbs
-* QR Code Generation
+*[#SkyBlue] QR Code Generation
 ** qrcode
 ** qrcode-generator
 ** qrcode-terminal
@@ -536,7 +536,7 @@ Programmatically generate QR codes in Node.js
 Write JavaScript to build SQL queries
 
 ```wbs
-* Query Builders
+*[#SkyBlue] Query Builders
 ** knex
 ** kysely
 ```
@@ -546,7 +546,7 @@ Write JavaScript to build SQL queries
 Generate random data to test your application
 
 ```wbs
-* Random Data Generation
+*[#SkyBlue] Random Data Generation
 ** @faker-js/faker
 ** chance
 ** json-schema-faker
@@ -559,7 +559,7 @@ Generate random data to test your application
 Redis clients for Node.js
 
 ```wbs
-* Redis Clients
+*[#SkyBlue] Redis Clients
 ** redis
 ** ioredis
 ```
@@ -569,7 +569,7 @@ Redis clients for Node.js
 Run tasks on a schedule
 
 ```wbs
-* Scheduling
+*[#SkyBlue] Scheduling
 ** cron
 ** node-schedule
 ** node-cron
@@ -582,7 +582,7 @@ Run tasks on a schedule
 Execute shell commands from Node.js
 
 ```wbs
-* Shell Execution
+*[#SkyBlue] Shell Execution
 ** execa
 ** zx
 ** shelljs
@@ -593,7 +593,7 @@ Execute shell commands from Node.js
 Node.js drivers for SQLite
 
 ```wbs
-* SQLite Clients
+*[#SkyBlue] SQLite Clients
 ** sqlite3
 ** better-sqlite3
 ```
@@ -603,7 +603,7 @@ Node.js drivers for SQLite
 Serve a statically generated site on localhost
 
 ```wbs
-* Static Servers
+*[#SkyBlue] Static Servers
 ** http-server
 ** serve
 ** live-server
@@ -616,7 +616,7 @@ Serve a statically generated site on localhost
 Render dynamic HTML output
 
 ```wbs
-* Template Engines
+*[#SkyBlue] Template Engines
 ** handlebars
 ** pug
 ** mustache
@@ -630,7 +630,7 @@ Render dynamic HTML output
 Frameworks to help you write automated tests
 
 ```wbs
-* Test Frameworks
+*[#SkyBlue] Test Frameworks
 ** jest
 ** mocha
 ** ava
@@ -644,9 +644,10 @@ Frameworks to help you write automated tests
 Crawl and scrape entire websites using Node.js
 
 ```wbs
-* WSF
+*[#SkyBlue] Web Scraping Frameworks
 ** crawlee
 ** x-ray
+** puppeteer
 ```
 
 ::: info Github 源码地址：
