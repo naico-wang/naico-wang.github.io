@@ -13,7 +13,7 @@
   "dependencies": {
     "@giscus/vue": "^3.0.0",
     "@huyikai/local-cms": "^0.0.27",
-    "@types/node": "^22.1.0",
+    "@types/node": "^22.2.0",
     "markdown-it-plantuml": "^1.4.1"
   }
 }
