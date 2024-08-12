@@ -183,10 +183,10 @@ vite整体思路：启动一个 `connect` 服务器拦截由浏览器请求 ESM�
 4. 如果没有缓存时则需要进行依赖扫描。这里主要是会调用`scanImports`方法，从名字也能看出该方法应该是通过扫描项目中的import语句来得到需要预编译的依赖，最终会返回一个`prepareEsbuildScanner`方法
    
    ```javascript
-  export function scanImports(config: ResolvedConfig) { ... }
+    export function scanImports(config: ResolvedConfig) { ... }
    ```
 
-1. 最后该方法中会使用`esbuild`对扫描出来的依赖项进行预编译。
+5. 最后该方法中会使用`esbuild`对扫描出来的依赖项进行预编译。
 
 
 
