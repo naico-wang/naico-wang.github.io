@@ -8,11 +8,11 @@ abstract: 随着 Vite 的盛行，使用 Vite 的开发者越来越多，那么 
 
 ## 前言
 
-随着Vue3的逐渐普及以及Vite的逐渐成熟，我们有必要来了解一下关于vite的本地构建原理。
+随着`Vue3`的逐渐普及以及`Vite`的逐渐成熟，我们有必要来了解一下关于`vite`的本地构建原理。
 
-对于webpack打包的核心流程是通过分析JS文件中引用关系，通过递归得到整个项目的依赖关系，并且对于非JS类型的资源，通过调用对应的loader将其打包编译生成JS 代码，最后再启动开发服务器。
+对于`webpack`打包的核心流程是通过分析JS文件中引用关系，通过递归得到整个项目的依赖关系，并且对于非JS类型的资源，通过调用对应的`loader`将其打包编译生成JS 代码，最后再启动开发服务器。
 
-了解到webpack的耗时主要花费在打包上，Vite选择跳过打包，直接以以 原生 ESM 方式提供源码，这样岂不是可以非常快！
+了解到`webpack`的耗时主要花费在打包上，`Vite`选择跳过打包，直接以以 `原生 ESM` 方式提供源码，这样岂不是可以非常快！
 
 ## 与 Webpack 对比
 
@@ -30,7 +30,7 @@ abstract: 随着 Vite 的盛行，使用 Vite 的开发者越来越多，那么 
 
 这一切都要得益于浏览器支持ESM的模块化方案，当浏览器识别到模块内的 ESM 方式导入的模块时，会自动去帮我们查找对应的内容
 
-这就是为什么vite项目的模版文件中的script标签需要加上type=module，而webpack项目不需要。
+这就是为什么vite项目的模版文件中的script标签需要加上`type=module`，而webpack项目不需要。
 
 ```javascript
 <script type="module" src="/src/main.ts"></script>
@@ -42,9 +42,9 @@ abstract: 随着 Vite 的盛行，使用 Vite 的开发者越来越多，那么 
 
 总结来说就是：**基于ESM模块化方案** + **预构建**
 
-vite整体思路：启动一个 connect 服务器拦截由浏览器请求 ESM的请求。通过请求的路径找到目录下对应的文件做一下编译最终以 ESM的格式返回给浏览器。
+vite整体思路：启动一个 `connect` 服务器拦截由浏览器请求 ESM的请求。通过请求的路径找到目录下对应的文件做一下编译最终以 ESM的格式返回给浏览器。
 
-对于node_modules下面的依赖，vite会使用esbuild进行预构建，主要是为了兼容CommonJS与UMD，以及提高性能。
+对于`node_modules`下面的依赖，vite会使用`esbuild`进行预构建，主要是为了兼容`CommonJS`与`UMD`，以及提高性能。
 
 这样完整走一遍，是不是对Vite的理解又更深一步了，它实际上就是“走一步看一步”，不像webpack上来就扫描整个项目进行打包编译，所以vite的构建速度会比较快！
 
@@ -146,12 +146,207 @@ vite整体思路：启动一个 connect 服务器拦截由浏览器请求 ESM的
 ## 预构建流程
 
 1. 在启动服务的过程中会执行一个`initDepsOptimizer`表示初始化依赖优化
-2. 接着找到定义`initDepsOptimizer`方法的地方
-3. 在这里会执行`createDepsOptimizer`方法，再接着找到定义`createDepsOptimizer`的地方
-4. 这里首先会去执行`loadCachedDepOptimizationMetadata`用于获取本地缓存中的`metadata`数据
+   
+   ```javascript
+    export async function initDepsOptimizer(
+      config: ResolvedConfig,
+      server: ViteDevServer,
+    ): Promise<void> {
+      if (!getDepsOptimizer(config, false)) {
+        await createDepsOptimizer(config, server)
+      }
+    }
+   ```
+2. 在这里会执行`createDepsOptimizer`方法，再接着找到定义`createDepsOptimizer`的地方
+   
+   ```javascript
+    async function createDepsOptimizer(
+      config: ResolvedConfig,
+      server: ViteDevServer,
+    ): Promise<void> {
+      const { logger } = config
+      const ssr = false
+      const sessionTimestamp = Date.now().toString()
+
+      const cachedMetadata = await loadCachedDepOptimizationMetadata(config, ssr)
+      ...
+    }
+   ```
+
+3. 这里首先会去执行`loadCachedDepOptimizationMetadata`用于获取本地缓存中的`metadata`数据
     该函数会在获取到_metadata.json文件内容之后去对比lock文件hash以及配置文件optimizeDeps内容，如果一样说明预构建缓存没有任何改变，无需重新预构建，直接使用上次预构建缓存即可
-5. 如果没有缓存时则需要进行依赖扫描。这里主要是会调用`scanImport`方法，从名字也能看出该方法应该是通过扫描项目中的import语句来得到需要预编译的依赖，最终会返回一个`prepareEsbuildScanner`方法
-6. 最后该方法中会使用`esbuild`对扫描出来的依赖项进行预编译。
+    
+    ```javascript
+    /**
+     * Creates the initial dep optimization metadata, loading it from the deps cache
+    * if it exists and pre-bundling isn't forced
+    */
+    export async function loadCachedDepOptimizationMetadata(
+      config: ResolvedConfig,
+      ssr: boolean,
+      force = config.optimizeDeps.force,
+      asCommand = false,
+    ): Promise<DepOptimizationMetadata | undefined> {
+      const log = asCommand ? config.logger.info : debug
+
+      if (firstLoadCachedDepOptimizationMetadata) {
+        firstLoadCachedDepOptimizationMetadata = false
+        // Fire up a clean up of stale processing deps dirs if older process exited early
+        setTimeout(() => cleanupDepsCacheStaleDirs(config), 0)
+      }
+
+      const depsCacheDir = getDepsCacheDir(config, ssr)
+
+      if (!force) {
+        let cachedMetadata: DepOptimizationMetadata | undefined
+        try {
+          const cachedMetadataPath = path.join(depsCacheDir, METADATA_FILENAME)
+          cachedMetadata = parseDepsOptimizerMetadata(
+            await fsp.readFile(cachedMetadataPath, 'utf-8'),
+            depsCacheDir,
+          )
+        } catch (e) {}
+        // hash is consistent, no need to re-bundle
+        if (cachedMetadata) {
+          if (cachedMetadata.lockfileHash !== getLockfileHash(config, ssr)) {
+            config.logger.info(
+              'Re-optimizing dependencies because lockfile has changed',
+            )
+          } else if (cachedMetadata.configHash !== getConfigHash(config, ssr)) {
+            config.logger.info(
+              'Re-optimizing dependencies because vite config has changed',
+            )
+          } else {
+            log?.('Hash is consistent. Skipping. Use --force to override.')
+            // Nothing to commit or cancel as we are using the cache, we only
+            // need to resolve the processing promise so requests can move on
+            return cachedMetadata
+          }
+        }
+      } else {
+        config.logger.info('Forced re-optimization of dependencies')
+      }
+
+      // Start with a fresh cache
+      debug?.(colors.green(`removing old cache dir ${depsCacheDir}`))
+      await fsp.rm(depsCacheDir, { recursive: true, force: true })
+    }
+    ```
+4. 如果没有缓存时则需要进行依赖扫描。这里主要是会调用`scanImports`方法，从名字也能看出该方法应该是通过扫描项目中的import语句来得到需要预编译的依赖，最终会返回一个`prepareEsbuildScanner`方法
+   
+   ```javascript
+  export function scanImports(config: ResolvedConfig): {
+    cancel: () => Promise<void>
+    result: Promise<{
+      deps: Record<string, string>
+      missing: Record<string, string>
+    }>
+  } {
+    // Only used to scan non-ssr code
+
+    const start = performance.now()
+    const deps: Record<string, string> = {}
+    const missing: Record<string, string> = {}
+    let entries: string[]
+
+    const scanContext = { cancelled: false }
+
+    const esbuildContext: Promise<BuildContext | undefined> = computeEntries(
+      config,
+    ).then((computedEntries) => {
+      entries = computedEntries
+
+      if (!entries.length) {
+        if (!config.optimizeDeps.entries && !config.optimizeDeps.include) {
+          config.logger.warn(
+            colors.yellow(
+              '(!) Could not auto-determine entry point from rollupOptions or html files ' +
+                'and there are no explicit optimizeDeps.include patterns. ' +
+                'Skipping dependency pre-bundling.',
+            ),
+          )
+        }
+        return
+      }
+      if (scanContext.cancelled) return
+
+      debug?.(
+        `Crawling dependencies using entries: ${entries
+          .map((entry) => `\n  ${colors.dim(entry)}`)
+          .join('')}`,
+      )
+      return prepareEsbuildScanner(config, entries, deps, missing, scanContext)
+    })
+
+    const result = esbuildContext
+      .then((context) => {
+        function disposeContext() {
+          return context?.dispose().catch((e) => {
+            config.logger.error('Failed to dispose esbuild context', { error: e })
+          })
+        }
+        if (!context || scanContext?.cancelled) {
+          disposeContext()
+          return { deps: {}, missing: {} }
+        }
+        return context
+          .rebuild()
+          .then(() => {
+            return {
+              // Ensure a fixed order so hashes are stable and improve logs
+              deps: orderedDependencies(deps),
+              missing,
+            }
+          })
+          .finally(() => {
+            return disposeContext()
+          })
+      })
+      .catch(async (e) => {
+        if (e.errors && e.message.includes('The build was canceled')) {
+          // esbuild logs an error when cancelling, but this is expected so
+          // return an empty result instead
+          return { deps: {}, missing: {} }
+        }
+
+        const prependMessage = colors.red(`\
+    Failed to scan for dependencies from entries:
+    ${entries.join('\n')}
+
+    `)
+        if (e.errors) {
+          const msgs = await formatMessages(e.errors, {
+            kind: 'error',
+            color: true,
+          })
+          e.message = prependMessage + msgs.join('\n')
+        } else {
+          e.message = prependMessage + e.message
+        }
+        throw e
+      })
+      .finally(() => {
+        if (debug) {
+          const duration = (performance.now() - start).toFixed(2)
+          const depsStr =
+            Object.keys(orderedDependencies(deps))
+              .sort()
+              .map((id) => `\n  ${colors.cyan(id)} -> ${colors.dim(deps[id])}`)
+              .join('') || colors.dim('no dependencies found')
+          debug(`Scan completed in ${duration}ms: ${depsStr}`)
+        }
+      })
+
+    return {
+      cancel: async () => {
+        scanContext.cancelled = true
+        return esbuildContext.then((context) => context?.cancel())
+      },
+      result,
+    }
+   ```
+
+5. 最后该方法中会使用`esbuild`对扫描出来的依赖项进行预编译。
 
 
 
