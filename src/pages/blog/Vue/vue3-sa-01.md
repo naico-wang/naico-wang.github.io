@@ -1,5 +1,5 @@
 ---
-title: Vue3 源码解读前置知识 - Proxy
+title: 阅读Vue3源码 - Proxy
 date: 2024-08-14
 abstract: 此系列是解析 Vue3 源码与实现系列的前置知识，本文介绍了 ES6 Proxy 相关的知识。
 ---
