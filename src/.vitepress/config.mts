@@ -8,7 +8,9 @@ const dynamicSideBar = generateSidebar([
     documentRootPath: '/src/pages/blog/',
     resolvePath: '/blog/',
     useTitleFromFrontmatter: true,
-    sortMenusByFrontmatterDate: false,
+    sortMenusByName: false,
+    sortMenusByFrontmatterDate: true,
+    sortMenusOrderByDescending: false,
     debugPrint: false,
     collapsed: true
   }
