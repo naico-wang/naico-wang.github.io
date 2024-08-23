@@ -7,8 +7,15 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   --vp-font-family-base: 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'MiSans';
+  --vp-font-family-mono: 'JetBrainsMono', ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
 }
 
 .VPNavBarSearch, .VPContent {
   flex-grow: 0 !important;
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  font-weight: normal;
+  src: url('/fonts/JetBrainsMono-Medium.woff2') format("woff");
 }
