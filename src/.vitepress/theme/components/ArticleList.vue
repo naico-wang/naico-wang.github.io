@@ -1,6 +1,7 @@
 <script setup>
-import { computed, reactive } from 'vue';
+import { computed, reactive, ref } from 'vue';
 import { data } from '../../../.vitepress/theme/posts.data.mts';
+import Pagination from './Pagination.vue'
 
 const props = defineProps({
   displayCount: Number
@@ -20,6 +21,17 @@ const pageData = computed(() => {
 
 const onTagSelect = (e) => currentTag.setTag(e);
 
+// 定义响应式变量
+const pageNo = ref(1)
+const pageSize = ref(10)
+const total = ref(posts.length)
+const continues = ref(3)
+const pageSizes = ref([10, 20, 30, 40])
+
+// 页码变化处理函数
+const handlePageNoChange = (newPageNo) => {
+  pageNo.value = newPageNo
+}
 </script>
 
 <style lang="scss" module>
@@ -172,6 +184,16 @@ const onTagSelect = (e) => currentTag.setTag(e);
           <span :class="$style.tag" @click="onTagSelect(article.tag)">{{article.tag}}</span>
         </div>
       </div>
+    </section>
+    <section v-if="currentTag.value === 'all'">
+      <pagination
+        :pageNo="pageNo"
+        :pageSize="pageSize"
+        :total="total"
+        :continues="continues"
+        :pageSizes="pageSizes"
+        @change-page-no="handlePageNoChange"
+      />
     </section>
   </main>
 </template>
