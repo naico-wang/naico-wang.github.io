@@ -7,6 +7,19 @@ const props = defineProps({
   displayCount: Number
 })
 
+const directoryNameMapping = {
+  'Architecture': '软件架构',
+  'Auth-and-Encrypt': 'Web加解密',
+  'Design Pattern': '经典设计模式',
+  'Engineering': '软件开发相关',
+  'Java': 'Java相关',
+  'JavaScript': 'JavaScript知识库',
+  'Life Style': '生活日常',
+  'React': 'React相关',
+  'Vue': 'Vue相关',
+  'Web-and-Mobile': '网站和移动开发'
+}
+
 const ALL_TAG_VALUE = 'all'
 const currentTag = reactive({
   value: ALL_TAG_VALUE,
@@ -169,7 +182,7 @@ const handlePageNoChange = (newPageNo) => {
           :key="idx"
           @click="onTagSelect(tag)"
         >
-          {{tag}}
+          {{directoryNameMapping[tag]}}
         </span>
       </div>
     </section>
