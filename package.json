@@ -13,5 +13,8 @@
     "@giscus/vue": "^3.0.0",
     "@types/node": "^22.5.5",
     "markdown-it-plantuml": "^1.4.1"
+  },
+  "overrides": {
+    "vite": "5.4.6"
   }
 }
