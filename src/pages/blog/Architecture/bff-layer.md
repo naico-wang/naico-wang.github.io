@@ -37,6 +37,7 @@ abstract: 这篇文章其实阐述了很多观点，关于BFF，关于多端API�
 *通用API后端常见架构*
 
 ## 为前端引入 BFF 层
+
 我看到 REA 和 SoundCloud 都在使用一种解决此问题的方法，即不采用通用 API 后端，而是为每个用户体验提供一个后端 - 或者如（前 SoundCloud 员工）Phil Calçado所称的“前端的后端”（BFF）。从概念上讲，您应该将面向用户的应用程序视为两个组件 - 一个位于外围的客户端应用程序和一个位于外围的服务器端组件（BFF）。
 
 BFF 与特定的用户体验紧密耦合，通常由与用户界面相同的团队维护，从而更容易根据 UI 的要求定义和调整 API，同时简化了客户端和服务器组件的发布流程。
@@ -70,11 +71,11 @@ Pete Hodgson 观察到，BFF 在团队边界内协调一致时效果最佳，因
 
 对于后端服务数量较少的架构，BFF 可能是一种有用的模式。然而，对于使用大量服务的组织来说，它们可能是必不可少的，因为聚合多个下游调用以提供用户功能的需求急剧增加。在这种情况下，对 BFF 的一次调用通常会导致对微服务的多次下游调用。例如，想象一个电子商务公司的应用程序。我们希望提取用户愿望清单中的商品列表，显示库存水平和价格：
 
-| Name          |      Stocks      | Price |
-| ------------- | :--------------: | -----: |
-| The Brakes - Give Blood | In Stock! | $5.99 |
+| Name                        | Stocks       | Price  |
+| --------------------------- |:------------:| ------:|
+| The Brakes - Give Blood     | In Stock!    | $5.99  |
 | Blue Juice - Retrospectable | Out Of Stock | $17.50 |
-| Hot Chip - Why Make Sense? | Going fast | $9.99 |
+| Hot Chip - Why Make Sense?  | Going fast   | $9.99  |
 
 多个服务保存着我们想要的信息。愿望清单服务存储有关清单的信息以及每个项目的 ID。目录服务存储每个项目的名称和价格，库存水平存储在我们的库存服务中。因此，在我们的 BFF 中，我们将公开一种检索完整播放列表的方法，该方法至少包含 3 个调用：
 
@@ -159,6 +160,3 @@ Pete Hodgson 观察到，BFF 在团队边界内协调一致时效果最佳，因
 前端后端解决了使用微服务时移动开发的一个迫切问题。此外，它们还为通用 API 后端提供了引人注目的替代方案，许多团队不仅将其用于移动开发，还将其用于其他目的。通过限制它们支持的消费者数量，它们更容易使用和更改，并帮助开发面向客户的应用程序的团队保留更多的自主权。
 
 感谢 Matthias Käppler、Michael England、Phil Calçado、Lukasz Plotnicki、Jon Eaves、Stewart Gleadow 和 Kristof Adriaenssens 在研究本文时提供的帮助，以及 Giles Alexander、Ken McCormack、Sriram Viswanathan、Kornelis Sietsma、Hany Elemary、Martin Fowler、Vladimir Sneblic 和 Pete Hodgson 提供的一般反馈。我也非常感谢任何进一步的反馈，所以请随时在下面发表评论！
-
-
-

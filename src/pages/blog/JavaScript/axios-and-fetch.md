@@ -103,21 +103,21 @@ fetch(url, options)
 ### 对比分析
 
 1. 数据发送方式：
-
+   
    - Axios 使用 data 属性来发送数据。
-
+   
    - Fetch 使用 body 属性来发送数据，并且需要手动将数据转换成 JSON 字符串。
 
 2. 响应数据处理：
-
+   
    - Axios 自动将服务器响应数据转换为 JSON 对象。
-
+   
    - Fetch 需要手动调用 response.json() 方法来解析响应数据。
 
 3. 便捷性：
-
+   
    - Axios 自动处理很多细节，比如响应数据的转换，错误处理等，更加方便易用。
-
+   
    - Fetch 则提供了更灵活的配置选项，但需要开发者写更多代码来处理响应数据和错误。
 
 ## 二、错误处理
@@ -139,7 +139,7 @@ fetch('https://api.example.com/data')
   .then(data => {
     console.log('接收到的数据:', data);
   })
-  
+
   .catch(error => {
     console.error('错误信息:', error.message);
   });
@@ -171,22 +171,22 @@ axios
 ### 对比分析
 
 1. 错误处理机制：
-
-    - Fetch 默认认为所有响应都是成功的，需要手动检查 response.ok 属性。
-    
-    - Axios 自动拒绝非成功状态码的响应，更加简化了错误处理。
+   
+   - Fetch 默认认为所有响应都是成功的，需要手动检查 response.ok 属性。
+   
+   - Axios 自动拒绝非成功状态码的响应，更加简化了错误处理。
 
 2. 响应数据解析：
-
-    - Fetch 需要手动调用 response.json() 方法来解析 JSON 数据。
-
-    - Axios 自动将响应数据解析为 JSON 对象，并通过 response.data 提供访问。
+   
+   - Fetch 需要手动调用 response.json() 方法来解析 JSON 数据。
+   
+   - Axios 自动将响应数据解析为 JSON 对象，并通过 response.data 提供访问。
 
 3. 错误信息获取：
-
-    - Fetch 在 `.catch()` 块中只能捕获网络错误或代码中的错误，需手动抛出 HTTP 错误。
-
-    - Axios 在 `.catch()` 块中可以获取详细的错误信息，包括响应和请求的详细情况。
+   
+   - Fetch 在 `.catch()` 块中只能捕获网络错误或代码中的错误，需手动抛出 HTTP 错误。
+   
+   - Axios 在 `.catch()` 块中可以获取详细的错误信息，包括响应和请求的详细情况。
 
 ## 三、拦截HTTP请求和响应
 
@@ -251,22 +251,22 @@ fetch("https://api.example.com/data")
 ### 对比分析
 
 1. 代码简洁性：
-
-    - Axios 提供了内置的拦截器支持，代码更加简洁。
-    
-    - Fetch 需要手动重写全局方法，代码略显冗长。
+   
+   - Axios 提供了内置的拦截器支持，代码更加简洁。
+   
+   - Fetch 需要手动重写全局方法，代码略显冗长。
 
 2. 功能性：
-
-    - Axios 拦截器功能强大，可以在请求和响应阶段进行操作。
-
-    - Fetch 通过重写方法实现拦截，灵活性较高，但代码复杂度增加。
+   
+   - Axios 拦截器功能强大，可以在请求和响应阶段进行操作。
+   
+   - Fetch 通过重写方法实现拦截，灵活性较高，但代码复杂度增加。
 
 3. 错误处理：
-
-    - Axios 自动处理 HTTP 错误并抛出异常，便于统一处理。
-
-    - Fetch 需要手动检查响应状态码，并抛出异常。
+   
+   - Axios 自动处理 HTTP 错误并抛出异常，便于统一处理。
+   
+   - Fetch 需要手动检查响应状态码，并抛出异常。
 
 通过以上对比可以看出，使用 Axios 可以更加简化拦截和错误处理的代码，更加便于维护。而 Fetch 提供了更高的灵活性，但需要更多的手动处理。
 
@@ -346,22 +346,22 @@ fetch('https://api.example.com/items', { signal })
 ### 对比分析
 
 1. 代码简洁性：
-
-    - Axios 提供了内置的超时设置，代码更加简洁。
-    
-    - Fetch 需要使用 AbortController 和定时器来实现超时功能，代码略显复杂。
+   
+   - Axios 提供了内置的超时设置，代码更加简洁。
+   
+   - Fetch 需要使用 AbortController 和定时器来实现超时功能，代码略显复杂。
 
 2. 功能性：
-
-    - Axios 允许在配置对象中直接设置超时，方便控制。
-
-    - Fetch 通过 AbortController 实现超时，提供了更高的灵活性，但实现较为复杂。
+   
+   - Axios 允许在配置对象中直接设置超时，方便控制。
+   
+   - Fetch 通过 AbortController 实现超时，提供了更高的灵活性，但实现较为复杂。
 
 3. 错误处理：
-
-    - Axios 自动处理超时错误，并在请求超时时抛出异常。
-
-    - Fetch 需要手动检查请求是否被中止，并处理相应的错误。
+   
+   - Axios 自动处理超时错误，并在请求超时时抛出异常。
+   
+   - Fetch 需要手动检查请求是否被中止，并处理相应的错误。
 
 通过以上对比可以看出，对于初学者来说，使用 Axios 可以更加简化超时处理的代码，更加便于维护。而 Fetch 提供了更高的灵活性，但需要更多的手动处理。
 
@@ -439,22 +439,22 @@ Promise.all(fetchRequests)
 ### 对比分析
 
 1. 代码简洁性：
-
-    - Axios 提供了内置的方法 axios.all() 和 axios.spread()，使得代码更加简洁易读。
-
-    - Fetch 需要使用 Promise.all() 并手动处理每个响应，代码略显复杂。
+   
+   - Axios 提供了内置的方法 axios.all() 和 axios.spread()，使得代码更加简洁易读。
+   
+   - Fetch 需要使用 Promise.all() 并手动处理每个响应，代码略显复杂。
 
 2. 响应处理：
-
-    - Axios 使用 axios.spread() 将响应展开为单独的参数，可以更方便地处理每个响应。
-
-    - Fetch 需要在 Promise.all() 之后手动解析每个响应的 JSON 数据，增加了额外的复杂性。
+   
+   - Axios 使用 axios.spread() 将响应展开为单独的参数，可以更方便地处理每个响应。
+   
+   - Fetch 需要在 Promise.all() 之后手动解析每个响应的 JSON 数据，增加了额外的复杂性。
 
 3. 错误处理：
-
-    - Axios 自动处理每个请求的错误，并在并发请求时统一捕获错误。
-
-    - Fetch 需要手动检查每个响应的状态码，并在解析 JSON 数据时处理可能的错误。
+   
+   - Axios 自动处理每个请求的错误，并在并发请求时统一捕获错误。
+   
+   - Fetch 需要手动检查每个响应的状态码，并在解析 JSON 数据时处理可能的错误。
 
 ## 六、向后兼容性
 
@@ -502,16 +502,16 @@ window.fetch(`${baseURL}/item`)
 ### 对比分析
 
 1. 向后兼容性：
-
-    - Axios 由于使用 XMLHttpRequest，可以在包括 IE11 在内的更旧的浏览器中使用。
-
-    - Fetch 主要面向现代浏览器，需要使用 polyfill 才能在旧版浏览器中使用。
+   
+   - Axios 由于使用 XMLHttpRequest，可以在包括 IE11 在内的更旧的浏览器中使用。
+   
+   - Fetch 主要面向现代浏览器，需要使用 polyfill 才能在旧版浏览器中使用。
 
 2. 安装和使用：
-
-    - Axios 不需要额外的配置即可在旧浏览器中使用。
-
-    - Fetch 需要安装 whatwg-fetch polyfill，并可能需要 Promise polyfill，以确保在旧版浏览器中的兼容性。
+   
+   - Axios 不需要额外的配置即可在旧浏览器中使用。
+   
+   - Fetch 需要安装 whatwg-fetch polyfill，并可能需要 Promise polyfill，以确保在旧版浏览器中的兼容性。
 
 ## 总结
 
