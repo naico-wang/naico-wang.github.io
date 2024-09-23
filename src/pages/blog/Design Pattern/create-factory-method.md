@@ -64,7 +64,7 @@ abstract: 亦称：虚拟构造函数、Virtual Constructor、Factory Method，�
 
 4. **具体创建者**(Concrete Creators)将会重写基础工厂方法，使其返回不同类型的产品。
 
-::: warning
+::: danger
 注意，并不一定每次调用工厂方法都会**创建**新的实例。工厂方法也可以返回缓存、对象池或其他来源的已有对象。
 :::
 
