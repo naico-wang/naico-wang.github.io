@@ -13,7 +13,6 @@ abstract: 在JavaScript开发中，解构赋值是一个广受欢迎的特性，
 JavaScript中的解构赋值主要有两种模式：
 
 - 数组解构（ArrayAssignmentPattern）
-
 - 对象解构（ObjectAssignmentPattern）
 
 ## 数组解构模式的性能隐患
@@ -26,13 +25,13 @@ const [first, second] = [1, 2];
 
 这段看似简单的代码背后，实际上涉及了复杂的操作。根据ECMAScript规范
 
-:::info ECMA
+```javascript
 ArrayAssignmentPattern : [ AssignmentElementList ]
 1. Let iteratorRecord be ? GetIterator(value, sync).
 2. Let result be Completion(IteratorDestructuringAssignmentEvaluation of AssignmentElementList with argument iteratorRecord).
 3. If iteratorRecord.[[Done]] is false, return ? IteratorClose(iteratorRecord, result).
 4. Return result.
-:::
+```
 
 数组解构会创建一个迭代器，这个过程可能会消耗大量资源。
 
@@ -136,14 +135,14 @@ const { 0: first, 1: second } = [1, 2];
 
 来看一下 ECMA 规范中是怎么定义的：
 
-:::info ECMA
+```javascript
 ObjectAssignmentPattern :
 { AssignmentPropertyList }
 { AssignmentPropertyList , }
 1. Perform ? RequireObjectCoercible(value).
 2. Perform ? PropertyDestructuringAssignmentEvaluation of AssignmentPropertyList with argument value.
 3. Return unused.
-:::
+```
 
 这种方式直接通过键值获取数组元素，避免了创建迭代器的开销。
 
