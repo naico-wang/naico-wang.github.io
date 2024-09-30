@@ -1,6 +1,6 @@
 <script setup>
 import { computed, reactive, ref } from 'vue';
-import { data } from '../../../.vitepress/theme/posts.data.mts';
+import { data } from '../posts.data.ts';
 import Pagination from './Pagination.vue'
 
 const props = defineProps({
