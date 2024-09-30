@@ -63,7 +63,6 @@ const handlePageNoChange = (newPageNo) => {
     flex-wrap: wrap;
 
     .tag_item {
-      margin-top: 0;
       background-color: var(--vp-c-indigo-soft);
       font-weight: bold;
       color: var(--vp-c-text-1);

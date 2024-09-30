@@ -2,7 +2,7 @@
   --vp-nav-logo-height: 30px;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #41d1ff, #bd34fe);
-  --vp-sidebar-width: 300px;
+  --vp-sidebar-width: 280px;
   --vp-layout-max-width: 1680px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -12,12 +12,12 @@
   --vp-font-family-mono: 'JetBrainsMono', ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
 }
 
-.VPNavBarSearch, .VPContent {
-  flex-grow: 0 !important;
+.VPDoc.has-aside .content-container {
+  max-width: 768px !important;
 }
 
-.VPDoc.has-aside .content-container {
-  max-width: 800px !important;
+.VPNavBarTitle.has-sidebar .title {
+  border-bottom-color: transparent !important;
 }
 
 @font-face {

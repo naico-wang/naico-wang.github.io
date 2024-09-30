@@ -9,13 +9,16 @@ import ArticleList from '../../.vitepress/theme/components/ArticleList.vue';
 <style lang="scss" module>
   .main {
     padding: 48px 32px 96px;
-    max-width: 900px;
+    max-width: 1280px;
     margin: 0 auto;
 
     .pagetitle {
-      font-size: 2em;
+      padding-bottom: 1em;
+      text-align: center;
+      font-size: 2.5em;
       font-weight: bold;
       line-height: 2.5em;
+      color: var(--vp-c-indigo-1);
     }
   }
 </style>
