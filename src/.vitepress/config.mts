@@ -122,7 +122,16 @@ export default defineConfig({
         replacement: fileURLToPath(
           new URL('./theme/components/CustomFooter.vue', import.meta.url)
         )}]
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+            api: 'modern-compiler',
+        },
+      },
+    },
+    build: {
+      chunkSizeWarningLimit: 1500
     }
-  },
-  metaChunk: true
+  }
 })
