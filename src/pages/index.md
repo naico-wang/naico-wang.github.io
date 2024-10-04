@@ -8,25 +8,11 @@ hero:
  image:
    src: /icons/icon-logo.svg
    alt: 膜蛤
-#  actions:
-#    - theme: brand
-#      text: Get Started
-#      link: /guide/what-is-vitepress
-#    - theme: alt
-#      text: View on GitHub
-#      link: https://github.com/vuejs/vitepress
-# features:
-#   - title: Introduction<hr />
-#     details: "· Former Engineering Lead<br />· Programming Enthusiast<br />· Base in Shanghai, China<br />"
-#   - title: Technical Skills<hr />
-#     details: "· React/Vue/Nodejs<br />· .NET Core/ASP.NET/Java<br />· WeChat/Ali/TikTok MPs<br />"
-#   - title: Roles<hr />
-#     details: "· Engineering Lead<br />· PMP/PMP-ACP<br />· System Design and Architect<br />"
 ---
 
 <script setup>
   import ArticleList from '../.vitepress/theme/components/ArticleList.vue'
 </script>
 <section style="margin-top: 32px;">
-  <ArticleList :display-count='8' />
+  <ArticleList :display-count='8'></ArticleList>
 </section>
