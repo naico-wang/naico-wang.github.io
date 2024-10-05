@@ -27,6 +27,7 @@ export default defineConfig({
   outDir: '../site',
   lastUpdated: false,
   cleanUrls: true,
+  appearance: 'force-auto',
   sitemap: {
     hostname: 'https://naico.wang'
   },
