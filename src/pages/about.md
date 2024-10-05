@@ -31,7 +31,7 @@ features:
 
 ## 更多关于我的信息请查阅个人小程序
 
-![小程序码](/public/icons/minip-qrcode.jpg)
+![小程序码](/icons/minip-qrcode.jpg)
 
 ## 关于这个网站
 
