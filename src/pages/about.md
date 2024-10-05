@@ -6,7 +6,7 @@ features:
   - icon:
       src: /icons/icon-pc.svg
     title: Introduction<hr />
-    details: "· Former Engineering Lead<br />· Programming Enthusiast<br />· Bon Vivant<br />· Residing in Shanghai, China<br />"
+    details: "· Pricinple Solution Architect<br />· Programming Enthusiast<br />· Bon Vivant<br />· Residing in Shanghai, China<br />"
   - icon:
       src: /icons/icon-leaf.svg
     title: Technical Skills<hr />
