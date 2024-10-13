@@ -1,14 +1,16 @@
 ---
 title: GraphQL 快速入门
 date: 2024-10-13
-abstract: 本文纯搬运，正好最近在深耕GraphQL，这篇文章通俗易懂，非常适合新手入门。原文链接:https://www.less-bug.com/posts/graphql-quick-start/
+abstract: 本文纯搬运，正好最近在深耕GraphQL，这篇文章通俗易懂，非常适合新手入门。
 ---
 
 # GraphQL 快速入门
 
+原文链接: https://www.less-bug.com/posts/graphql-quick-start/
+
 ## 环境
 
-https://github.com/notiz-dev/nestjs-prisma-starter 是一个基于 NestJS 和 Prisma 的后端项目模板，可以用来快速搭建后端项目。
+https://github.com/notiz-dev/nestjs-prisma-starter 是一个基于 `NestJS` 和 `Prisma` 的后端项目模板，可以用来快速搭建后端项目。
 
 ## Schema
 
@@ -42,7 +44,7 @@ type User {
 }
 ```
 
-这里，Post 和 User 是自定义类型，Query、Mutation 和 Subscription 是操作。
+这里，`Post` 和 `User` 是自定义类型，`Query`、`Mutation` 和 `Subscription` 是操作。
 
 
 ```graphql
@@ -52,7 +54,7 @@ type Query {
 }
 ```
 
-表示 Query 操作有两个字段，分别是 posts 和 post。posts 返回一个 Post 类型的数组，post(id: ID!): Post 这是一个参数为 id 的函数，返回一个 Post 类型的对象。! 表示这个字段是必须的。
+表示 Query 操作有两个字段，分别是 posts 和 post。posts 返回一个 Post 类型的数组，`post(id: ID!): Post` 这是一个参数为 id 的函数，返回一个 Post 类型的对象。`!` 表示这个字段是必须的。
 
 ## 一个真实的 Schema 例子
 
@@ -186,7 +188,7 @@ type User {
 }
 ```
 
-上面的 Schema 描述了一个博客系统的数据类型和操作。大多数内容都很好理解。除了下面这个可能需要解释一下：
+上面的 `Schema` 描述了一个博客系统的数据类型和操作。大多数内容都很好理解。除了下面这个可能需要解释一下：
 
 
 ```graphql
@@ -229,7 +231,7 @@ PostEdge 包括两个字段：cursor 和 node。cursor 是一个字符串类型�
 
 ### 1. 注册用户
 
-们使用 signup 变更来创建新用户。signup 变更需要一个包含 email、password、firstname 和 lastname 的 SignupInput 输入对象，并返回一个包含访问令牌、刷新令牌和用户信息的 Auth 对象。
+我们使用 signup 变更来创建新用户。signup 变更需要一个包含 email、password、firstname 和 lastname 的 SignupInput 输入对象，并返回一个包含访问令牌、刷新令牌和用户信息的 Auth 对象。
 
 可以使用以下查询：
 
@@ -253,6 +255,7 @@ mutation {
   }
 }
 ```
+
 执行上述查询后，返回：
 
 ```json
@@ -324,7 +327,7 @@ mutation {
 
 ### 3. 创建帖子
 
-现在可以使用访问令牌来创建帖子。在 Playground 的 HTTP Headers 中添加 Authorization 头，值为 Bearer <accessToken>。例如：
+现在可以使用访问令牌来创建帖子。在 Playground 的 HTTP Headers 中添加 Authorization 头，值为 `Bearer <accessToken>`。例如：
 
 ```json
 {
@@ -370,7 +373,7 @@ mutation {
         "id": "clg7apay30000kco2t96u3iuo",
         "email": "test@example.com",
         "firstname": "John",
-        "lastname": "Doe"
+        "lastname": "Doe",
       }
     }
   }

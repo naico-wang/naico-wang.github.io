@@ -39,8 +39,8 @@ export default defineConfig({
       infoLabel: '信息',
       detailsLabel: '详细信息'
     },
+    theme: 'one-dark-pro',
     config: (md) => {
-      md.use(markdownItPlantuml);
       md.use(markdownItPlantuml, {
         openMarker: '```wbs',
         closeMarker: '```',

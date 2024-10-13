@@ -4,12 +4,14 @@
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #41d1ff, #bd34fe);
   --vp-sidebar-width: 280px;
   --vp-layout-max-width: 1680px;
+  --vp-code-block-bg: #222222;
+  --vp-code-lang-color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  --vp-font-family-base: 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'MiSans';
-  --vp-font-family-mono: 'JetBrainsMono', ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  /*--vp-font-family-base: 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'MiSans';*/
+  /*--vp-font-family-mono: 'JetBrainsMono', ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;*/
 }
 
 .VPDoc.has-aside .content-container {
