@@ -3,11 +3,19 @@ layout: home
 title: '苟利国家生死以,岂因祸福避趋之'
 
 hero:
- name: "苟利国家生死以"
- text: "岂因祸福避趋之"
+ name: "Naico Wang"
+# text: "IT 民工"
+ tagline: '苟利国家生死以, 岂因祸福避趋之'
  image:
    src: /icons/icon-logo.svg
    alt: 膜蛤
+ actions:
+  - theme: brand
+    text: Blogs
+    link: /blog
+  - theme: alt
+    text: View on GitHub
+    link: https://github.com/naico-wang
 
 features:
   - icon:
@@ -35,10 +43,3 @@ features:
     title: Contact Me<hr />
     details: "· Email: naico.hy.wang@gmail.com<br />· https://github.com/naico-wang<br />· https://www.linkedin.com/in/naico-hongyu-wang-49554891/<br />"
 ---
-
-<script setup>
-  import ArticleList from '../.vitepress/theme/components/ArticleList.vue'
-</script>
-<section style="margin-top: 32px;">
-  <ArticleList :display-count='8'></ArticleList>
-</section>
