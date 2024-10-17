@@ -32,6 +32,8 @@ const pageData = computed(() => {
   return currentTag.value === ALL_TAG_VALUE ? props.displayCount ? posts.slice(0, props.displayCount) : posts : posts.filter(_ => _.tag === currentTag.value)
 })
 
+console.log(data)
+
 const onTagSelect = (e) => currentTag.setTag(e);
 
 // 定义响应式变量
