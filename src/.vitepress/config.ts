@@ -41,6 +41,7 @@ export default defineConfig({
     },
     theme: 'one-dark-pro',
     config: (md) => {
+      md.use(markdownItPlantuml);
       md.use(markdownItPlantuml, {
         openMarker: '```wbs',
         closeMarker: '```',

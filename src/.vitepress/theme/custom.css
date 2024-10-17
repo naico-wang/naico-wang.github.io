@@ -10,6 +10,7 @@
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  --shiki-light: #ffffff;
   /*--vp-font-family-base: 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'MiSans';*/
   /*--vp-font-family-mono: 'JetBrainsMono', ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;*/
 }
