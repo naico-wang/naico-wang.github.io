@@ -2,8 +2,8 @@
   --vp-nav-logo-height: 30px;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #41d1ff, #bd34fe);
-  --vp-sidebar-width: 280px;
-  --vp-layout-max-width: 1680px;
+  /*--vp-sidebar-width: 280px;*/
+  /*--vp-layout-max-width: 1680px;*/
   --vp-code-block-bg: #222222;
   --vp-code-lang-color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
@@ -11,14 +11,20 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   --shiki-light: #ffffff;
-  /*--vp-font-family-base: 'Inter', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'MiSans';*/
-  /*--vp-font-family-mono: 'JetBrainsMono', ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;*/
 }
 
-.VPDoc.has-aside .content-container {
-  max-width: 768px !important;
-}
+/*.VPDoc.has-aside .content-container {*/
+/*  max-width: 768px !important;*/
+/*}*/
 
-.VPNavBarTitle.has-sidebar .title {
-  border-bottom-color: transparent !important;
+/*.VPNavBarTitle.has-sidebar .title {*/
+/*  border-bottom-color: transparent !important;*/
+/*}*/
+
+@media (min-width: 960px) {
+  .VPHero.VPHomeHero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }

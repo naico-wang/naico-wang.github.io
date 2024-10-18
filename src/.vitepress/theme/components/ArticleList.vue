@@ -1,7 +1,6 @@
 <script setup>
 import { computed, reactive, ref } from 'vue';
-import { data } from '../posts.data.ts';
-import Pagination from './Pagination.vue'
+import { data } from '../mobile.data.ts';
 
 const props = defineProps({
   displayCount: Number
@@ -27,26 +26,12 @@ const currentTag = reactive({
     this.value = tag;
   }
 });
+
 const { posts, tags, postCount } = data;
 const pageData = computed(() => {
   return currentTag.value === ALL_TAG_VALUE ? props.displayCount ? posts.slice(0, props.displayCount) : posts : posts.filter(_ => _.tag === currentTag.value)
 })
-
-console.log(data)
-
 const onTagSelect = (e) => currentTag.setTag(e);
-
-// 定义响应式变量
-const pageNo = ref(1)
-const pageSize = ref(10)
-const total = ref(posts.length)
-const continues = ref(3)
-const pageSizes = ref([10, 20, 30, 40])
-
-// 页码变化处理函数
-const handlePageNoChange = (newPageNo) => {
-  pageNo.value = newPageNo
-}
 </script>
 
 <style lang="scss" module>
@@ -95,6 +80,8 @@ const handlePageNoChange = (newPageNo) => {
 
   .pagetags {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .item_wrapper {
@@ -108,9 +95,10 @@ const handlePageNoChange = (newPageNo) => {
 
     .item_title {
       display: flex;
+      font-size: 16px;
       align-items: center;
       border-bottom: solid 1px #e2e2e3;
-      padding: 20px;
+      padding: 15px 20px;
     }
 
     .item_desc {
@@ -118,14 +106,15 @@ const handlePageNoChange = (newPageNo) => {
       justify-content: space-between;
       padding: 10px 20px;
       color: var(--vp-c-text-2);
-      font-size: 14px;
+      font-size: 12px;
       box-sizing: border-box;
       background-color: var(--vp-c-indigo-soft);
       border-radius: 0 0 16px 16px;
     }
 
     .item_abstract {
-      padding: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
       color: grey;
     }
 
@@ -155,7 +144,6 @@ const handlePageNoChange = (newPageNo) => {
   .item_link,
   .item_link:link,
   .item_link:visited {
-    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: var(--vp-c-brand-1);
@@ -198,16 +186,6 @@ const handlePageNoChange = (newPageNo) => {
           <span :class="$style.tag" @click="onTagSelect(article.tag)">{{article.tag}}</span>
         </div>
       </div>
-    </section>
-    <section v-if="currentTag.value === 'all'">
-      <pagination
-        :pageNo="pageNo"
-        :pageSize="pageSize"
-        :total="total"
-        :continues="continues"
-        :pageSizes="pageSizes"
-        @change-page-no="handlePageNoChange"
-      />
     </section>
   </main>
 </template>

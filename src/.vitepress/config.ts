@@ -5,7 +5,7 @@ import dynamicSideBar from './utils/sidebar'
 
 
 export default defineConfig({
-  title: '苟利国家生死以，岂因祸福避趋之',
+  title: '奶一口智库',
   titleTemplate: ':title - Naico.Wang',
   description: 'Naico\'s Blog',
   base: '/',
@@ -60,15 +60,18 @@ export default defineConfig({
     { name: 'referrer', content: 'no-referrer' }
   ]],
   themeConfig: {
-    siteTitle: 'naico.wang',
+    siteTitle: '智库',
     logo: '/icons/website-logo.png',
     search: {
       provider: 'local'
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: '设计模式', link: '/design_pattern' },
-      { text: 'About Me', link: '/about' }
+      { text: '首页', link: '/' },
+      { text: '系统架构', link: '/architect' },
+      { text: '移动开发', link: '/mobile' },
+      { text: '深入设计模式', link: '/pattern' },
+      { text: '面试知识储备', link: '/interview' },
+      { text: '关于', link: '/about' }
     ],
     sidebar: dynamicSideBar,
     socialLinks: [
@@ -90,21 +93,16 @@ export default defineConfig({
     docFooter: {
       prev: false,
       next: false
-      // prev: '上一篇',
-      // next: '下一篇'
+    },
+    footer: {
+      message: 'Powered by <a href="https://vitepress.dev/">VitePress</a>. Statics by <a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3ItqjsY11mrrfGg3">51la统计</a>',
+      copyright: 'Copyright © 2024 <a href="https://github.com/naico-wang">Naico Wang</a>'
     },
     returnToTopLabel: '回顶部',
     sidebarMenuLabel: '菜单',
     externalLinkIcon: true
   },
   vite: {
-    resolve: {
-      alias: [{
-        find: /^.*\/VPFooter\.vue$/,
-        replacement: fileURLToPath(
-          new URL('./theme/components/CustomFooter.vue', import.meta.url)
-        )}]
-    },
     css: {
       preprocessorOptions: {
         scss: {

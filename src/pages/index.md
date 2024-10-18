@@ -1,34 +1,44 @@
 ---
 layout: home
-title: '苟利国家生死以,岂因祸福避趋之'
+title: '奶一口智库'
 
 hero:
- name: "Naico Wang"
+ name: "奶一口智库"
 # text: "IT 民工"
  tagline: '苟利国家生死以, 岂因祸福避趋之'
- image:
-   src: /icons/icon-logo.svg
-   alt: 膜蛤
+# image:
+#   src: /icons/icon-logo.svg
+#   alt: 膜蛤
  actions:
   - theme: brand
-    text: Blogs
-    link: /blog
+    text: 移动开发
+    link: /mobile
   - theme: alt
-    text: View on GitHub
+    text: 系统架构
+    link: /architect
+  - theme: alt
+    text: 深入设计模式
+    link: /pattern
+  - theme: alt
+    text: 面试知识储备
+    link: /interview
+    
+  - theme: alt
+    text: 查看源码
     link: https://github.com/naico-wang
 
 features:
   - icon:
       src: /icons/icon-pc.svg
-    title: Introduction<hr />
+    title: 关于作者：<hr />
     details: "· Pricinple Solution Architect<br />· Programming Enthusiast<br />· Bon Vivant<br />· Residing in Shanghai, China<br />"
   - icon:
       src: /icons/icon-leaf.svg
-    title: Technical Skills<hr />
-    details: "· HTML5/CSS/JavaScript<br />· .NET Core/ASP.NET/Java<br />· React/Vue/Nodejs<br />· WeChat/Ali/TikTok MiniPrograms<br />"
+    title: 擅长技术栈：<hr />
+    details: "· HTML5/CSS/JavaScript<br />· .NET Core/ASP.NET/Java<br />· React/Vue/Nodejs<br />· All MiniPrograms<br />"
   - icon:
       src: /icons/icon-feature.svg
-    title: Roles<hr />
+    title: 曾经的角色：<hr />
     details: "· Engineering Lead<br />· Scrum Master/Agile Coach<br />· Project Management<br />· System Design and Architect<br />"
 #  - icon:
 #      src: /icons/icon-location.svg

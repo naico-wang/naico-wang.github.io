@@ -2,13 +2,12 @@ import { generateSidebar } from 'vitepress-sidebar'
 
 const dynamicSideBar = generateSidebar([
   {
-    documentRootPath: '/src/pages/blog/',
-    resolvePath: '/blog/',
+    documentRootPath: '/src/pages/mobile/',
+    resolvePath: '/mobile/',
     useTitleFromFrontmatter: true,
     sortMenusByName: false,
     sortMenusByFrontmatterDate: true,
     sortMenusOrderByDescending: false,
-    debugPrint: false,
     collapsed: true,
     useFolderTitleFromIndexFile: true
   },
@@ -19,18 +18,21 @@ const dynamicSideBar = generateSidebar([
     sortMenusByName: false,
     sortMenusByFrontmatterDate: true,
     sortMenusOrderByDescending: false,
-    debugPrint: false,
     collapsed: true,
     useFolderTitleFromIndexFile: true
   },
   {
-    documentRootPath: '/src/pages/design_pattern/',
-    resolvePath: '/design_pattern/',
+    documentRootPath: '/src/pages/pattern/',
+    resolvePath: '/pattern/',
     useTitleFromFrontmatter: true,
-    sortMenusByName: false,
-    sortMenusByFrontmatterDate: true,
-    sortMenusOrderByDescending: false,
-    debugPrint: false,
+    collapsed: false,
+    useFolderTitleFromIndexFile: true
+
+  },
+  {
+    documentRootPath: '/src/pages/architect/',
+    resolvePath: '/architect/',
+    useTitleFromFrontmatter: true,
     collapsed: false,
     useFolderTitleFromIndexFile: true
   }
