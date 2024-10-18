@@ -1,4 +1,5 @@
 import { createContentLoader } from 'vitepress'
+import { formatDate } from '../utils/common'
 
 interface Post {
   title: string
@@ -16,9 +17,11 @@ declare const data: { posts: Post[], tags: Tags}
 
 export { data }
 
-const arraySearchDirs = ['./blog/*/*.md','./blog/*/*/*.md','./blog/*/*/*/*.md']
+const arraySearchDirs = ['./blog/*/*.md', './interview/*/*.md', './design-pettern/*.md']
+
 
 export default createContentLoader(arraySearchDirs, {
+  excerpt: true,
   transform(raw): any {
   const tags: string[] = []
   const postCount = (raw || []).length
@@ -50,18 +53,3 @@ export default createContentLoader(arraySearchDirs, {
   }
  }
 })
-
-function formatDate(raw: string): Post['date'] {
-  const date = new Date(raw)
-
-  date.setUTCHours(12)
-
-  return {
-    time: +date || 0,
-    string: date.toLocaleDateString('zh-CN', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    })
-  }
-}

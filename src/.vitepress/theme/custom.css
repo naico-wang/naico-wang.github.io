@@ -1,7 +1,7 @@
 :root {
   --vp-nav-logo-height: 30px;
-  /*--vp-home-hero-name-color: transparent;*/
-  /*--vp-home-hero-name-background: -webkit-linear-gradient(120deg, #41d1ff, #bd34fe);*/
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #41d1ff, #bd34fe);
   --vp-sidebar-width: 280px;
   --vp-layout-max-width: 1680px;
   --vp-code-block-bg: #222222;
