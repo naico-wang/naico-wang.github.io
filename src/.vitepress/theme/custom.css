@@ -2,8 +2,8 @@
   --vp-nav-logo-height: 30px;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #41d1ff, #bd34fe);
-  /*--vp-sidebar-width: 280px;*/
-  /*--vp-layout-max-width: 1680px;*/
+  --vp-sidebar-width: 280px;
+  --vp-layout-max-width: 1280px;
   --vp-code-block-bg: #222222;
   --vp-code-lang-color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
@@ -13,13 +13,24 @@
   --shiki-light: #ffffff;
 }
 
-/*.VPDoc.has-aside .content-container {*/
-/*  max-width: 768px !important;*/
-/*}*/
+.group:has([role='button']) .VPSidebarItem.level-0 .items {
+  padding-left: 16px !important;
+  border-left: 1px solid var(--vp-c-divider);
+  border-radius: 2px;
+  transition: background-color 0.25s;
+}
+.group:has([role='button']) h2.text {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
 
-/*.VPNavBarTitle.has-sidebar .title {*/
-/*  border-bottom-color: transparent !important;*/
-/*}*/
+  &:before {
+    content: ':: ';
+  }
+  &:after {
+    content: ' ::';
+  }
+}
 
 @media (min-width: 960px) {
   .VPHero.VPHomeHero {

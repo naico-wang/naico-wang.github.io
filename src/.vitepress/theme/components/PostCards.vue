@@ -3,10 +3,6 @@ const props = defineProps(['data'])
 </script>
 
 <style lang="scss" module>
-  .date {
-    text-align: right;
-  }
-
   .pagetags {
     display: flex;
   }
@@ -23,31 +19,32 @@ const props = defineProps(['data'])
     .item_title {
       display: flex;
       align-items: center;
-      border-bottom: solid 1px #e2e2e3;
-      padding: 15px 20px;
+      padding: 15px;
       font-size: 16px;
+      background-color: var(--vp-c-indigo-soft);
+      border-radius: 16px 16px 0 0;
     }
 
     .item_desc {
-      display: flex;
-      justify-content: space-between;
       padding: 10px 20px;
       color: var(--vp-c-text-2);
       font-size: 12px;
+      line-height: 18px;
       box-sizing: border-box;
-      background-color: var(--vp-c-indigo-soft);
-      border-radius: 0 0 16px 16px;
+      text-align: right;
+      text-decoration: underline;
     }
 
     .item_abstract {
-      padding: 10px 20px;
+      padding: 10px 15px;
       color: grey;
       font-size: 14px;
+      border-bottom: solid 1px #e2e2e3;
     }
 
     .tag {
-      margin-left: 12px;
-      font-size: 12px;
+      font-size: 10px;
+      line-height: 18px;
       background-color: var(--vp-c-indigo-1);
       font-weight: bold;
       color: var(--vp-c-bg-soft);
@@ -73,17 +70,18 @@ const props = defineProps(['data'])
     font-weight: bold;
     text-decoration: underline;
   }
+  .item_link {
+    margin-left: 10px;
+  }
 
 </style>
 <template>
   <div v-for="(post, index) in props.data" :key="index" :class="$style.item_wrapper">
     <div :class="$style.item_title">
+      <span :class="$style.tag">{{post.category}}</span>
       <a :href="post.url" :class="$style.item_link">{{post.title}}</a>
     </div>
     <div v-show="post.abstract" :class="$style.item_abstract">{{post.abstract}}</div>
-    <div :class="$style.item_desc">
-      <div :class="$style.date">{{post.date.string}}</div>
-      <span :class="$style.tag">{{post.category}}</span>
-    </div>
+    <div :class="$style.item_desc">{{post.date.string}}</div>
   </div>
 </template>

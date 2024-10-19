@@ -1,4 +1,3 @@
-import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 import markdownItPlantuml from 'markdown-it-plantuml'
 import dynamicSideBar from './utils/sidebar'
@@ -68,7 +67,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '系统架构', link: '/architect' },
-      { text: '移动开发', link: '/mobile' },
+      { text: '全栈开发', link: '/fullstack' },
       { text: '深入设计模式', link: '/pattern' },
       { text: '面试知识储备', link: '/interview' },
       { text: '关于', link: '/about' }

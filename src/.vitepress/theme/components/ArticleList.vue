@@ -1,23 +1,10 @@
 <script setup>
-import { computed, reactive, ref } from 'vue';
-import { data } from '../mobile.data.ts';
+import { computed, reactive } from 'vue';
+import { data } from '../fullstack.data.ts';
 
 const props = defineProps({
   displayCount: Number
 })
-
-const directoryNameMapping = {
-  'Architecture': '软件架构',
-  'Auth-and-Encrypt': 'Web加解密',
-  'Design Pattern': '经典设计模式',
-  'Engineering': '软件开发相关',
-  'Java': 'Java相关',
-  'JavaScript': 'JavaScript知识库',
-  'Life Style': '生活日常',
-  'React': 'React相关',
-  'Vue': 'Vue相关',
-  'Web-and-Mobile': '网站和移动开发'
-}
 
 const ALL_TAG_VALUE = 'all'
 const currentTag = reactive({
@@ -53,12 +40,15 @@ const onTagSelect = (e) => currentTag.setTag(e);
       background-color: var(--vp-c-indigo-soft);
       font-weight: bold;
       color: var(--vp-c-text-1);
-      padding: 2px 8px;
+      padding: 5px 10px;
       font-size: 12px;
       border-radius: 6px;
       cursor: pointer;
-      margin-right: 12px;
-      margin-top: 12px;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       &:hover {
         background: var(--vp-c-indigo-1);
@@ -79,9 +69,16 @@ const onTagSelect = (e) => currentTag.setTag(e);
   }
 
   .pagetags {
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: var(--vp-nav-height);
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    //box-shadow: 5px 5px 10px #e2e2e3;
   }
 
   .item_wrapper {
@@ -97,48 +94,48 @@ const onTagSelect = (e) => currentTag.setTag(e);
       display: flex;
       font-size: 16px;
       align-items: center;
-      border-bottom: solid 1px #e2e2e3;
       padding: 15px 20px;
+      background-color: var(--vp-c-indigo-soft);
+      border-radius: 16px 16px 0 0;
     }
 
     .item_desc {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 20px;
+      padding: 10px 25px;
       color: var(--vp-c-text-2);
       font-size: 12px;
       box-sizing: border-box;
-      background-color: var(--vp-c-indigo-soft);
-      border-radius: 0 0 16px 16px;
+      text-align: right;
+      text-decoration: underline;
+      font-weight: bold;
     }
 
     .item_abstract {
       padding: 10px 20px;
-      font-size: 14px;
+      font-size: 12px;
+      line-height: 18px;
       color: grey;
+      border-bottom: solid 1px #e2e2e3;
     }
 
     .tag {
-      margin-left: 12px;
-      font-size: 12px;
-      background-color: var(--vp-c-indigo-soft);
-      color: var(--vp-c-text-1);
+      font-size: 10px;
+      line-height: 18px;
+      font-weight: bold;
+      background-color: var(--vp-c-indigo-1);
+      color: var(--vp-c-bg-soft);
       padding: 0 8px;
-      border-radius: 6px;
-      cursor: pointer;
-
-      &:hover {
-        font-weight: bold;
-        background: var(--vp-c-indigo-1);
-        color: var(--vp-c-bg-soft);
-        transition: all, .3s;
-      }
+      border-radius: 4px;
     }
   }
 
   .currenttag {
     background: var(--vp-c-indigo-1);
     color: var(--vp-c-bg-soft);
+  }
+
+  .item_link {
+    font-weight: bold;
+    margin-left: 10px;
   }
 
   .item_link,
@@ -171,20 +168,18 @@ const onTagSelect = (e) => currentTag.setTag(e);
           :key="idx"
           @click="onTagSelect(tag)"
         >
-          {{directoryNameMapping[tag]}}
+          {{tag}}
         </span>
       </div>
     </section>
     <section :class="$style.listwrap">
       <div v-for="(article, index) in pageData" :key="index" :class="$style.item_wrapper">
         <div :class="$style.item_title">
+          <span :class="$style.tag">{{article.tag}}</span>
           <a :href="article.url" :class="$style.item_link">{{article.title}}</a>
         </div>
         <div v-show="article.abstract" :class="$style.item_abstract">{{article.abstract}}</div>
-        <div :class="$style.item_desc">
-          <div :class="$style.date">{{article.date.string}}</div>
-          <span :class="$style.tag" @click="onTagSelect(article.tag)">{{article.tag}}</span>
-        </div>
+        <div :class="$style.item_desc">{{article.date.string}}</div>
       </div>
     </section>
   </main>

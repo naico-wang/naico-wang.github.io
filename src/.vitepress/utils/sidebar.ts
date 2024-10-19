@@ -2,14 +2,15 @@ import { generateSidebar } from 'vitepress-sidebar'
 
 const dynamicSideBar = generateSidebar([
   {
-    documentRootPath: '/src/pages/mobile/',
-    resolvePath: '/mobile/',
+    documentRootPath: '/src/pages/fullstack/',
+    resolvePath: '/fullstack/',
     useTitleFromFrontmatter: true,
     sortMenusByName: false,
     sortMenusByFrontmatterDate: true,
     sortMenusOrderByDescending: false,
     collapsed: true,
-    useFolderTitleFromIndexFile: true
+    useFolderTitleFromIndexFile: true,
+    rootGroupText: '全栈开发'
   },
   {
     documentRootPath: '/src/pages/interview/',
@@ -19,14 +20,16 @@ const dynamicSideBar = generateSidebar([
     sortMenusByFrontmatterDate: true,
     sortMenusOrderByDescending: false,
     collapsed: true,
-    useFolderTitleFromIndexFile: true
+    useFolderTitleFromIndexFile: true,
+    rootGroupText: '面试知识储备'
   },
   {
     documentRootPath: '/src/pages/pattern/',
     resolvePath: '/pattern/',
     useTitleFromFrontmatter: true,
     collapsed: false,
-    useFolderTitleFromIndexFile: true
+    useFolderTitleFromIndexFile: true,
+    rootGroupText: '经典设计模式'
 
   },
   {
@@ -34,7 +37,8 @@ const dynamicSideBar = generateSidebar([
     resolvePath: '/architect/',
     useTitleFromFrontmatter: true,
     collapsed: false,
-    useFolderTitleFromIndexFile: true
+    useFolderTitleFromIndexFile: true,
+    rootGroupText: '软件架构体系'
   }
 ])
 

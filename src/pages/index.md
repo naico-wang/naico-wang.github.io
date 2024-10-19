@@ -11,8 +11,8 @@ hero:
 #   alt: 膜蛤
  actions:
   - theme: brand
-    text: 移动开发
-    link: /mobile
+    text: 全栈开发
+    link: /fullstack
   - theme: alt
     text: 系统架构
     link: /architect
