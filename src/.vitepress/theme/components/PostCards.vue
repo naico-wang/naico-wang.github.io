@@ -31,8 +31,9 @@ const props = defineProps(['data'])
       font-size: 12px;
       line-height: 18px;
       box-sizing: border-box;
-      text-align: right;
-      text-decoration: underline;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .item_abstract {
@@ -74,14 +75,21 @@ const props = defineProps(['data'])
     margin-left: 10px;
   }
 
+  .date {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
 </style>
 <template>
   <div v-for="(post, index) in props.data" :key="index" :class="$style.item_wrapper">
     <div :class="$style.item_title">
-      <span :class="$style.tag">{{post.category}}</span>
       <a :href="post.url" :class="$style.item_link">{{post.title}}</a>
     </div>
     <div v-show="post.abstract" :class="$style.item_abstract">{{post.abstract}}</div>
-    <div :class="$style.item_desc">{{post.date.string}}</div>
+    <div :class="$style.item_desc">
+      <span :class="$style.tag">{{post.category}}</span>
+      <div :class="$style.date">{{post.date.string}}</div>
+    </div>
   </div>
 </template>

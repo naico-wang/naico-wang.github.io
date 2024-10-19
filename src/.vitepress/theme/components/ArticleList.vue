@@ -25,10 +25,6 @@ const onTagSelect = (e) => currentTag.setTag(e);
   .main {
     padding: 0 12px;
     margin: 0 auto;
-
-    & .listwrap {
-      padding-top: 12px;
-    }
   }
   .tag_list {
     list-style-type: none;
@@ -37,14 +33,14 @@ const onTagSelect = (e) => currentTag.setTag(e);
     flex-wrap: wrap;
 
     .tag_item {
-      background-color: var(--vp-c-indigo-soft);
+      background-color: var(--vp-c-gray-3);
       font-weight: bold;
       color: var(--vp-c-text-1);
       padding: 5px 10px;
       font-size: 12px;
       border-radius: 6px;
       cursor: pointer;
-      margin-right: 15px;
+      margin: 0 15px 15px 0;
 
       &:last-child {
         margin-right: 0;
@@ -72,13 +68,11 @@ const onTagSelect = (e) => currentTag.setTag(e);
     padding: 10px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     position: sticky;
     top: var(--vp-nav-height);
     background-color: white;
     border-radius: 0 0 8px 8px;
-    //box-shadow: 5px 5px 10px #e2e2e3;
   }
 
   .item_wrapper {
@@ -86,16 +80,20 @@ const onTagSelect = (e) => currentTag.setTag(e);
     border-radius: 16px;
     background-color: #fff;
     border: 1px solid #dedfe0;
-    box-shadow: 5px 5px 10px #e2e2e3;
+    box-shadow: 5px 5px 10px #e1e2e2;
     margin-top: 20px;
     box-sizing: border-box;
+
+    &:first-child {
+      margin-top: 0;
+    }
 
     .item_title {
       display: flex;
       font-size: 16px;
       align-items: center;
       padding: 15px 20px;
-      background-color: var(--vp-c-indigo-soft);
+      background-color: var(--vp-c-gray-3);
       border-radius: 16px 16px 0 0;
     }
 
@@ -104,9 +102,9 @@ const onTagSelect = (e) => currentTag.setTag(e);
       color: var(--vp-c-text-2);
       font-size: 12px;
       box-sizing: border-box;
-      text-align: right;
-      text-decoration: underline;
-      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .item_abstract {
@@ -135,7 +133,6 @@ const onTagSelect = (e) => currentTag.setTag(e);
 
   .item_link {
     font-weight: bold;
-    margin-left: 10px;
   }
 
   .item_link,
@@ -175,11 +172,13 @@ const onTagSelect = (e) => currentTag.setTag(e);
     <section :class="$style.listwrap">
       <div v-for="(article, index) in pageData" :key="index" :class="$style.item_wrapper">
         <div :class="$style.item_title">
-          <span :class="$style.tag">{{article.tag}}</span>
           <a :href="article.url" :class="$style.item_link">{{article.title}}</a>
         </div>
         <div v-show="article.abstract" :class="$style.item_abstract">{{article.abstract}}</div>
-        <div :class="$style.item_desc">{{article.date.string}}</div>
+        <div :class="$style.item_desc">
+          <span :class="$style.tag">{{article.tag}}</span>
+          <div :class="$style.date">{{article.date.string}}</div>
+        </div>
       </div>
     </section>
   </main>
