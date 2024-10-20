@@ -37,13 +37,13 @@ import { data } from '../../.vitepress/theme/pattern.data';
 
 <div v-for="(categoryGroup, index) in data" :key="index">
   <h4>{{ categoryGroup.category }} {{ categoryGroup.postCount }} 种</h4>
-  <ul v-for="(post, idx) in categoryGroup.data" :key="idx">
-    <li>
+  <ul>
+    <li v-for="(post, idx) in categoryGroup.data" :key="idx">
       <h6><a :href="post.url">{{ post.title }}</a></h6>
+      <div :class="$style.desc">
+        {{ post.abstract }}
+      </div>
     </li>
-    <div :class="$style.desc">
-      {{ post.abstract }}
-    </div>
   </ul>
 </div>
 

@@ -901,7 +901,7 @@ public int coinChange(int[] coins, int amount) {
 
 [Leetcode](https://leetcode.com/problems/coin-change-2/description/) / [力扣](https://leetcode-cn.com/problems/coin-change-2/description/)
 
-```text-html-basic
+```text
 Input: amount = 5, coins = [1, 2, 5]
 Output: 4
 Explanation: there are four ways to make up the amount:

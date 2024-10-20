@@ -29,6 +29,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
   .tag_list {
     list-style-type: none;
     display: flex;
+    gap: 15px;
     align-items: center;
     flex-wrap: wrap;
 
@@ -40,7 +41,6 @@ const onTagSelect = (e) => currentTag.setTag(e);
       font-size: 12px;
       border-radius: 6px;
       cursor: pointer;
-      margin: 0 15px 15px 0;
 
       &:last-child {
         margin-right: 0;
@@ -62,6 +62,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
 
   .date {
     text-align: right;
+    color: var(--vp-c-indigo-1);
   }
 
   .pagetags {
