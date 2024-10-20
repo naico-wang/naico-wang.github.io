@@ -1,16 +1,10 @@
 ---
-layout: home
 title: 'About Me'
-
-hero:
- name: "苟利国家生死以"
- text: "岂因祸福避趋之"
- image:
-   src: /icons/icon-logo.svg
-   alt: 膜蛤
 ---
 
-## 关于这个网站
+# 关于这个网站
+
+## 技术栈
 
 - 用Vue经典的VitePress搭建
   - VitePress Repo: [https://vitepress.dev/](https://vitepress.dev/)

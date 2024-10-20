@@ -2,6 +2,8 @@
 title: '面试知识储备'
 exclude: true
 aside: false
+prev: false
+next: false
 ---
 
 # 面试知识储备

@@ -2,6 +2,8 @@
 aside: false
 title: 前端开发
 exclude: true
+prev: false
+next: false
 ---
 
 <script setup>

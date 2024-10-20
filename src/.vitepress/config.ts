@@ -6,7 +6,7 @@ import dynamicSideBar from './utils/sidebar'
 export default defineConfig({
   title: '奶一口智库',
   titleTemplate: ':title - Naico.Wang',
-  description: 'Naico\'s Blog',
+  description: '苟利国家生死以，岂因祸福避趋之',
   base: '/',
   lang: 'en-US',
   srcDir: './pages',
@@ -36,34 +36,18 @@ export default defineConfig({
       })
     }
   },
-  head: [[
-    'link',
-    { rel: 'icon', href: '/favicon.ico' }
-  ],[
-    'meta',
-    { property: 'og:type', content: 'website' }
-  ],[
-    'meta',
-    { property: 'og:title', content: 'Naico Wang\'s Blog' }
-  ],[
-    'meta',
-    { property: 'og:description', content: 'Naico Wang\'s Blog' }
-  ],[
-    'meta',
-    { property: 'og:image', content: 'https://naico.wang/icons/website-logo-full.png' }
-  ],[
-    'meta',
-    { property: 'og:url', content: 'https://naico.wang' }
-  ],[
-    'meta',
-    { name: 'referrer', content: 'no-referrer' }
-  ]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Naico Wang\'s Blog' }],
+    ['meta', { property: 'og:description', content: 'Naico Wang\'s Blog' }],
+    ['meta', { property: 'og:image', content: 'https://naico.wang/icons/website-logo-full.png' }],
+    ['meta', { property: 'og:url', content: 'https://naico.wang' }],
+    ['meta', { name: 'referrer', content: 'no-referrer' }]
+  ],
   themeConfig: {
     siteTitle: '智库',
-    logo: '/icons/website-logo.png',
-    search: {
-      provider: 'local'
-    },
+    logo: '/icons/icon-logo.svg',
     nav: [
       { text: '首页', link: '/' },
       { text: '系统架构', link: '/architect' },
@@ -90,8 +74,8 @@ export default defineConfig({
       }
     },
     docFooter: {
-      prev: false,
-      next: false
+      prev: '上一篇',
+      next: '下一篇'
     },
     footer: {
       message: 'Powered by <a href="https://vitepress.dev/">VitePress</a>. Statics by <a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3ItqjsY11mrrfGg3">51la统计</a>',

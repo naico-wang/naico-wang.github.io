@@ -1,6 +1,8 @@
 ---
 title: '设计模式系列文章'
 exclude: true
+prev: false
+next: false
 ---
 
 <script setup>

@@ -1,7 +1,9 @@
 :root {
   --vp-nav-logo-height: 30px;
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #41d1ff, #bd34fe);
+  --vp-home-hero-name-background: linear-gradient(to right, #625793 0%, #d55d64 35%, #e49129 65%, #c0671c 100%);
+  --vp-home-hero-image-background-image: radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(ellipse at 70% 60%, #c3e060 0%, rgba(195, 224, 96, 0) 90%), radial-gradient(ellipse at 30% 30%, #c3e060 0%, rgba(195, 224, 96, 0) 60%), radial-gradient(ellipse at bottom left, #00a3cb 0%, rgba(0, 163, 203, 0) 70%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #122e77 100%), linear-gradient(to right, #625793 0%, #d55d64 35%, #e49129 65%, #c0671c 100%);
+  --vp-home-hero-image-filter: blur(100px);
   --vp-code-block-bg: #222222;
   --vp-code-lang-color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
@@ -21,19 +23,26 @@
   font-size: 18px;
   font-weight: bold;
   padding: 10px 0;
+}
 
-  &:before {
-    content: ':: ';
-  }
-  &:after {
-    content: ' ::';
-  }
+.VPImage.image-src {
+  width: 260px;
+  border-radius: 50%;
 }
 
 @media (min-width: 960px) {
-  .VPHero.VPHomeHero {
-    display: flex;
-    align-items: center;
-    text-align: center;
+  .VPHero.has-image .container .main {
+    max-width: 680px;
+  }
+}
+@media (min-width: 960px) {
+  .image .image-container {
+    transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .VPContent.is-home .VPHome[data-v-11bf3ff9] {
+    margin-bottom: 98px;
   }
 }
