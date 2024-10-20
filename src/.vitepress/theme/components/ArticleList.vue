@@ -1,6 +1,6 @@
 <script setup>
 import { computed, reactive } from 'vue';
-import { data } from '../fullstack.data.ts';
+import { data } from '../page_fullstack.data.ts';
 
 const props = defineProps({
   displayCount: Number

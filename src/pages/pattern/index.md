@@ -4,7 +4,7 @@ exclude: true
 ---
 
 <script setup>
-import { data } from '../../.vitepress/theme/pattern.data';
+import { data } from '../../.vitepress/theme/page_pattern.data';
 </script>
 <style module>
 .desc {
