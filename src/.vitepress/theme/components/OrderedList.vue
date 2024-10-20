@@ -1,12 +1,11 @@
 <script setup>
 import { useRouter } from 'vitepress';
+
 const router = useRouter();
 const props = defineProps(['data', 'single']);
 const navigateTo = (url) => {
   router.go(url);
 }
-
-console.log(props)
 </script>
 
 <style lang="scss" module>
