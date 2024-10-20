@@ -23,41 +23,17 @@ const onTagSelect = (e) => currentTag.setTag(e);
 
 <style lang="scss" module>
   .main {
-    padding: 0 12px;
+    padding-right: 100px;
     margin: 0 auto;
   }
-  .tag_list {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
 
-    .tag_item {
-      background-color: var(--vp-c-gray-3);
-      font-weight: bold;
-      color: var(--vp-c-text-1);
-      padding: 5px 10px;
-      font-size: 12px;
-      border-radius: 6px;
-      cursor: pointer;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &:hover {
-        background: var(--vp-c-indigo-1);
-        color: var(--vp-c-bg-soft);
-        transition: all, .3s
-      }
-
-      &.current {
-        background: var(--vp-c-indigo-1);
-        color: var(--vp-c-bg-soft);
-        transition: all, .3s;
-      }
-    }
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--vp-c-indigo-1);
   }
 
   .date {
@@ -66,14 +42,73 @@ const onTagSelect = (e) => currentTag.setTag(e);
   }
 
   .pagetags {
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: sticky;
+    position: fixed;
+    right: 0;
     top: var(--vp-nav-height);
-    background-color: white;
-    border-radius: 0 0 8px 8px;
+
+    & .tag_list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 20px;
+
+      & .tag_item {
+        background-color: var(--vp-c-gray-3);
+        font-weight: bold;
+        color: var(--vp-c-text-1);
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 6px 0 0 6px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background: var(--vp-c-indigo-1);
+          color: var(--vp-c-bg-soft);
+          transition: all, .3s
+        }
+
+        &.current {
+          background: var(--vp-c-indigo-1);
+          color: var(--vp-c-bg-soft);
+          transition: all, .3s;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .main {
+      padding: 0;
+    }
+
+    .pagetags {
+      background: #ffffff;
+      position: sticky;
+      top: 47px;
+
+      & .tag_list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px 0;
+
+        & .tag_item {
+          border-radius: 6px;
+        }
+      }
+    }
+
+  }
+
+  @media (min-width: 1500px) {
+    .main {
+      padding: 0;
+    }
   }
 
   .item_wrapper {
@@ -152,6 +187,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
 </style>
 <template>
   <main :class="$style.main">
+    <div :class="$style.title">全栈开发文章列表</div>
     <section :class="$style.pagetags">
       <div :class="$style.tag_list">
         <span
@@ -170,7 +206,7 @@ const onTagSelect = (e) => currentTag.setTag(e);
         </span>
       </div>
     </section>
-    <section :class="$style.listwrap">
+    <section>
       <div v-for="(article, index) in pageData" :key="index" :class="$style.item_wrapper">
         <div :class="$style.item_title">
           <a :href="article.url" :class="$style.item_link">{{article.title}}</a>
