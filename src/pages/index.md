@@ -11,16 +11,19 @@ hero:
    alt: 膜蛤
  actions:
   - theme: brand
-    text: 全栈开发
-    link: /fullstack
-  - theme: alt
-    text: 系统架构
+    text: 架构
     link: /architect
   - theme: alt
-    text: 深入设计模式
+    text: 开发笔记
+    link: /development
+  - theme: alt
+    text: 算法与数据结构
+    link: /algorithm
+  - theme: alt
+    text: 设计模式
     link: /pattern
   - theme: alt
-    text: 面试知识储备
+    text: 面试八股文
     link: /interview
     
   - theme: alt
