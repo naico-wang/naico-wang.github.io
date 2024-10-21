@@ -1,6 +1,7 @@
 ---
 title: 软件架构
 aside: false
+exclude: true
 ---
 
 # 为什么要学习架构？

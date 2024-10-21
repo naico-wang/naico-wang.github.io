@@ -1,5 +1,7 @@
 ---
 title: 'About Me'
+aside: false
+sidebar: false
 ---
 
 # 关于这个网站

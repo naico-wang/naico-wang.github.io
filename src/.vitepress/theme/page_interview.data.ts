@@ -1,5 +1,5 @@
 import { getDirectoryData } from '../utils/common'
 
-const scanDir = ['./interview/*.md', './interview/**/**/.md', './interview/**/*.md']
+const scanDir = './interview/**/*.md';
 
 export default getDirectoryData(scanDir)

@@ -1,4 +1,5 @@
 import { generateSidebar } from 'vitepress-sidebar'
+import { link } from 'node:fs'
 
 const dynamicSideBar = generateSidebar([
   {

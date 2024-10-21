@@ -11,6 +11,9 @@ hero:
    alt: 膜蛤
  actions:
   - theme: brand
+    text: 文章列表
+    link: /posts
+  - theme: alt
     text: 架构
     link: /architect
   - theme: alt
@@ -25,10 +28,6 @@ hero:
   - theme: alt
     text: 面试八股文
     link: /interview
-    
-  - theme: alt
-    text: 查看源码
-    link: https://github.com/naico-wang
 features:
   - icon:
       src: /icons/icon-logo.svg
@@ -43,4 +42,3 @@ features:
     title: 曾经的角色：<hr />
     details: "· Engineering Lead<br />· Scrum Master/Agile Coach<br />· Project Management<br />· System Design and Architect<br />"
 ---
-

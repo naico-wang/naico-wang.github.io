@@ -51,6 +51,7 @@ export default defineConfig({
     logo: '/icons/icon-logo.svg',
     nav: [
       { text: '首页', link: '/', activeMatch: '' },
+      { text: '文章列表', link: '/posts', activeMatch: '/posts' },
       { text: '架构', link: '/architect', activeMatch: '/architect' },
       { text: '开发笔记', link: '/development', activeMatch: '/development' },
       { text: '算法与数据结构', link: '/algorithm', activeMatch: '/algorithm' },
