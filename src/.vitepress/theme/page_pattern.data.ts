@@ -1,5 +1,5 @@
 import { getDirectoryData } from '../utils/common'
 
-const designPatternDir = './pattern/*.md'
+const scanDir = './pattern/*.md'
 
-export default getDirectoryData(designPatternDir)
+export default getDirectoryData(scanDir)

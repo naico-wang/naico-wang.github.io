@@ -2,29 +2,41 @@ import { generateSidebar } from 'vitepress-sidebar'
 
 const dynamicSideBar = generateSidebar([
   {
-    documentRootPath: '/src/pages/fullstack/',
-    resolvePath: '/fullstack/',
+    documentRootPath: 'src/pages',
+    scanStartPath: 'development',
+    resolvePath: '/development/',
     useTitleFromFrontmatter: true,
     sortMenusByName: false,
     sortMenusByFrontmatterDate: true,
     sortMenusOrderByDescending: false,
     collapsed: true,
-    useFolderTitleFromIndexFile: true,
-    rootGroupText: '全栈开发'
+    useFolderTitleFromIndexFile: true
   },
   {
-    documentRootPath: '/src/pages/interview/',
+    documentRootPath: 'src/pages',
+    scanStartPath: 'algorithm',
+    resolvePath: '/algorithm/',
+    useTitleFromFrontmatter: true,
+    sortMenusByName: false,
+    sortMenusByFrontmatterDate: true,
+    sortMenusOrderByDescending: false,
+    collapsed: true,
+    useFolderTitleFromIndexFile: true
+  },
+  {
+    documentRootPath: 'src/pages',
+    scanStartPath: 'interview',
     resolvePath: '/interview/',
     useTitleFromFrontmatter: true,
     sortMenusByName: false,
     sortMenusByFrontmatterDate: true,
     sortMenusOrderByDescending: false,
     collapsed: true,
-    useFolderTitleFromIndexFile: true,
-    rootGroupText: '面试知识储备'
+    useFolderTitleFromIndexFile: true
   },
   {
-    documentRootPath: '/src/pages/pattern/',
+    documentRootPath: 'src/pages',
+    scanStartPath: 'pattern',
     resolvePath: '/pattern/',
     useTitleFromFrontmatter: true,
     collapsed: false,
@@ -33,12 +45,12 @@ const dynamicSideBar = generateSidebar([
 
   },
   {
-    documentRootPath: '/src/pages/architect/',
+    documentRootPath: 'src/pages',
+    scanStartPath: 'architect',
     resolvePath: '/architect/',
     useTitleFromFrontmatter: true,
     collapsed: false,
-    useFolderTitleFromIndexFile: true,
-    rootGroupText: '软件架构体系'
+    useFolderTitleFromIndexFile: true
   }
 ])
 

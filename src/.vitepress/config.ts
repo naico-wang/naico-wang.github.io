@@ -18,6 +18,7 @@ export default defineConfig({
     hostname: 'https://naico.wang'
   },
   markdown: {
+    math: true,
     container: {
       tipLabel: '提示',
       warningLabel: '警告',
@@ -49,12 +50,13 @@ export default defineConfig({
     siteTitle: '智库',
     logo: '/icons/icon-logo.svg',
     nav: [
-      { text: '首页', link: '/' },
-      { text: '系统架构', link: '/architect' },
-      { text: '全栈开发', link: '/fullstack' },
-      { text: '深入设计模式', link: '/pattern' },
-      { text: '面试知识储备', link: '/interview' },
-      { text: '关于', link: '/about' }
+      { text: '首页', link: '/', activeMatch: '' },
+      { text: '架构', link: '/architect', activeMatch: '/architect' },
+      { text: '开发笔记', link: '/development', activeMatch: '/development' },
+      { text: '算法与数据结构', link: '/algorithm', activeMatch: '/algorithm' },
+      { text: '设计模式', link: '/pattern', activeMatch: '/pattern' },
+      { text: '面试八股文', link: '/interview', activeMatch: '/interview' },
+      { text: '关于', link: '/about', activeMatch: '/about' }
     ],
     sidebar: dynamicSideBar,
     socialLinks: [
