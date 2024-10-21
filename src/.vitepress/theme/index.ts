@@ -1,12 +1,12 @@
 import DefaultTheme from 'vitepress/theme'
-import vuewordcloud from 'vuewordcloud'
+import VueWordCloud from '../utils/wordcloud.mjs'
 
 import './custom.css'
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
-    app.component('vue-word-cloud', vuewordcloud)
+    app.component('vue-word-cloud', VueWordCloud)
   }
 }
 
