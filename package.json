@@ -14,6 +14,7 @@
   "dependencies": {
     "@giscus/vue": "^3.0.0",
     "@types/node": "^22.7.7",
-    "markdown-it-plantuml": "^1.4.1"
+    "markdown-it-plantuml": "^1.4.1",
+    "vuewordcloud": "^19.0.0"
   }
 }

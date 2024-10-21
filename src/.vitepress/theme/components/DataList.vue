@@ -5,7 +5,7 @@ import { data } from '../page_all.data'
 const { posts, count } = data
 
 const currentPage = ref(1)
-const pageSize = 20
+const pageSize = 30
 
 const totalPages = computed(() => Math.ceil(posts.length / pageSize))
 
@@ -119,10 +119,6 @@ function goToPage(page) {
 .post-title a:hover {
   text-decoration: underline;
 }
-.vpi-chevron-right {
-  display: inline-flex;
-  margin-right: 10px;
-}
 
 @media (max-width: 600px) {
   .wrapper {
@@ -164,7 +160,6 @@ function goToPage(page) {
   <div class="list">
     <article class="wrapper" v-for="(post, index) in currentPageArticles" :key="index">
       <div class="post-title">
-        <span class="vpi-chevron-right"></span>
         <a :href="post.url">{{ post.title }}</a>
         <sup class="sup">{{ post.category }}</sup>
       </div>
@@ -173,7 +168,7 @@ function goToPage(page) {
   </div>
   <div class="pagination">
     <button @click="goToPage(1)" :disabled="currentPage === 1">首页</button>
-    <button @click="goToPage(currentPage - 1)" :disabled="currentPage === 1">上一页</button>
+    <button @click="goToPage(currentPage - 1)" :disabled="currentPage === 1"><<</button>
 
     <template v-for="page in displayedPages" :key="page">
       <button
@@ -186,7 +181,7 @@ function goToPage(page) {
       <span class="eclips" v-else>{{ page }}</span>
     </template>
 
-    <button @click="goToPage(currentPage + 1)" :disabled="currentPage === totalPages">下一页</button>
+    <button @click="goToPage(currentPage + 1)" :disabled="currentPage === totalPages">>></button>
     <button @click="goToPage(totalPages)" :disabled="currentPage === totalPages">尾页</button>
     <span class="total-pages">共 {{ totalPages }} 页</span>
   </div>

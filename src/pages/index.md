@@ -28,17 +28,23 @@ hero:
   - theme: alt
     text: 面试八股文
     link: /interview
-features:
-  - icon:
-      src: /icons/icon-logo.svg
-    title: 关于作者：<hr />
-    details: "· Pricinple Solution Architect<br />· Programming Enthusiast<br />· Bon Vivant<br />· Residing in Shanghai, China<br />"
-  - icon:
-      src: /icons/icon-logo.svg
-    title: 擅长技术栈：<hr />
-    details: "· HTML5/CSS/JavaScript<br />· .NET Core/ASP.NET/Java<br />· React/Vue/Nodejs<br />· All MiniPrograms<br />"
-  - icon:
-      src: /icons/icon-logo.svg
-    title: 曾经的角色：<hr />
-    details: "· Engineering Lead<br />· Scrum Master/Agile Coach<br />· Project Management<br />· System Design and Architect<br />"
+#features:
+#  - icon:
+#      src: /icons/icon-logo.svg
+#    title: 关于作者：<hr />
+#    details: "· Pricinple Solution Architect<br />· Programming Enthusiast<br />· Bon Vivant<br />· Residing in Shanghai, China<br />"
+#  - icon:
+#      src: /icons/icon-logo.svg
+#    title: 擅长技术栈：<hr />
+#    details: "· HTML5/CSS/JavaScript<br />· .NET Core/ASP.NET/Java<br />· React/Vue/Nodejs<br />· All MiniPrograms<br />"
+#  - icon:
+#      src: /icons/icon-logo.svg
+#    title: 曾经的角色：<hr />
+#    details: "· Engineering Lead<br />· Scrum Master/Agile Coach<br />· Project Management<br />· System Design and Architect<br />"
 ---
+
+<script setup>
+import WorldCloud from '../.vitepress/theme/components/WordCloud.vue';
+</script>
+
+<WorldCloud></WorldCloud>
