@@ -1,9 +1,7 @@
 ---
-title: JW* 的简介以及使用方法
+title: JWT、JWS、JWE、JWA、JWK
 date: 2024-07-08
-tag: 杂七杂八
-category: 杂七杂八
-abstract: JWT、JWS、JWE、JWA、JWK简介及使用方法
+category: Web加解密
 ---
 
 # JWT、JWS、JWE、JWA、JWK简介及使用方法

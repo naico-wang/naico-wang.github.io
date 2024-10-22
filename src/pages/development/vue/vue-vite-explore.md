@@ -1,9 +1,7 @@
 ---
 title: 深入了解Vite
 date: 2024-08-13
-tag: Vue架构与实践
-category: Vue架构与实践
-abstract: 随着 Vite 的盛行，使用 Vite 的开发者越来越多，那么 Vite 和 Webpack 到底有什么不同？它为什么会快这么多呢？这篇文章我们就来深层解读一下。
+category: Vue2/3
 ---
 
 # 深入了解Vite

@@ -1,9 +1,7 @@
 ---
 title: OpenID Connect详解
 date: 2024-07-06
-tag: 系统架构
 category: 系统架构
-abstract: OpenID Connect 1.0是建立在OAuth 2.0上的一个身份验证机制，它允许客户端通过授权服务对用户进行认证并获取简单的用户信息。
 ---
 
 # OpenID Connect详解

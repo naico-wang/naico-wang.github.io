@@ -1,9 +1,7 @@
 ---
 title: useState 和 useRef 的区别
 date: 2024-08-10
-tag: React架构与实践
-category: React架构与实践
-abstract: 你知道这两个hook之间的区别吗？如果知道，你是否了解它们的微妙之处以及何时使用其中的哪一个？这篇文章会给你答案。
+category: React
 ---
 
 # React useState 和 useRef 的区别

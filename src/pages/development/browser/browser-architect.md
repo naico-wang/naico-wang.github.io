@@ -1,9 +1,7 @@
 ---
 title: 浏览器架构
 date: 2023-12-20
-tag: 浏览器/HTTP
 category: 浏览器/HTTP
-abstract: 现代浏览器是由什么组成的？
 ---
 
 # 浏览器架构

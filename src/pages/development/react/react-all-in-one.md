@@ -1,9 +1,7 @@
 ---
 title: React 生态工具推荐
 date: 2024-07-20
-tag: React架构与实践
-category: React架构与实践
-abstract: 经过多年的不断演进，React 已经构建了一个极为丰富且强大的生态系统，本文就来盘点2024年 React 技术栈组合。
+category: React
 ---
 
 # React 生态工具推荐

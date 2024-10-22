@@ -1,9 +1,7 @@
 ---
 title: 在 TypeScript 中理解枚举
 date: 2024-09-30
-tag: JavaScript
-category: JavaScript
-abstract: TypeScript的枚举（Enum）是一个常被低估但却极其强大的特性。作为一个从JavaScript转向TypeScript的开发者，我发现枚举不仅简化了代码，还提高了代码的可读性和可维护性。我们深入探讨枚举的本质、用法以及它如何改变我们的编码方式。
+category: TypeScript
 ---
 
 # 在 TypeScript 中理解枚举 | 强大而优雅的常量管理

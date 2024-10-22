@@ -1,9 +1,7 @@
 ---
 title: 2024年 Nodejs 生态合集
 date: 2024-08-12
-tag: NodeJS/SSR
 category: NodeJS/SSR
-abstract: 2024年，nodejs 在 Javascript 运行时中仍然占据着霸主的地位。其丰富的生态系统是其他运行时无法比拟的。今天我们就来盘点下2024年当下 nodejs 的生态系统。
 ---
 
 # 2024年 Nodejs 生态合集

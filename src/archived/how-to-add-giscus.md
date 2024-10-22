@@ -1,7 +1,6 @@
 ---
 title: 为VitePress添加评论系统
 date: 2024-06-30
-abstract: 如果你感兴趣，可以跟着步骤一步步来，搭建属于你的 VitePress 评论系统。
 ---
 
 # 为VitePress添加Giscus评论系统

@@ -1,9 +1,7 @@
 ---
-title: JavaScript 运行机制详解：再谈Event Loop
+title: JavaScript 运行机制 - Event Loop
 date: 2024-09-26
-tag: JavaScript
 category: JavaScript
-abstract: 本篇文章来源是参考阮一峰老师的文章，加上朴老师的评价注解，让大家能完整理解 Event Loop.
 ---
 
 # JavaScript 运行机制详解：再谈Event Loop

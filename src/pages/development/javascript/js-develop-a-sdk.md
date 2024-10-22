@@ -1,9 +1,7 @@
 ---
 title: 如何开发一款 JSSDK ？
 date: 2024-08-02
-tag: JavaScript
 category: JavaScript
-abstract: 最近项目需要开发一款JSSDK，所以查阅了相关的资料并进行了整理。
 ---
 
 # 如何开发一款 JSSDK ？

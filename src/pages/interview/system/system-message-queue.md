@@ -2,8 +2,6 @@
 title: 消息队列
 date: 2024-10-19
 category: System Design
-tag: System Design
-abstract: 消息队列
 ---
 
 # 消息队列

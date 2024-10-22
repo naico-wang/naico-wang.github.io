@@ -1,9 +1,7 @@
 ---
 title: 可视化看 Promise 的执行逻辑
 date: 2024-07-17
-tag: JavaScript
 category: JavaScript
-abstract: 在这篇文章中，我们将深入探讨 Promise 的一些内部机制，并探索它们是如何使得 JavaScript 能够执行非阻塞的异步任务。
 ---
 
 # 通过可视化彻底搞懂 Promise执行逻辑

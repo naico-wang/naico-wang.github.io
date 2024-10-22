@@ -1,9 +1,7 @@
 ---
-title: 测测你对 with 语句和嵌套对象的理解
+title: 理解 with 语句和嵌套对象
 date: 2024-08-28
-tag: JavaScript
 category: JavaScript
-abstract: 今天的挑战题目涉及到JavaScript中的 with 语句和嵌套对象的作用域处理。with 语句允许你在指定对象的上下文中执行代码，但它的行为可能会让你感到意外，特别是在处理嵌套对象时。让我们一起分析这段代码，看看它会输出什么以及为什么。
 ---
 
 # 测测你对 with 语句和嵌套对象的理解

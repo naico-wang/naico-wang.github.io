@@ -1,9 +1,7 @@
 ---
 title: 常用Monorepo工具横向对比
 date: 2024-07-03
-tag: JavaScript
-category: JavaScript
-abstract: 横向比较了常见的monorepo工具，并整理成了表格可供大家参阅
+category: Monorepo
 ---
 
 # 常用Monorepo工具横向对比

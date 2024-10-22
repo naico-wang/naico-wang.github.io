@@ -1,9 +1,7 @@
 ---
 title: 05 - PostgreSQL
 date: 2024-08-12
-tag: NestJS
 category: NestJS
-abstract: 05 - PostgreSQL
 ---
 
 # 05 - PostgreSQL

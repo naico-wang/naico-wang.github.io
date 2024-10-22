@@ -1,9 +1,7 @@
 ---
-title: JS新特性：'?='操作符助你告别bug！
+title: JS新特性：'?='操作符
 date: 2024-10-09
-tag: JavaScript
 category: JavaScript
-abstract: JavaScript 作为一门动态语言，其错误处理一直是一个让开发者头疼的问题。传统的try-catch块虽然功能强大，但往往会导致代码结构变得复杂且难以维护。幸运的是，ECMAScript 提出了一个新的提案——安全赋值操作符（?=），旨在简化错误处理，让代码更加清晰和高效。
 ---
 
 # JS新特性：'?='操作符助你告别bug！

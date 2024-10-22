@@ -1,9 +1,7 @@
 ---
 title: 为什么 let 在 JavaScript/TypeScript 中是不必要的
 date: 2024-08-26
-tag: JavaScript
-category: JavaScript
-abstract: 你可能已经遇到 let 关键字上百万次了。它是 JavaScript（以及扩展的 TypeScript）中那些最初看起来像是救星的特性之一。
+category: TypeScript
 ---
 
 # 为什么 let 在 JavaScript/TypeScript 中是不必要的

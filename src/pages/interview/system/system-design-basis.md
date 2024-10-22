@@ -2,8 +2,6 @@
 title: 系统设计基础
 date: 2024-10-19
 category: System Design
-tag: System Design
-abstract: 系统设计基础
 ---
 
 # 系统设计基础

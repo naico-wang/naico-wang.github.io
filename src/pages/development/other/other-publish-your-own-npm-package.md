@@ -1,9 +1,7 @@
 ---
 title: 教你如何发布自己的npm包
 date: 2024-07-18
-tag: 杂七杂八
 category: 杂七杂八
-abstract: npm包相信大家都用了很多了，下面我来教大家如何发布一个自己的npm package.
 ---
 
 # 一步一步构建发布一个基于 `TypeScript` 的 `NPM Package`

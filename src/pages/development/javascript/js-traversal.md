@@ -1,9 +1,7 @@
 ---
-title: 如何使用JavaScript遍历对象？
+title: 使用JavaScript遍历对象
 date: 2024-08-15
-tag: JavaScript
 category: JavaScript
-abstract: 在前端开发中，我们经常需要操作和处理对象，比如用户信息、商品详情等。如何高效、优雅地遍历对象，是每个开发者都需要掌握的技能。今天我们来深入探讨三种遍历JavaScript对象的实用方法，让你的代码既简洁又强大！
 ---
 
 # 如何使用JavaScript遍历对象？

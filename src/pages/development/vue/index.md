@@ -1,4 +1,4 @@
 ---
-title: Vue架构与实践
+title: Vue2/3
 exclude: true
 ---

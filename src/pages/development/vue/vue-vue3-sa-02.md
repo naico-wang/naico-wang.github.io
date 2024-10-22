@@ -1,9 +1,7 @@
 ---
 title: 阅读Vue3源码 - Set与Map
 date: 2024-08-14
-tag: Vue架构与实践
-category: Vue架构与实践
-abstract: 此系列是解析 Vue3 源码与实现系列的前置知识，本文介绍了 Set、Map、WeakSet、WeakMap 相关的知识。
+category: Vue2/3
 ---
 
 # 阅读Vue3源码 - Set、Map、WeakSet、WeakMap

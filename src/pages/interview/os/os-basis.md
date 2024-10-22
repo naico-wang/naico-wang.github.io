@@ -2,8 +2,6 @@
 title: 计算机操作系统 - 基础知识
 date: 2024-10-19
 category: Operation System
-tag: Operation System
-abstract: 计算机操作系统 - 基础知识
 ---
 
 # 操作系统基础

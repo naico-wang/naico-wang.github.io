@@ -2,8 +2,6 @@
 title: 计算机操作系统 - Linux
 date: 2024-10-19
 category: Operation System
-tag: Operation System
-abstract: 计算机操作系统 - Linux
 ---
 
 # 计算机操作系统 - Linux

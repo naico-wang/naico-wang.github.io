@@ -1,9 +1,7 @@
 ---
 title: 深入学习React Fiber（二）
 date: 2023-06-28
-tag: React架构与实践
-category: React架构与实践
-abstract: Fiber架构的之二，读完这篇和references，你应该对Fiber是什么有深入的理解了，至少面试没问题了吧。
+category: React
 ---
 
 # 深入学习React Fiber（二）

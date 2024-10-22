@@ -2,8 +2,6 @@
 title: SQL 经典习题
 date: 2024-10-19
 category: Database
-tag: Database
-abstract: SQL 语句练习题集锦，基本来自一些经典网站，一起来复习下SQL语句如何写吧。
 ---
 
 # SQL 练习

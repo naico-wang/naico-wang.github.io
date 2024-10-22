@@ -1,9 +1,7 @@
 ---
-title: 理解JavaScript中的Object.freeze()和Object.seal()
+title: 理解JS中的Object.freeze()和Object.seal()
 date: 2024-08-15
-tag: JavaScript
 category: JavaScript
-abstract: 在JavaScript编程中，管理对象的可变性对于保持代码的稳定性和可预测性至关重要。有两个强大的方法可以帮助控制对象属性的变化，它们分别是Object.freeze()和Object.seal()。这篇文章将深入探讨Object.freeze()和Object.seal()的实际用途，并通过实例来说明它们的功能和使用场景，帮助你在实际开发中有效地运用这些方法。
 ---
 
 # 理解JavaScript中的Object.freeze()和Object.seal()

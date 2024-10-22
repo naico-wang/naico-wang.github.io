@@ -2,8 +2,6 @@
 title: Java 容器
 date: 2024-10-19
 category: Java
-tag: Java
-abstract: Java 容器
 ---
 
 # Java 容器

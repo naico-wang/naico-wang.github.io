@@ -2,8 +2,6 @@
 title: SQL 语法
 date: 2024-10-19
 category: Database
-tag: Database
-abstract: SQL 语句面试常用的一些语法，一起来复习下SQL语句如何写吧。
 ---
 
 # SQL 语法

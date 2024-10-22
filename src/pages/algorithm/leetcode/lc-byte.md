@@ -1,9 +1,7 @@
 ---
 title: 数据结构 - 位运算
 date: 2024-10-19
-category: LeetCode题解
-tag: LeetCode题解
-abstract: 数据结构 - 位运算
+category: 算法题解
 ---
 
 # Leetcode 题解 - 位运算

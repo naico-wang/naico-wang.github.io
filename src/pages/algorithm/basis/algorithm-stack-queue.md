@@ -2,8 +2,6 @@
 title: 算法 - 栈和队列
 date: 2024-10-19
 category: 算法系列
-tag: 算法系列
-abstract: 算法 - 栈和队列
 ---
 
 # 算法 - 栈和队列

@@ -1,9 +1,7 @@
 ---
 title: 性能优化面试题
 date: 2024-10-21
-category: 前端常见面试问题
-tag: 前端常见面试问题
-abstract: 性能优化面试题
+category: 前端面试
 ---
 
 # 性能优化面试题

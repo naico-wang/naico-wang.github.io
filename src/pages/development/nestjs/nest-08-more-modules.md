@@ -1,9 +1,7 @@
 ---
 title: 08 - 更多模块
 date: 2024-08-12
-tag: NestJS
 category: NestJS
-abstract: 08 - 更多模块
 ---
 
 # 08 - 更多模块

@@ -1,9 +1,7 @@
 ---
-title: Monorepo体验
+title: Monorepo 体验
 date: 2024-07-02
-tag: JavaScript
-category: JavaScript
-abstract: Everything you need to know about monorepos, and the tools to build them.
+category: Monorepo
 ---
 
 # 手把手建立一个Monorepo项目

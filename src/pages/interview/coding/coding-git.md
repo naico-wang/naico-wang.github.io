@@ -1,9 +1,7 @@
 ---
 title: Git相关知识
 date: 2024-10-19
-tag: 编程语言
 category: 编程语言
-abstract: Git相关知识
 ---
 
 # Git相关知识

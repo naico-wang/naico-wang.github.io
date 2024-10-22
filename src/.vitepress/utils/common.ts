@@ -38,9 +38,7 @@ const processDataIgnoreCategory = (data) => {
     .map(({url, frontmatter}) => ({
       url,
       title: frontmatter.title,
-      abstract: frontmatter.abstract,
       date: formatDate(frontmatter.date).string,
-      tag: frontmatter.tag,
       category: frontmatter.category
     }))
 
@@ -65,7 +63,6 @@ const processDataWithCategory = (data) => {
         acc[category].push({
           url: item.url,
           title: item.frontmatter.title,
-          abstract: item.frontmatter.abstract,
           category: item.frontmatter.category,
           date: formatDate(item.frontmatter.date)
         });
@@ -74,7 +71,7 @@ const processDataWithCategory = (data) => {
       }, {})
   ).map(([category, posts]) => ({
     category,
-    postCount: posts.length,
+    postCount: posts.length || 0,
     data: posts
   }));
 }

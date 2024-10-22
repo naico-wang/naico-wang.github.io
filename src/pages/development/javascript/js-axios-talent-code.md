@@ -1,9 +1,7 @@
 ---
 title: axios中的那些天才代码
 date: 2024-10-07
-tag: JavaScript
 category: JavaScript
-abstract: 让我们来看一下axios中的那些天才代码！看完我实力大涨！
 ---
 
 # axios中的那些天才代码

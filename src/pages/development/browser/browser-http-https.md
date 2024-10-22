@@ -1,9 +1,7 @@
 ---
 title: 图文详解Http和Https的区别
 date: 2024-07-17
-tag: 浏览器/HTTP
 category: 浏览器/HTTP
-abstract: 随着 HTTPS 的不断普及和使用成本的下降，现阶段大部分的系统都已经开始用上 HTTPS 协议。 HTTPS 与 HTTP 相比， 主打的就是安全概念，相关的知识如 SSL 、非对称加密、 CA证书、数据完整性保护 等，我们多多少少也都有听过。 本文重点从原理上讲解 HTTPS 的安全性，以及同HTTP的比较说明。
 ---
 
 # 图文详解Http和Https的区别

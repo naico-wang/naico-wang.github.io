@@ -1,9 +1,7 @@
 ---
 title: Web端常用加密方法小结
 date: 2024-07-03
-tag: JavaScript
-category: JavaScript
-abstract: 在网站的安全性架构中，常常用到各种加密方法和算法；本文总结了几种加密方法的原理，以备不时之用。
+category: Web加解密
 ---
 
 # Web端常用加密方法小结

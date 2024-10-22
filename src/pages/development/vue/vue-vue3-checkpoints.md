@@ -1,9 +1,7 @@
 ---
 title: 我认为的 Vue3 核心知识点
 date: 2024-08-13
-tag: Vue架构与实践
-category: Vue架构与实践
-abstract: Vue3 发布有一段时间了，近期有空一探究竟，特此总结。
+category: Vue2/3
 ---
 
 # 我认为的 Vue3 核心知识点

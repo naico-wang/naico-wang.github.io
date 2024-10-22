@@ -2,8 +2,6 @@
 title: Java 基础
 date: 2024-10-19
 category: Java
-tag: Java
-abstract: Java 基础
 ---
 
 # Java 基础

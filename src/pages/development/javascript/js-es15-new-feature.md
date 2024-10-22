@@ -1,9 +1,7 @@
 ---
-title: ES15(2024) 中5个令人惊叹的新JavaScript特性
+title: ES15(2024) 中5个新JavaScript特性
 date: 2024-08-06
-tag: JavaScript
-category: JavaScript
-abstract: 2024年:又是一个带来全新JS特性升级的不可思议的年份,ES15推出。
+category: ECMAScript
 ---
 
 # ES15(2024) 中5个令人惊叹的新JavaScript特性

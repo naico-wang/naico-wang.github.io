@@ -1,9 +1,7 @@
 ---
 title: BFF - BFF模式探究
 date: 2024-07-01
-tag: 系统架构
 category: BFF架构
-abstract: 这篇文章其实阐述了很多观点，关于BFF，关于多端API，关于应该如何选型，请自行理解。文章最后我会附上参考链接。
 ---
 
 # BFF 模式： Backends For Frontends

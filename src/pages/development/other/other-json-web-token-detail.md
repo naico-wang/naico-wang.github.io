@@ -1,9 +1,7 @@
 ---
 title: 浅谈JWT
 date: 2024-07-03
-tag: 杂七杂八
 category: 杂七杂八
-abstract: Web端常用的验证方式就是JWT Token，本文旨在阐述清楚JWT相关的知识，以及应用的流程。
 ---
 
 # Jwt Token 的原理，验证流程及应用

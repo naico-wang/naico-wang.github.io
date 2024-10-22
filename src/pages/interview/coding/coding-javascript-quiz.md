@@ -2,8 +2,6 @@
 title: JavaScript 进阶问题列表
 date: 2024-07-17
 category: 编程语言
-tag: 编程语言
-abstract: 从基础到进阶，测试你有多了解 JavaScript，刷新你的知识，或者帮助你的 coding 面试。
 ---
 
 # JavaScript 进阶问题列表

@@ -1,9 +1,7 @@
 ---
 title: 数组解构是如何降低 JavaScript 的运行速度
 date: 2024-09-28
-tag: JavaScript
 category: JavaScript
-abstract: 在JavaScript开发中，解构赋值是一个广受欢迎的特性，它让代码更加简洁易读。然而，不同的解构模式可能会对性能产生显著影响。本文将深入探讨数组解构赋值可能带来的性能问题，并提供优化建议。
 ---
 
 # 数组解构是如何降低 JavaScript 的运行速度

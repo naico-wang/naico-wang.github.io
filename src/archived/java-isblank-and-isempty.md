@@ -1,7 +1,6 @@
 ---
 title: Java 中 isEmpty 和 isBlank 的区别
 date: 2024-08-24
-abstract: 新来的同事，干了3年java，代码中 isEmpty 和 isBlank 的区别 都不知道，一顿瞎用...
 ---
 
 # Java 中 isEmpty 和 isBlank 的区别

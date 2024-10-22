@@ -1,4 +1,4 @@
 ---
-title: React架构与实践
+title: React
 exclude: true
 ---

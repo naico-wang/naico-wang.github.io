@@ -1,9 +1,7 @@
 ---
 title: 浏览器的渲染原理
 date: 2023-12-20
-tag: 浏览器/HTTP
 category: 浏览器/HTTP
-abstract: 浏览器的一些渲染原理，是一部分，不是全部。完整的原理请去google网站查看。
 ---
 
 # 浏览器的渲染原理

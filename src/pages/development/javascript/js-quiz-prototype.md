@@ -1,12 +1,10 @@
 ---
-title: 测测你对JavaScript原型继承和 instanceof 的理解
+title: JavaScript 继承
 date: 2024-09-02
-tag: JavaScript
 category: JavaScript
-abstract: 今天的挑战题目涉及到JavaScript中的原型继承和 instanceof 操作符的使用。我们将通过分析一个关于构造函数和原型链的例子，来探索对象继承的机制，以及如何判断对象的类型。让我们一起深入解析这段代码，看看它会输出什么以及为什么。
 ---
 
-# 测测你对JavaScript原型继承和 instanceof 的理解
+# 理解JavaScript原型继承和 instanceof
 
 ![quiz-prototype](https://mmbiz.qpic.cn/sz_mmbiz_png/KEXUm19zKo51ibdX6Z5joqVl7IUQnMcsEuq5czmNiaex6xdm6ELUKzt3g1eLOTd6dXu0mFYjeTRYpsnfnSfSZfEg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 

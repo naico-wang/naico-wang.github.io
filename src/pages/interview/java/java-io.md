@@ -2,8 +2,6 @@
 title: Java IO
 date: 2024-10-19
 category: Java
-tag: Java
-abstract: Java IO
 ---
 
 # Java IO

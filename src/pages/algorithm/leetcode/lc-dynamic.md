@@ -1,9 +1,7 @@
 ---
 title: 算法思想 - 动态规划
 date: 2024-10-19
-category: LeetCode题解
-tag: LeetCode题解
-abstract: 算法思想 - 动态规划
+category: 算法题解
 ---
 
 # Leetcode 题解 - 动态规划

@@ -1,9 +1,7 @@
 ---
 title: 深入学习React Fiber（一）
 date: 2023-06-28
-tag: React架构与实践
-category: React架构与实践
-abstract: 深入学习React系列的第一篇，也是Fiber架构的第一篇。
+category: React
 ---
 
 # 深入学习React Fiber（一）

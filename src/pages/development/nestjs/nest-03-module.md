@@ -1,9 +1,7 @@
 ---
 title: 03 - Module
 date: 2024-08-12
-tag: NestJS
 category: NestJS
-abstract: 03 - Module
 ---
 
 # 03 - Module

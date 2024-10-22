@@ -1,9 +1,7 @@
 ---
-title: 如何理解JavaScript中的原始类型和引用类型
+title: JavaScript中的原始类型和引用类型
 date: 2024-09-11
-tag: JavaScript
 category: JavaScript
-abstract: JavaScript作为我们开发前端时不可或缺的工具，你真的理解它的核心概念吗？今天我想用通俗易懂的语言，结合一些实际的业务场景，来带你了解JavaScript中的原始类型和引用类型，顺便讲一下它们的可变性和不可变性。相信我，看完这些你一定会对代码有更深的理解！
 ---
 
 # 如何理解JavaScript中的原始类型和引用类型

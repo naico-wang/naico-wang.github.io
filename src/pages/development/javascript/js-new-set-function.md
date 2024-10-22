@@ -1,9 +1,7 @@
 ---
-title: JavaScript 中的 7 个新 Set 方法
+title: JS 中的 7 个新 Set 方法
 date: 2024-08-23
-tag: JavaScript
 category: JavaScript
-abstract: Set 从 ES6 就已经存在了，但通常它们只是用来确保列表中没有重复项。然而，随着这7个即将推出的内置 Set 方法，我们可能会发现自己更加频繁地使用它们。
 ---
 
 # JavaScript 中的 7 个新 Set 方法

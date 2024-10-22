@@ -1,9 +1,7 @@
 ---
 title: 一道题测试你对JavaScript类继承和静态方法的理解
 date: 2024-08-24
-tag: JavaScript
 category: JavaScript
-abstract: 今天的话题涉及到JavaScript中的类继承 (class inheritance)、静态方法 (static method)、以及 super 关键字的使用。让我们一起来分析这段代码，看看它会输出什么以及为什么。
 ---
 
 # 测一测你对JavaScript类继承和静态方法的理解

@@ -1,9 +1,7 @@
 ---
-title: 我爱 RESTful，但现在是时候使用 GraphQL 了
+title: 了解 GraphQL
 date: 2024-10-08
-tag: NodeJS/SSR
 category: NodeJS/SSR
-abstract: 在Web开发领域，REST API长期以来一直是构建后端服务的主流选择。然而，随着应用复杂度的不断提升，开发者们开始寻求更高效、灵活的数据交互方式。GraphQL作为一种新兴的API查询语言，正在为全栈开发带来革命性的变化。本文将深入探讨如何在现有的REST架构中引入GraphQL，以及这种转变所带来的挑战和机遇。
 ---
 
 # 我爱 RESTful，但现在是时候使用 GraphQL 了：在 2024 年转换之前你应该了解的一切

@@ -1,9 +1,7 @@
 ---
-title: 了解 TypeScript 中的实用类型
+title: TypeScript 中的实用类型
 date: 2024-09-25
-tag: JavaScript
-category: JavaScript
-abstract: 在TypeScript的世界里，类型系统不仅仅是静态类型检查的工具，更是提升代码质量和开发效率的强大武器。今天，我将深入探讨七个essential的实用工具类型，这些工具类型不仅能够简化代码，还能让开发过程更加高效和富有表现力。
+category: TypeScript
 ---
 
 # 了解 TypeScript 中的实用类型

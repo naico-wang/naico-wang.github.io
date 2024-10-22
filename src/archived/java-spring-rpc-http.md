@@ -1,7 +1,6 @@
 ---
 title: Spring Cloud 远程调用：为何选择 HTTP 而非 RPC？
 date: 2024-10-05
-abstract: 在构建微服务架构时，远程调用是服务间通信的核心机制之一。在选择通信协议时，开发者常常面临 HTTP 与 RPC（远程过程调用）之间的抉择。本文将深入探讨 Spring Cloud 倾向于使用 HTTP 而非 RPC 的原因，并解析 HTTP 在微服务架构中的独特优势。
 ---
 
 # Spring Cloud 远程调用：为何选择 HTTP 而非 RPC？

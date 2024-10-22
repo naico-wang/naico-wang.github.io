@@ -1,9 +1,7 @@
 ---
 title: Monorepo+pnpm 实战
 date: 2024-07-28
-tag: JavaScript
-category: JavaScript
-abstract: 关于PNPM + Monorepo 在实际项目中的应用
+category: Monorepo
 ---
 
 # Monorepo+pnpm 实战

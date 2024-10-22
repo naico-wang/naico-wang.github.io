@@ -1,9 +1,7 @@
 ---
 title: GraphQL 快速入门
 date: 2024-10-13
-tag: NodeJS/SSR
 category: NodeJS/SSR
-abstract: 本文纯搬运，正好最近在深耕GraphQL，这篇文章通俗易懂，非常适合新手入门。
 ---
 
 # GraphQL 快速入门

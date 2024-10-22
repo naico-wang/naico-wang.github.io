@@ -2,8 +2,6 @@
 title: 计算机操作系统 - 链接
 date: 2024-10-19
 category: Operation System
-tag: Operation System
-abstract: 计算机操作系统 - 链接
 ---
 
 # 计算机操作系统 - 链接

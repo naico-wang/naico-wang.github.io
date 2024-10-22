@@ -1,9 +1,7 @@
 ---
 title: HTML 面试题汇总
 date: 2024-10-21
-category: 前端常见面试问题
-tag: 前端常见面试问题
-abstract: HTML 面试题汇总
+category: 前端面试
 ---
 
 # HTML 面试题汇总

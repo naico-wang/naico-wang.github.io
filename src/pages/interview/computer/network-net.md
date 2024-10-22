@@ -1,9 +1,7 @@
 ---
 title: 计算机网络 - 网络层
 date: 2024-10-19
-category: Computer
-tag: Computer
-abstract: 计算机网络 - 网络层
+category: 计算机网络
 ---
 
 # 计算机网络 - 网络层

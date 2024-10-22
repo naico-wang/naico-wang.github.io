@@ -2,16 +2,17 @@
 import { data } from '../page_wordcloud.data';
 
 const wordCloudData = data.map(({ category, postCount }) => ([category, postCount]))
-const style = "height: 320px; width: 90%;"
+const style = "height: 450px; width: 100%;"
 const font = 'Inter'
-const color = ([, weight]) => weight > 20 ? '#6f42c1' : weight > 10 ? '#18794e': weight > 5 ? '#ff6600' : '#b8272c';
+const ratio = 3
+const color = ([, weight]) => weight > 20 ? '#6f42c1' : weight > 10 ? '#18794e': weight > 5 ? '#ff6600' : '#5672cd';
 </script>
 
 <style scoped>
 .title {
   font-size: 56px;
   line-height: 64px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-decoration: underline;
   font-weight: 700;
   text-align: center;
@@ -27,7 +28,9 @@ const color = ([, weight]) => weight > 20 ? '#6f42c1' : weight > 10 ? '#18794e':
     :words="wordCloudData"
     :style="style"
     :color="color"
+    :font-size-ratio="ratio"
     :font-family="font"
+    font-weight="bold"
   />
 </template>
 

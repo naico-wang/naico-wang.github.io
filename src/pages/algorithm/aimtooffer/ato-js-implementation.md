@@ -1,9 +1,7 @@
 ---
 title: 剑指Offer - JavaScript实现版
 date: 2024-10-19
-category: 剑指Offer题解
-tag: 剑指Offer题解
-abstract: 剑指Offer - JavaScript实现版
+category: 算法题解
 ---
 
 # 剑指 Offer

@@ -1,9 +1,7 @@
 ---
 title: 掌握 JavaScript 的柯里化，让代码更优雅
 date: 2024-08-07
-tag: JavaScript
 category: JavaScript
-abstract: JavaScript 是一门灵活多变的语言，它的魅力之一就在于可以对函数进行各种炫酷的操作。今天我们要聊的是一个听起来有点高深，但其实很有趣的概念——柯里化（Currying）。
 ---
 
 # 掌握 JavaScript 的柯里化，让代码更优雅

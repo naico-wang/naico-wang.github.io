@@ -1,9 +1,7 @@
 ---
 title: OAuth 2.0 架构初探
 date: 2024-07-05
-tag: 系统架构
 category: 系统架构
-abstract: OAuth 通过引入授权层来解决这些问题，并将客户端的角色与资源的角色分开...
 ---
 
 # OAuth 2.0 架构初探

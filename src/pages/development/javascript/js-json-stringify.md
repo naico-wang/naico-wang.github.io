@@ -1,9 +1,7 @@
 ---
-title: JavaScript的JSON.stringify鲜为人知的技巧
+title: JSON.stringify鲜为人知的技巧
 date: 2024-08-15
-tag: JavaScript
 category: JavaScript
-abstract: 在日常开发中，我们经常会使用到 JSON.stringify 这个方法，特别是在需要进行序列化（深拷贝）的时候。它可以把我们的对象转换成一个 JSON 字符串，这个方法确实非常方便，但它也有一些不常被注意到的缺点。
 ---
 
 # 掌握JavaScript的JSON.stringify鲜为人知的技巧，让前端开发更加高效和灵活

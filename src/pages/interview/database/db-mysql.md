@@ -2,8 +2,6 @@
 title: MySQL 相关知识汇总
 date: 2024-10-19
 category: Database
-tag: Database
-abstract: MySQL 相关知识汇总
 ---
 
 # MySQL 相关知识汇总

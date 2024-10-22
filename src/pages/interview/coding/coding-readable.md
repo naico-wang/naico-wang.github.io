@@ -1,9 +1,7 @@
 ---
 title: 代码可读性
 date: 2024-10-19
-tag: 编程语言
 category: 编程语言
-abstract: 代码可读性
 ---
 
 # 代码可读性

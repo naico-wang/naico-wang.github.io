@@ -1,9 +1,7 @@
 ---
 title: 计算机网络 - HTTP
 date: 2024-10-19
-category: Computer
-tag: Computer
-abstract: 计算机网络 - HTTP
+category: 计算机网络
 ---
 
 # 计算机网络 - HTTP

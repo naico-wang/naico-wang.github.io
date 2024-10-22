@@ -1,9 +1,7 @@
 ---
-title: 每个开发人员都应了解的 2024 年 6 大 ECMAScript 功能
+title: 2024 年 6 大 ECMAScript 功能
 date: 2024-10-11
-tag: JavaScript
-category: JavaScript
-abstract: 随着JavaScript生态系统的不断发展，ECMAScript标准也在持续更新，为开发者带来了许多强大的新特性。本文将深入探讨2024年ECMAScript中最值得关注的六大特性，这些特性不仅能够提升代码质量，还能显著改善开发体验。
+category: ECMAScript
 ---
 
 # 每个开发人员都应了解的 2024 年 6 大 ECMAScript 功能

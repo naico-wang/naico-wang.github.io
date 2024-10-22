@@ -2,8 +2,6 @@
 title: 集群
 date: 2024-10-19
 category: System Design
-tag: System Design
-abstract: 集群中的应用服务器（节点）通常被设计成无状态，用户可以请求任何一个节点。
 ---
 
 # 集群

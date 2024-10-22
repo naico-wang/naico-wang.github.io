@@ -1,9 +1,7 @@
 ---
 title: 深入浅出WebSocket
 date: 2023-12-25
-tag: 浏览器/HTTP
 category: 浏览器/HTTP
-abstract: 公司的项目正好要用到WebSocket，所以我做了一些deep dive，整理了这篇文档。
 ---
 
 # 深入浅出WebSocket

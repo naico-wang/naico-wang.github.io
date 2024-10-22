@@ -1,9 +1,7 @@
 ---
 title: 06 - 原理细节
 date: 2024-08-12
-tag: NestJS
 category: NestJS
-abstract: 06 - 原理细节
 ---
 
 # 06 - 原理细节

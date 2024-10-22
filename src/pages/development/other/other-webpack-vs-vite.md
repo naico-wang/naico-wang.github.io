@@ -1,9 +1,7 @@
 ---
-title: 为什么 Webpack 正在慢慢失去领导地位，而在 2024 年无法与 Vite 竞争
+title: Webpack vs Vite
 date: 2024-09-13
-tag: 杂七杂八
 category: 杂七杂八
-abstract: 老实说，Webpack 多年来一直是 JavaScript 世界中的“打包工具之王”。它为历史上一些最复杂、性能最高的 Web 应用提供了支持。
 ---
 
 # 为什么 Webpack 正在慢慢失去领导地位，而在 2024 年无法与 Vite 竞争

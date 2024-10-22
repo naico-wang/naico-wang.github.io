@@ -1,9 +1,7 @@
 ---
 title: 聚焦于 Web 性能指标 TTI
 date: 2024-09-20
-tag: 杂七杂八
-category: 杂七杂八
-abstract: 在优化网站性能的过程中，我们经常遇到一个“为指标而优化”的困境。指标并不能真正反映用户体验，而应该最真实地反映用户行为。在本节中，我们将研究 TTI（Time to Interactive）。
+category: Web性能
 ---
 
 # 聚焦于 Web 性能指标 TTI

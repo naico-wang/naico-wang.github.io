@@ -1,9 +1,7 @@
 ---
 title: 这个 JavaScript API - AbortController 比你想象中更强大！
 date: 2024-10-01
-tag: JavaScript
 category: JavaScript
-abstract: 今天，我们来聊聊一个可能被你忽视，而且非常强大的标准 JavaScript API - AbortController 。
 ---
 
 # 这个 JavaScript API - AbortController 比你想象中更强大！

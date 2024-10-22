@@ -1,9 +1,7 @@
 ---
 title: 手把手教你在vue项目中优雅地封装axios
 date: 2024-09-23
-tag: Vue架构与实践
-category: Vue架构与实践
-abstract: axios 是一个用来发起网络请求的 js 库，返回的格式是 Promise。vue 项目中基本都是用 axios 发起网络请求。现在我们看看如何Vue中优雅的封装axios。
+category: Vue2/3
 ---
 
 # 手把手教你在vue项目中优雅地封装axios

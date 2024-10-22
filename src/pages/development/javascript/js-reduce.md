@@ -1,9 +1,7 @@
 ---
-title: 14个JavaScript代码片段，轻松掌握reduce进阶用法
+title: 14个JS Reduce案例
 date: 2024-10-04
-tag: JavaScript
 category: JavaScript
-abstract: 你是不是还在为处理数组头疼？那你一定要试试JavaScript的reduce方法！这个方法真的超强大，能把数组里的每个元素都“串”起来，最后得到一个你想要的结果。不管你是要计算总和，还是想把数据转换成另一种形式，reduce都能轻松帮你搞定。
 ---
 
 # 14个JavaScript代码片段，轻松掌握reduce进阶用法

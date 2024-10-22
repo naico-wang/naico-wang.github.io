@@ -1,9 +1,7 @@
 ---
 title: Docker相关知识
 date: 2024-10-19
-tag: 编程语言
 category: 编程语言
-abstract: Docker相关知识
 ---
 
 # Docker相关知识

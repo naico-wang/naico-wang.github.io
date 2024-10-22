@@ -1,9 +1,7 @@
 ---
 title: 算法思想 - 排序
 date: 2024-10-19
-category: LeetCode题解
-tag: LeetCode题解
-abstract: 算法思想 - 排序
+category: 算法题解
 ---
 
 # Leetcode 题解 - 排序

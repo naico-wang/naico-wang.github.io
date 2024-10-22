@@ -1,9 +1,7 @@
 ---
 title: 为什么很多人抵制 TypeScript ？
 date: 2024-08-10
-tag: JavaScript
-category: JavaScript
-abstract: 最近，我们部门在开发一个组件库时，我注意到一些团队成员对使用TypeScript表示出了抵触情绪，他们常常抱怨说：“TypeScript太麻烦了，我们不想用！”起初，我对此感到困惑：TypeScript真的有那么麻烦吗？然而，当我抽时间审查队伍的代码时，我终于发现了问题所在。
+category: TypeScript
 ---
 
 # 为什么很多人抵制 TypeScript ？

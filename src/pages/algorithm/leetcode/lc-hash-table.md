@@ -1,9 +1,7 @@
 ---
 title: 数据结构 - 哈希表
 date: 2024-10-19
-category: LeetCode题解
-tag: LeetCode题解
-abstract: 数据结构 - 哈希表
+category: 算法题解
 ---
 
 # Leetcode 题解 - 哈希表

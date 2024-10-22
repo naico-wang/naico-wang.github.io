@@ -1,9 +1,7 @@
 ---
 title: JavaScript 原型与原型链
 date: 2024-08-15
-tag: JavaScript
 category: JavaScript
-abstract: JavaScript是一门强大且灵活的编程语言，它的许多独特特性是其他编程语言所不具备的。在JavaScript的面向对象编程中，原型系统是一个基础概念。理解原型和原型链对于掌握JavaScript至关重要，因为它让开发者能够理解语言中的继承和属性解析机制。
 ---
 
 # JavaScript 原型与原型链

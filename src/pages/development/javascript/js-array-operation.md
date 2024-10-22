@@ -1,9 +1,7 @@
 ---
 title: JavaScript 常用数组方法
 date: 2024-08-05
-tag: JavaScript
 category: JavaScript
-abstract: 在快节奏的Web开发世界里，掌握JavaScript数组方法对于提升开发效率至关重要。以下是一些你应该知道的数组方法，它们能帮助你更快、更精确地完成任务。
 ---
 
 # JavaScript 常用数组方法：提升你的开发效率

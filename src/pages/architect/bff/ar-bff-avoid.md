@@ -1,9 +1,7 @@
 ---
 title: BFF - BFF避坑指南
 date: 2024-07-01
-tag: 系统架构
 category: BFF架构
-abstract: BFF在改善前端用户体验上起到了非常大的作用，但因为介于前端和后端之间，在落地实施过程中很容易踩坑
 ---
 
 # BFF（Backends for frontends）避坑指南

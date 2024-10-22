@@ -1,9 +1,7 @@
 ---
-title: 不要再写满屏import导入啦！🔥
+title: 优雅地减少 import 语句
 date: 2024-08-09
-tag: JavaScript
 category: JavaScript
-abstract: 如果打开一个文件，看到的全是满屏幕的 import 语句，这将是一种怎样的体验？
 ---
 
 # 优雅地减少 import 语句

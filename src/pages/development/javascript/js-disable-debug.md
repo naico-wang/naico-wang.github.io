@@ -1,9 +1,7 @@
 ---
-title: 如何禁止用户调试你的页面？
+title: 禁止用户调试你的页面
 date: 2024-09-22
-tag: JavaScript
 category: JavaScript
-abstract: 在前端开发中，大家都想在production环境不让别人调试你的代码，那究竟要怎么做呢？这里有几个方法...
 ---
 
 # 如何禁止用户调试你的页面？

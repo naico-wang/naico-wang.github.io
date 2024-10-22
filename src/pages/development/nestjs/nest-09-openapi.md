@@ -1,9 +1,7 @@
 ---
 title: 09 - OpenAPI
 date: 2024-08-12
-tag: NestJS
 category: NestJS
-abstract: 09 - OpenAPI
 ---
 
 # 09 - OpenAPI
