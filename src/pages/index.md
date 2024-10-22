@@ -44,7 +44,7 @@ hero:
 ---
 
 <script setup>
-import WorldCloud from '../.vitepress/theme/components/WordCloud.vue';
+import WordCloud from '../.vitepress/theme/components/WordCloud.vue';
 </script>
 
-<WorldCloud></WorldCloud>
+<WordCloud></WordCloud>

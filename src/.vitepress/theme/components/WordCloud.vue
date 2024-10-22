@@ -1,11 +1,12 @@
 <script setup>
+import VueWordCloud from '../../utils/wordcloud.mjs'
 import { data } from '../page_wordcloud.data';
 
-const wordCloudData = data.map(({ category, postCount }) => ([category, postCount]))
-const style = "height: 450px; width: 100%;"
+const wordCloudData = data.map(({ category, postCount }) => ([category, postCount % 4]))
+const style = "height: 300px; width: 80%; margin: 0 auto;"
 const font = 'Inter'
-const ratio = 3
-const color = ([, weight]) => weight > 20 ? '#6f42c1' : weight > 10 ? '#18794e': weight > 5 ? '#ff6600' : '#5672cd';
+const ratio = 0
+const color = ([, weight]) => weight > 2 ? '#255489' : weight > 1 ? '#602960': weight > 0 ? '#155f3e' : '#3b8eed';
 </script>
 
 <style scoped>
@@ -24,7 +25,7 @@ const color = ([, weight]) => weight > 20 ? '#6f42c1' : weight > 10 ? '#18794e':
 
 <template>
   <div class="title">智库 ● 词云</div>
-  <vue-word-cloud
+  <VueWordCloud
     :words="wordCloudData"
     :style="style"
     :color="color"
