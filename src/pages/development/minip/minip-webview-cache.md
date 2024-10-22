@@ -1,5 +1,5 @@
 ---
-title: 微信小程序内嵌web-view缓存问题
+title: 微信小程序web-view缓存问题
 date: 2024-09-19
 category: 小程序开发
 ---

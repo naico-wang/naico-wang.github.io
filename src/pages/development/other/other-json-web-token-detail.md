@@ -4,19 +4,17 @@ date: 2024-07-03
 category: 杂七杂八
 ---
 
-# Jwt Token 的原理，验证流程及应用
+# JWT Token 的原理，验证流程及应用
 
 :::info 查看JWT完整的标准文档
 [RFC 7519](https://datatracker.ietf.org/doc/html/rfc7519)
 :::
 
-[[toc]]
-
 ## 什么是JWT？
 
 **Json Web Token (JWT)**, 是为了在网络应用环境间传递声明而执行的一种基于JSON的开放标准([RFC 7519](https://datatracker.ietf.org/doc/html/rfc7519)).
 
-JWT被设计为紧凑且安全的，特别适用于分布式站点的`单点登录（SSO）`场景。
+JWT被设计为紧凑且安全的，特别适用于分布式站点的`单点登录(SSO)`场景。
 
 JWT的声明一般被用来在身份提供者和服务提供者间传递被认证的用户身份信息，以便于从资源服务器获取资源，也可以增加一些额外的其它业务逻辑所必须的声明信息，该token也可直接被用于认证，也可被加密。
 
