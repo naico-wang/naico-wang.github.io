@@ -28,15 +28,15 @@ const color = ([, weight]) => weight > 2 ? '#255489' : weight > 1 ? '#602960': w
 <template>
   <div class="title">智库 ● 词云</div>
   <VueWordCloud
-      :animation-duration="duration"
-      :words="wordCloudData"
-      :style="style"
-      :color="color"
-      :font-size-ratio="ratio"
-      :font-style="fontStyle"
-      :font-family="font"
-      :spacing = spacing
-      font-weight="bold"
+    :animation-duration="duration"
+    :words="wordCloudData"
+    :style="style"
+    :color="color"
+    :font-size-ratio="ratio"
+    :font-style="fontStyle"
+    :font-family="font"
+    :spacing = spacing
+    font-weight="bold"
   />
 </template>
 

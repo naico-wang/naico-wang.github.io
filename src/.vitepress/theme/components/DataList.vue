@@ -60,13 +60,13 @@ function goToPage(page) {
 }
 
 .pagination button:hover {
-  background-color: #222222;
+  background-color: var(--vp-c-green-3);
   color: #ffffff;
 }
 
 .pagination button.active {
   font-weight: bold;
-  background-color: #222222;
+  background-color: var(--vp-c-green-3);
   color: #ffffff;
 }
 
@@ -99,7 +99,7 @@ function goToPage(page) {
   line-height: 2;
 }
 .post-desc {
-  color: #222222;
+  color: var(--vp-c-text-1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,10 +113,11 @@ function goToPage(page) {
 .post-title a:link,
 .post-title a:active,
 .post-title a:visited {
-  color: #222222;
+  color: var(--vp-c-text-1);
   text-decoration: none;
 }
 .post-title a:hover {
+  color: var(--vp-c-green-3);
   text-decoration: underline;
 }
 
