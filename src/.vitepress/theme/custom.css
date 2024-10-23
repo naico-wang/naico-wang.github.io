@@ -17,24 +17,35 @@
   color: #11252b;
 }
 
+.VPHero.has-image .tagline {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 6px;
+}
+
 .VPImage.image-src {
   width: 260px;
   border-radius: 50%;
 }
 
 @media (min-width: 960px) {
+  .VPHero.has-image .text {
+    font-size: 36px;
+  }
+  .VPHero.has-image.VPHomeHero {
+    padding-top: 160px;
+  }
   .VPHero.has-image .container .main {
     max-width: 680px;
   }
-}
-@media (min-width: 960px) {
   .image .image-container {
     transform: none;
   }
 }
 
-@media (min-width: 768px) {
-  .VPContent.is-home .VPHome[data-v-11bf3ff9] {
-    margin-bottom: 98px;
+@media (min-width: 640px) {
+  .VPHero.has-image .text {
+    font-size: 36px;
   }
 }
+
