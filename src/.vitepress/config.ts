@@ -52,7 +52,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/', activeMatch: '' },
       { text: '文章列表', link: '/posts', activeMatch: '/posts' },
-      { text: '架构', link: '/architect', activeMatch: '/architect' },
+      { text: '架构基础', link: '/architect', activeMatch: '/architect' },
       { text: '开发笔记', link: '/development', activeMatch: '/development' },
       { text: '算法与数据结构', link: '/algorithm', activeMatch: '/algorithm' },
       { text: '设计模式', link: '/pattern', activeMatch: '/pattern' },

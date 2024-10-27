@@ -14,7 +14,7 @@ hero:
     text: 文章列表
     link: /posts
   - theme: alt
-    text: 架构
+    text: 架构基础
     link: /architect
   - theme: alt
     text: 开发笔记

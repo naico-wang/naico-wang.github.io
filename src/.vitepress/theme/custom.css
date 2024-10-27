@@ -20,6 +20,10 @@
   --vp-c-brand-3: var(--vp-c-green-3)
 }
 
+.action .VPButton.medium {
+  padding: 0 15px;
+}
+
 .VPHero.has-image .text {
   color: #11252b;
 }
