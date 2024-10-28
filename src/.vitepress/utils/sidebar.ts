@@ -50,7 +50,7 @@ const dynamicSideBar = generateSidebar([
     scanStartPath: 'architect',
     resolvePath: '/architect/',
     useTitleFromFrontmatter: true,
-    collapsed: false,
+    collapsed: true,
     useFolderTitleFromIndexFile: true
   }
 ])
