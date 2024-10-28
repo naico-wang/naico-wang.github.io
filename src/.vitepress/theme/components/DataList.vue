@@ -40,9 +40,16 @@ function goToPage(page) {
 .site-title {
   font-size: 2rem;
   line-height: 2;
-  padding: 20px 0;
+  padding: 10px 0;
   font-weight: 700;
   text-align: center;
+}
+
+.total-count {
+  padding: 0 0.75rem 1rem;
+  font-size: 1rem;
+  text-align: right;
+  color: #222222;
 }
 
 .pagination {
@@ -118,7 +125,6 @@ function goToPage(page) {
 }
 .post-title a:hover {
   color: var(--vp-c-green-3);
-  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -158,6 +164,7 @@ function goToPage(page) {
 
 <template>
   <div class="site-title">本站文章索引</div>
+  <div class="total-count">● 总共{{ count }}篇</div>
   <div class="list">
     <article class="wrapper" v-for="(post, index) in currentPageArticles" :key="index">
       <div class="post-title">
