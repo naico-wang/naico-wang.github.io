@@ -11,6 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  --shiki-light: #eeeeee;
   /* overwrite color settings */
   --vp-button-brand-hover-bg: var(--vp-c-green-1);
   --vp-button-brand-bg: var(--vp-c-green-3);

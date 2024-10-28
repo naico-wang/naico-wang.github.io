@@ -10,7 +10,7 @@ category: 架构基础系列
 
 大型互联网架构设计要遵循四大原则：
 
-```wbs
+```plantuml
 @startmindmap
 + 大型互联网架构设计的四大原则
 ++ 高可用原则
@@ -55,7 +55,7 @@ category: 架构基础系列
 
 系统中某个单节点故障可能会引起级联故障。如下所示，当`D`服务因故障宕机时，就会造成`B`和`C`服务出现大量的交易失败和请求积压，问题会很快传遍所有依赖节点，造成大量业务功能无法使用甚至全面宕机。
 
-```wbs
+```plantuml
 @startmindmap
 + Service A
 ++ Service B
@@ -67,7 +67,7 @@ category: 架构基础系列
 
 如下图所示，服务`A`使用了**MQ**、**Redis**、**MongoDB**、**MySQL**多种中间件，都是单节点部署，当MongoDB节点因故障宕机后，就可能会导致服务A无法正常启动、核心功能丧失、失去服务能力。
 
-```wbs
+```plantuml
 @startmindmap
 + Nginx
 ++ Service A
@@ -93,7 +93,7 @@ category: 架构基础系列
 #### 1.什么是负载均衡架构？
 
 - 无冗余结构：
-  ```wbs
+  ```plantuml
   @startmindmap
   + 客户端
   ++[#red] 服务器
@@ -101,7 +101,7 @@ category: 架构基础系列
   ```
 
 - 负载均衡冗余结构
-  ```wbs
+  ```plantuml
   @startmindmap
   + 客户端
   ++ 负载设备
@@ -138,7 +138,7 @@ LVS和HAProxy的性能比Nginx强很多，因为LVS和HAProxy专门用于四层�
 
 LVS和HAProxy工作在第4层，而Nginx可以工作在第`4`层和第`7`层
 
-```wbs
+```plantuml
 @startmindmap
 + OSI七层网络模型
 ++[#lightgrey] 第七层 - 应用层
@@ -172,7 +172,7 @@ F5、Radware等硬负载设备，也是工作在四层网络之上，借助独�
 
 客户端请求到达负载设备，需要根据一定的算法决定分发给哪一个上游服务器，这个分发算法就是负载策略，如下图所示。
 
-```wbs
+```plantuml
 @startmindmap
 + 客户端
 ++ 负载策略

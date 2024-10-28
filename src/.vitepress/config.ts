@@ -28,11 +28,9 @@ export default defineConfig({
     },
     theme: 'material-theme-palenight',
     config: (md) => {
-      md.use(markdownItPlantuml);
       md.use(markdownItPlantuml, {
-        openMarker: '```wbs',
+        openMarker: '```plantuml',
         closeMarker: '```',
-        diagramName: 'wbs',
         imageFormat: 'svg',
       })
     }

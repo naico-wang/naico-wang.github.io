@@ -14,7 +14,7 @@ category: NodeJS/SSR
 
 Handle the authentication of users for web applications
 
-```wbs
+```plantuml
 *[#SkyBlue] Authentication
 ** passport
 ** express-session
@@ -26,7 +26,7 @@ Handle the authentication of users for web applications
 
 Restrict user actions according to various access control patterns
 
-```wbs
+```plantuml
 *[#SkyBlue] Authorization
 ** @casl/ability
 ** oso
@@ -38,7 +38,7 @@ Restrict user actions according to various access control patterns
 
 Run code benchmarks in Node.js and analyze results
 
-```wbs
+```plantuml
 *[#SkyBlue] Benchmarking
 ** benchmark
 ** tinybench
@@ -49,7 +49,7 @@ Run code benchmarks in Node.js and analyze results
 
 Write automated tests that run in real-world browser environments
 
-```wbs
+```plantuml
 *[#SkyBlue] Browser Testing
 ** puppeteer
 ** @playwright/test
@@ -64,7 +64,7 @@ Write automated tests that run in real-world browser environments
 
 Manage codebases containing multiple distinct projects (Monorepos)
 
-```wbs
+```plantuml
 *[#SkyBlue] Build Systems
 ** lerna
 ** nx
@@ -78,7 +78,7 @@ Manage codebases containing multiple distinct projects (Monorepos)
 
 Bundle an application's source code into a single file. Mostly used for frontend apps to minimize network requests
 
-```wbs
+```plantuml
 *[#SkyBlue] Bundlers
 ** webpack
 ** vite
@@ -92,7 +92,7 @@ Bundle an application's source code into a single file. Mostly used for frontend
 
 Analyze and visualize code complexity to help you refactor (legacy) codebases
 
-```wbs
+```plantuml
 *[#SkyBlue] Code Complexity
 ** plato
 ** code-complexity
@@ -105,7 +105,7 @@ Analyze and visualize code complexity to help you refactor (legacy) codebases
 
 Generate a visual graph of your code's internal dependencies
 
-```wbs
+```plantuml
 *[#SkyBlue] Code Graphs
 ** madge
 ** dependency-cruiser
@@ -115,7 +115,7 @@ Generate a visual graph of your code's internal dependencies
 
 Format code and fix problems before shipping to production
 
-```wbs
+```plantuml
 *[#SkyBlue] Code Linters & Formatters
 ** prettier
 ** eslint
@@ -130,7 +130,7 @@ Format code and fix problems before shipping to production
 
 Create interactive command line tools by asking for user input
 
-```wbs
+```plantuml
 *[#SkyBlue] Command Line Prompts
 ** inquirer
 ** prompts
@@ -142,7 +142,7 @@ Create interactive command line tools by asking for user input
 
 Create beautiful command line tools
 
-```wbs
+```plantuml
 *[#SkyBlue] Command Line Styling
 ** chalk
 ** colors
@@ -156,7 +156,7 @@ Create beautiful command line tools
 
 Use Node.js to create powerful command line applications
 
-```wbs
+```plantuml
 *[#SkyBlue] Command Line Utilities
 ** commander
 ** yargs
@@ -170,7 +170,7 @@ Use Node.js to create powerful command line applications
 
 Load environment variables and configure your applications
 
-```wbs
+```plantuml
 *[#SkyBlue] Configuration Management
 ** dotenv
 ** rc
@@ -183,7 +183,7 @@ Load environment variables and configure your applications
 
 Create and manage content seamlessly using Node.js-based CMS solutions
 
-```wbs
+```plantuml
 *[#SkyBlue] Content Management Systems
 ** @strapi/strapi
 ** ghost
@@ -198,7 +198,7 @@ Create and manage content seamlessly using Node.js-based CMS solutions
 
 Work with CSV files from Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] CSV Parsers
 ** papaparse
 ** csv-parse
@@ -213,7 +213,7 @@ Work with CSV files from Node.js
 
 A more intuitive approach to dates and times than the standard library
 
-```wbs
+```plantuml
 *[#SkyBlue] Date & Time
 **[#pink] moment (Deprecated)
 ** dayjs
@@ -225,7 +225,7 @@ A more intuitive approach to dates and times than the standard library
 
 Review outdated dependencies and manually (or automatically) update them
 
-```wbs
+```plantuml
 *[#SkyBlue] Dependency Management
 ** renovate
 ** npm-check-updates
@@ -240,7 +240,7 @@ Review outdated dependencies and manually (or automatically) update them
 
 Send emails with ease from Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] Email Delivery
 ** nodemailer
 ** email-templates
@@ -252,7 +252,7 @@ Send emails with ease from Node.js
 
 Parse and write excel spreadsheets in Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] Excel Spreadsheets
 ** xlsx
 ** exceljs
@@ -263,7 +263,7 @@ Parse and write excel spreadsheets in Node.js
 
 Handle file uploads in Node.js applications
 
-```wbs
+```plantuml
 *[#SkyBlue] File Uploads
 ** multer
 ** formidable
@@ -276,7 +276,7 @@ Handle file uploads in Node.js applications
 
 Quickly develop full-stack applications with these batteries-included frameworks
 
-```wbs
+```plantuml
 *[#SkyBlue] Full-stack Frameworks
 ** @nestjs/core
 ** meteor
@@ -293,7 +293,7 @@ Quickly develop full-stack applications with these batteries-included frameworks
 
 Easily find and extract the data you need from HTML
 
-```wbs
+```plantuml
 *[#SkyBlue] HTML Scrapers
 ** jsdom
 ** cheerio
@@ -306,7 +306,7 @@ Easily find and extract the data you need from HTML
 
 Send network requests and fetch data from external APIs
 
-```wbs
+```plantuml
 *[#SkyBlue] HTTP Clients
 ** axios
 **[#pink] request (Deprecated)
@@ -321,7 +321,7 @@ Send network requests and fetch data from external APIs
 
 Minimalist frameworks based around HTTP verbs and routes
 
-```wbs
+```plantuml
 *[#SkyBlue] HTTP Frameworks
 ** express
 ** koa
@@ -339,7 +339,7 @@ Minimalist frameworks based around HTTP verbs and routes
 
 Mock network requests and test modules in isolation
 
-```wbs
+```plantuml
 *[#SkyBlue] HTTP Mocking
 ** superagent
 ** msw
@@ -352,7 +352,7 @@ Mock network requests and test modules in isolation
 
 Resize, crop and convert images to various formats
 
-```wbs
+```plantuml
 *[#SkyBlue] Image Processing
 ** sharp
 ** jimp
@@ -366,7 +366,7 @@ Resize, crop and convert images to various formats
 
 Schedule and process CPU intensive tasks off the main thread
 
-```wbs
+```plantuml
 *[#SkyBlue] Job Queues
 ** bull
 ** kue
@@ -381,7 +381,7 @@ Schedule and process CPU intensive tasks off the main thread
 
 Use JSON Schema language to validate user input and anything else
 
-```wbs
+```plantuml
 *[#SkyBlue] JSON Schema Validators
 ** ajv
 ** jsonschema
@@ -396,7 +396,7 @@ Use JSON Schema language to validate user input and anything else
 
 Sign and verify JWTs in Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] JSON Web Token (JWT)
 ** jsonwebtoken
 ** jose
@@ -409,7 +409,7 @@ Sign and verify JWTs in Node.js
 
 Log events to help you debug problems in your application
 
-```wbs
+```plantuml
 *[#SkyBlue] Logging
 ** winston
 ** pino
@@ -424,7 +424,7 @@ Log events to help you debug problems in your application
 
 MongoDB clients for Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] MongoDB Clients
 ** mongoose
 ** mongodb
@@ -434,7 +434,7 @@ MongoDB clients for Node.js
 
 Node.js drivers for MySQL
 
-```wbs
+```plantuml
 *[#SkyBlue] MySQL Clients
 ** mysql
 ** mysql2
@@ -444,7 +444,7 @@ Node.js drivers for MySQL
 
 Map SQL database tables to JavaScript objects
 
-```wbs
+```plantuml
 *[#SkyBlue] Object-relational Mapping (ORM)
 ** typeorm
 ** sequelize
@@ -459,7 +459,7 @@ Map SQL database tables to JavaScript objects
 
 Simple and intuitive validation with object schemas
 
-```wbs
+```plantuml
 *[#SkyBlue] Object Schema Validators
 ** validator
 ** zod
@@ -472,7 +472,7 @@ Simple and intuitive validation with object schemas
 
 Automate your package release workflow
 
-```wbs
+```plantuml
 *[#SkyBlue] Package Publishing
 ** semantic-release
 **[#pink] standard-version (Deprecated)
@@ -484,7 +484,7 @@ Automate your package release workflow
 
 Package a Node.js application into a single executable file
 
-```wbs
+```plantuml
 *[#SkyBlue] Package to Executable
 ** bun
 ** pkg
@@ -496,7 +496,7 @@ Package a Node.js application into a single executable file
 
 Generate PDF files with Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] PDF Generation
 ** jspdf
 ** pdfmake
@@ -509,7 +509,7 @@ Generate PDF files with Node.js
 
 Interact with PostgreSQL databases from Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] PostgreSQL Clients
 ** pg
 ** postgres
@@ -521,7 +521,7 @@ Interact with PostgreSQL databases from Node.js
 
 Programmatically generate QR codes in Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] QR Code Generation
 ** qrcode
 ** qrcode-generator
@@ -535,7 +535,7 @@ Programmatically generate QR codes in Node.js
 
 Write JavaScript to build SQL queries
 
-```wbs
+```plantuml
 *[#SkyBlue] Query Builders
 ** knex
 ** kysely
@@ -545,7 +545,7 @@ Write JavaScript to build SQL queries
 
 Generate random data to test your application
 
-```wbs
+```plantuml
 *[#SkyBlue] Random Data Generation
 ** @faker-js/faker
 ** chance
@@ -558,7 +558,7 @@ Generate random data to test your application
 
 Redis clients for Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] Redis Clients
 ** redis
 ** ioredis
@@ -568,7 +568,7 @@ Redis clients for Node.js
 
 Run tasks on a schedule
 
-```wbs
+```plantuml
 *[#SkyBlue] Scheduling
 ** cron
 ** node-schedule
@@ -581,7 +581,7 @@ Run tasks on a schedule
 
 Execute shell commands from Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] Shell Execution
 ** execa
 ** zx
@@ -592,7 +592,7 @@ Execute shell commands from Node.js
 
 Node.js drivers for SQLite
 
-```wbs
+```plantuml
 *[#SkyBlue] SQLite Clients
 ** sqlite3
 ** better-sqlite3
@@ -602,7 +602,7 @@ Node.js drivers for SQLite
 
 Serve a statically generated site on localhost
 
-```wbs
+```plantuml
 *[#SkyBlue] Static Servers
 ** http-server
 ** serve
@@ -615,7 +615,7 @@ Serve a statically generated site on localhost
 
 Render dynamic HTML output
 
-```wbs
+```plantuml
 *[#SkyBlue] Template Engines
 ** handlebars
 ** pug
@@ -629,7 +629,7 @@ Render dynamic HTML output
 
 Frameworks to help you write automated tests
 
-```wbs
+```plantuml
 *[#SkyBlue] Test Frameworks
 ** jest
 ** mocha
@@ -643,7 +643,7 @@ Frameworks to help you write automated tests
 
 Crawl and scrape entire websites using Node.js
 
-```wbs
+```plantuml
 *[#SkyBlue] Web Scraping Frameworks
 ** crawlee
 ** x-ray

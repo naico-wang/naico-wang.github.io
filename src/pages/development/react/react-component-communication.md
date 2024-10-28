@@ -6,7 +6,7 @@ category: React
 
 # React 七种组件通信方式总结
 
-```wbs
+```plantuml
 * React组件通信方式
 ** Props
 ** 回调函数

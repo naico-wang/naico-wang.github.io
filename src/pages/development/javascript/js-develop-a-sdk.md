@@ -39,7 +39,7 @@ SDK是 `Software Development Kit`（软件开发工具包）的缩写，`JSSDK`�
 
 ### 设计SDK要遵循的原则
 
-```wbs
+```plantuml
 * 设计原则
 ** 单一职责原则
 ** 最小可用、最少依赖性原则
