@@ -373,7 +373,7 @@ Renderer（渲染器） 工作的阶段被称为 commit 阶段。它会把 rende
 
 在[进程与线程](../../development/browser/browser-related)一文中我们介绍了进程和线程的关系。进程时应用程序创建的实例，而线程依托于进程
 
-再加上我们在[浏览器的渲染原理](../browser/browser-render-principle)中所说，浏览器渲染分为三个步骤，解析、渲染、绘制
+再加上我们在[浏览器的渲染原理](../../development/browser/browser-render-principle)中所说，浏览器渲染分为三个步骤，解析、渲染、绘制
 
 解析：HTML、CSS、JavaScript 被解析，HTML 被解析为 DOM 树，CSS 被解析成 CSS 规则数，JavaScript 通过 DOM API 和 CSSOM API 来操作  DOM Tree 和 CSS Rule Tree
 
