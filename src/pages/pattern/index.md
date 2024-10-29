@@ -1,19 +1,9 @@
 ---
-title: '设计模式系列文章'
+title: 设计模式系列文章
 exclude: true
 prev: false
 next: false
 ---
-
-<script setup>
-import { data } from '../../.vitepress/theme/page_pattern.data';
-</script>
-<style module>
-.desc {
-  font-size: 14px;
-  padding: 10px 0;
-}
-</style>
 
 # 经典设计模式系列文章
 
@@ -37,17 +27,13 @@ import { data } from '../../.vitepress/theme/page_pattern.data';
 
 ## 常用设计模式目录
 
-<div v-for="(categoryGroup, index) in data" :key="index">
-  <h4>{{ categoryGroup.category }} {{ categoryGroup.postCount }} 种</h4>
-  <ul>
-    <li v-for="(post, idx) in categoryGroup.data" :key="idx">
-      <h6><a :href="post.url">{{ post.title }}</a></h6>
-      <div :class="$style.desc">
-        {{ post.abstract }}
-      </div>
-    </li>
-  </ul>
-</div>
+
+<script setup>
+import { data } from '../../.vitepress/theme/page_pattern.data';
+import SingleList from '../../.vitepress/theme/components/SingleList.vue';
+</script>
+
+<SingleList :data="data"></SingleList>
 
 
 

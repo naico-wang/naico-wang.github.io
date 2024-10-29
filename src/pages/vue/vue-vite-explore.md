@@ -1,7 +1,7 @@
 ---
 title: 深入了解Vite
 date: 2024-08-13
-category: Vue2/3
+category: Vue源码与进阶
 ---
 
 # 深入了解Vite

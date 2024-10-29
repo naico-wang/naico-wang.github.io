@@ -1,7 +1,7 @@
 ---
 title: React 组件通信方式总结
 date: 2024-08-11
-category: React
+category: React进阶
 ---
 
 # React 七种组件通信方式总结

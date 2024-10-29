@@ -1,7 +1,7 @@
 ---
-title: 手把手教你在vue项目中优雅地封装axios
+title: 在vue项目中优雅地封装axios
 date: 2024-09-23
-category: Vue2/3
+category: Vue源码与进阶
 ---
 
 # 手把手教你在vue项目中优雅地封装axios

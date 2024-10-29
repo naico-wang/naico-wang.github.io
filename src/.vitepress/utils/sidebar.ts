@@ -43,7 +43,15 @@ const dynamicSideBar = generateSidebar([
     collapsed: false,
     useFolderTitleFromIndexFile: true,
     rootGroupText: '经典设计模式'
-
+  },
+  {
+    documentRootPath: 'src/pages',
+    scanStartPath: 'vue',
+    resolvePath: '/vue/',
+    useTitleFromFrontmatter: true,
+    collapsed: false,
+    useFolderTitleFromIndexFile: true,
+    rootGroupText: 'Vue源码与进阶'
   },
   {
     documentRootPath: 'src/pages',
@@ -51,6 +59,14 @@ const dynamicSideBar = generateSidebar([
     resolvePath: '/architect/',
     useTitleFromFrontmatter: true,
     collapsed: true,
+    useFolderTitleFromIndexFile: true
+  },
+  {
+    documentRootPath: 'src/pages',
+    scanStartPath: 'react',
+    resolvePath: '/react/',
+    useTitleFromFrontmatter: true,
+    collapsed: false,
     useFolderTitleFromIndexFile: true
   }
 ])

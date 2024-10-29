@@ -1,7 +1,7 @@
 ---
 title: 10 种方案提升 React 应用的性能
 date: 2024-08-09
-category: React
+category: React进阶
 ---
 
 # 10 种方案提升 React 应用的性能

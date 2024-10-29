@@ -11,23 +11,20 @@ hero:
    alt: 膜蛤
  actions:
   - theme: brand
-    text: 文章列表
+    text: 文章导览
     link: /posts
-  - theme: alt
-    text: 架构基础
-    link: /architect
   - theme: alt
     text: 开发笔记
     link: /development
   - theme: alt
-    text: 算法与数据结构
-    link: /algorithm
-  - theme: alt
-    text: 设计模式
-    link: /pattern
-  - theme: alt
     text: 面试八股文
     link: /interview
+  - theme: alt
+    text: 深入 ● 技术与设计模式
+    link: /deepin
+  - theme: alt
+    text: 关于作者
+    link: /about
 #features:
 #  - icon:
 #      src: /icons/icon-logo.svg

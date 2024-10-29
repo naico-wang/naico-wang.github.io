@@ -1,7 +1,7 @@
 ---
 title: 阅读Vue3源码 - Spec语法
 date: 2024-08-14
-category: Vue2/3
+category: Vue源码与进阶
 ---
 
 # 阅读Vue3源码 - Spec语法

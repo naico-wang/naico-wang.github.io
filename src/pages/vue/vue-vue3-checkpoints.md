@@ -1,7 +1,7 @@
 ---
 title: 我认为的 Vue3 核心知识点
 date: 2024-08-13
-category: Vue2/3
+category: Vue源码与进阶
 ---
 
 # 我认为的 Vue3 核心知识点
