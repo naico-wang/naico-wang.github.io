@@ -52,7 +52,7 @@ const processDataWithCategory = (data) => {
   return Object.entries(
     data
       .filter(item => item.frontmatter.exclude !== true)
-      .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+      .sort((a, b) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date))
       .reduce((acc, item) => {
         const category = item.frontmatter.category;
 
