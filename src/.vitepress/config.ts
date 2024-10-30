@@ -26,7 +26,7 @@ export default defineConfig({
       infoLabel: '信息',
       detailsLabel: '详细信息'
     },
-    theme: 'material-theme-palenight',
+    theme: 'one-dark-pro',
     config: (md) => {
       md.use(markdownItPlantuml, {
         openMarker: '```plantuml',

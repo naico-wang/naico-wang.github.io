@@ -1,8 +1,8 @@
 {
   "type": "module",
   "devDependencies": {
-    "sass": "^1.80.4",
-    "vitepress": "^1.4.1",
+    "sass": "^1.80.5",
+    "vitepress": "^1.4.2",
     "vitepress-sidebar": "^1.28.0"
   },
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@giscus/vue": "^3.0.0",
-    "@types/node": "^22.8.1",
+    "@types/node": "^22.8.4",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-plantuml": "^1.4.1"
   }
