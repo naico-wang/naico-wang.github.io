@@ -25,6 +25,10 @@ sidebar: false
 - 数学公式显示使用的是`markdown-it-mathjax3`
   - Repo: [markdown-it-mathjax3](https://github.com/tani/markdown-it-mathjax3)
 
+## 友情链接
+
+- [少个分号](https://shaogefenhao.com/)
+
 ## 更多关于我的信息请查阅个人小程序
 
 ![小程序码](/icons/minip-qrcode.jpg)
