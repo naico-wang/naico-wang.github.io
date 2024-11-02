@@ -13,7 +13,7 @@ export default defineConfig({
   outDir: '../site',
   lastUpdated: false,
   cleanUrls: true,
-  appearance: 'force-auto',
+  // appearance: 'force-auto',
   sitemap: {
     hostname: 'https://naico.wang'
   },
@@ -26,7 +26,7 @@ export default defineConfig({
       infoLabel: '信息',
       detailsLabel: '详细信息'
     },
-    theme: 'one-dark-pro',
+    // theme: 'one-dark-pro',
     config: (md) => {
       md.use(markdownItPlantuml, {
         openMarker: '```plantuml',
