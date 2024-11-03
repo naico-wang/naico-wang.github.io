@@ -19,7 +19,7 @@ const color = ([, weight]) => weight > 2 ? '#255489' : weight > 1 ? '#602960': w
   padding-bottom: 20px;
   font-weight: 700;
   color: var(--vp-c-brand-1);
-  border-bottom: dashed 1px var(--vp-c-brand-1);
+  border-bottom: solid 1px var(--vp-c-brand-1);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

@@ -19,7 +19,7 @@ const goToPost = (e) => go(e)
   font-weight: 700;
   padding-bottom: 20px;
   color: var(--vp-c-brand-1);
-  border-bottom: dashed 1px var(--vp-c-brand-1);
+  border-bottom: solid 1px var(--vp-c-brand-1);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
