@@ -1,6 +1,19 @@
 const documentRootPath = 'src/pages';
 
-const getMultiFolderSidebarSettings = (collapsed = true) => {
+type SideBarConfig = {
+  documentRootPath?: string,
+  scanStartPath?: string,
+  resolvePath?: string,
+  useTitleFromFrontmatter?: boolean,
+  sortMenusByName?: boolean,
+  sortMenusByFrontmatterDate?: boolean,
+  sortMenusOrderByDescending?: boolean,
+  collapsed?: boolean,
+  useFolderTitleFromIndexFile?: boolean
+  rootGroupText?: string
+}
+
+const getMultiFolderSidebarSettings: SideBarConfig = (collapsed:boolean = true) => {
   return {
     useTitleFromFrontmatter: true,
     sortMenusByName: false,
@@ -11,7 +24,7 @@ const getMultiFolderSidebarSettings = (collapsed = true) => {
   }
 }
 
-const getSingleFolderSidebarSettings = (title) => {
+const getSingleFolderSidebarSettings: SideBarConfig = (title: string) => {
   return {
     useTitleFromFrontmatter: true,
     collapsed: false,
@@ -20,7 +33,7 @@ const getSingleFolderSidebarSettings = (title) => {
   }
 }
 
-export const sidebarConfig = [{
+export const sidebarConfig: SideBarConfig[] = [{
     documentRootPath,
     scanStartPath: 'development',
     resolvePath: '/development/',
