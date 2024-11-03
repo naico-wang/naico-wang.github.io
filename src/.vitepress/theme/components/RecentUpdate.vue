@@ -1,8 +1,11 @@
 <script setup>
 import { data } from '../page_all.data';
+import { useRouter } from 'vitepress';
 
+const { go } = useRouter();
 const { posts, count } = data
 const articleData = posts.slice(0,10)
+const goToPost = (e) => go(e)
 </script>
 
 <style scoped>
@@ -29,45 +32,21 @@ const articleData = posts.slice(0,10)
 .item-list {
   padding: 0;
   margin: 0;
-  list-style-position: outside;
-  list-style-type: circle;
+  list-style: none;
 }
 
 .item {
   position: relative;
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 15px;
   font-size: 16px;
   line-height: 1.2;
+  color: var(--vp-c-brand-1);
+  cursor: pointer;
+  transition: font-weight .1s;
+  //background-color: var(--vp-c-brand-1);
 
-  & .item-title {
-    display: flex;
-    align-items: center;
-
-    & a {
-      text-decoration: none;
-    }
-
-    & a:hover {
-      text-decoration: underline;
-    }
-    & .item-tag {
-      color: #ffffff;
-      background-color: var(--vp-c-brand-1);
-      padding: 2px 5px;
-      border-radius: 4px;
-      font-size: 10px;
-    }
-
-    & .item-link {
-      margin-left: 10px;
-    }
-  }
-
-  & .item-date {
-    font-size: 12px;
+  &:hover {
+    font-weight: 700;
   }
 }
 
@@ -75,14 +54,6 @@ const articleData = posts.slice(0,10)
   .title {
     font-size: 24px;
     line-height: 1.2;
-  }
-}
-
-@media (740px <= width <= 1170px) {
-  .item {
-    & .item-date {
-      display: none;
-    }
   }
 }
 </style>
@@ -94,14 +65,8 @@ const articleData = posts.slice(0,10)
       <div class="count">总计{{ count }}篇</div>
     </div>
     <ul class="item-list" v-for="(post, index) in articleData">
-      <li class="item" :key="index">
-        <div class="item-title">
-          <span class="item-tag">{{ post.category }}</span>
-          <span class="item-link">
-            <a :href="post.url">{{ post.title }}</a>
-          </span>
-        </div>
-        <div class="item-date">{{ post.date }}</div>
+      <li class="item" :key="index" v-on:click="goToPost(post.url)">
+        【{{ post.category }}】— {{ post.title }}
       </li>
     </ul>
   </div>
