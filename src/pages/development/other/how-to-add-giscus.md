@@ -1,6 +1,7 @@
 ---
 title: 为VitePress添加评论系统
 date: 2024-06-30
+category: 杂七杂八
 ---
 
 # 为VitePress添加Giscus评论系统

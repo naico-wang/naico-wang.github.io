@@ -30,7 +30,7 @@ const goToPost = (e) => go(e)
 }
 
 .scroll-container {
-  max-height: 320px;
+  max-height: 350px;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }

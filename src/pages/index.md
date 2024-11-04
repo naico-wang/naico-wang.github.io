@@ -5,7 +5,7 @@ title: '奶一口智库'
 hero:
  name: 奶一口智库
  text: 做最好的自己
- tagline: Naico (Hongyu) Wang
+# tagline: Naico (Hongyu) Wang
  image:
    src: /icons/icon-avatar.png
    alt: 膜蛤

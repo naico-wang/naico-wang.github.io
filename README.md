@@ -36,7 +36,7 @@ For more configuration and usage, please refer to VitePress official website.
 
 ## How To Add Discussion using Giscus?
 
-Please refer to this doc: [Add giscus to VitePress](https://naico.wang/blog/%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/how-to-add-giscus)
+Please refer to this doc: [Add giscus to VitePress](https://naico.wang/development/other/how-to-add-giscus)
 
 ## Contact Me
 
