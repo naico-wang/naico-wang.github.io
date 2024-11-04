@@ -3,21 +3,17 @@
 .layout-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
 }
 
 .aside {
   width: 45%;
-  padding: 20px;
-  border: solid 1px var(--vp-button-brand-hover-bg);
-  border-radius: 10px;
+  padding: 10px;
 }
 
 .main {
   flex: 1;
-  padding: 20px;
-  border: solid 1px var(--vp-button-brand-hover-bg);
-  border-radius: 10px;
+  padding: 10px;
 }
 
 @media (max-width: 740px) {

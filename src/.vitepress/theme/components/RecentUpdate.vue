@@ -4,7 +4,7 @@ import { useRouter } from 'vitepress';
 
 const { go } = useRouter();
 const { posts, count } = data
-const articleData = posts.slice(0,10)
+const articleData = posts.slice(0,20)
 const goToPost = (e) => go(e)
 </script>
 
@@ -29,6 +29,16 @@ const goToPost = (e) => go(e)
   }
 }
 
+.scroll-container {
+  max-height: 320px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 .item-list {
   padding: 0;
   margin: 0;
@@ -38,12 +48,13 @@ const goToPost = (e) => go(e)
 .item {
   position: relative;
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   color: var(--vp-c-brand-1);
   cursor: pointer;
   transition: font-weight .1s;
-  //background-color: var(--vp-c-brand-1);
+  border-bottom: dashed 1px #222222;
+  padding-bottom: 10px;
 
   &:hover {
     font-weight: 700;
@@ -64,11 +75,13 @@ const goToPost = (e) => go(e)
       <div>● 最近更新</div>
       <div class="count">总计{{ count }}篇</div>
     </div>
-    <ul class="item-list" v-for="(post, index) in articleData">
-      <li class="item" :key="index" v-on:click="goToPost(post.url)">
-        【{{ post.category }}】— {{ post.title }}
-      </li>
-    </ul>
+    <div class="scroll-container">
+      <ul class="item-list" v-for="(post, index) in articleData">
+        <li class="item" :key="index" v-on:click="goToPost(post.url)">
+          [{{ post.category }}] · {{ post.title }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
