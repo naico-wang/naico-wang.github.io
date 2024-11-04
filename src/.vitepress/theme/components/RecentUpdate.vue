@@ -30,7 +30,7 @@ const goToPost = (e) => go(e)
 }
 
 .scroll-container {
-  max-height: 350px;
+  max-height: 400px;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -49,14 +49,15 @@ const goToPost = (e) => go(e)
   position: relative;
   margin-top: 15px;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 18px;
   color: var(--vp-c-brand-1);
   cursor: pointer;
   transition: font-weight .1s;
-  border-bottom: dashed 1px #222222;
+  border-bottom: dashed 1px var(--vp-c-brand-1);
   padding-bottom: 10px;
 
   &:hover {
+    font-size: 16px;
     font-weight: 700;
   }
 }
