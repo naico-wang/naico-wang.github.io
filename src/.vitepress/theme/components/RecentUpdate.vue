@@ -46,8 +46,14 @@ const goToPost = (e) => go(e)
           padding: 15px 20px;
           border: solid 1px #efefef;
           border-radius: 6px;
-          color: #ffffff;
-          background-color: var(--vp-c-brand-3);
+          background-color: #efefef;
+          color: #222222;
+
+          &:hover {
+            color: #ffffff;
+            background-color: var(--vp-c-brand-3);
+            transition: background-color 0.5s;
+          }
 
           & .title {
             font-size: 15px;
@@ -91,6 +97,27 @@ const goToPost = (e) => go(e)
     & .module-title {
       font-size: 24px;
       line-height: 1.2;
+    }
+  }
+}
+@media (max-width: 1220px) and (min-width: 1000px) {
+  .container {
+    & .scroll-container {
+      min-height: 500px;
+    }
+  }
+}
+@media (max-width: 1000px) and (min-width: 880px) {
+  .container {
+    & .scroll-container {
+      min-height: 600px;
+    }
+  }
+}
+@media (max-width: 880px) and (min-width: 740px) {
+  .container {
+    & .scroll-container {
+      min-height: 700px;
     }
   }
 }

@@ -7,12 +7,15 @@
 }
 
 .aside {
-  width: 45%;
+  width: 50%;
   padding: 10px;
 }
 
 .main {
   flex: 1;
+  padding: 10px;
+}
+.layout-bottom {
   padding: 10px;
 }
 
@@ -34,6 +37,9 @@
     <main class="main">
       <slot name="main"></slot>
     </main>
+  </div>
+  <div class="layout-bottom">
+    <slot name="bottom"></slot>
   </div>
 </template>
 

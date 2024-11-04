@@ -3,7 +3,7 @@ import VueWordCloud from '../../utils/wordcloud.mjs'
 import { data } from '../page_wordcloud.data';
 
 const wordCloudData = data.map(({ category, postCount }) => ([category, postCount % 5]))
-const style = "height: 400px; width: 100%;"
+const style = "height: 380px; width: 100%; margin-top: 20px;"
 const font = 'Inter'
 const fontStyle = 'italic'
 const ratio = 0
@@ -13,24 +13,18 @@ const color = ([, weight]) => weight > 2 ? '#255489' : weight > 1 ? '#602960': w
 </script>
 
 <style scoped>
-.title {
+.module-title {
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.5;
+  padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 700;
   color: var(--vp-c-brand-1);
   border-bottom: solid 1px var(--vp-c-brand-1);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.count {
-  font-size: 12px;
 }
 
 @media (max-width: 740px) {
-  .title {
+  .module-title {
     font-size: 24px;
     line-height: 1.2;
   }
@@ -38,20 +32,20 @@ const color = ([, weight]) => weight > 2 ? '#255489' : weight > 1 ? '#602960': w
 </style>
 
 <template>
-  <div class="title">
-    <div>● 智库词云</div>
-    <div class="count">总计{{ data.length }}个关键词</div>
+  <div class="module-wrapper">
+    <div class="module-title">● 智库词云</div>
+    <VueWordCloud
+      :animation-duration="duration"
+      :words="wordCloudData"
+      :style="style"
+      :color="color"
+      :font-size-ratio="ratio"
+      :font-style="fontStyle"
+      :font-family="font"
+      :spacing = spacing
+      font-weight="bold"
+    />
   </div>
-  <VueWordCloud
-    :animation-duration="duration"
-    :words="wordCloudData"
-    :style="style"
-    :color="color"
-    :font-size-ratio="ratio"
-    :font-style="fontStyle"
-    :font-family="font"
-    :spacing = spacing
-    font-weight="bold"
-  />
+
 </template>
 

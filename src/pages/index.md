@@ -42,8 +42,9 @@ hero:
 
 <script setup>
 import Layout from '../.vitepress/theme/components/Layout.vue';
-import WordCloud from '../.vitepress/theme/components/WordCloud.vue';
+import CategoryList from '../.vitepress/theme/components/CategoryList.vue';
 import RecentUpdate from '../.vitepress/theme/components/RecentUpdate.vue';
+import WordCloud from '../.vitepress/theme/components/WordCloud.vue';
 </script>
 
 <Layout>
@@ -51,6 +52,9 @@ import RecentUpdate from '../.vitepress/theme/components/RecentUpdate.vue';
     <RecentUpdate></RecentUpdate>
   </template>
   <template v-slot:main>
+    <CategoryList></CategoryList>
+  </template>
+  <template v-slot:bottom>
     <WordCloud></WordCloud>
   </template>
 </Layout>
