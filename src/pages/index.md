@@ -7,7 +7,7 @@ hero:
  text: 做最好的自己
 # tagline: Naico (Hongyu) Wang
  image:
-   src: /icons/icon-avatar.png
+   src: /icons/icon-avatar.jpg
    alt: 膜蛤
  actions:
   - theme: brand
