@@ -48,7 +48,8 @@ export const siteConfig = {
     },
     returnToTopLabel: '回顶部',
     sidebarMenuLabel: '菜单',
-    externalLinkIcon: true
+    externalLinkIcon: true,
+    metaChunk: true
   },
   vite: {
     css: {
