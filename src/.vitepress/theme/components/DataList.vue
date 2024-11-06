@@ -3,12 +3,13 @@ import { ref, computed } from 'vue'
 import { data } from '../page_all.data'
 import { useRouter } from 'vitepress';
 
+const { go } = useRouter();
 const { posts, count } = data
 
 const currentPage = ref(1)
 const pageSize = 30
 
-const goToPost = (e) => useRouter().go(e)
+const goToPost = (e) => go(e)
 
 const totalPages = computed(() => Math.ceil(posts.length / pageSize))
 
