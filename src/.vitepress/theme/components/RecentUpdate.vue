@@ -130,8 +130,8 @@ const goToPost = (e) => go(e)
       <div class="count">总计{{ count }}篇</div>
     </div>
     <div class="scroll-container">
-      <ul class="item-list" v-for="(post, index) in articleData">
-        <li class="item" :key="index" v-on:click="goToPost(post.url)">
+      <ul class="item-list">
+        <li class="item" v-for="(post, index) in articleData" :key="index" v-on:click="goToPost(post.url)">
           <div class="item-wrap">
             <div class="title">{{ post.title }}</div>
             <div class="desc">
