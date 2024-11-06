@@ -122,6 +122,15 @@ function goToPage(page) {
           color: #ffffff;
           background-color: var(--vp-c-brand-3);
           transition: background-color 0.5s;
+
+          & .desc{
+            & .category {
+              background-image: url("/icons/icon-tag-active.svg");
+            }
+            & .date {
+              background-image: url("/icons/icon-date-active.svg");
+            }
+          }
         }
 
         & .title {
@@ -137,17 +146,17 @@ function goToPage(page) {
           align-items: center;
 
           & .category {
-            padding-left: 20px;
+            padding-left: 22px;
             font-size: 12px;
-            background: url("/icons/icon-project.svg") left center no-repeat transparent;
-            background-size: 16px;
+            background: url("/icons/icon-tag.svg") left 2px no-repeat transparent;
+            background-size: 18px;
             font-weight: 700;
           }
           & .date {
-            padding-left: 20px;
+            padding-left: 22px;
             font-size: 12px;
-            background: url("/icons/icon-program.svg") left center no-repeat;
-            background-size: 16px;
+            background: url("/icons/icon-date.svg") left 2px no-repeat;
+            background-size: 18px;
             font-weight: 700;
           }
         }
