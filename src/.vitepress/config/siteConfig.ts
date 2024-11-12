@@ -12,7 +12,7 @@ export const siteConfig = {
   outDir: '../site',
   lastUpdated: false,
   cleanUrls: true,
-  // appearance: 'force-auto',
+  appearance: 'force-auto',
   sitemap: {
     hostname: 'https://naico.wang'
   },
