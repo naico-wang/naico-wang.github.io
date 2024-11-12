@@ -2,14 +2,23 @@
 import VueWordCloud from '../../utils/wordcloud.mjs'
 import { data } from '../page_wordcloud.data';
 
-const wordCloudData = data.map(({ category, postCount }) => ([category, postCount % 5]))
+const wordCloudData = data.map(({ category, postCount }) => ([category, category === '算法题解' ? postCount - 70 : postCount]))
+console.log(wordCloudData)
 const style = "height: 380px; width: 100%; margin-top: 20px;"
 const font = 'Inter'
 const fontStyle = 'italic'
 const ratio = 0
 const spacing = 0.5
 const duration = 500
-const color = ([, weight]) => weight > 2 ? '#255489' : weight > 1 ? '#602960': weight > 0 ? '#155f3e' : '#3b8eed';
+const color = ([, weight]) => {
+  switch (true) {
+    case weight > 30: return '#255489';
+    case weight > 20: return '#602960';
+    case weight > 10: return '#155f3e';
+    case weight > 5: return '#b8272c';
+    default: return '#3451b2';
+  }
+};
 </script>
 
 <style scoped>
