@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: page
 title: 全站导航
 aside: false
 ---

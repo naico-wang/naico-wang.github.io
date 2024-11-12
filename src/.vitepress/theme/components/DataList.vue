@@ -42,7 +42,9 @@ function goToPage(page) {
 
 <style lang="scss" scoped>
 .post-list {
-  padding: 0 20px;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 .site-title {
   font-size: 2rem;
@@ -62,31 +64,31 @@ function goToPage(page) {
 .pagination {
   text-align: center;
   margin-top: 20px;
-}
 
-.pagination button {
-  margin: 0 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  border: solid 1px #efefef;
-  color: #222222;
-  font-size: 12px;
-}
+  & button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: solid 1px #efefef;
+    color: #222222;
+    font-size: 12px;
 
-.pagination button:hover {
-  background-color: var(--vp-c-green-3);
-  color: #ffffff;
-}
+    & :hover {
+      background-color: var(--vp-c-green-3);
+      color: #ffffff;
+    }
 
-.pagination button.active {
-  font-weight: bold;
-  background-color: var(--vp-c-green-3);
-  color: #ffffff;
-}
+    &.active {
+      font-weight: bold;
+      background-color: var(--vp-c-green-3);
+      color: #ffffff;
+    }
 
-.pagination button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
 }
 
 .total-pages {
@@ -95,71 +97,60 @@ function goToPage(page) {
 }
 
 .list {
-  padding: 10px;
-  border: solid 1px #efefef;
-  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 
-  & .item-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  & .item {
+    cursor: pointer;
 
-    & .item {
-      margin-top: 15px;
-      cursor: pointer;
+    & .item-wrap {
+      padding: 15px 20px;
+      border: solid 1px #efefef;
+      border-radius: 6px;
+      background-color: #efefef;
+      color: #222222;
 
-      &:first-child {
-        margin-top: 5px;
-      }
+      &:hover {
+        color: #ffffff;
+        background-color: var(--vp-c-brand-3);
+        transition: background-color 0.5s;
 
-      & .item-wrap {
-        padding: 15px 20px;
-        border: solid 1px #efefef;
-        border-radius: 6px;
-        background-color: #efefef;
-        color: #222222;
-
-        &:hover {
-          color: #ffffff;
-          background-color: var(--vp-c-brand-3);
-          transition: background-color 0.5s;
-
-          & .desc{
-            & .category {
-              background-image: url("/icons/icon-tag-active.svg");
-            }
-            & .date {
-              background-image: url("/icons/icon-date-active.svg");
-            }
-          }
-        }
-
-        & .title {
-          font-size: 15px;
-          line-height: 18px;
-          font-weight: 700;
-        }
-
-        & .desc {
-          margin-top: 10px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
+        & .desc{
           & .category {
-            padding-left: 22px;
-            font-size: 12px;
-            background: url("/icons/icon-tag.svg") left 2px no-repeat transparent;
-            background-size: 18px;
-            font-weight: 700;
+            background-image: url("/icons/icon-tag-active.svg");
           }
           & .date {
-            padding-left: 22px;
-            font-size: 12px;
-            background: url("/icons/icon-date.svg") left 2px no-repeat;
-            background-size: 18px;
-            font-weight: 700;
+            background-image: url("/icons/icon-date-active.svg");
           }
+        }
+      }
+
+      & .title {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 700;
+      }
+
+      & .desc {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .category {
+          padding-left: 22px;
+          font-size: 12px;
+          background: url("/icons/icon-tag.svg") left 2px no-repeat transparent;
+          background-size: 18px;
+          font-weight: 700;
+        }
+        & .date {
+          padding-left: 22px;
+          font-size: 12px;
+          background: url("/icons/icon-date.svg") left 2px no-repeat;
+          background-size: 18px;
+          font-weight: 700;
         }
       }
     }
@@ -174,6 +165,7 @@ function goToPage(page) {
   .list {
     margin-top: 20px;
     padding-top: 0;
+    grid-template-columns: 1fr;
   }
   .total-pages {
     display: none;
@@ -182,9 +174,9 @@ function goToPage(page) {
     font-size: 10px;
     padding: 5px 8px;
   }
-  .eclips {
-    display: none;
-  }
+  //.eclips {
+  //  display: none;
+  //}
 }
 </style>
 
@@ -193,17 +185,15 @@ function goToPage(page) {
     <div class="site-title">本站文章索引</div>
     <div class="total-count">● 总共{{ count }}篇</div>
     <div class="list">
-      <ul class="item-list">
-        <li class="item" v-for="(post, index) in currentPageArticles" :key="index" v-on:click="goToPost(post.url)">
-          <div class="item-wrap">
-            <div class="title">{{ post.title }}</div>
-            <div class="desc">
-              <span class="category">{{ post.category }}</span>
-              <span class="date">{{ post.date }}</span>
-            </div>
+      <article class="item" v-for="(post, index) in currentPageArticles" :key="index" v-on:click="goToPost(post.url)">
+        <div class="item-wrap">
+          <div class="title">{{ post.title }}</div>
+          <div class="desc">
+            <span class="category">{{ post.category }}</span>
+            <span class="date">{{ post.date }}</span>
           </div>
-        </li>
-      </ul>
+        </div>
+      </article>
     </div>
     <div class="pagination">
       <button @click="goToPage(1)" :disabled="currentPage === 1">首页</button>
