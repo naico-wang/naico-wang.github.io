@@ -13,7 +13,7 @@ type SideBarConfig = {
   rootGroupText?: string
 }
 
-const getMultiFolderSidebarSettings: SideBarConfig = (collapsed:boolean = true) => {
+const getMultiFolderSidebarSettings = (collapsed:boolean = true): SideBarConfig => {
   return {
     useTitleFromFrontmatter: true,
     sortMenusByName: false,
@@ -24,7 +24,7 @@ const getMultiFolderSidebarSettings: SideBarConfig = (collapsed:boolean = true) 
   }
 }
 
-const getSingleFolderSidebarSettings: SideBarConfig = (title: string) => {
+const getSingleFolderSidebarSettings = (title: string): SideBarConfig => {
   return {
     useTitleFromFrontmatter: true,
     collapsed: false,
