@@ -15,7 +15,7 @@
   flex: 1;
   padding: 10px;
 }
-.layout-bottom {
+.layout-center {
   padding: 10px;
 }
 
@@ -30,6 +30,9 @@
 </style>
 
 <template>
+  <div class="layout-center">
+    <slot name="bottom"></slot>
+  </div>
   <div class="layout-container">
     <aside class="aside">
       <slot name="aside"></slot>
@@ -38,8 +41,7 @@
       <slot name="main"></slot>
     </main>
   </div>
-  <div class="layout-bottom">
-    <slot name="bottom"></slot>
-  </div>
 </template>
 
+<script setup lang="ts">
+</script>

@@ -3,13 +3,11 @@ import VueWordCloud from '../../utils/wordcloud.mjs'
 import { data } from '../page_wordcloud.data';
 
 const wordCloudData = data.map(({ category, postCount }) => ([category, category === '算法题解' ? postCount - 70 : postCount]))
-console.log(wordCloudData)
-const style = "height: 380px; width: 100%; margin-top: 20px;"
+const style = "height: 260px; width: 100%; margin-top: 20px;"
 const font = 'Inter'
 const fontStyle = 'italic'
 const ratio = 0
-const spacing = 0.5
-const duration = 500
+const spacing = 0
 const color = ([, weight]) => {
   switch (true) {
     case weight > 30: return '#255489';
@@ -44,14 +42,13 @@ const color = ([, weight]) => {
   <div class="module-wrapper">
     <div class="module-title">● 智库词云</div>
     <VueWordCloud
-      :animation-duration="duration"
       :words="wordCloudData"
       :style="style"
       :color="color"
       :font-size-ratio="ratio"
       :font-style="fontStyle"
       :font-family="font"
-      :spacing = spacing
+      :spacing = "spacing"
       font-weight="bold"
     />
   </div>
