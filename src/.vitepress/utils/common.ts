@@ -9,9 +9,9 @@ export const formatDate = (raw: string): any => {
     time: +date || 0,
     string: date.toLocaleDateString('zh-CN', {
       year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }) || ''
+      month: '2-digit',
+      day: '2-digit'
+    }).replace(/\//g, '-') || ''
   }
 }
 

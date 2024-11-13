@@ -1,185 +1,183 @@
 <script setup>
 import { data } from '../page_all.data'
-import { useRouter } from 'vitepress';
 import { computed } from 'vue';
+import { useRouter } from 'vitepress';
 
 const { go } = useRouter();
-const { posts, count } = data
-
+const { posts } = data
 const sortedArticles = computed(() => {
   const grouped = {};
 
   posts.forEach((article) => {
-    const match = article.date.match(/^(\d{4})年(\d{1,2})月/);
+    const match = article.date.match(/^(\d{4})-(\d{1,2})/);
     if (match) {
-      const year = `${match[1]}年`;
-      const month = `${match[2]}月`;
+      const yearMonth = `${match[1]}年${match[2]}月`;
 
-      if (!grouped[year]) grouped[year] = {};
-      if (!grouped[year][month]) grouped[year][month] = [];
-      grouped[year][month].push(article);
+      if (!grouped[yearMonth]) grouped[yearMonth] = [];
+      grouped[yearMonth].push(article);
     }
   });
 
-  // 按年月排序
   const sortedGrouped = {};
   Object.keys(grouped)
     .sort((a, b) => b.localeCompare(a))
-    .forEach((year) => {
-      sortedGrouped[year] = {};
-      Object.keys(grouped[year])
-        .sort((a, b) => b.localeCompare(a))
-        .forEach((month) => {
-          sortedGrouped[year][month] = grouped[year][month];
-        });
+    .forEach((yearMonth) => {
+      sortedGrouped[yearMonth] = grouped[yearMonth];
     });
 
   return sortedGrouped;
 });
+const goToPost = (e) => go(e)
 </script>
 
 <style lang="scss" scoped>
-.post-list {
-  padding: 40px;
-  margin: 0 auto;
-  max-width: 900px;
-}
-.site-title {
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+
+h1 {
   font-size: 2rem;
+  font-weight: bold;
   line-height: 2;
-  padding: 10px 0;
-  font-weight: 700;
   text-align: center;
+  padding:30px 0 0 0;
 }
 
-.articles-tree {
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-  & .year-section {
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
 
-    & .year-title {
-      font-size: 32px;
-      line-height: 1.5;
-      font-weight: bold;
-      color: #444444;
+  &:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 3px;
+    background-color: var(--vp-c-brand-3);
+    margin-left: -1.5px;
+    left: 20px;
 
-      &:before {
-        content: '● ';
-      }
+    @media (min-width: 576px) {
+      left: 50%;
+    }
+  }
+
+  > li {
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 55px;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
     }
 
-    & .months {
-      margin-left: 15px;
+    .panel {
+      width: 100%;
+      float: left;
+      border-radius: 3px;
+      overflow:hidden;
+      position: relative;
+      background: #eeeeee;
+      box-shadow: 1px 2px 80px 0 rgba(#000000, 0.2);
 
-      & .month-section {
+      summary{
+        display: block;
+        user-select: none;
+        outline: none;
+        padding: 15px;
+        margin-bottom: 0;
+        transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition-property: margin, background;
+        font-weight: 600;
+        cursor: pointer;
+        border: solid 1px var(--vp-c-brand-1);
+        border-radius: 4px;
 
-        & .month-title {
-          color: #444444;
-          display: flex;
-          align-items: center;
-          font-size: 24px;
-          line-height: 2;
+        &::-webkit-details-marker { display:none; }
+
+        &:hover{
+          background: var(--vp-c-brand-3);
+          color: #ffffff;
+        }
+      }
+
+      &[open] summary{
+        color: #ffffff;
+        background-color: var(--vp-c-brand-3);
+        padding-bottom: 20px;
+      }
+
+      & .sub-list {
+        padding: 10px 20px;
+
+        & .item {
+          font-size: 12px;
           font-weight: bold;
-          padding: 15px 0 5px 30px;
-          border-left: dashed 1px #444444;
+          line-height: 2;
+          display: flex;
+          justify-content: flex-start;
 
-          &:after {
-            width: 25px;
-            height: 25px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E") center no-repeat;
-            display: inline-block;
-            content: '';
-            transform: rotate(90deg);
-          }
-        }
-
-        & .articles {
-          padding-left: 20px;
-          border-left: dashed 1px #444444;
-
-          & .ul {
-            padding-left: 20px;
-
-            & .li {
-              font-size: 16px;
-              line-height: 2.5;
-              padding-left: 20px;
-              border-left: solid 1px #444444;
-
-              & .date {
-                font-size: 14px;
-              }
-              & .category {
-                color: #ffffff;
-                padding: 2px 5px;
-                background: var(--vp-c-brand-3);
-                border-radius: 6px;
-                margin-left: 10px;
-                font-size: 12px;
-              }
-
-              & a,
-              & a:link,
-              & a:active {
-                color: #444444;
-              }
-
-              & a:hover {
-                font-weight: bold;
-                color: var(--vp-c-brand-1);
-                text-decoration: underline;
-                transition: all .1s;
-              }
-            }
+          &:hover {
+            color: var(--vp-c-brand-1);
           }
         }
       }
     }
-  }
-}
 
-@media (max-width: 600px) {
-  .site-title {
-    padding: 0;
-    font-size: 1.5rem;
-  }
-  .post-list {
-    padding: 20px 15px;
-    margin: 0 auto;
-    max-width: 700px;
-  }
-  .articles-tree {
+    @media (min-width: 576px) {
+      padding-left:0;
 
-    & .year-section {
-
-      & .year-title {
-        font-size: 18px;
+      .panel {
+        width: 50%;
       }
 
-      & .months {
-        margin-left: 8px;
-
-        & .month-section {
-
-          & .month-title {
-            font-size: 16px;
-            padding-left: 15px;
-          }
-
-          & .articles {
-            padding-left: 10px;
-
-            & .ul {
-
-              & .li {
-                font-size: 12px;
-
-                & .date,
-                & .category {
-                  display: none;
-                }
-              }
+      &:not(:nth-child(even)) {
+        .panel {
+          & .sub-list {
+            & .item {
+              flex-direction: row-reverse;
             }
           }
+        }
+        text-align: right;
+        padding-right: 90px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 90px;
+        > :nth-child(even) {
+          float: right;
+        }
+      }
+    }
+
+    > {
+      .icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 2.5em;
+        text-align: center;
+        position: absolute;
+        left: 20px;
+        margin-left: -25px;
+        background-color: #efefef;
+        z-index: 999;
+        border-radius: 50%;
+        font-family: Font Awesome\ 5 Free,serif;
+        color: var(--vp-c-brand-1);
+
+        &:before{ content: "\f017"; }
+
+        @media (min-width: 576px) {
+          left: 50%;
         }
       }
     }
@@ -188,28 +186,19 @@ const sortedArticles = computed(() => {
 </style>
 
 <template>
-  <div class="post-list">
-    <div class="site-title">本站时间线</div>
-    <div class="articles-tree">
-      <div v-for="(months, year) in sortedArticles" :key="year" class="year-section">
-        <div class="year-title">{{ year }}</div>
-        <div class="months">
-          <div v-for="(articles, month) in months" :key="month" class="month-section">
-            <div class="month-title">
-              <span>{{ month }}份</span>
-            </div>
-            <div class="articles">
-              <ul class="ul">
-                <li class="li" v-for="article in articles" :key="article.url">
-                  <span class="date">[{{ article.date }}] - </span>
-                  <span><a :href="article.url">{{ article.title }}</a></span>
-                  <span class="category">{{ article.category }}</span>
-                </li>
+  <div class="container">
+    <h1>本站时间线</h1>
+      <ul class="timeline">
+          <li class="timeline" v-for="(posts, month) in sortedArticles" :key="month">
+            <div class="icon done"></div>
+            <details class="panel">
+              <summary>{{ month }}</summary>
+              <ul class="sub-list">
+                <li class="item" v-for="(post, index) in posts" :key="index" v-on:click="goToPost(post.url)">{{ post.title }}</li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </details>
+          </li>
+
+      </ul>
   </div>
 </template>
