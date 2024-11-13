@@ -1,7 +1,7 @@
 {
   "type": "module",
   "devDependencies": {
-    "sass": "^1.80.6",
+    "sass": "^1.80.7",
     "vitepress": "^1.5.0",
     "vitepress-sidebar": "^1.29.0"
   },
