@@ -11,8 +11,8 @@ hero:
    alt: 膜蛤
  actions:
   - theme: brand
-    text: 文章导览
-    link: /posts
+    text: 时间线
+    link: /timeline
   - theme: alt
     text: 开发笔记
     link: /development

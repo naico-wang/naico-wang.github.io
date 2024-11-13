@@ -1,6 +1,12 @@
 export const navConfig = [
   { text: '首页', link: '/', activeMatch: '' },
-  { text: '文章导览', link: '/posts', activeMatch: '/posts' },
+  { text: '文章导览', activeMatch: '\\b(posts|timeline)\\b',
+    items:[{
+      text: '时间线', link: '/timeline', activeMatch: '/timeline'
+    }, {
+      text: '全部文章', link: '/posts', activeMatch: '/posts'
+    }
+  ]},
   { text: '开发笔记', link: '/development', activeMatch: '/development' },
   { text: '面试八股文', link: '/interview', activeMatch: '/interview' },
   { text: '深入 ● 技术与设计', activeMatch: '\\b(architect|algorithm|pattern|react)\\b',
