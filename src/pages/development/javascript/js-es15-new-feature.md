@@ -1,7 +1,7 @@
 ---
 title: ES15(2024) 中5个新JavaScript特性
 date: 2024-08-06
-category: ECMAScript
+category: JavaScript/TypeScript
 ---
 
 # ES15(2024) 中5个令人惊叹的新JavaScript特性

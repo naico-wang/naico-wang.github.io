@@ -1,7 +1,7 @@
 ---
 title: 理解JS中的Object.freeze()和Object.seal()
 date: 2024-08-15
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 理解JavaScript中的Object.freeze()和Object.seal()

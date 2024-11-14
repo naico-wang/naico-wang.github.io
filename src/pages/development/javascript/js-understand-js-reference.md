@@ -1,7 +1,7 @@
 ---
 title: JavaScript中的原始类型和引用类型
 date: 2024-09-11
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 如何理解JavaScript中的原始类型和引用类型

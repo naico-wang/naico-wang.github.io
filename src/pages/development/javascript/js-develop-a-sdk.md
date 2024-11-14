@@ -1,7 +1,7 @@
 ---
 title: 如何开发一款 JSSDK ？
 date: 2024-08-02
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 如何开发一款 JSSDK ？

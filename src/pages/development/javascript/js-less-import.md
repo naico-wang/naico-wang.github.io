@@ -1,7 +1,7 @@
 ---
 title: 优雅地减少 import 语句
 date: 2024-08-09
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 优雅地减少 import 语句

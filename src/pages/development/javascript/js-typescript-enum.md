@@ -1,7 +1,7 @@
 ---
 title: 在 TypeScript 中理解枚举
 date: 2024-09-30
-category: TypeScript
+category: JavaScript/TypeScript
 ---
 
 # 在 TypeScript 中理解枚举 | 强大而优雅的常量管理

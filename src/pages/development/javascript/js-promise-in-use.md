@@ -1,7 +1,7 @@
 ---
 title: 可视化看 Promise 的执行逻辑
 date: 2024-07-17
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 通过可视化彻底搞懂 Promise执行逻辑

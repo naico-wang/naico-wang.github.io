@@ -1,7 +1,7 @@
 ---
 title: 为什么 let 在 JavaScript/TypeScript 中是不必要的
 date: 2024-08-26
-category: TypeScript
+category: JavaScript/TypeScript
 ---
 
 # 为什么 let 在 JavaScript/TypeScript 中是不必要的

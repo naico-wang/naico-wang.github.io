@@ -1,7 +1,7 @@
 ---
 title: JavaScript迭代器
 date: 2024-08-15
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # JavaScript迭代器，助你更高效地处理异步编程

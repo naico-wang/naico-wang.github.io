@@ -11,7 +11,7 @@ const sortedArticles = computed(() => {
   posts.forEach((article) => {
     const match = article.date.match(/^(\d{4})-(\d{1,2})/);
     if (match) {
-      const yearMonth = `${match[1]}年${match[2]}月`;
+      const yearMonth = `${match[1]} 年 ${match[2]} 月`;
 
       if (!grouped[yearMonth]) grouped[yearMonth] = [];
       grouped[yearMonth].push(article);
@@ -31,19 +31,23 @@ const goToPost = (e) => go(e)
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
-
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  line-height: 2;
+  line-height: 2.5;
   text-align: center;
-  padding:30px 0 0 0;
+  padding-top:30px;
+  color: var(--vp-c-brand-1);
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 576px) {
+    padding: 0 50px;
+  }
 }
 
 .timeline {
@@ -66,11 +70,14 @@ h1 {
     }
   }
 
+
+
   > li {
     cursor: pointer;
     margin-bottom: 20px;
     position: relative;
     padding-left: 55px;
+    color: var(--vp-c-brand-1);
 
     &:after {
       content: "";
@@ -85,7 +92,7 @@ h1 {
       overflow:hidden;
       position: relative;
       background: #eeeeee;
-      box-shadow: 1px 2px 80px 0 rgba(#000000, 0.2);
+      box-shadow: 5px 5px 10px 0 rgba(#000000, 0.5);
 
       summary{
         display: block;
@@ -97,8 +104,8 @@ h1 {
         transition-property: margin, background;
         font-weight: 600;
         cursor: pointer;
-        border: solid 1px var(--vp-c-brand-1);
-        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 18px;
 
         &::-webkit-details-marker { display:none; }
 
@@ -111,20 +118,19 @@ h1 {
       &[open] summary{
         color: #ffffff;
         background-color: var(--vp-c-brand-3);
-        padding-bottom: 20px;
       }
 
       & .sub-list {
         padding: 10px 20px;
 
         & .item {
-          font-size: 12px;
           font-weight: bold;
-          line-height: 2;
+          line-height: 2.2;
           display: flex;
           justify-content: flex-start;
 
           &:hover {
+            text-decoration: underline;
             color: var(--vp-c-brand-1);
           }
         }
@@ -147,11 +153,11 @@ h1 {
           }
         }
         text-align: right;
-        padding-right: 90px;
+        padding-right: 15%;
       }
 
       &:nth-child(even) {
-        padding-left: 90px;
+        padding-left: 15%;
         > :nth-child(even) {
           float: right;
         }
@@ -171,10 +177,21 @@ h1 {
         background-color: #efefef;
         z-index: 999;
         border-radius: 50%;
-        font-family: Font Awesome\ 5 Free,serif;
         color: var(--vp-c-brand-1);
 
-        &:before{ content: "\f017"; }
+        &:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin: auto;
+          display: block;
+          content: '';
+          width: 30px;
+          height: 30px;
+          background: var(--vp-c-brand-3);
+          border-radius: 50%;
+        }
 
         @media (min-width: 576px) {
           left: 50%;
@@ -187,10 +204,10 @@ h1 {
 
 <template>
   <div class="container">
-    <h1>本站时间线</h1>
+    <h1>Time Line</h1>
       <ul class="timeline">
           <li class="timeline" v-for="(posts, month) in sortedArticles" :key="month">
-            <div class="icon done"></div>
+            <div class="icon"></div>
             <details class="panel">
               <summary>{{ month }}</summary>
               <ul class="sub-list">

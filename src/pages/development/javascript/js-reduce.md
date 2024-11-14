@@ -1,7 +1,7 @@
 ---
 title: 14个JS Reduce案例
 date: 2024-10-04
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 14个JavaScript代码片段，轻松掌握reduce进阶用法

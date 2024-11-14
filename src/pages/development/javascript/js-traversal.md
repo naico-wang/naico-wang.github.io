@@ -1,7 +1,7 @@
 ---
 title: 使用JavaScript遍历对象
 date: 2024-08-15
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 如何使用JavaScript遍历对象？

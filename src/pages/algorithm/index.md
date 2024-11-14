@@ -4,6 +4,7 @@ aside: false
 exclude: true
 prev: false
 next: false
+path: /algorithm
 ---
 
 # 算法与数据结构

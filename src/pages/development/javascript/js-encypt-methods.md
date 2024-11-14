@@ -1,7 +1,7 @@
 ---
 title: Web端常用加密方法小结
 date: 2024-07-03
-category: Web加解密
+category: JavaScript/TypeScript
 ---
 
 # Web端常用加密方法小结

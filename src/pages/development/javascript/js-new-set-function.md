@@ -1,7 +1,7 @@
 ---
 title: JS 中的 7 个新 Set 方法
 date: 2024-08-23
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # JavaScript 中的 7 个新 Set 方法

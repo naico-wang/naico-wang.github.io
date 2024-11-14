@@ -1,7 +1,7 @@
 ---
 title: 常用Monorepo工具横向对比
 date: 2024-07-03
-category: Monorepo
+category: JavaScript/TypeScript
 ---
 
 # 常用Monorepo工具横向对比

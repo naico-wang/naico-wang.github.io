@@ -1,7 +1,7 @@
 ---
 title: JSON.stringify鲜为人知的技巧
 date: 2024-08-15
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 掌握JavaScript的JSON.stringify鲜为人知的技巧，让前端开发更加高效和灵活

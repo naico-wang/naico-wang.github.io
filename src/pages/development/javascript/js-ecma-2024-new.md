@@ -1,7 +1,7 @@
 ---
 title: 2024 年 6 大 ECMAScript 功能
 date: 2024-10-11
-category: ECMAScript
+category: JavaScript/TypeScript
 ---
 
 # 每个开发人员都应了解的 2024 年 6 大 ECMAScript 功能

@@ -1,7 +1,7 @@
 ---
 title: Monorepo+pnpm 实战
 date: 2024-07-28
-category: Monorepo
+category: JavaScript/TypeScript
 ---
 
 # Monorepo+pnpm 实战

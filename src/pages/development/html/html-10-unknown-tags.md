@@ -1,7 +1,7 @@
 ---
 title: 十个几乎无人使用的罕见HTML标签
 date: 2024-08-12
-category: HTML
+category: HTML/CSS
 ---
 
 # 十个几乎无人使用的罕见HTML标签

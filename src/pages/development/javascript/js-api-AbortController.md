@@ -1,7 +1,7 @@
 ---
 title: 这个 JavaScript API - AbortController 比你想象中更强大！
 date: 2024-10-01
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 这个 JavaScript API - AbortController 比你想象中更强大！

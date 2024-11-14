@@ -1,7 +1,7 @@
 ---
 title: 算法思想 - 贪心思想
 date: 2024-10-19
-category: 算法题解
+category: Leetcode算法题解
 ---
 
 # Leetcode 题解 - 贪心思想

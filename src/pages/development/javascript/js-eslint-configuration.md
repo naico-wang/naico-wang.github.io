@@ -1,7 +1,7 @@
 ---
 title: ESLint Config 配置流程详解
 date: 2024-08-18
-category: ESLint
+category: JavaScript/TypeScript
 ---
 
 # ESLint Config 配置流程详解

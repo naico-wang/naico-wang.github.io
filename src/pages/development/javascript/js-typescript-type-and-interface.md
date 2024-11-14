@@ -1,7 +1,7 @@
 ---
 title: 深入理解 TypeScript 中类型别名与接口
 date: 2024-09-29
-category: TypeScript
+category: JavaScript/TypeScript
 ---
 
 # 深入理解TypeScript 2024中类型别名与接口的差异

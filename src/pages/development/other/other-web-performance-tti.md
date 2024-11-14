@@ -1,7 +1,7 @@
 ---
 title: 聚焦于 Web 性能指标 TTI
 date: 2024-09-20
-category: Web性能
+category: 杂七杂八
 ---
 
 # 聚焦于 Web 性能指标 TTI

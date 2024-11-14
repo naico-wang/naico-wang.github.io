@@ -1,7 +1,7 @@
 ---
 title: 这 6 个常见的前端开源库，你一定要知道！
 date: 2024-09-04
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 这 6 个常见的前端开源库，你一定要知道！

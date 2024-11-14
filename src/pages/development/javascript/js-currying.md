@@ -1,7 +1,7 @@
 ---
 title: 掌握 JavaScript 的柯里化，让代码更优雅
 date: 2024-08-07
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 掌握 JavaScript 的柯里化，让代码更优雅

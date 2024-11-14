@@ -1,7 +1,7 @@
 ---
 title: TypeScript 中的实用类型
 date: 2024-09-25
-category: TypeScript
+category: JavaScript/TypeScript
 ---
 
 # 了解 TypeScript 中的实用类型

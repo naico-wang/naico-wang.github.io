@@ -1,7 +1,7 @@
 ---
 title: JavaScript 运行机制 - Event Loop
 date: 2024-09-26
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # JavaScript 运行机制详解：再谈Event Loop

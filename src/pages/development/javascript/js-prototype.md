@@ -1,7 +1,7 @@
 ---
 title: JavaScript 原型与原型链
 date: 2024-08-15
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # JavaScript 原型与原型链

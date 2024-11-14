@@ -1,7 +1,7 @@
 ---
 title: 数据结构 - 数组与矩阵
 date: 2024-10-19
-category: 算法题解
+category: Leetcode算法题解
 ---
 
 # Leetcode 题解 - 数组与矩阵

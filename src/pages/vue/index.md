@@ -1,6 +1,7 @@
 ---
 title: Vue源码与进阶
 exclude: true
+path: /vue
 ---
 
 # 深入了解 Vue3

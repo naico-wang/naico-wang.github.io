@@ -1,7 +1,7 @@
 ---
 title: JavaScript 继承
 date: 2024-09-02
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 理解JavaScript原型继承和 instanceof

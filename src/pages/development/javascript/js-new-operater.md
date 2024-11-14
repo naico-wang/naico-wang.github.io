@@ -1,7 +1,7 @@
 ---
 title: JS新特性：'?='操作符
 date: 2024-10-09
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # JS新特性：'?='操作符助你告别bug！

@@ -1,7 +1,7 @@
 ---
 title: 禁止用户调试你的页面
 date: 2024-09-22
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 如何禁止用户调试你的页面？

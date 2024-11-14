@@ -1,7 +1,7 @@
 ---
 title: 一道题测试你对JavaScript类继承和静态方法的理解
 date: 2024-08-24
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 测一测你对JavaScript类继承和静态方法的理解

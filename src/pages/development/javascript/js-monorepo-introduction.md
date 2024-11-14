@@ -1,7 +1,7 @@
 ---
 title: Monorepo 体验
 date: 2024-07-02
-category: Monorepo
+category: JavaScript/TypeScript
 ---
 
 # 手把手建立一个Monorepo项目

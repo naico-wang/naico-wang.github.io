@@ -1,7 +1,7 @@
 ---
 title: 数组解构是如何降低 JavaScript 的运行速度
 date: 2024-09-28
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 数组解构是如何降低 JavaScript 的运行速度

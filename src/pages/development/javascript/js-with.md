@@ -1,7 +1,7 @@
 ---
 title: 理解 with 语句和嵌套对象
 date: 2024-08-28
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # 测测你对 with 语句和嵌套对象的理解

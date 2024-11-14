@@ -1,7 +1,7 @@
 ---
 title: JWT、JWS、JWE、JWA、JWK
 date: 2024-07-08
-category: Web加解密
+category: 杂七杂八
 ---
 
 # JWT、JWS、JWE、JWA、JWK简介及使用方法

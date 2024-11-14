@@ -1,7 +1,7 @@
 ---
 title: JavaScript 常用数组方法
 date: 2024-08-05
-category: JavaScript
+category: JavaScript/TypeScript
 ---
 
 # JavaScript 常用数组方法：提升你的开发效率
