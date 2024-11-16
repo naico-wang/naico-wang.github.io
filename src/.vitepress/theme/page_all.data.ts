@@ -7,7 +7,8 @@ const dirList = [
   './interview/**/*.md',
   './pattern/**/*.md',
   './react/**/*.md',
-  './vue/*.md'
+  './vue/*.md',
+  './onepic/*.md'
 ];
 
 export default getAllSiteData(dirList)

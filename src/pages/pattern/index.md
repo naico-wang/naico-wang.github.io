@@ -3,7 +3,6 @@ title: 设计模式系列文章
 exclude: true
 prev: false
 next: false
-path: /pattern
 ---
 
 # 经典设计模式系列文章

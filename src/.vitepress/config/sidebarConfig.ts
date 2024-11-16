@@ -50,6 +50,11 @@ export const sidebarConfig: SideBarConfig[] = [{
     ...getMultiFolderSidebarSettings()
   }, {
     documentRootPath,
+    scanStartPath: 'onepic',
+    resolvePath: '/onepic/',
+    ...getSingleFolderSidebarSettings('一张图读懂系列')
+  }, {
+    documentRootPath,
     scanStartPath: 'pattern',
     resolvePath: '/pattern/',
     ...getSingleFolderSidebarSettings('经典设计模式')

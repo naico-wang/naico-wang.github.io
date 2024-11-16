@@ -20,7 +20,7 @@ hero:
     text: 面试八股文
     link: /interview
   - theme: alt
-    text: 深入 ● 技术与设计模式
+    text: 专题系列文章
     link: /deepin
   - theme: alt
     text: 关于作者
