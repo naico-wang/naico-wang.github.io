@@ -3,7 +3,7 @@ import VueWordCloud from '../../utils/wordcloud.mjs'
 import { data } from '../page_wordcloud.data';
 
 const wordCloudData = data.map(({ category, postCount }) => ([category, postCount % 3 ]))
-const style = "height: 240px; width: 350px; margin: 0 auto;"
+const style = "height: 280px; width: 300px; margin: 0 auto;"
 const font = 'Inter'
 const fontStyle = ''
 const ratio = 0
