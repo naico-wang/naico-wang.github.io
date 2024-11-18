@@ -1,9 +1,13 @@
 <style lang="scss" scoped>
 .user-wrapper {
   padding: 20px 30px;
-  border: solid 1px var(--vp-c-brand-1);
+  border: solid 2px var(--vp-c-brand-1);
   border-radius: 10px;
   background-color: #f6f6f6;
+
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
 
   & .user-info {
     display: flex;
@@ -29,6 +33,12 @@
       line-height: 2;
       font-weight: bold;
       color: var(--vp-c-brand-1);
+
+      @media (max-width: 500px) {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-top: 10px;
+      }
     }
 
     & .menu {
@@ -54,8 +64,9 @@
 
         & li {
           position: relative;
-          padding: 5px 10px 5px 15px;
-          font-size: 14px;
+          text-align: center;
+          padding: 10px;
+          font-size: 16px;
           font-weight: bold;
           border-radius: 4px;
           color: var(--vp-c-white);
@@ -85,7 +96,7 @@
           <li v-on:click="goToPost('/interview')">面试八股文</li>
           <li v-on:click="goToPost('/pattern')">设计模式</li>
           <li v-on:click="goToPost('/architect')">架构基础</li>
-          <li v-on:click="goToPost('/algorithm')">算法与数据结构</li>
+          <li v-on:click="goToPost('/algorithm')">算法/数据结构</li>
         </ul>
       </div>
     </div>

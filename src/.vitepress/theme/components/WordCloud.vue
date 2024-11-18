@@ -14,7 +14,7 @@ const color = () => `rgb(${[ Math.round(Math.random() * 160) + 50, Math.round(Ma
 <style scoped>
 .module-wrapper {
   padding: 20px;
-  border: solid 1px var(--vp-c-brand-1);
+  border: solid 2px var(--vp-c-brand-1);
   border-radius: 10px;
   margin-top: 20px;
   background-color: #f6f6f6;

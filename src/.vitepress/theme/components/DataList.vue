@@ -103,13 +103,12 @@ function goToPage(page) {
 
   & .item {
     cursor: pointer;
-    background-color: #f6f6f6;
 
     & .item-wrap {
       padding: 15px 20px;
-      border: solid 1px var(--vp-c-brand-3);
+      border: solid 2px var(--vp-c-brand-1);
       border-radius: 6px;
-      color: #222222;
+      color: var(--vp-c-brand-1);
 
       &:hover {
         color: #ffffff;
