@@ -1,7 +1,6 @@
 <style lang="scss" scoped>
 .user-wrapper {
   padding: 20px 30px;
-  border: solid 2px var(--vp-c-brand-1);
   border-radius: 10px;
   background-color: #f6f6f6;
 
@@ -29,7 +28,7 @@
     }
 
     & .site-title {
-      font-size: 36px;
+      font-size: 32px;
       line-height: 2;
       font-weight: bold;
       color: var(--vp-c-brand-1);
@@ -88,7 +87,7 @@
   <div class="user-wrapper">
     <div class="user-info">
       <img class="user-avatar" alt="智库" src="/icons/icon-avatar.png" />
-      <div class="site-title">Naico 智库</div>
+      <div class="site-title">奶一口智库</div>
       <div class="menu">
         <ul>
           <li v-on:click="goToPost('/timeline')">时间线</li>

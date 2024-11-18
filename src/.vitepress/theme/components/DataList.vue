@@ -7,7 +7,7 @@ const { go } = useRouter();
 const { posts } = data
 
 const currentPage = ref(1)
-const pageSize = 10
+const pageSize = 9
 
 const goToPost = (e) => go(e)
 
@@ -69,7 +69,6 @@ function goToPage(page) {
     margin: 0 4px;
     padding: 0 5px;
     cursor: pointer;
-    border: solid 1px var(--vp-c-green-3);
     border-radius: 2px;
     color: var(--vp-c-brand-1);
     font-size: 12px;
@@ -100,7 +99,7 @@ function goToPage(page) {
 
 .list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 
   & .item {
@@ -108,29 +107,38 @@ function goToPage(page) {
 
     & .item-wrap {
       padding: 15px 20px;
-      border: solid 2px var(--vp-c-brand-1);
       border-radius: 6px;
       color: var(--vp-c-brand-1);
+      background-color: #f6f6f6;
+
 
       &:hover {
         color: #ffffff;
         background-color: var(--vp-c-brand-3);
         transition: background-color 0.3s;
 
-        & .desc{
-          & .category {
-            background-image: url("/icons/icon-tag-active.svg");
-          }
+        & .title {
+          background-image: url("/icons/icon-tag-active.svg");
+        }
+
+        & .desc {
           & .date {
             background-image: url("/icons/icon-date-active.svg");
+          }
+          & .category {
+            background-color: #f6f6f6;
+            color: var(--vp-c-brand-1);
           }
         }
       }
 
       & .title {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 1.5;
         font-weight: 700;
+        padding-left: 22px;
+        background: url("/icons/icon-tag.svg") left 2px no-repeat transparent;
+        background-size: 18px;
       }
 
       & .desc {
@@ -140,21 +148,27 @@ function goToPage(page) {
         align-items: center;
 
         & .category {
-          padding-left: 22px;
-          font-size: 14px;
-          background: url("/icons/icon-tag.svg") left 2px no-repeat transparent;
-          background-size: 18px;
-          font-weight: 700;
+          padding: 0 6px;
+          border-radius: 4px;
+          color: #ffffff;
+          background-color: var(--vp-c-brand-3);
+          font-size: 10px;
         }
         & .date {
           padding-left: 22px;
-          font-size: 14px;
+          font-size: 12px;
           background: url("/icons/icon-date.svg") left 2px no-repeat;
           background-size: 18px;
           font-weight: 700;
         }
       }
     }
+  }
+}
+
+@media (max-width: 880px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
