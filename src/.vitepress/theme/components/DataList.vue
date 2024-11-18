@@ -4,10 +4,10 @@ import { data } from '../page_all.data'
 import { useRouter } from 'vitepress';
 
 const { go } = useRouter();
-const { posts, count } = data
+const { posts } = data
 
 const currentPage = ref(1)
-const pageSize = 30
+const pageSize = 10
 
 const goToPost = (e) => go(e)
 
@@ -42,7 +42,7 @@ function goToPage(page) {
 
 <style lang="scss" scoped>
 .post-list {
-  padding: 40px;
+  padding: 20px 0;
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -99,22 +99,22 @@ function goToPage(page) {
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 20px;
 
   & .item {
     cursor: pointer;
+    background-color: #f6f6f6;
 
     & .item-wrap {
       padding: 15px 20px;
-      border: solid 1px #efefef;
+      border: solid 1px var(--vp-c-brand-3);
       border-radius: 6px;
-      background-color: #efefef;
       color: #222222;
 
       &:hover {
         color: #ffffff;
         background-color: var(--vp-c-brand-3);
-        transition: background-color 0.5s;
+        transition: background-color 0.3s;
 
         & .desc{
           & .category {
@@ -127,8 +127,8 @@ function goToPage(page) {
       }
 
       & .title {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 18px;
+        line-height: 1.5;
         font-weight: 700;
       }
 
@@ -140,14 +140,14 @@ function goToPage(page) {
 
         & .category {
           padding-left: 22px;
-          font-size: 12px;
+          font-size: 14px;
           background: url("/icons/icon-tag.svg") left 2px no-repeat transparent;
           background-size: 18px;
           font-weight: 700;
         }
         & .date {
           padding-left: 22px;
-          font-size: 12px;
+          font-size: 14px;
           background: url("/icons/icon-date.svg") left 2px no-repeat;
           background-size: 18px;
           font-weight: 700;
@@ -182,8 +182,6 @@ function goToPage(page) {
 
 <template>
   <div class="post-list">
-    <div class="site-title">本站文章索引</div>
-    <div class="total-count">● 总共{{ count }}篇</div>
     <div class="list">
       <article class="item" v-for="(post, index) in currentPageArticles" :key="index" v-on:click="goToPost(post.url)">
         <div class="item-wrap">

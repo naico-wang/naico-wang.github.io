@@ -3,7 +3,7 @@ import VueWordCloud from '../../utils/wordcloud.mjs'
 import { data } from '../page_wordcloud.data';
 
 const wordCloudData = data.map(({ category, postCount }) => ([category, postCount % 3 ]))
-const style = "height: 260px; width: 100%; margin-top: 20px;"
+const style = "height: 100px; width: 100%; padding: 20px; margin: 0 auto;"
 const font = 'Inter'
 const fontStyle = ''
 const ratio = 0
@@ -12,27 +12,17 @@ const color = () => `rgb(${[ Math.round(Math.random() * 160) + 50, Math.round(Ma
 </script>
 
 <style scoped>
-.module-title {
-  font-size: 18px;
-  line-height: 1.5;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: 700;
-  color: var(--vp-c-brand-1);
-  border-bottom: solid 1px var(--vp-c-brand-1);
-}
-
-@media (max-width: 740px) {
-  .module-title {
-    font-size: 24px;
-    line-height: 1.2;
-  }
+.module-wrapper {
+  padding: 20px;
+  border: solid 1px var(--vp-c-brand-1);
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #f6f6f6;
 }
 </style>
 
 <template>
   <div class="module-wrapper">
-    <div class="module-title">● 智库词云</div>
     <VueWordCloud
       :words="wordCloudData"
       :style="style"
