@@ -21,8 +21,8 @@ const currentPageArticles = computed(() => {
 
 const displayedPages = computed(() => {
   const pages = []
-  const leftBound = Math.max(1, currentPage.value - 1)
-  const rightBound = Math.min(totalPages.value, currentPage.value + 1)
+  const leftBound = Math.max(1, currentPage.value - 2)
+  const rightBound = Math.min(totalPages.value, currentPage.value + 2)
 
   if (leftBound > 1) pages.push(1, '...')
   for (let i = leftBound; i <= rightBound; i++) {
@@ -58,19 +58,20 @@ function goToPage(page) {
   padding: 0 0.75rem 1rem;
   font-size: 1rem;
   text-align: right;
-  color: #222222;
+  color: var(--vp-c-brand-1);
 }
 
 .pagination {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 
   & button {
-    margin: 0 5px;
-    padding: 5px 10px;
+    margin: 0 4px;
+    padding: 0 5px;
     cursor: pointer;
-    border: solid 1px #efefef;
-    color: #222222;
+    border: solid 1px var(--vp-c-green-3);
+    border-radius: 2px;
+    color: var(--vp-c-brand-1);
     font-size: 12px;
 
     & :hover {
@@ -94,6 +95,7 @@ function goToPage(page) {
 .total-pages {
   font-size: 12px;
   margin-left: 10px;
+  color: var(--vp-c-brand-1);
 }
 
 .list {
@@ -171,11 +173,12 @@ function goToPage(page) {
   }
   .pagination button {
     font-size: 10px;
-    padding: 5px 8px;
   }
-  //.eclips {
-  //  display: none;
-  //}
+  .pagination .prev,
+  .pagination .next {
+    display: none;
+  }
+
 }
 </style>
 
@@ -194,7 +197,7 @@ function goToPage(page) {
     </div>
     <div class="pagination">
       <button @click="goToPage(1)" :disabled="currentPage === 1">首页</button>
-      <button @click="goToPage(currentPage - 1)" :disabled="currentPage === 1"><<</button>
+      <button class="prev" @click="goToPage(currentPage - 1)" :disabled="currentPage === 1"><<</button>
       <template v-for="page in displayedPages" :key="page">
         <button
           v-if="page !== '...'"
@@ -206,7 +209,7 @@ function goToPage(page) {
         <span class="eclips" v-else>{{ page }}</span>
       </template>
 
-      <button @click="goToPage(currentPage + 1)" :disabled="currentPage === totalPages">>></button>
+      <button class="next" @click="goToPage(currentPage + 1)" :disabled="currentPage === totalPages">>></button>
       <button @click="goToPage(totalPages)" :disabled="currentPage === totalPages">尾页</button>
       <span class="total-pages">共 {{ totalPages }} 页</span>
     </div>
