@@ -108,7 +108,7 @@ function goToPage(page) {
     & .item-wrap {
       padding: 15px 20px;
       border-radius: 6px;
-      color: var(--vp-c-brand-1);
+      color: var(--vp-c-text-1);
       background-color: #f6f6f6;
 
 
@@ -133,7 +133,7 @@ function goToPage(page) {
       }
 
       & .title {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.5;
         font-weight: 700;
         padding-left: 22px;
@@ -156,10 +156,10 @@ function goToPage(page) {
           font-weight: 700;
         }
         & .date {
-          padding-left: 22px;
-          font-size: 12px;
-          background: url("/icons/icon-date.svg") left 2px no-repeat;
-          background-size: 18px;
+          padding-left: 18px;
+          font-size: 10px;
+          background: url("/icons/icon-date.svg") left 3px no-repeat;
+          background-size: 16px;
           font-weight: 700;
         }
       }

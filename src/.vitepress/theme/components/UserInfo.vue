@@ -33,7 +33,7 @@
       font-size: 28px;
       line-height: 1.5;
       font-weight: bold;
-      color: var(--vp-c-brand-1);
+      color: var(--vp-c-text-1);
       padding: 10px 0;
 
       @media (max-width: 500px) {

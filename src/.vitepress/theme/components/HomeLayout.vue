@@ -12,7 +12,7 @@
     font-weight: 900;
     color: transparent;
     background-color: var(--vp-c-green-1);
-    background-image: -webkit-linear-gradient(30deg, var(--vp-c-brand-1), var(--vp-c-important-1));
+    background-image: -webkit-linear-gradient(30deg, var(--vp-c-brand-1), var(--vp-c-text-1));
     background-clip: text;
     overflow: hidden;
     text-overflow: ellipsis;
