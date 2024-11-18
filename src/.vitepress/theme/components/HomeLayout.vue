@@ -35,13 +35,11 @@
   <div class="home-container">
     <div class="site-title">苟利国家生死以，岂因祸福避趋之</div>
     <UserInfo></UserInfo>
-    <WordCloud></WordCloud>
     <DataList></DataList>
   </div>
 </template>
 
 <script setup lang="ts">
-import WordCloud from './WordCloud.vue'
 import UserInfo from './UserInfo.vue'
 import DataList from './DataList.vue'
 </script>

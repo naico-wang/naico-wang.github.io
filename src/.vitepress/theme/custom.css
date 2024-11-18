@@ -10,12 +10,12 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   /* overwrite color settings */
-  --vp-button-brand-hover-bg: var(--vp-c-green-1);
-  --vp-button-brand-bg: var(--vp-c-green-3);
-  --vp-c-brand-light: var(--vp-c-green-soft);
-  --vp-c-brand-1: var(--vp-c-green-1);
-  --vp-c-brand-2: var(--vp-c-green-2);
-  --vp-c-brand-3: var(--vp-c-green-3);
+  /*--vp-button-brand-hover-bg: var(--vp-c-green-1);*/
+  /*--vp-button-brand-bg: var(--vp-c-green-3);*/
+  /*--vp-c-brand-light: var(--vp-c-green-soft);*/
+  /*--vp-c-brand-1: var(--vp-c-green-1);*/
+  /*--vp-c-brand-2: var(--vp-c-green-2);*/
+  /*--vp-c-brand-3: var(--vp-c-green-3);*/
 }
 
 .group:has([role='button']) .VPSidebarItem.level-0 .items {

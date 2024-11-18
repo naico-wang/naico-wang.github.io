@@ -1,37 +1,40 @@
 <style lang="scss" scoped>
 .user-wrapper {
-  padding: 20px 30px;
+  padding: 20px 0;
   border-radius: 10px;
+  display: flex;
   background-color: #f6f6f6;
+  justify-content: space-around;
+  align-items: center;
 
-  @media (max-width: 500px) {
-    padding: 20px;
+  @media (max-width: 700px) {
+    flex-direction: column;
   }
 
   & .user-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    flex-direction: column;
 
 
     @media (max-width: 900px) {
-      flex-direction: column;
       gap: 0;
     }
 
     & .user-avatar {
-      width: 120px;
+      width: 160px;
       height: auto;
       border-radius: 50%;
       border: solid 2px var(--vp-c-brand-1);
     }
 
     & .site-title {
-      font-size: 32px;
-      line-height: 2;
+      font-size: 28px;
+      line-height: 1.5;
       font-weight: bold;
       color: var(--vp-c-brand-1);
+      padding: 10px 0;
 
       @media (max-width: 500px) {
         font-size: 24px;
@@ -41,16 +44,12 @@
     }
 
     & .menu {
-      padding-left: 30px;
-      flex: 1;
-      width: fit-content;
-      margin: 0 auto;
 
       & ul {
         margin: 0;
         padding: 0;
         display: grid;
-        gap: 10px 20px;
+        gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
 
         @media (max-width: 900px) {
@@ -64,12 +63,12 @@
         & li {
           position: relative;
           text-align: center;
-          padding: 10px;
-          font-size: 16px;
+          padding: 5px 10px;
+          font-size: 14px;
           font-weight: bold;
           border-radius: 4px;
           color: var(--vp-c-white);
-          background-color: var(--vp-c-brand-2);
+          background-color: var(--vp-c-brand-3);
 
           &:hover {
             cursor: pointer;
@@ -78,6 +77,13 @@
           }
         }
       }
+    }
+  }
+
+  & .word-cloud {
+
+    @media (max-width: 700px) {
+      margin-top: 20px;
     }
   }
 }
@@ -99,11 +105,15 @@
         </ul>
       </div>
     </div>
+    <div class="word-cloud">
+      <WordCloud></WordCloud>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from 'vitepress'
+import WordCloud from './WordCloud.vue'
 
 const { go } = useRouter();
 const goToPost = (e) => go(e)

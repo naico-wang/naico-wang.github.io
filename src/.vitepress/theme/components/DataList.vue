@@ -7,7 +7,7 @@ const { go } = useRouter();
 const { posts } = data
 
 const currentPage = ref(1)
-const pageSize = 9
+const pageSize = 12
 
 const goToPost = (e) => go(e)
 
@@ -74,13 +74,13 @@ function goToPage(page) {
     font-size: 12px;
 
     & :hover {
-      background-color: var(--vp-c-green-3);
+      background-color: var(--vp-c-brand-3);
       color: #ffffff;
     }
 
     &.active {
       font-weight: bold;
-      background-color: var(--vp-c-green-3);
+      background-color: var(--vp-c-brand-3);
       color: #ffffff;
     }
 
@@ -153,6 +153,7 @@ function goToPage(page) {
           color: #ffffff;
           background-color: var(--vp-c-brand-3);
           font-size: 10px;
+          font-weight: 700;
         }
         & .date {
           padding-left: 22px;
@@ -178,7 +179,6 @@ function goToPage(page) {
     font-size: 1.5rem;
   }
   .list {
-    margin-top: 20px;
     padding-top: 0;
     grid-template-columns: 1fr;
   }
