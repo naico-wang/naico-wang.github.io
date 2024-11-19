@@ -1,6 +1,6 @@
 ---
 title: 解决JS中async/await异步传染性问题
-date: 2024-08-05
+date: 2024-11-19
 category: JavaScript/TypeScript
 ---
 
