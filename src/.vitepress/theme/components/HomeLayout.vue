@@ -14,18 +14,18 @@
     background-color: var(--vp-c-green-1);
     background-image: -webkit-linear-gradient(30deg, var(--vp-c-brand-1), var(--vp-c-text-1));
     background-clip: text;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 
     @media (max-width: 800px) {
       font-size: 36px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       font-size: 28px;
     }
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
     @media (max-width: 400px) {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 }

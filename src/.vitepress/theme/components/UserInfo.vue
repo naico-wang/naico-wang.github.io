@@ -23,10 +23,10 @@
     }
 
     & .user-avatar {
-      width: 160px;
+      width: 140px;
       height: auto;
       border-radius: 50%;
-      border: solid 2px var(--vp-c-brand-1);
+      border: solid 5px var(--vp-c-brand-3);
     }
 
     & .site-title {
@@ -39,7 +39,6 @@
       @media (max-width: 500px) {
         font-size: 24px;
         line-height: 1.5;
-        margin-top: 10px;
       }
     }
 
