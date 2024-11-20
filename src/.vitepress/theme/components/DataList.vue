@@ -7,7 +7,7 @@ const { go } = useRouter();
 const { posts } = data
 
 const currentPage = ref(1)
-const pageSize = 6
+const pageSize = 20
 
 const goToPost = (e) => go(e)
 
@@ -99,7 +99,7 @@ function goToPage(page) {
 
 .list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 
   & .item {
@@ -164,12 +164,6 @@ function goToPage(page) {
         }
       }
     }
-  }
-}
-
-@media (max-width: 880px) {
-  .list {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
