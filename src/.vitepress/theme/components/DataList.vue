@@ -7,7 +7,7 @@ const { go } = useRouter();
 const { posts } = data
 
 const currentPage = ref(1)
-const pageSize = 20
+const pageSize = 10
 
 const goToPost = (e) => go(e)
 
