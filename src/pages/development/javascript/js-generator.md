@@ -4,7 +4,7 @@ date: 2024-08-15
 category: JavaScript/TypeScript
 ---
 
-# JavaScript迭代器，助你更高效地处理异步编程
+# JavaScript迭代器
 
 `JavaScript`这门编程语言，总是能带给人无尽的惊喜和探索的乐趣。今天，我想带大家一起深入了解其中一个非常有趣且强大的功能——生成器（`Generators`）。
 

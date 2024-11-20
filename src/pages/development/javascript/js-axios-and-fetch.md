@@ -1,10 +1,10 @@
 ---
-title: Axios vs. Fetch API，你该选哪个？
+title: Axios vs Fetch
 date: 2024-08-08
 category: JavaScript/TypeScript
 ---
 
-# Axios vs. Fetch API，你该选哪个？
+# Axios vs Fetch API
 
 在前端开发中，与远程服务器无缝互动并通过网络交换数据是必不可少的一环。不论是从API获取数据、执行CRUD操作，还是处理其他网络相关任务，HTTP请求的重要性不言而喻。为了让开发者更轻松地处理HTTP请求，JavaScript社区中诞生了两个非常流行的库：Axios和Fetch。
 

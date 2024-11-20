@@ -1,10 +1,10 @@
 ---
-title: 为什么很多人抵制 TypeScript ？
+title: 抵制TypeScript
 date: 2024-08-10
 category: JavaScript/TypeScript
 ---
 
-# 为什么很多人抵制 TypeScript ？
+# 为什么很多人抵制 TypeScript
 
 ## 前言
 

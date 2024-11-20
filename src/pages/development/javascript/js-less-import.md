@@ -1,10 +1,10 @@
 ---
-title: 优雅地减少 import 语句
+title: 减少import语句
 date: 2024-08-09
 category: JavaScript/TypeScript
 ---
 
-# 优雅地减少 import 语句
+# 减少 import 语句
 
 如果打开一个文件，看到的全是满屏幕的 `import` 语句，这将是一种怎样的体验？
 

@@ -1,10 +1,10 @@
 ---
-title: JavaScript 运行机制 - Event Loop
+title: JavaScript Event Loop
 date: 2024-09-26
 category: JavaScript/TypeScript
 ---
 
-# JavaScript 运行机制详解：再谈Event Loop
+# JavaScript Event Loop
 
 本篇文章来源是参考阮一峰老师的文章，加上朴老师的评价注解，让大家能完整理解 `Event Loop`.
 

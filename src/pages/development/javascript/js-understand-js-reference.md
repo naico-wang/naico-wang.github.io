@@ -1,10 +1,10 @@
 ---
-title: JavaScript中的原始类型和引用类型
+title: JavaScript原始类型和引用类型
 date: 2024-09-11
 category: JavaScript/TypeScript
 ---
 
-# 如何理解JavaScript中的原始类型和引用类型
+# JavaScript原始类型和引用类型
 
 ![js-reference-primitive](https://mmbiz.qpic.cn/sz_mmbiz_png/KEXUm19zKo6cUGW3scgeQutvQfibsHETeRHfzicTsor3pb8CpcAcWibUAmcaPNSMYknK0ibIR0WKO87hNvRnzWcpOQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 

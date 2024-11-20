@@ -1,10 +1,10 @@
 ---
-title: Web端常用加密方法小结
+title: Web端常用加密方法
 date: 2024-07-03
 category: JavaScript/TypeScript
 ---
 
-# Web端常用加密方法小结
+# Web端常用加密方法
 
 ## 说明
 

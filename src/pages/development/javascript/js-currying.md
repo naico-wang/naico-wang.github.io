@@ -1,10 +1,10 @@
 ---
-title: 掌握 JavaScript 的柯里化，让代码更优雅
+title: JavaScript 柯里化
 date: 2024-08-07
 category: JavaScript/TypeScript
 ---
 
-# 掌握 JavaScript 的柯里化，让代码更优雅
+# JavaScript 柯里化
 
 JavaScript 是一门灵活多变的语言，它的魅力之一就在于可以对函数进行各种炫酷的操作。
 

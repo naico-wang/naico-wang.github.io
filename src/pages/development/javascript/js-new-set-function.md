@@ -1,10 +1,10 @@
 ---
-title: JS 中的 7 个新 Set 方法
+title: JS中的7个新Set方法
 date: 2024-08-23
 category: JavaScript/TypeScript
 ---
 
-# JavaScript 中的 7 个新 Set 方法
+# JS中的7个新Set方法
 
 我们坦诚一点：你可能对 `Set` 并不怎么关心！至少直到现在……
 

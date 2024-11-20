@@ -1,10 +1,10 @@
 ---
-title: 理解 with 语句和嵌套对象
+title: with语句和嵌套对象
 date: 2024-08-28
 category: JavaScript/TypeScript
 ---
 
-# 测测你对 with 语句和嵌套对象的理解
+# with语句和嵌套对象
 
 ![javascript-with](https://mmbiz.qpic.cn/sz_mmbiz_png/KEXUm19zKo4lWUdrNty8ibfWvEkCEbDrLpkOia8tYjdZNLhTpRAibKPGOPKCclma7Cicl4b2JXLkVr6yMngV6UGzag/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 

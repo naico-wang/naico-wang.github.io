@@ -1,10 +1,10 @@
 ---
-title: 深入理解 TypeScript 中类型别名与接口
+title: TypeScript中类型别名与接口
 date: 2024-09-29
 category: JavaScript/TypeScript
 ---
 
-# 深入理解TypeScript 2024中类型别名与接口的差异
+# TypeScript中类型别名与接口的差异
 
 在TypeScript的世界里,类型别名(Type Aliases)和接口(Interfaces)是两个经常让开发者困惑的概念。作为一名前端开发者,我曾多次思考:"为什么TypeScript要提供两种似乎功能重叠的方式来定义对象结构呢?"今天,我们一起深入探讨这个问题,剖析它们的区别,优缺点,以及在实际开发中如何选择使用。
 

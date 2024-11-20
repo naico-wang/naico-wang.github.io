@@ -1,10 +1,10 @@
 ---
-title: axios中的那些天才代码
+title: Axios代码鉴赏
 date: 2024-10-07
 category: JavaScript/TypeScript
 ---
 
-# axios中的那些天才代码
+# Axios代码鉴赏
 
 ## axios的两种调用方式
 

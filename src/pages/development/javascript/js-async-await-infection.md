@@ -1,10 +1,10 @@
 ---
-title: 解决JS中async/await异步传染性问题
+title: JS中async/await异步传染性问题
 date: 2024-11-19
 category: JavaScript/TypeScript
 ---
 
-# 解决 JavaScript 中 async/await 异步传染性问题
+# JavaScript 中 async/await 异步传染性问题
 
 随着现代 JavaScript 中 `async/await` 的普及，开发者能够更直观、易懂地编写异步代码。相比传统的回调函数，`async/await` 的语法让我们在处理异步操作时能像同步代码一样进行编写。然而，在实际使用中，`async/await` 也带来了一些“隐性”问题，其中最为典型的就是 异步传染性问题。
 

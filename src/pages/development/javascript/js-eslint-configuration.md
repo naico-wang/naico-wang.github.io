@@ -1,10 +1,10 @@
 ---
-title: ESLint Config 配置流程详解
+title: ESLint Config 配置流程
 date: 2024-08-18
 category: JavaScript/TypeScript
 ---
 
-# ESLint Config 配置流程详解
+# ESLint Config配置流程
 
 在前端开发中，代码质量和一致性至关重要。`ESLint` 是帮助你提升代码质量的关键工具，尤其是在使用 `Vue` 和 `React` 进行开发时，合理配置和使用 `ESLint` 能够大幅提升开发效率和代码质量。但是，你知道如何在 `VSCode` 中无缝集成 `ESLint`，并让它自动为你提示和修复代码问题吗？本文将介绍 `ESLint` 的详细配置过程。
 
