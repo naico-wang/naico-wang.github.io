@@ -7,8 +7,7 @@ const dirList = [
   './algorithm/**/*.md',
   './pattern/*.md',
   './react/**/*.md',
-  './vue/*.md',
-  './onepic/*.md'
+  './vue/*.md'
 ];
 
 export default getDirectoryData(dirList)

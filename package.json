@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@giscus/vue": "^3.0.0",
-    "@types/node": "^22.9.0",
+    "@types/node": "^22.10.1",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-plantuml": "^1.4.1"
   }

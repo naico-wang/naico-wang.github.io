@@ -4,79 +4,33 @@
   border-radius: 10px;
   background-color: #f6f6f6;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 550px) {
+  @media (max-width: 500px) {
     flex-direction: column;
   }
-
-  & .user-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (max-width: 700px) {
-      flex-direction: column;
-    }
-
-    & .user-avatar {
-      width: 120px;
-      height: auto;
-      border-radius: 50%;
-      border: solid 5px var(--vp-c-brand-3);
-    }
-
-    & .site-title {
-      font-size: 24px;
-      line-height: 1.5;
-      font-weight: bold;
-      color: var(--vp-c-text-1);
-      padding: 10px 0;
-      margin-left: 20px;
-
-      @media (max-width: 500px) {
-        font-size: 24px;
-        line-height: 1.5;
-        margin-left: 0;
-      }
-    }
-
+  & .user-avatar {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
   }
 
-  & .menu {
+  & .site-title {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-left: 20px;
+    color: transparent;
+    background-color: var(--vp-c-green-1);
+    background-image: -webkit-linear-gradient(30deg, var(--vp-c-brand-1), var(--vp-c-important-1));
+    background-clip: text;
+    text-align: center;
 
-    & ul {
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr;
-
-      @media (max-width: 900px) {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      @media (max-width: 400px) {
-        display: none;
-      }
-
-      & li {
-        position: relative;
-        text-align: center;
-        padding: 5px 10px;
-        font-size: 14px;
-        font-weight: bold;
-        border-radius: 4px;
-        color: var(--vp-c-white);
-        background-color: var(--vp-c-brand-3);
-
-        &:hover {
-          cursor: pointer;
-          color: #ffffff;
-          background-color: var(--vp-c-brand-1);
-        }
-      }
+    @media (max-width: 500px) {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-left: 0;
     }
   }
 }
@@ -84,27 +38,7 @@
 
 <template>
   <div class="user-wrapper">
-    <div class="user-info">
-      <img class="user-avatar" alt="智库" src="/icons/icon-avatar.png" />
-      <div class="site-title">奶一口智库</div>
-    </div>
-    <div class="menu">
-      <ul>
-        <li v-on:click="goToPost('/timeline')">时间线</li>
-        <li v-on:click="goToPost('/development')">开发笔记</li>
-        <li v-on:click="goToPost('/interview')">面试八股文</li>
-        <li v-on:click="goToPost('/pattern')">设计模式</li>
-        <li v-on:click="goToPost('/architect')">架构基础</li>
-        <li v-on:click="goToPost('/algorithm')">算法/数据结构</li>
-      </ul>
-    </div>
+    <img class="user-avatar" alt="智库" src="/icons/icon-avatar.png" />
+    <div class="site-title">TOO YOUNG TOO SIMPLE, SOMETIMES NAIVE</div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { useRouter } from 'vitepress'
-import WordCloud from './WordCloud.vue'
-
-const { go } = useRouter();
-const goToPost = (e) => go(e)
-</script>

@@ -1,24 +1,19 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { data } from '../page_all.data'
+import { data } from '../page_home.data'
 import { useRouter } from 'vitepress';
 
 const { go } = useRouter();
 const { posts } = data
-
 const currentPage = ref(1)
-const pageSize = 10
-
+const pageSize = 20
 const goToPost = (e) => go(e)
-
 const totalPages = computed(() => Math.ceil(posts.length / pageSize))
-
 const currentPageArticles = computed(() => {
   const start = (currentPage.value - 1) * pageSize
   const end = start + pageSize
   return posts.slice(start, end)
 })
-
 const displayedPages = computed(() => {
   const pages = []
   const leftBound = Math.max(1, currentPage.value - 2)
@@ -98,70 +93,43 @@ function goToPage(page) {
 }
 
 .list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
   & .item {
     cursor: pointer;
 
     & .item-wrap {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
       padding: 15px 20px;
       border-radius: 6px;
-      color: var(--vp-c-text-1);
+      color: var(--vp-c-brand-1);
       background-color: #f6f6f6;
 
-
       &:hover {
-        color: #ffffff;
-        background-color: var(--vp-c-brand-3);
-        transition: background-color 0.3s;
 
         & .title {
-          background-image: url("/icons/icon-tag-active.svg");
-        }
-
-        & .desc {
-          & .date {
-            background-image: url("/icons/icon-date-active.svg");
-          }
-          & .category {
-            background-color: #f6f6f6;
-            color: var(--vp-c-brand-1);
-          }
+          text-decoration: underline;
         }
       }
 
       & .title {
-        font-size: 15px;
-        line-height: 1.5;
-        font-weight: 700;
-        padding-left: 22px;
-        background: url("/icons/icon-tag.svg") left 2px no-repeat transparent;
-        background-size: 18px;
+        flex: 1;
+        font-size: 18px;
+        line-height: 2;
+        padding-left: 25px;
+        background: url("/icons/icon-tag.svg") left center no-repeat transparent;
+        background-size: 16px;
       }
 
       & .desc {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        & .category {
-          padding: 0 6px;
-          border-radius: 4px;
-          color: #ffffff;
-          background-color: var(--vp-c-brand-3);
-          font-size: 10px;
-          font-weight: 700;
-        }
-        & .date {
-          padding-left: 18px;
-          font-size: 10px;
-          background: url("/icons/icon-date.svg") left 3px no-repeat;
-          background-size: 16px;
-          font-weight: 700;
-        }
+        padding-left: 18px;
+        font-size: 12px;
+        background: url("/icons/icon-date.svg") left 3px no-repeat;
+        background-size: 16px;
       }
     }
   }
@@ -196,10 +164,7 @@ function goToPage(page) {
       <article class="item" v-for="(post, index) in currentPageArticles" :key="index" v-on:click="goToPost(post.url)">
         <div class="item-wrap">
           <div class="title">{{ post.title }}</div>
-          <div class="desc">
-            <span class="category">{{ post.category }}</span>
-            <span class="date">{{ post.date }}</span>
-          </div>
+          <div class="desc">{{ post.date }}</div>
         </div>
       </article>
     </div>

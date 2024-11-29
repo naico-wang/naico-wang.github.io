@@ -1,5 +1,5 @@
 import { getDirectoryData } from '../utils/common'
 
-const scanDir = './architect/basic/*.md'
+const scanDir = './architect/**/*.md'
 
 export default getDirectoryData(scanDir)
