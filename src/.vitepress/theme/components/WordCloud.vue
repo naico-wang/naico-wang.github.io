@@ -31,7 +31,7 @@ const color = () => `rgb(${[ Math.round(Math.random() * 160) + 50, Math.round(Ma
       :font-style="fontStyle"
       :font-family="font"
       :spacing = "spacing"
-      font-weight="normal"
+      font-weight="bold"
     />
   </div>
 

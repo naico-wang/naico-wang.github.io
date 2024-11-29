@@ -123,6 +123,10 @@ function goToPage(page) {
         padding-left: 25px;
         background: url("/icons/icon-tag.svg") left center no-repeat transparent;
         background-size: 16px;
+
+        @media (max-width: 500px) {
+          font-size: 14px;
+        }
       }
 
       & .desc {
@@ -130,6 +134,10 @@ function goToPage(page) {
         font-size: 12px;
         background: url("/icons/icon-date.svg") left 3px no-repeat;
         background-size: 16px;
+
+        @media (max-width: 400px) {
+          display: none;
+        }
       }
     }
   }
