@@ -3,7 +3,7 @@ import { markdownConfig } from './markdownConfig'
 import { navConfig } from './navConfig'
 
 export const siteConfig = {
-  title: '奶一口智库',
+  title: '智库',
   titleTemplate: ':title - Naico.Wang',
   description: '苟利国家生死以，岂因祸福避趋之',
   base: '/',

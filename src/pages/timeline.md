@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 时间线
-aside: false
 ---
 
 <script setup>

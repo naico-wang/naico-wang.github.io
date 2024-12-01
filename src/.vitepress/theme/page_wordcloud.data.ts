@@ -3,11 +3,9 @@ import { getDirectoryData } from '../utils/common'
 const dirList = [
   './interview/**/*.md',
   './architect/**/*.md',
-  './development/**/*.md',
-  './algorithm/**/*.md',
+  './fullstack/**/*.md',
   './pattern/*.md',
-  './react/**/*.md',
-  './vue/*.md'
+  './blog/**/*.md'
 ];
 
 export default getDirectoryData(dirList)

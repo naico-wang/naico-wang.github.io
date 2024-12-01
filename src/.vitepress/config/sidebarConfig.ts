@@ -35,8 +35,8 @@ const getSingleFolderSidebarSettings = (title: string): SideBarConfig => {
 
 export const sidebarConfig: SideBarConfig[] = [{
     documentRootPath,
-    scanStartPath: 'development',
-    resolvePath: '/development/',
+    scanStartPath: 'blog',
+    resolvePath: '/blog/',
     ...getMultiFolderSidebarSettings()
   }, {
     documentRootPath,
@@ -55,17 +55,12 @@ export const sidebarConfig: SideBarConfig[] = [{
     ...getSingleFolderSidebarSettings('经典设计模式')
   }, {
     documentRootPath,
-    scanStartPath: 'vue',
-    resolvePath: '/vue/',
-    ...getSingleFolderSidebarSettings('Vue源码与进阶')
+    scanStartPath: 'fullstack',
+    resolvePath: '/fullstack/',
+    ...getMultiFolderSidebarSettings()
   }, {
     documentRootPath,
     scanStartPath: 'architect',
     resolvePath: '/architect/',
     ...getMultiFolderSidebarSettings()
-  }, {
-    documentRootPath,
-    scanStartPath: 'react',
-    resolvePath: '/react/',
-    ...getMultiFolderSidebarSettings(false)
-}]
+  }]

@@ -1,13 +1,11 @@
 export const navConfig = [
   { text: '首页', link: '/', activeMatch: '' },
   { text: '时间线', link: '/timeline', activeMatch: '/timeline'},
-  { text: '开发笔记', link: '/development', activeMatch: '/development' },
+  { text: '博客', link: '/blog', activeMatch: '/blog' },
   { text: '面试八股文', link: '/interview', activeMatch: '/interview' },
-  { text: '专题系列文章', activeMatch: '\\b(architect|algorithm|pattern|react)\\b',
+  { text: '专题系列文章', activeMatch: '\\b(architect|algorithm|pattern|fullstack)\\b',
     items: [{
-      text: 'React技术揭秘', link: '/react', activeMatch: '/react'
-    }, {
-      text: 'Vue源码与进阶', link: '/vue', activeMatch: '/vue'
+      text: '全栈架构', link: '/fullstack', activeMatch: '/fullstack'
     }, {
       text: '架构基础', link: '/architect', activeMatch: '/architect'
     }, {

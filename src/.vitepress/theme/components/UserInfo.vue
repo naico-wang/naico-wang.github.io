@@ -1,44 +1,66 @@
 <style lang="scss" scoped>
-.user-wrapper {
-  padding: 20px 40px;
-  border-radius: 10px;
-  background-color: #f6f6f6;
+.user-info {
+  color: var(--vp-c-black);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
 
-  @media (max-width: 500px) {
-    flex-direction: column;
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    padding: 20px 0;
   }
-  & .user-avatar {
-    width: 60px;
-    height: auto;
-    border-radius: 50%;
-  }
 
-  & .site-title {
-    font-size: 24px;
-    line-height: 1.5;
-    font-weight: bold;
-    padding: 10px 0;
-    margin-left: 20px;
-    color: transparent;
-    background-color: var(--vp-c-green-1);
-    background-image: -webkit-linear-gradient(30deg, var(--vp-c-brand-1), var(--vp-c-important-1));
-    background-clip: text;
-    text-align: center;
+  & .basic-info {
+    flex: 1;
 
-    @media (max-width: 500px) {
-      font-size: 24px;
-      line-height: 1.5;
-      margin-left: 0;
+    & .name {
+      font-size: 32px;
+      line-height: 2.5;
     }
+
+    & ul > li {
+      padding: 5px 0 5px 16px;
+      font-size: 16px;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: var(--vp-c-black);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  & .avatar {
+    margin-right: 36px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: url("/icons/avatar.png") center no-repeat;
+    background-size: contain;
   }
 }
 </style>
 
 <template>
-  <div class="user-wrapper">
-    <img class="user-avatar" alt="智库" src="/icons/icon-avatar.png" />
-    <div class="site-title">TOO YOUNG TOO SIMPLE, SOMETIMES NAIVE</div>
+  <div class="user-info">
+    <div class="basic-info">
+      <div class="name">Hello, I'm <strong>Naico (Hongyu) Wang</strong>.</div>
+      <ul>
+        <li>Work as Pricinple Solution Architect.</li>
+        <li>Used to be an Engineer Lead.</li>
+        <li>PMP Certified.</li>
+      </ul>
+    </div>
+    <div class="avatar" />
   </div>
 </template>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: '奶一口智库'
+title: '智库'
 ---
 
 <script setup>
