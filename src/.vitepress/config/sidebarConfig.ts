@@ -50,11 +50,6 @@ export const sidebarConfig: SideBarConfig[] = [{
     ...getMultiFolderSidebarSettings()
   }, {
     documentRootPath,
-    scanStartPath: 'pattern',
-    resolvePath: '/pattern/',
-    ...getSingleFolderSidebarSettings('经典设计模式')
-  }, {
-    documentRootPath,
     scanStartPath: 'fullstack',
     resolvePath: '/fullstack/',
     ...getMultiFolderSidebarSettings()

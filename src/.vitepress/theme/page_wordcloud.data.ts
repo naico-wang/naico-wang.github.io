@@ -4,7 +4,6 @@ const dirList = [
   './interview/**/*.md',
   './architect/**/*.md',
   './fullstack/**/*.md',
-  './pattern/*.md',
   './blog/**/*.md'
 ];
 

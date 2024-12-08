@@ -52,7 +52,7 @@ const goToPost = (e) => go(e)
       cursor: pointer;
       list-style-type: none;
       padding-left: 30px;
-      text-decoration: underline double darkblue;
+      text-decoration: underline;
 
       &::-webkit-details-marker { display:none; }
 
@@ -116,9 +116,9 @@ const goToPost = (e) => go(e)
 </style>
 <template>
   <div class="container">
-    <div class="title">-=时间线=-</div>
+    <div class="title">时光荏苒，白驹过隙</div>
     <div class="item-wrapper">
-      <details class="details" v-for="item in groupedArray" open>
+      <details class="details" v-for="item in groupedArray">
         <summary class="date">{{ item.date }}</summary>
         <ul class="list">
           <li v-for="article in item.articles" v-on:click="goToPost(article.url)">

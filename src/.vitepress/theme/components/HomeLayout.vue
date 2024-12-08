@@ -7,7 +7,7 @@
   & .site-title {
     font-size: 2em;
     line-height: 1.5;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     color: transparent;
     background-color: var(--vp-c-green-1);

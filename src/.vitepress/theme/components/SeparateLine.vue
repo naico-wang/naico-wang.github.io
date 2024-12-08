@@ -2,11 +2,10 @@
 hr {
   color: var(--vp-c-black);
   border: 0;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: normal;
   padding: 1em 0;
   position: relative;
-  margin-top: 20px;
 
   &:before {
     content: attr(data-content);

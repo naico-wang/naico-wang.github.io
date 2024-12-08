@@ -53,9 +53,9 @@
     <div class="item number-1" v-on:click="go('/fullstack')">全栈架构解析</div>
     <div class="item number-2" v-on:click="go('/interview')">面试八股文</div>
     <div class="item number-3" v-on:click="go('/pattern')">深入设计模式</div>
-    <div class="item number-4" v-on:click="go('/architect')">软件架构基础</div>
-    <div class="item number-5" v-on:click="go('/algorithm')">算法与数据结构</div>
-    <div class="item number-6" v-on:click="go('/blog')">博客文章</div>
+    <div class="item number-4" v-on:click="go('/algorithm')">算法与数据结构</div>
+    <div class="item number-5" v-on:click="go('/blog')">博客文章</div>
+    <div class="item number-6" v-on:click="go('/about')">关于作者</div>
   </div>
 </div>
 </template>

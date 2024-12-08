@@ -16,13 +16,13 @@
     flex: 1;
 
     & .name {
-      font-size: 32px;
-      line-height: 2.5;
+      font-size: 28px;
+      line-height: 2;
     }
 
     & ul > li {
       padding: 5px 0 5px 16px;
-      font-size: 16px;
+      font-size: 14px;
       position: relative;
 
       &:before {
@@ -42,11 +42,11 @@
 
   & .avatar {
     margin-right: 36px;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    background: url("/icons/avatar.png") center no-repeat;
-    background-size: contain;
+    background: url("/icons/avatar-v2.png") center no-repeat;
+    background-size: 100%;
   }
 }
 </style>
@@ -54,7 +54,7 @@
 <template>
   <div class="user-info">
     <div class="basic-info">
-      <div class="name">Hello, I'm <strong>Naico (Hongyu) Wang</strong>.</div>
+      <div class="name">Hello, I'm <strong>Naico Wang</strong>.</div>
       <ul>
         <li>Work as Pricinple Solution Architect.</li>
         <li>Used to be an Engineer Lead.</li>
