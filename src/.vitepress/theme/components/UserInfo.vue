@@ -45,7 +45,7 @@
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background: url("/icons/avatar-v2.png") center no-repeat;
+    background: url("/icons/avatar-v3.png") center no-repeat;
     background-size: 100%;
   }
 }
