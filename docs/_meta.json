@@ -1,0 +1,32 @@
+[
+  {
+    "text": "日积月累",
+    "link": "/blog/",
+    "activeMatch": "^/blog/"
+  },
+  {
+    "text": "面试八股文",
+    "link": "/interview/",
+    "activeMatch": "^/interview/"
+  },
+  {
+    "text": "前端架构",
+    "link": "/fullstack/",
+    "activeMatch": "^/fullstack/"
+  },
+  {
+    "text": "算法与数据结构",
+    "link": "/algorithm/",
+    "activeMatch": "^/algorithm/"
+  },
+  {
+    "text": "读书笔记",
+    "link": "/reading/",
+    "activeMatch": "^/reading/",
+    "items": [{
+      "text": "《架构基础》",
+      "link": "/reading/architect-basic/",
+      "activeMatch": "^/reading/architect-basic/"
+    }]
+  }
+]

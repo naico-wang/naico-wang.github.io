@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/naico-wang.github.io.iml" filepath="$PROJECT_DIR$/.idea/naico-wang.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rspress.iml" filepath="$PROJECT_DIR$/.idea/rspress.iml" />
     </modules>
   </component>
 </project>
