@@ -1,5 +1,4 @@
 ---
 title: 数据库相关
-exclude: true
-path: /interview
+overview: true
 ---

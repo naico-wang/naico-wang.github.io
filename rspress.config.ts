@@ -17,12 +17,12 @@ export default defineConfig({
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/web-infra-dev/rspress',
+        content: 'https://github.com/naico-wang',
       },
       {
         icon: 'linkedin',
         mode: 'link',
-        content: 'https://github.com/web-infra-dev/rspress',
+        content: 'https://www.linkedin.com/in/naico-wang-49554891/',
       },
     ],
     outlineTitle: '本页内容导航',

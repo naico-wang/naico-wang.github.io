@@ -1,7 +1,6 @@
 ---
-title: 架构基础
-aside: false
-exclude: true
+title: 软件架构
+overview: true
 ---
 
 # 为什么要学习架构？
@@ -13,10 +12,3 @@ exclude: true
 这个系列我会持续更新，根据我所学习到的知识和收集到的一些最佳实践，来更新一下。相信你读完这一系列的文章以后会对于软件架构有一个新的认识。
 
 本系列文章参考了尹洪亮老师的《架构基础 - 从需求到架构》，里面的图和一些感悟都是我在读这本书的时候画的。希望对大家有所帮助。
-
-<script setup>
-import { data } from '../../.vitepress/theme/page_architect.data';
-import OrderedList from '../../.vitepress/theme/components/OrderedList.vue';
-</script>
-
-<OrderedList :data="data"></OrderedList>
