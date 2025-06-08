@@ -729,7 +729,7 @@ $ tar [-z|-j|-J] [xv] [-f 已有的 tar 文件] [-C 目录]    ==解压缩
 
 对一个变量赋值直接使用 =。
 
-对变量取用需要在变量前加上 \$ ，也可以用 \${} 的形式；
+对变量取用需要在变量前加上 `\$` ，也可以用 `\${}` 的形式；
 
 输出变量使用 echo 命令。
 
@@ -977,7 +977,7 @@ $ grep -n 'the' regular_express.txt
 18:google is the best tools for search keyword
 ```
 
-示例：正则表达式 a{m,n} 用来匹配字符 a m\~n 次，这里需要将 { 和 } 进行转义，因为它们在 shell 是有特殊意义的。
+示例：正则表达式 `a{m,n}` 用来匹配字符 a m\~n 次，这里需要将 `{` 和 `}` 进行转义，因为它们在 shell 是有特殊意义的。
 
 ```html
 $ grep -n 'a\{2,5\}' regular_express.txt

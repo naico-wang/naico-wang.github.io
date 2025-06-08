@@ -33,23 +33,23 @@ sidebar_position: 0
 
 ## 📚 博客栏目介绍
 
-### 📝 [所有文章](./docs/)
+### 📝 [所有文章](/docs)
 
 汇总博客中发布的全部内容，适合按时间顺序阅读。
 
-### 🏗️ [系统架构设计](./category/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1)
+### 🏗️ [系统架构设计](/docs/category/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1)
 
 关注系统的高可用、高性能、可扩展设计，以及实际项目中的架构实践。
 
-### 🔁 [经典设计模式](./category/%E7%BB%8F%E5%85%B8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+### 🔁 [经典设计模式](/docs/category/%E7%BB%8F%E5%85%B8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
 
 总结常用设计模式及其在工程项目中的应用案例。
 
-### 📖 [读书笔记](./category/%E6%97%A5%E5%B8%B8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0)
+### 📖 [读书笔记](/docs/category/%E6%97%A5%E5%B8%B8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0)
 
 记录我读过的技术与非技术书籍的反思与理解。
 
-### 🎯 [面试八股文](./category/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E6%96%87)
+### 🎯 [面试八股文](/docs/category/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E6%96%87)
 
 涵盖常见面试知识点，适合面试准备与基础巩固。
 

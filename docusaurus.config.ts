@@ -37,7 +37,9 @@ const config: Config = {
   },
 
   staticDirectories: ['static'],
-
+  markdown: {
+    mermaid: true,
+  },
   presets: [
     [
       'classic',
@@ -45,7 +47,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          rehypePlugins: [rehypeKatex]
         },
         theme: {
           customCss: './src/css/custom.css',

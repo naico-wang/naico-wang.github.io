@@ -340,7 +340,7 @@ SELECT c FROM t WHERE c BETWEEN 10 and 20 FOR UPDATE;
 
 ### 异常
 
-以下的学生课程关系的函数依赖为 {Sno, Cname} -\> {Sname, Sdept, Mname, Grade}，键码为 {Sno, Cname}。也就是说，确定学生和课程之后，就能确定其它信息。
+以下的学生课程关系的函数依赖为 `{Sno, Cname}` -\> `{Sname, Sdept, Mname, Grade}`，键码为 `{Sno, Cname}`。也就是说，确定学生和课程之后，就能确定其它信息。
 
 | Sno | Sname | Sdept | Mname | Cname | Grade |
 | :---: | :---: | :---: | :---: | :---: |:---:|
@@ -381,7 +381,7 @@ SELECT c FROM t WHERE c BETWEEN 10 and 20 FOR UPDATE;
 | 2 | 学生-2 | 学院-2 | 院长-2 | 课程-1 | 100 |
 | 3 | 学生-3 | 学院-2 | 院长-2 | 课程-2 | 95 |
 
-以上学生课程关系中，{Sno, Cname} 为键码，有如下函数依赖：
+以上学生课程关系中，`{Sno, Cname}` 为键码，有如下函数依赖：
 
 - Sno -\> Sname, Sdept
 - Sdept -\> Mname
