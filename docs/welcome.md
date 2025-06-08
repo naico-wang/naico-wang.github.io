@@ -68,7 +68,7 @@ sidebar_position: 0
 欢迎通过以下方式与我交流：
 
 - GitHub: [@Naico Wang](https://github.com/naico-wang)
-- 邮箱: youremail@example.com
+- 邮箱: naico.wang@gmail.com
 
 ---
 
