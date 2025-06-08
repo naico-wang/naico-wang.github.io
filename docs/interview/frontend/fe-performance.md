@@ -61,7 +61,7 @@ CDN 和 DNS 有着密不可分的联系，先来看一下 DNS 的解析域名过
 
 如果缓存服务器没有用户想要的内容，那么缓存服务器就会向它的上一级缓存服务器请求内容，以此类推，直到获取到需要的资源。最后如果还是没有，就会回到自己的服务器去获取资源。
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a4635b395fb64aaab8417f63e64291d4~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom: 33%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a4635b395fb64aaab8417f63e64291d4~tplv-k3u1fbpfcp-watermark.awebp) 
 
 CNAME（意为：别名)：在域名解析中，实际上解析出来的指定域名对应的 IP 地址，或者该域名的一个 CNAME，然后再根据这个 CNAME 来查找对应的 IP 地址。
 
@@ -107,18 +107,18 @@ CNAME（意为：别名)：在域名解析中，实际上解析出来的指定�
 
 **图示：**
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/efbcb31418be45eaa848d107b107c4eb~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom: 33%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/efbcb31418be45eaa848d107b107c4eb~tplv-k3u1fbpfcp-watermark.awebp) 
 
 **代码实现：**
 
 ```html
 <div class="container">
-     <img src="loading.gif"  data-src="pic.png">
-     <img src="loading.gif"  data-src="pic.png">
-     <img src="loading.gif"  data-src="pic.png">
-     <img src="loading.gif"  data-src="pic.png">
-     <img src="loading.gif"  data-src="pic.png">
-     <img src="loading.gif"  data-src="pic.png">
+     [img](pic.png)
+     [img](pic.png)
+     [img](pic.png)
+     [img](pic.png)
+     [img](pic.png)
+     [img](pic.png)
 </div>
 <script>
 var imgs = document.querySelectorAll('img');

@@ -449,7 +449,7 @@ Webpack 能处理 CSS 吗：
 - `imgs.offsetTop` 是元素顶部距离文档顶部的高度（包括滚动条的距离）；
 - 内容达到显示区域的：`img.offsetTop < window.innerHeight + document.body.scrollTop;`
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom: 25%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c57fc165a4ce4d5b9a2885867d4f1cab~tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 30. z-index 属性在什么情况下会失效
 
@@ -1017,7 +1017,7 @@ position 有以下属性值：
 3. 否则，如果 float 不是 none，框是浮动的，display 根据下表进行调整。
 4. 其他情况下 display 的值为指定值。
 
-<img src="https://oss.justin3go.com/blogs/image-20220223154355574.png" alt="image-20220223154355574" style="zoom:80%;" />
+[img](https://oss.justin3go.com/blogs/image-20220223154355574.png)
 
 ### 8. absolute 与 fixed 共同点与不同点
 
@@ -1058,7 +1058,7 @@ div {
 
 将元素的长宽都设置为 0，显示出来的效果是这样的：
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:50%;" /> 
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cba8731fea9842a8b8103c2b387fe64f~tplv-k3u1fbpfcp-watermark.awebp) 
 
 所以可以根据 border 这个特性来绘制三角形： **（1)三角 1**
 
@@ -1066,7 +1066,7 @@ div {
 div {    width: 0;    height: 0;    border-top: 50px solid red;    border-right: 50px solid transparent;    border-left: 50px solid transparent;}
 ```
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab996951a0cc42cf9e6d9e12eb827f8b~tplv-k3u1fbpfcp-watermark.awebp) 
 
 **（2)三角 2**
 
@@ -1080,7 +1080,7 @@ div {
 }
 ```
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/531c6c250dd8446fb0f264e7b3df6fba~tplv-k3u1fbpfcp-watermark.awebp) 
 
 **（3)三角 3**
 
@@ -1094,7 +1094,7 @@ div {
 }
 ```
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e4beaf4e4a0140ad9e7252f8a6e4e8e6~tplv-k3u1fbpfcp-watermark.awebp) 
 
 **（4)三角 4**
 
@@ -1108,7 +1108,7 @@ div {
 }
 ```
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/445f50ad19164b0f863ad8dfef2a29b1~tplv-k3u1fbpfcp-watermark.awebp) 
 
 **（5)三角 5**
 
@@ -1121,7 +1121,7 @@ div {
 }
 ```
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1ac630463164e42a027b54bb95f56ba~tplv-k3u1fbpfcp-watermark.awebp) 
 
 还有很多，就不一一实现了，总体的原则就是通过上下左右边框来控制三角形的方向，用边框的宽度比来控制三角形的角度。
 
@@ -1139,7 +1139,7 @@ div{
 }
 ```
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/db5e46aea0ce4805a0c2bbec2743546e~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/db5e46aea0ce4805a0c2bbec2743546e~tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 3. 实现一个宽高自适应的正方形
 

@@ -40,7 +40,7 @@ category: 编程语言
 
 - begin、end 表示访问空间的排除范围，即 end 不包含尾部。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191209003453268.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191209003453268.png)
 
 ## 四、良好的代码风格
 

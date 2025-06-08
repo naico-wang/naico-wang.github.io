@@ -12,7 +12,7 @@ category: Java
 
 ### Collection
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208220948084.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208220948084.png)
 
 #### 1. Set
 
@@ -38,7 +38,7 @@ category: Java
 
 ### Map
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20201101234335837.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20201101234335837.png)
 
 - TreeMap：基于红黑树实现。
 
@@ -53,7 +53,7 @@ category: Java
 
 ### 迭代器模式
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208225301973.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208225301973.png)
 
 Collection 继承了 Iterable 接口，其中的 iterator() 方法能够产生一个 Iterator 对象，通过这个对象就可以迭代遍历 Collection 中的元素。
 
@@ -114,7 +114,7 @@ public class ArrayList<E> extends AbstractList<E>
 private static final int DEFAULT_CAPACITY = 10;
 ```
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208232221265.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208232221265.png)
 
 #### 2. 扩容
 
@@ -398,7 +398,7 @@ transient Node<E> first;
 transient Node<E> last;
 ```
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208233940066.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208233940066.png)
 
 #### 2. 与 ArrayList 的比较
 
@@ -415,7 +415,7 @@ ArrayList 基于动态数组实现，LinkedList 基于双向链表实现。Array
 
 内部包含了一个 Entry 类型的数组 table。Entry 存储着键值对。它包含了四个字段，从 next 字段我们可以看出 Entry 是一个链表。即数组中的每个位置被当成一个桶，一个桶存放一个链表。HashMap 使用拉链法来解决冲突，同一个链表中存放哈希值和散列桶取模运算结果相同的 Entry。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208234948205.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208234948205.png)
 
 ```java
 transient Entry[] table;
@@ -495,7 +495,7 @@ map.put("K3", "V3");
 - 计算键值对所在的桶；
 - 在链表上顺序查找，时间复杂度显然和链表的长度成正比。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208235258643.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208235258643.png)
 
 #### 3. put 操作
 
@@ -788,7 +788,7 @@ static final int tableSizeFor(int cap) {
 
 #### 1. 存储结构
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191209001038024.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191209001038024.png)
 
 ```java
 static final class HashEntry<K,V> {

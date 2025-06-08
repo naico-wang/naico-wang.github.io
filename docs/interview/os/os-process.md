@@ -16,7 +16,7 @@ category: Operation System
 
 下图显示了 4 个程序创建了 4 个进程，这 4 个进程可以并发地执行。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a6ac2b08-3861-4e85-baa8-382287bfee9f.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a6ac2b08-3861-4e85-baa8-382287bfee9f.png)
 
 ### 2. 线程
 
@@ -26,7 +26,7 @@ category: Operation System
 
 QQ 和浏览器是两个进程，浏览器进程里面有很多线程，例如 HTTP 请求线程、事件响应线程、渲染线程等等，线程的并发执行使得在浏览器中点击一个新链接从而发起 HTTP 请求时，浏览器还可以响应用户的其它事件。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/3cd630ea-017c-488d-ad1d-732b4efeddf5.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/3cd630ea-017c-488d-ad1d-732b4efeddf5.png)
 
 ### 3. 区别
 
@@ -48,7 +48,7 @@ QQ 和浏览器是两个进程，浏览器进程里面有很多线程，例如 H
 
 ## 进程状态的切换
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ProcessState.png" width="500"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ProcessState.png)
 
 - 就绪状态（ready）：等待被调度
 - 运行状态（running）
@@ -96,7 +96,7 @@ QQ 和浏览器是两个进程，浏览器进程里面有很多线程，例如 H
 - 因为进程切换都要保存进程的信息并且载入新进程的信息，如果时间片太小，会导致进程切换得太频繁，在进程切换上就会花过多时间。
 - 而如果时间片过长，那么实时性就不能得到保证。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/8c662999-c16c-481c-9f40-1fdba5bc9167.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/8c662999-c16c-481c-9f40-1fdba5bc9167.png)
 
 **2.2 优先级调度**  
 
@@ -114,7 +114,7 @@ QQ 和浏览器是两个进程，浏览器进程里面有很多线程，例如 H
 
 可以将这种调度算法看成是时间片轮转调度算法和优先级调度算法的结合。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/042cf928-3c8e-4815-ae9c-f2780202c68f.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/042cf928-3c8e-4815-ae9c-f2780202c68f.png)
 
 ### 3. 实时系统
 
@@ -235,7 +235,7 @@ end monitor;
 
 管程引入了   **条件变量**   以及相关的操作：**wait()** 和 **signal()** 来实现同步操作。对条件变量执行 wait() 操作会导致调用进程阻塞，把管程让出来给另一个进程持有。signal() 操作用于唤醒被阻塞的进程。
 
-<font size=3>  **使用管程实现生产者-消费者问题**  </font><br>
+**使用管程实现生产者-消费者问题**
 
 ```pascal
 // 管程
@@ -288,7 +288,7 @@ end;
 
 ### 1. 哲学家进餐问题
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a9077f06-7584-4f2b-8c20-3a8e46928820.jpg"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a9077f06-7584-4f2b-8c20-3a8e46928820.jpg)
 
 五个哲学家围着一张圆桌，每个哲学家面前放着食物。哲学家的生活有两种交替活动：吃饭以及思考。当一个哲学家吃饭时，需要先拿起自己左右两边的两根筷子，并且一次只能拿起一根筷子。
 
@@ -533,7 +533,7 @@ int pipe(int fd[2]);
 - 只支持半双工通信（单向交替传输）；
 - 只能在父子进程或者兄弟进程中使用。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/53cd9ade-b0a6-4399-b4de-7f1fbd06cdfb.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/53cd9ade-b0a6-4399-b4de-7f1fbd06cdfb.png)
 
 ### 2. FIFO
 
@@ -547,7 +547,7 @@ int mkfifoat(int fd, const char *path, mode_t mode);
 
 FIFO 常用于客户-服务器应用程序中，FIFO 用作汇聚点，在客户进程和服务器进程之间传递数据。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/2ac50b81-d92a-4401-b9ec-f2113ecc3076.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/2ac50b81-d92a-4401-b9ec-f2113ecc3076.png)
 
 ### 3. 消息队列
 

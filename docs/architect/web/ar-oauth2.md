@@ -6,7 +6,7 @@ category: 系统架构
 
 # OAuth 2.0 架构初探
 
-:::info 前言
+:::tip 前言
 前面写过一篇文章，是关于JWT的，说到JWT，就会联系到SSO（Single Sign On）和 OAuth。与JWT不同的是，OAuth是一种软件的架构，用来解决第三方客户端的权限问题。
 本文会对架构做一些个人粗浅的分析。
 

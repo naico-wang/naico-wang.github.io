@@ -30,15 +30,16 @@ sayHi()
 - C: `ReferenceError` 和 `21`
 - D: `undefined` 和 `ReferenceError`
 
-<details><summary><b>答案</b></summary>
-
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 #### 答案：D
 
 在函数内部，我们首先通过 `var` 关键字声明了 `name` 变量。这意味着变量被提升了（内存空间在创建阶段就被设置好了），直到程序运行到定义变量位置之前默认值都是 `undefined`。因为当我们打印 `name` 变量时还没有执行到定义变量的位置，因此变量的值保持为 `undefined`。
 
 通过 `let` 和 `const` 关键字声明的变量也会提升，但是和 `var` 不同，它们不会被<i>初始化</i>。在我们声明（初始化）之前是不能访问它们的。这个行为被称之为暂时性死区。当我们试图在声明之前访问它们时，JavaScript 将会抛出一个 `ReferenceError` 错误。
-
 
 </details>
 
@@ -60,8 +61,10 @@ for (let i = 0; i < 3; i++) {
 - B: `0 1 2` 和 `3 3 3`
 - C: `3 3 3` 和 `0 1 2`
 
-<details><summary><b>答案</b></summary>
-
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 #### 答案：C
 
@@ -94,7 +97,10 @@ shape.perimeter()
 - C: `20` and `63`
 - D: `NaN` and `63`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -121,7 +127,10 @@ shape.perimeter()
 - B: `false` and `NaN`
 - C: `false` and `false`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -153,7 +162,10 @@ const mouse = {
 - C: `mouse[bird["size"]]`是无效的
 - D: 以上三个选项都是有效的
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -188,7 +200,10 @@ console.log(d.greeting)
 - C: `ReferenceError`
 - D: `TypeError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -221,7 +236,10 @@ console.log(b === c)
 - C: `true` `false` `false`
 - D: `false` `true` `true`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -260,7 +278,10 @@ freddie.colorChange('orange')
 - C: `green`
 - D: `TypeError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -284,7 +305,10 @@ console.log(greetign)
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -313,7 +337,10 @@ bark.animal = 'dog'
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -348,7 +375,10 @@ console.log(member.getFullName());
 - C: `Lydia Hallie`
 - D: `undefined` `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -388,7 +418,10 @@ console.log(sarah)
 - C: `Person {firstName: "Lydia", lastName: "Hallie"}` and `{}`
 - D:`Person {firstName: "Lydia", lastName: "Hallie"}` and `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -409,7 +442,10 @@ console.log(sarah)
 - C: Target > Bubbling > Capturing
 - D: Capturing > Target > Bubbling
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -426,7 +462,10 @@ console.log(sarah)
 - A: 对
 - B: 错
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -453,7 +492,10 @@ sum(1, '2')
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -481,7 +523,10 @@ console.log(number)
 - C: `0` `2` `2`
 - D: `0` `1` `2`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -522,7 +567,10 @@ getPersonInfo`${person} is ${age} years old`
 - B: `["", " is ", " years old"]` `"Lydia"` `21`
 - C: `"Lydia"` `["", " is ", " years old"]` `21`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -554,7 +602,10 @@ checkAge({ age: 18 })
 - B: `You are still an adult.`
 - C: `Hmm.. You don't have an age I guess`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -585,7 +636,10 @@ getAge(21)
 - C: `"object"`
 - D: `"NaN"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -614,7 +668,10 @@ getAge()
 - C: `ReferenceError`
 - D: `TypeError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -639,7 +696,10 @@ console.log(sum)
 - C: `TypeError`
 - D: `"10*10+5"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -662,7 +722,10 @@ sessionStorage.setItem('cool_secret', 123)
 - C: 当用户关掉整个浏览器，而不只是关掉标签页。
 - D: 当用户关闭电脑时。
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -690,7 +753,10 @@ console.log(num)
 - C: `SyntaxError`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -721,7 +787,10 @@ set.has(1)
 - C: `true` `true` `false` `true`
 - D: `true` `true` `true` `true`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -747,7 +816,10 @@ console.log(obj)
 - C: `{ a: "three", b: "two" }`
 - D: `SyntaxError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -765,7 +837,10 @@ console.log(obj)
 - B: 错
 - C: 看情况
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -791,7 +866,10 @@ for (let i = 1; i < 5; i++) {
 - C: `1` `2` `4`
 - D: `1` `3` `4`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -820,7 +898,10 @@ name.giveLydiaPizza()
 - C: `SyntaxError`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -850,7 +931,10 @@ console.log(a[b])
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -883,7 +967,10 @@ baz()
 - C: `Second` `First` `Third`
 - D: `Second` `Third` `First`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -926,7 +1013,10 @@ WebAPI 不能随时向栈内添加内容。相反，它将回调函数推到名�
 - C: `button`
 - D: 一个包含所有嵌套元素的数组。
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -953,7 +1043,10 @@ WebAPI 不能随时向栈内添加内容。相反，它将回调函数推到名�
 - C: `p`
 - D: `div`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -983,7 +1076,10 @@ sayHi.bind(person, 21)
 - C: `Lydia is 21` `Lydia is 21`
 - D: `Lydia is 21` `function`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -1012,7 +1108,10 @@ typeof sayHi()
 - C: `"function"`
 - D: `"undefined"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1042,7 +1141,10 @@ undefined
 - C: `0`, `''`, `new Boolean(false)`, `undefined`
 - D: All of them are falsy
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1078,7 +1180,10 @@ console.log(typeof typeof 1)
 - C: `"object"`
 - D: `"undefined"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1104,7 +1209,10 @@ console.log(numbers)
 - C: `[1, 2, 3, 7 x empty, 11]`
 - D: `SyntaxError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1141,7 +1249,10 @@ console.log(numbers)
 - C: `1` `1` `2`
 - D: `1` `undefined` `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1164,7 +1275,10 @@ console.log(numbers)
 - C: 只有对象
 - D: 数字与对象
 -
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1194,7 +1308,10 @@ JavaScript 只有基本类型和对象。
 - C: `[1, 2, 0, 1, 2, 3]`
 - D: `[1, 2, 6]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1220,7 +1337,10 @@ JavaScript 只有基本类型和对象。
 - C: `false` `true` `true`
 - D: `true` `true` `false`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1247,7 +1367,10 @@ setInterval(() => console.log('Hi'), 1000)
 - C: 传递的函数
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1270,7 +1393,10 @@ setInterval(() => console.log('Hi'), 1000)
 - C: `[[], "Lydia"]`
 - D: `[["L", "y", "d", "i", "a"]]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1301,7 +1427,10 @@ console.log(gen.next().value);
 - C: `10, 20`
 - D: `0, 10 and 10, 20`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1335,7 +1464,10 @@ Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
 - C: `"two" "one"`
 - D: `"one" "two"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1362,7 +1494,10 @@ console.log(members);
 - C: `[{}]`
 - D: `[{ name: "Lydia" }]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -1399,7 +1534,10 @@ for (const item in person) {
 - C: `"Lydia", 21`
 - D: `["name", "Lydia"], ["age", 21]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1422,7 +1560,10 @@ console.log(3 + 4 + "5");
 - C: `12`
 - D: `"12"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1449,7 +1590,10 @@ const num = parseInt("7*6", 10);
 - C: `7`
 - D: `NaN`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1477,7 +1621,10 @@ const num = parseInt("7*6", 10);
 - C: `[undefined, undefined, undefined]`
 - D: `[ 3 x empty ]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1512,7 +1659,10 @@ console.log(person, birthYear);
 - C: `{ name: "Lydia" }, "1998"`
 - D: `{ name: "Sarah" }, "1997"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1552,7 +1702,10 @@ sayHi();
 - C: `SyntaxError: can only throw Error objects`
 - D: `"Oh no an error: Hello world!`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -1583,7 +1736,10 @@ console.log(myCar.make);
 - C: `ReferenceError`
 - D: `TypeError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1611,7 +1767,10 @@ console.log(typeof y);
 - C: `"object", "number"`
 - D: `"number", "undefined"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1634,7 +1793,7 @@ let x = y;
 
 ---
 
-###### <a name=20190629></a>55. 输出是什么？
+###### 55. 输出是什么？
 
 ```javascript
 class Dog {
@@ -1661,7 +1820,10 @@ pet.bark();
 - C: `"Woof I am Mara"`, `undefined`
 - D: `TypeError`, `TypeError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1688,7 +1850,10 @@ console.log(set);
 - C: `{1, 1, 2, 3, 4}`
 - D: `{1, 2, 3, 4}`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -1724,7 +1889,10 @@ console.log(myCounter);
 - C: `Error`
 - D: `NaN`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1753,7 +1921,10 @@ console.log(delete age);
 - C: `true`, `true`
 - D: `undefined`, `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1781,7 +1952,10 @@ console.log(y);
 - C: `1`
 - D: `[1]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1819,7 +1993,10 @@ console.log(admin);
 - C: `{ admin: true, user: ["Lydia", 21] }`
 - D: `{ admin: true }`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1847,7 +2024,10 @@ console.log(Object.keys(person));
 - C: `{ name: "Lydia"}`, `["name", "age"]`
 - D: `{ name: "Lydia"}`, `["age"]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -1879,7 +2059,10 @@ console.log(data);
 - C: `"["level", "health"]"`
 - D: `"{"username": "lydiahallie", "level":19, "health":90}"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1916,7 +2099,10 @@ console.log(num2);
 - C: `11`, `11`
 - D: `11`, `12`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -1950,7 +2136,10 @@ multiply(value);
 - C: `20`, `20`, `20`, `40`
 - D: `NaN`, `NaN`, `20`, `40`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -1979,7 +2168,10 @@ multiply(value);
 - C: `1` `undefined` and `2` `undefined` and `3` `undefined` and `4` `undefined`
 - D: `1` `2` and `undefined` `3` and `undefined` `4`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -2045,7 +2237,10 @@ class Labrador extends Dog {
 - C: 3
 - D: 4
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2078,7 +2273,10 @@ export const sum = (a, b) => a + b;
 - C: `running sum.js`, `3`, `running index.js`
 - D: `running index.js`, `undefined`, `running sum.js`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2105,7 +2303,10 @@ console.log(Symbol('foo') === Symbol('foo'))
 - C: `true`, `false`, `true`
 - D: `true`, `true`, `true`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2130,7 +2331,10 @@ console.log(name.padStart(2))
 - C: `" Lydia Hallie"`, `"Lydia Hallie"` (`"[1x whitespace]Lydia Hallie"`, `"Lydia Hallie"`)
 - D: `"Lydia Hallie"`, `"Lyd"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2155,7 +2359,10 @@ console.log("🥑" + "💻");
 - C: A string containing their code points
 - D: Error
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2188,7 +2395,10 @@ console.log(/* 2 */); // JavaScript loves you back ❤️
 - C: `game.next().value` and `game.next("Yes").value`
 - D: `game.next.value()` and `game.next.value("Yes")`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2213,7 +2423,10 @@ console.log(String.raw`Hello\nworld`);
 - C: `Hello\nworld`
 - D: `Hello\n` <br /> &nbsp; &nbsp; &nbsp;`world`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2258,7 +2471,10 @@ console.log(data);
 - C: `Promise {<pending>}`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2292,7 +2508,10 @@ console.log(result);
 - C: `true`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2323,7 +2542,10 @@ console.log(shape)
 - C: `{ x: 100 }`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2354,7 +2576,10 @@ console.log(name);
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -2381,7 +2606,10 @@ function sum(a, b) {
 - A: Yes
 - B: No
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2424,7 +2652,10 @@ console.log(addFunction(5 * 2));
 - C: `Calculated! 20` `From cache! 20` `From cache! 20`
 - D: `Calculated! 20` `From cache! 20` `Error`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2446,7 +2677,7 @@ console.log(addFunction(5 * 2));
 
 ---
 
-###### <a name=20190726></a>79. 输出什么？
+###### 79. 输出什么？
 
 ```javascript
 const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]
@@ -2465,7 +2696,10 @@ for (let item of myLifeSummedUp) {
 - C: `"☕"` ` "💻"` `"🍷"` `"🍫"` and `0` `1` `2` `3`
 - D:  `0` `1` `2` `3` and `{0: "☕", 1: "💻", 2: "🍷", 3: "🍫"}`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2495,7 +2729,10 @@ console.log(list)
 - C: `[3, 2, 0.5]`
 - D:  `[1, 1, 1]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2524,7 +2761,10 @@ console.log(sayHi())
 - C: `Hi there, null`
 - D:  `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2567,7 +2807,10 @@ setTimeout(() => {
 - C: `"😍"` and `"😎"`
 - D: `"😎"` and `"😎"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2599,7 +2842,10 @@ console.log(person)
 - C: `{ name: "Lydia", age: 21, city: undefined }`
 - D: `"Amsterdam"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2638,7 +2884,10 @@ console.log(checkAge(21))
 - C: `ReferenceError`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2663,7 +2912,10 @@ fetch('https://www.website.com/api/user/1')
 - C: 前一个`.then()`中回调方法返回的结果
 - D: 总是`undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2688,7 +2940,10 @@ function getName(name) {
 - C: `new Boolean(name)`
 - D: `name.length`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2715,7 +2970,10 @@ console.log("I want pizza"[0])
 - C: `SyntaxError`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2744,7 +3002,10 @@ sum(10)
 - C: `ReferenceError`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -2784,7 +3045,10 @@ console.log(data)
 - C: `{ default: "Hello world", name: "Lydia" }`
 - D: Global object of `module.js`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2816,7 +3080,10 @@ console.log(typeof member)
 - C: `"object"`
 - D: `"string"`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -2849,7 +3116,10 @@ console.log(newList.push(5))
 - C: `[1, 2, 3, 4]`
 - D: `Error`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -2881,7 +3151,10 @@ console.log(giveLydiaChocolate.prototype)
 - C: `{ constructor: ...}` `{}`
 - D: `{ constructor: ...}` `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -2911,7 +3184,10 @@ for (const [x, y] of Object.entries(person)) {
 - C: `["name", "age"]` and `undefined`
 - D: `Error`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -2944,7 +3220,10 @@ getItems(["banana", "apple"], "pear", "orange")
 - C: `["banana", "apple", ["pear"], "orange"]`
 - D: `SyntaxError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -2965,7 +3244,7 @@ getItems(["banana", "apple"], "pear", "orange")
 
 ---
 
-###### <a name=20190817></a>95. 输出什么？
+###### 95. 输出什么？
 
 ```javascript
 function nums(a, b) {
@@ -2987,7 +3266,10 @@ console.log(nums(1, 2))
 - C: `undefined` and `undefined`
 - D: `SyntaxError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3033,7 +3315,10 @@ console.log(member.name)
 - C: `Error: cannot redeclare Person`
 - D: `SyntaxError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3063,7 +3348,10 @@ console.log(Object.keys(info))
 - C: `{ a: "b" }` and `["a"]`
 - D: `{Symbol('a'): 'b'}` and `[]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -3096,7 +3384,10 @@ console.log(getUser(user))
 - C: `[1, 2, 3, 4]` and `{ name: "Lydia", age: 21 }`
 - D: `Error` and `{ name: "Lydia", age: 21 }`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -3132,7 +3423,10 @@ console.log(name())
 - C: `TypeError`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3164,7 +3458,10 @@ You should${'' && `n't`} see a therapist after so much JavaScript lol`
 - C: `possible! You shouldn't see a therapist after so much JavaScript lol`
 - D: `Impossible! You shouldn't see a therapist after so much JavaScript lol`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3194,7 +3491,10 @@ console.log(one, two, three)
 - C: `{}` `""` `[]`
 - D: `null` `null` `true`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3236,7 +3536,10 @@ secondFunction()
 - C: `I have resolved!`, `second` and `second`, `I have resolved!`
 - D: `second`, `I have resolved!` and `I have resolved!`, `second`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -3275,7 +3578,10 @@ for (let item of set) {
 - C: `3`, `Lydia2`, `[Object object]2`
 - D: `"12"`, `Lydia2`, `[Object object]2`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3304,7 +3610,10 @@ Promise.resolve(5)
 - C: `Promise {<fulfilled>: 5}`
 - D: `Error`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3338,7 +3647,10 @@ compareMembers(person)
 - C: `ReferenceError`
 - D: `SyntaxError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3378,7 +3690,10 @@ console.log(colorConfig.colors[1])
 - C: `undefined`
 - D: `TypeError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -3405,7 +3720,10 @@ console.log('❤️' === '❤️')
 - A: `true`
 - B: `false`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -3436,7 +3754,10 @@ emojis.splice(1, 2, '✨')
 - C: `map` `slice` `splice` 
 - D: `splice`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -3450,7 +3771,7 @@ emojis.splice(1, 2, '✨')
 
 ---
 
-###### <a name=20191009></a>109. 输出什么？
+###### 109. 输出什么？
 
 ```javascript
 const food = ['🍕', '🍫', '🥑', '🍔']
@@ -3466,7 +3787,10 @@ console.log(food)
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']` 
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -3491,7 +3815,10 @@ JSON.parse()
 - C: Parses any JavaScript value to JSON
 - D: Parses JSON to a JavaScript object only
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -3535,7 +3862,10 @@ getName()
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D 
@@ -3584,7 +3914,10 @@ console.log(two.next().value)
 - C: `['a', 'b', 'c']` and `a`
 - D: `a` and `['a', 'b', 'c']`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3623,7 +3956,10 @@ console.log(`${(x => x)('I love')} to program`)
 - C: `${(x => x)('I love') to program`
 - D: `TypeError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -3652,7 +3988,10 @@ config = null
 - C: `setInterval` 的回调仍然会被每秒钟调用
 - D: 我们从没调用过 `config.alert()`, config 为 `null`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3685,7 +4024,10 @@ myMap.get(() => 'greeting')
 - C: 2 and 3
 - D: All of them
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3725,7 +4067,10 @@ console.log(person)
 - C: `{name: "Lydia", age: 22}`
 - D: `{name: "Lydia", age: 23}`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3754,7 +4099,10 @@ function sumValues(x, y, z) {
 - C: `sumValues(...[1, 2, 3])`
 - D: `sumValues([1, 2, 3])`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3780,7 +4128,10 @@ console.log(list[(num += 1)]);
 - C: `SyntaxError`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3818,7 +4169,10 @@ console.log(member.getLastName?.());
 - C: `Mara` `null` `Lydia Hallie` `null`
 - D: `null` `ReferenceError` `null` `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3852,7 +4206,10 @@ if (groceries.indexOf("banana")) {
 - C: `undefined`
 - D: `1`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -3882,7 +4239,10 @@ console.log(config.language);
 - C: `[]`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -3908,7 +4268,10 @@ console.log(!typeof name === "string");
 - C: `false` `false`
 - D: `true` `true`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3938,7 +4301,10 @@ add(4)(5)(6);
 - C: `4` `function` `function`
 - D: `undefined` `undefined` `6`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -3972,7 +4338,10 @@ async function* range(start, end) {
 - C: `1` `2` `3`
 - D: `undefined` `undefined` `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -3999,12 +4368,15 @@ myFunc(1, 2, 3);
 - C: `{ 1: undefined }` `undefined` `undefined`
 - D: `undefined` `undefined` `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
 
-`myFunc` 期望接收一个包含 `x`, `y` 和 `z` 属性的对象作为它的参数。因为我们仅仅传递三个单独的数字值 (1, 2, 3) 而不是一个含有 `x`, `y` 和 `z` 属性的对象 ({x: 1, y: 2, z: 3})，`x`, `y` 和 `z` 有着各自的默认值 `undefined`.
+`myFunc` 期望接收一个包含 `x`, `y` 和 `z` 属性的对象作为它的参数。因为我们仅仅传递三个单独的数字值 (1, 2, 3) 而不是一个含有 `x`, `y` 和 `z` 属性的对象 (`{x: 1, y: 2, z: 3}`)，`x`, `y` 和 `z` 有着各自的默认值 `undefined`.
 
 
 </details>
@@ -4036,13 +4408,14 @@ console.log(getFine(130, 300))
 - C: The driver drove undefined and has to pay undefined
 - D: The driver drove 130.00 and has to pay 300.00
 
-<details><summary><b>答案</b></summary>
-
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 #### 答案：B
 
 通过方法 `Intl.NumberFormat`，我们可以格式化任意区域的数字值。我们对数字值 `130` 进行 `mile-per-hour` 作为 `unit` 的 `en-US` 区域 格式化，结果为 `130 mph`。对数字值 `300` 进行 `USD` 作为 `currency` 的 `en-US` 区域格式化，结果为 `$300.00`.
-
 
 </details>
 
@@ -4062,7 +4435,10 @@ console.log(spookyItems);
 - C: `["👻", "🎃", "🕸", { item: "💀" }]`
 - D: `["👻", "🎃", "🕸", "[object Object]"]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -4092,7 +4468,10 @@ console.log(isNaN(age));
 - C: `false` `false` `true` `false`
 - D: `false` `true` `false` `true`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4124,7 +4503,10 @@ getInfo();
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -4157,7 +4539,10 @@ const myPromise = Promise.resolve("Woah some cool data");
 - C: `Woah some cool data` `Oh finally!`
 - D: `Oops didn't work` `Oh finally!`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4182,7 +4567,10 @@ console.log(emojis.flat(1));
 - C: `['🥑', ['✨', '✨', '🍕', '🍕']]`
 - D: `['🥑', '✨', '✨', '🍕', '🍕']`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -4194,7 +4582,7 @@ console.log(emojis.flat(1));
 
 ---
 
-###### <a name=20191224></a>132. 输出什么？
+###### 132. 输出什么？
 
 ```javascript
 class Counter {
@@ -4222,7 +4610,10 @@ console.log(counterOne.count);
 - C: `2`
 - D: `3`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -4265,7 +4656,10 @@ funcTwo();
 - C: `Promise! Last line! Last line! Promise! Timeout! Timeout!`
 - D: `Last line! Promise! Promise! Last line! Timeout! Timeout!`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -4302,7 +4696,10 @@ import * as sum from "./sum";
 - C: `sum.default(4)`
 - D: 默认导出不用 `*` 来导入，只能具名导出
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4362,7 +4759,10 @@ person.name;
 - C: `Added a new property!` `Accessed a property!`
 - D: 没有任何输出
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4393,7 +4793,10 @@ Object.seal(person);
 - C: `delete person.name`
 - D: `Object.assign(person, { age: 21 })`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -4425,7 +4828,10 @@ Object.freeze(person);
 - C: `person.address.street = "101 Main St"`
 - D: `person.pet = { name: "Mara" }`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4457,7 +4863,10 @@ myFunc(3);
 - C: `2` `Error` and `3` `6`
 - D: `2` `4` and `3` `Error`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -4497,7 +4906,10 @@ console.log(counter.#number)
 - C: `undefined`
 - D: `SyntaxError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -4539,7 +4951,10 @@ obj.next(); // { value: "Lisa", done: false }
 - C: `return getMembers(teams[i].members)`
 - D: `return yield getMembers(teams[i].members)`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -4578,7 +4993,10 @@ console.log(person.hobbies);
 - C: `["coding", "dancing", "baking"]`
 - D: `["coding", "running", "dancing", "baking"]`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4622,7 +5040,10 @@ const pet = new Flamingo();
 - C: `I'm a bird. 🦢` `I'm pink. 🌸`
 - D: Nothing, we didn't call any method
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -4650,7 +5071,10 @@ const emojis = ["🎄", "🎅🏼", "🎁", "⭐"];
 - C: 3 and 4
 - D: 3
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -4678,7 +5102,10 @@ const person = {
 - C: `*[Symbol.iterator]() { yield* Object.values(this) }`
 - D: `*[Symbol.iterator]() { for (let x in this) yield this }`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4706,7 +5133,10 @@ console.log(count)
 - B: 2
 - C: 3
 - D: 4
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4735,7 +5165,10 @@ getFruit([['🍍'], ['🍊', '🍌']])
 - C: `[]`, `[]`, 🍌
 - D: `undefined`, `undefined`, 🍌
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -4777,7 +5210,10 @@ console.log(calc.count)
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -4819,7 +5255,10 @@ console.log(updatedUser === user)
 - C: `TypeError`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -4848,7 +5287,10 @@ console.log(fruit)
 - C: `['🍇', '🍊', '🍎']`
 - D: `['🍇', '🍌', '🍊', '🍎']`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -4880,7 +5322,10 @@ console.log(animals[dog])
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B
@@ -4917,7 +5362,10 @@ console.log(user.email)
 - C: `undefined`
 - D: `ReferenceError`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：A
@@ -4953,7 +5401,10 @@ runPromises()
 - C: `[['First', 'Second']]`
 - D: `'Third'`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：D
@@ -4982,7 +5433,10 @@ Object[method](keys.map((_, i) => {
 - C: `fromEntries`
 - D: `forEach`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -5018,7 +5472,10 @@ console.log(member)
 - C: `{ email: "my@email.com", address: {} }`
 - D: `{ email: "my@email.com", address: undefined }`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：C
@@ -5048,7 +5505,10 @@ if (!typeof randomValue === "string") {
 - C: `TypeError`
 - D: `undefined`
 
-<details><summary><b>答案</b></summary>
+<details>
+<summary>
+<b>答案</b>
+</summary>
 
 
 #### 答案：B

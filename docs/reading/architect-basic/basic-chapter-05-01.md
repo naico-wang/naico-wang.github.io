@@ -308,7 +308,7 @@ Token模式下的踢出与Session模式并没有本质的区别，只是第二�
 
 （3）服务端校验邮箱是否存在，如果存在，则生成Token串，Token具有有效期，如1小时。同时，对邮箱地址进行哈希加密（使用MD5、SHA等算法，防止邮箱地址被篡改）。
 
-（4）给用户邮箱发送邮件，邮件的内容为用户修改密码的地址，地址后面拼接Token和加密后的邮箱参数，如https://xxx:xx/restPassword?token=6wUU0Xwecav1TsFIiLwTS4wFaiLJtEvmrhwMIv9VFQq5VX55fXjEOAJgeFFAYMqk&email=5B0mDIsukVgkp2AY36O9。
+（4）给用户邮箱发送邮件，邮件的内容为用户修改密码的地址，地址后面拼接Token和加密后的邮箱参数，如`https://xxx:xx/restPassword?token=6wUU0Xwecav1TsFIiLwTS4wFaiLJtEvmrhwMIv9VFQq5VX55fXjEOAJgeFFAYMqk&email=5B0mDIsukVgkp2AY36O9`。
 
 （5）用户点击邮箱中的链接，跳转到客户端，进入密码修改页面。
 

@@ -887,7 +887,7 @@ const [a, b, c] = [1, 2, 3]
 
 最终，a、b、c 分别被赋予了数组第 0、1、2 个索引位的值：
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e55fc36b191340e69698782fbd67ef4f~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:33%;" /> 
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e55fc36b191340e69698782fbd67ef4f~tplv-k3u1fbpfcp-watermark.awebp) 
 
 数组里的 0、1、2 索引位的元素值，精准地被映射到了左侧的第 0、1、2 个变量里去，这就是数组解构的工作模式。还可以通过给左侧变量数组设置空占位的方式，实现对数组中某几个元素的精准提取：
 
@@ -897,7 +897,7 @@ const [a,,c] = [1,2,3]
 
 通过把中间位留空，可以顺利地把数组第一位和最后一位的值赋给 a、c 两个变量：
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a14ffbb3df2646a4a84f4a0c7d62d975~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:33%;" />
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a14ffbb3df2646a4a84f4a0c7d62d975~tplv-k3u1fbpfcp-watermark.awebp)
 
 **2）对象的解构** 对象解构比数组结构稍微复杂一些，也更显强大。在解构对象时，是以属性的名称为匹配条件，来提取想要的数据的。现在定义一个对象：
 
@@ -916,7 +916,7 @@ const { name, age } = stu
 
 这样就得到了 name 和 age 两个和 stu 平级的变量：
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ed2565845f2415b8243c8c355b2c6d6~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:33%;" />
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ed2565845f2415b8243c8c355b2c6d6~tplv-k3u1fbpfcp-watermark.awebp)
 
 注意，对象解构严格以属性名作为定位依据，所以就算调换了 name 和 age 的位置，结果也是一样的：
 
@@ -1472,9 +1472,9 @@ Array.from(arrayLike);
 
 因此，~6 的值为-7。
 
-#### 5. 左移运算符（<<）
+#### 5. 左移运算符（\<\<）
 
-**定义：** 将一个运算对象的各二进制位全部左移若干位，左边的二进制位丢弃，右边补 0。 设 a=1010 1110，a = a<< 2 将 a 的二进制位左移 2 位、右补 0，即得 a=1011 1000。 若左移时舍弃的高位不包含 1，则每左移一位，相当于该数乘以 2。
+**定义：** 将一个运算对象的各二进制位全部左移若干位，左边的二进制位丢弃，右边补 0。 设 a=1010 1110，a = a\<\< 2 将 a 的二进制位左移 2 位、右补 0，即得 a=1011 1000。 若左移时舍弃的高位不包含 1，则每左移一位，相当于该数乘以 2。
 
 #### 6. 右移运算符（>>）
 
@@ -1973,7 +1973,7 @@ fetch 的优点：
 fetch 的缺点：
 
 - fetch 只对网络请求报错，对 400，500 都当做成功的请求，服务器返回 400，500 错误码时并不会 reject，只有网络错误这些导致请求不能完成时，fetch 才会被 reject。
-- fetch 默认不会带 cookie，需要添加配置项： fetch(url, {credentials: 'include'})
+- fetch 默认不会带 cookie，需要添加配置项： `fetch(url, {credentials: 'include'})`
 - fetch 不支持 abort，不支持超时控制，使用 setTimeout 及 Promise.reject 的实现的超时控制并不能阻止请求过程继续在后台运行，造成了流量的浪费
 - fetch 没有办法原生监测请求的进度，而 XHR 可以
 

@@ -4,9 +4,9 @@
 
 ## About This Repo
 
-This is my personal GitPages repo, created using [Rspress](https://rspress.dev/index)
+This is my personal GitPages repo, created using [Docusaurus](https://docusaurus.io/)
 
-For more introduction of Rspress, please go to the official website.
+For more introduction of Docusaurus, please go to the official website.
 
 You can fork or download as you wish.
 
@@ -14,22 +14,16 @@ You can fork or download as you wish.
 
 If you want to create your own website using GitPages, please follow this steps:
 
-##### Create your own GitPages Repo 
+### Create your own GitPages Repo 
 
 ```shell
 https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site
 ```
 
-##### Install Rspress
+### Install Docusaurus and Init Your Own Docusaurus Site and Complete the steps
 
 ```shell
-npm add -D rspress
-```
-
-##### Init Your Own Rspress Site and Complete the steps
-
-```shell
-npx rspress init
+yarn create docusaurus
 ```
 
 For more configuration and usage, please refer to VitePress official website.

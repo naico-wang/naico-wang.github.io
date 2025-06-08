@@ -107,7 +107,7 @@ OPTIONS 请求方法的**主要用途**有两个：
 
 ### 7. HTTP 1.0 和 HTTP 1.1 之间有哪些区别？
 
-- **连接方面**，http1.0 默认使用非持久连接，而 http1.1 默认使用持久连接。http1.1 通过使用持久连接来使多个 http 请求复用同一个 TCP 连接，以此来避免使用非持久连接时每次需要建立连接的时延。
+- **连接方面**，http1.0 默认使用非持久连接，而 http1.1 默认使用持久连接。http1.1 通过使用持久连接来使多个 `http` 请求复用同一个 TCP 连接，以此来避免使用非持久连接时每次需要建立连接的时延。
 - 支持**管道(pipeline)网络传输**，只要第一个请求发出去了，不必等其回来，就可以发第二个请求出去，可以减少整体的响应时间。但服务器端必须按照接收到客户端请求的先后顺序依次回送响应结果，以保证客户端能够区分出每次请求的响应内容。
 - **资源请求方面**，在 http1.0 中，存在一些浪费带宽的现象，例如客户端只是需要某个对象的一部分，而服务器却将整个对象送过来了，并且不支持断点续传功能，http1.1 则在请求头引入了 range 头域，它允许只请求资源的某个部分，即返回码是 206（Partial Content）。
 - **缓存方面**，在 http1.0 中主要使用 header 里的 If-Modified-Since、Expires 来做为缓存判断的标准，http1.1 则引入了更多的缓存控制策略，例如 Etag、If-Unmodified-Since、If-Match、If-None-Match 等更多可供选择的缓存头来控制缓存策略。
@@ -247,7 +247,7 @@ HTTP2 的头部压缩是 HPACK 算法，在客户端和服务器两端建立“�
 - 空⾏
 - 请求体
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4fb5bb2cb1664850b52e32d57af74f2f~tplv-k3u1fbpfcp-watermark.awebp" alt="image.png" style="zoom:50%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4fb5bb2cb1664850b52e32d57af74f2f~tplv-k3u1fbpfcp-watermark.awebp) 
 
 **其中：** 
 
@@ -261,7 +261,7 @@ HTTP2 的头部压缩是 HPACK 算法，在客户端和服务器两端建立“�
 
 （3）请求体: post put 等请求携带的数据 
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eacc55d7152149e99730346f1edfc9ab~tplv-k3u1fbpfcp-watermark.awebp" alt="image.png" style="zoom: 50%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eacc55d7152149e99730346f1edfc9ab~tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 16. HTTP 响应报文的是什么样的？
 
@@ -272,7 +272,7 @@ HTTP2 的头部压缩是 HPACK 算法，在客户端和服务器两端建立“�
 - 空⾏
 - 响应体
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1b0183eb91ce451aa17bd515d047062d~tplv-k3u1fbpfcp-watermark.awebp" alt="image.png" style="zoom: 33%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1b0183eb91ce451aa17bd515d047062d~tplv-k3u1fbpfcp-watermark.awebp)
 
 - 响应⾏：由网络协议版本，状态码和状态码的原因短语组成，例如 HTTP/1.1 200 OK 。
 - 响应头：响应部⾸组成
@@ -301,7 +301,7 @@ HTTP/2 主要的问题在于，多个 HTTP 请求在复用一个 TCP 连接，�
 
 这都是基于 TCP 传输层的问题，所以 HTTP/3 把 HTTP 下层的 TCP 协议改成了 UDP! UDP 发生是不管顺序，也不管丢包的，所以不会出现 HTTP/1.1 的队头阻塞和 HTTP/2 的一个丢包全部重传问题。
 
-<img src="https://oss.justin3go.com/blogs/image-20220226191348758.png" alt="image-20220226191348758" style="zoom: 50%;" />
+[img](https://oss.justin3go.com/blogs/image-20220226191348758.png)
 
 大家都知道 UDP 是不可靠传输的，但基于 UDP 的 QUIC 协议可以实现类似 TCP 的可靠性传输。
 
@@ -357,7 +357,7 @@ QUIC 是新协议，对于很多网络设备，根本不知道什么是 QUIC，�
 
 ### 1. 什么是 HTTPS 协议？
 
-超文本传输安全协议（Hypertext Transfer Protocol Secure，简称：HTTPS）是一种通过计算机网络进行安全通信的传输协议。HTTPS 经由 HTTP 进行通信，利用 SSL/TLS 来加密数据包。HTTPS 的主要目的是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。 <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10885a9d4d574d7caf3fee1416f623ca~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:50%;" /> 
+超文本传输安全协议（Hypertext Transfer Protocol Secure，简称：HTTPS）是一种通过计算机网络进行安全通信的传输协议。HTTPS 经由 HTTP 进行通信，利用 SSL/TLS 来加密数据包。HTTPS 的主要目的是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。 [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/10885a9d4d574d7caf3fee1416f623ca~tplv-k3u1fbpfcp-watermark.awebp) 
 
 HTTP 协议采用**明文传输**信息，存在**信息窃听**、**信息篡改**和**信息劫持**的风险，而协议 TLS/SSL 具有**身份验证**、**信息加密**和**完整性校验**的功能，可以避免此类问题发生。
 
@@ -407,7 +407,7 @@ TLS/SSL 的功能实现主要依赖三类基本算法：**散列函数 hash**、
 
 这个方法最要的是认证中心的可靠性，一般浏览器里会内置一些顶层的认证中心的证书，相当于我们自动信任了他们，只有这样才能保证数据的安全。
 
-### 4. HTTPS 通信（握手）过程<重点>
+### 4. HTTPS 通信（握手）过程
 
 ![image-20220226221108326](https://oss.justin3go.com/blogs/image-20220226221108326.png)
 
@@ -698,7 +698,7 @@ DNS 服务器中以资源记录的形式存储信息，每一个 DNS 响应报�
 
 `ISO`为了更好的使网络应用更为普及，推出了`OSI`参考模型。
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c1e8e168d9f249788c74c5b50e0528e2~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:50%;" />
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c1e8e168d9f249788c74c5b50e0528e2~tplv-k3u1fbpfcp-watermark.awebp)
 
 #### （1）应用层
 
@@ -757,11 +757,11 @@ DNS 服务器中以资源记录的形式存储信息，每一个 DNS 响应报�
 
 在每一层实现的协议也各不同，即每一层的服务也不同，下图列出了每层主要的传输协议： 
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2db9226a6cdb4ee48daecd9bc4181b64~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:50%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2db9226a6cdb4ee48daecd9bc4181b64~tplv-k3u1fbpfcp-watermark.awebp)
 
 同样，`TCP/IP`四层协议的通信方式也是对等通信：
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2c0d79ff592242a8af294ce32177c8e3~tplv-k3u1fbpfcp-watermark.awebp" alt="image.png" style="zoom:50%;" />
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2c0d79ff592242a8af294ce32177c8e3~tplv-k3u1fbpfcp-watermark.awebp)
 
 ## 六、TCP 与 UDP
 
@@ -870,9 +870,9 @@ UDP 在传输数据之前不需要先建立连接，远地主机的运输层在�
 - 超时重传
 - 确认丢失和确认迟到
 
-<img src="https://oss.justin3go.com/blogs/image-20220227094340564.png" alt="image-20220227094340564" style="zoom: 67%;" />
+[img](https://oss.justin3go.com/blogs/image-20220227094340564.png)
 
-<img src="https://oss.justin3go.com/blogs/image-20220227094321934.png" alt="image-20220227094321934" style="zoom:50%;" />
+[img](https://oss.justin3go.com/blogs/image-20220227094321934.png)
 
 ### 6. TCP 的拥塞控制机制
 
@@ -897,7 +897,7 @@ TCP 的拥塞控制机制主要是以下四种机制：
 - 拥塞避免未必能够完全避免拥塞，是说在拥塞避免阶段将拥塞窗口控制为按线性增长，使网络不容易出现阻塞。
 - 思路： 让拥塞窗口 cwnd 缓慢的增大，即每经过一个返回时间 RTT 就把发送方的拥塞控制窗口加一
 - 无论是在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞，就把慢开始门限设置为出现拥塞时的发送窗口大小的一半。然后把拥塞窗口设置为 1，执行慢开始算法。如图所示:
--  <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06b60b174bb242b498d244002caded1c~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+-  [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/06b60b174bb242b498d244002caded1c~tplv-k3u1fbpfcp-watermark.awebp) 
 - x 其中，判断网络出现拥塞的根据就是没有收到确认，虽然没有收到确认可能是其他原因的分组丢失，但是因为无法判定，所以都当做拥塞来处理。
 
 **（3）快速重传**

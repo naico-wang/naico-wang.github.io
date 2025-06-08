@@ -82,7 +82,7 @@ Learner 不参与选举，而是学习被批准的 value，在Paxos中，Learner
 **Proposer 获得 Accept 回复的信息之后，做如下判断：**
 
 - 回复数量 > Acceptor 数量的1/2时，代表提交 value 成功，发送广播给所有的 Proposer、Learner，通知它们已提交的 value。
-- 回复数量 <= Acceptor 数量的1/2时，则重新开始，更新生成更大的提案号，跳转到准备阶段执行。
+- 回复数量 < = Acceptor 数量的1/2时，则重新开始，更新生成更大的提案号，跳转到准备阶段执行。
 - 收到响应error时，同样更新生成更大的提案号，转到准备阶段执行。
 
   ![process2](https://img2024.cnblogs.com/blog/167509/202404/167509-20240405123540303-1735398109.png)

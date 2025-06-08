@@ -12,7 +12,7 @@ category: 前端面试
 
 当一个 Vue 实例创建时，Vue 会遍历 data 中的属性，用 Object.defineProperty（vue3.0 使用 proxy ）将它们转为 getter/setter，并且在内部追踪相关依赖，在属性被访问和修改时通知变化。 每个组件实例都有相应的 watcher 程序实例，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的 setter 被调用时，会通知 watcher 重新计算，从而致使它关联的组件得以更新。
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1b16025a35b4cd2b343a92e740621b7~tplv-k3u1fbpfcp-watermark.awebp" alt="0_tB3MJCzh_cB6i3mS-1.png" style="zoom:67%;" />
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1b16025a35b4cd2b343a92e740621b7~tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 2. 双向数据绑定的原理
 [可参考链接](https://www.php.cn/js-tutorial-417685.html)
@@ -27,7 +27,7 @@ Vue2.js 是采用**数据劫持**结合**发布者-订阅者模式**的方式，
 	③ 待属性变动 dep.notice()通知时，能调用自身的 update()方法，并触发 Compile 中绑定的回调，则功成身退。
 1. MVVM 作为数据绑定的入口，整合 Observer、Compile 和 Watcher 三者，通过 Observer 来监听自己的 model 数据变化，通过 Compile 来解析编译模板指令，最终利用 Watcher 搭起 Observer 和 Compile 之间的通信桥梁，达到数据变化 -> 视图更新；视图交互变化(input) -> 数据 model 变更的双向绑定效果。
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a286bdc076ae425fb9591bb8c4153240~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a286bdc076ae425fb9591bb8c4153240~tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 3. 使用 Object.defineProperty() 来进行数据劫持有什么缺点？
 
@@ -704,7 +704,7 @@ methodsToPatch.forEach(function(method) {
 
 **区别：** 
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/76b3d747986e45e096abaf64faf5e332~tplv-k3u1fbpfcp-watermark.awebp" alt="775316ebb4c727f7c8771cc2c06e06dd.jpg" style="zoom: 67%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/76b3d747986e45e096abaf64faf5e332~tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 22. Vue template 到 render 的过程
 

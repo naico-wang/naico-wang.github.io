@@ -124,7 +124,7 @@ abc[^0-9]
 
 -   **{n}**   匹配 n 个字符
 -   **{m,n}**   匹配 m\~n 个字符
--   **{m,}**   至少匹配 m 个字符
+-   **`{m,}`**   至少匹配 m 个字符
 
 \* 和 + 都是贪婪型元字符，会匹配尽可能多的内容。在后面加 ? 可以转换为懒惰型元字符，例如 \*?、+? 和 {m,n}? 。
 
@@ -166,11 +166,11 @@ a.+c
 ^\s*\/\/.*$
 ```
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/600e9c75-5033-4dad-ae2b-930957db638e.png"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/600e9c75-5033-4dad-ae2b-930957db638e.png)
 
 **匹配结果**  
 
-1. public void fun() {
+1. public void fun() \{
 2. &nbsp;&nbsp;&nbsp;&nbsp;      **// 注释 1**  
 3. &nbsp;&nbsp;&nbsp;&nbsp;    int a = 1;
 4. &nbsp;&nbsp;&nbsp;&nbsp;    int b = 2;

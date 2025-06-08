@@ -160,7 +160,7 @@ DNS 劫持由于涉嫌违法，已经被监管起来，现在很少会有 DNS �
 
 **Chrome 浏览器的架构图**：
 
- <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/83e928a4f95d4ebe91d0881b5b2cf94b~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+ [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/83e928a4f95d4ebe91d0881b5b2cf94b~tplv-k3u1fbpfcp-watermark.awebp) 
 
 从图中可以看出，最新的 Chrome 浏览器包括：
 
@@ -387,7 +387,7 @@ self.addEventListener('fetch', e => {
 - 服务器收到请求后，优先根据 Etag 的值判断被请求的文件有没有做修改，Etag 值一致则没有修改，命中协商缓存，返回 304；如果不一致则有改动，直接返回新的资源文件带上新的 Etag 值并返回 200；
 - 如果服务器收到的请求没有 Etag 值，则将 If-Modified-Since 和被请求文件的最后修改时间做比对，一致则命中协商缓存，返回 304；不一致则返回新的 last-modified 和文件并返回 200；
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3f6837d8d1c74cf2894d8967a20115d9~tplv-k3u1fbpfcp-watermark.awebp" alt="业务流程图 1.png" style="zoom:67%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3f6837d8d1c74cf2894d8967a20115d9~tplv-k3u1fbpfcp-watermark.awebp) 
 
 很多网站的资源后面都加了版本号，这样做的目的是：每次升级了 JS 或 CSS 文件后，为了防止浏览器进行缓存，强制改变版本号，客户端浏览器就会重新下载新的 JS 或 CSS 文件 ，以保证用户能够及时获得网站的最新更新。
 
@@ -1456,7 +1456,7 @@ Event Loop 执行顺序如下所示：
 
 可以把执行栈认为是一个存储函数调用的**栈结构**，遵循先进后出的原则。 
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/391e7d7e880f42d59809dbc16af5d7bf~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:67%;" /> 
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/391e7d7e880f42d59809dbc16af5d7bf~tplv-k3u1fbpfcp-watermark.awebp) 
 
 当开始执行 JS 代码时，根据先进后出的原则，后执行的函数会先弹出栈，可以看到，`foo` 函数后执行，当执行完毕后就从栈中弹出了。
 
@@ -1533,7 +1533,7 @@ fs.readFile(__filename, () => {
 
 上面都是 macrotask 的执行情况，对于 microtask 来说，它会在以上每个阶段完成前**清空** microtask 队列，下图中的 Tick 就代表了 microtask 
 
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8ea27044a0124facaab3e4a8da89d709~tplv-k3u1fbpfcp-watermark.awebp" alt="img" style="zoom:50%;" />
+[img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8ea27044a0124facaab3e4a8da89d709~tplv-k3u1fbpfcp-watermark.awebp)
 
 ```javascript
 setTimeout(() => {

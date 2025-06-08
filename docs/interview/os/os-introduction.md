@@ -62,7 +62,7 @@ category: Operation System
 
 如果一个进程在用户态需要使用内核态的功能，就进行系统调用从而陷入内核，由操作系统代为完成。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/tGPV0.png" width="600"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/tGPV0.png)
 
 Linux 的系统调用主要有以下这些：
 
@@ -91,7 +91,7 @@ Linux 的系统调用主要有以下这些：
 
 因为需要频繁地在用户态和核心态之间进行切换，所以会有一定的性能损失。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/2_14_microkernelArchitecture.jpg"/> </div><br>
+[img](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/2_14_microkernelArchitecture.jpg)
 
 ## 中断分类
 
