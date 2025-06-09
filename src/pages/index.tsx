@@ -9,22 +9,23 @@ import styles from './index.module.css';
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout title={siteConfig.title}>
+    <Layout title={siteConfig.title} wrapperClassName={styles.homeWrapper}>
       <div className={styles.homeContainer}>
         <div className={styles.siteTitle}>Too Young, Too Simple, Sometimes Naive.</div>
-        <hr data-content="关于本站和作者" />
+        <hr data-content="About Me" />
         <div className={styles.userInfo}>
           <div className={styles.basicInfo}>
             <div className={styles.name}>Hello, I'm <strong>Naico Wang</strong>.</div>
             <ul>
-              <li>Work as Staff Engineer.</li>
-              <li>Used to be an Engineer Lead.</li>
-              <li>PMP Certified.</li>
+              <li>Work as <strong>Staff Engineer - Web</strong></li>
+              <li>Talk is Cheap, Show me the <strong>CODE</strong></li>
+              <li>PPT Engineer / Confluence Engineer</li>
+              <li><strong>PMP</strong> / <strong>PMI-ACP</strong></li>
             </ul>
           </div>
           <div className={styles.avatar} />
         </div>
-        <hr data-content="服务过的公司" />
+        <hr data-content="Work Experiences" />
         <div className={styles.companyList}>
           <img src="/img/company-grain.png" alt="Grain Tech"/>
           <img src="/img/company-chinasoft.png" alt="ChinaSoft"/>
@@ -32,7 +33,7 @@ export default function Home(): ReactNode {
           <img src="/img/company-farfetch.png" alt="FARFETCH"/>
           <img src="/img/company-marriott.png" alt="Marriott International"/>
         </div>
-        <hr data-content="推荐内容" />
+        <hr data-content="Recommended Contents" />
         <div className={styles.contentList}>
           <div className={styles.itemList}>
             <div className={clsx(styles.item, styles.number1)}><Link to="/docs/category/系统架构设计">系统架构设计</Link></div>
