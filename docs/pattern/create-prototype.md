@@ -1,7 +1,7 @@
 ---
 title: 创建型 - 原型模式
 date: 2024-05-19
-category: 设计模式
+tags: [DesignPattern]
 ---
 
 # 创建型 - 原型模式

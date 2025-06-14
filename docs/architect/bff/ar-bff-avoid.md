@@ -1,7 +1,7 @@
 ---
 title: BFF - BFF避坑指南
 date: 2024-07-01
-category: BFF架构
+tags: [BackendForFront]
 ---
 
 # BFF（Backends for frontends）避坑指南

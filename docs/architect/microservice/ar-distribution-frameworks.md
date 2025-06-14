@@ -1,7 +1,7 @@
 ---
 title: 三大主流分布式事务框架详解 
 date: 2024-07-16
-category: 分布式
+tags: [MicroService]
 ---
 
 # 三大主流分布式事务框架详解（图文总结） 

@@ -1,7 +1,7 @@
 ---
 title: BFF - BFF治理与优化实践
 date: 2024-07-01
-category: BFF架构
+tags: [BackendForFront]
 ---
 
 # BFF治理与优化实践

@@ -1,3 +1,7 @@
+---
+tags: [TypeScript]
+---
+
 # TypeScript 类型系统（二）
 
 ## 函数

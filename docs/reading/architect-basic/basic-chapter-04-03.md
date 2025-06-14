@@ -1,7 +1,7 @@
 ---
 title: 4.登录功能架构设计(三)
 date: 2024-10-28
-category: 架构基础系列
+tags: [ReadingNotes]
 ---
 
 # 4.登录功能架构设计(三)

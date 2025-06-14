@@ -1,7 +1,7 @@
 ---
 title: 缓存相关知识
 date: 2024-10-19
-category: System Design
+tags: [System Design]
 ---
 
 # 缓存

@@ -1,7 +1,7 @@
 ---
 title: 行为模式 - 备忘录模式
 date: 2024-05-19
-category: 设计模式
+tags: [DesignPattern]
 ---
 
 # 行为模式 - 备忘录模式

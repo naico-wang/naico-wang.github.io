@@ -1,3 +1,7 @@
+---
+tags: [TypeScript]
+---
+
 # Infer初探
 
 ## 介绍

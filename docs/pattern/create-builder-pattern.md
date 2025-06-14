@@ -1,7 +1,7 @@
 ---
 title: 创建型 - 生成器模式
 date: 2024-05-18
-category: 设计模式
+tags: [DesignPattern]
 ---
 
 # 创建型 - 生成器模式

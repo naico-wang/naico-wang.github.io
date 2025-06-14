@@ -1,7 +1,7 @@
 ---
 title: 性能优化面试题
 date: 2024-10-21
-category: 前端面试
+tags: [FrontEnd]
 ---
 
 # 性能优化面试题

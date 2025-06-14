@@ -1,7 +1,7 @@
 ---
 title: OAuth 2.0 架构初探
 date: 2024-07-05
-category: 系统架构
+tags: [FrontEnd]
 ---
 
 # OAuth 2.0 架构初探

@@ -1,7 +1,7 @@
 ---
 title: Vue 面试题汇总
 date: 2024-10-21
-category: 前端面试
+tags: [FrontEnd]
 ---
 
 # Vue 面试题汇总
@@ -12,7 +12,7 @@ category: 前端面试
 
 当一个 Vue 实例创建时，Vue 会遍历 data 中的属性，用 Object.defineProperty（vue3.0 使用 proxy ）将它们转为 getter/setter，并且在内部追踪相关依赖，在属性被访问和修改时通知变化。 每个组件实例都有相应的 watcher 程序实例，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的 setter 被调用时，会通知 watcher 重新计算，从而致使它关联的组件得以更新。
 
- [img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1b16025a35b4cd2b343a92e740621b7~tplv-k3u1fbpfcp-watermark.awebp)
+![img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1b16025a35b4cd2b343a92e740621b7~tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 2. 双向数据绑定的原理
 [可参考链接](https://www.php.cn/js-tutorial-417685.html)

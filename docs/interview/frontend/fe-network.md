@@ -1,7 +1,7 @@
 ---
 title: 计算机网络面试题
 date: 2024-10-21
-category: 前端面试
+tags: [FrontEnd]
 ---
 
 # 计算机网络面试题

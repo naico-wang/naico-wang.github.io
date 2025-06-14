@@ -1,3 +1,7 @@
+---
+tags: [TypeScript]
+---
+
 # TypeScript支持JSX
 
 TypeScript 支持 JSX 转换和代码分析，如果你还不了解 JSX，[官网](https://facebook.github.io/jsx/)上有关于它的摘要：

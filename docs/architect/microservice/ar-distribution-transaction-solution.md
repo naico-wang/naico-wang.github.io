@@ -1,7 +1,7 @@
 ---
 title: 五种分布式事务解决方案 
 date: 2024-07-14
-category: 分布式
+tags: [MicroService]
 ---
 
 # 五种分布式事务解决方案（图文总结）

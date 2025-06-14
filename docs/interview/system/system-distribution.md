@@ -1,7 +1,7 @@
 ---
 title: 分布式
 date: 2024-10-19
-category: System Design
+tags: [System Design]
 ---
 
 # 分布式

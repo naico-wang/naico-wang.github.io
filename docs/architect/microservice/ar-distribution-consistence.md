@@ -1,7 +1,7 @@
 ---
 title: 高并发下的数据一致性保障 
 date: 2024-07-15
-category: 分布式
+tags: [MicroService]
 ---
 
 # 高并发下的数据一致性保障（图文全面总结） 

@@ -1,7 +1,7 @@
 ---
 title: 构建工具
 date: 2024-10-19
-category: 编程语言
+tags: [Programming Language]
 ---
 
 # 构建工具

@@ -1,7 +1,7 @@
 ---
 title: 6.系统日志架构设计
 date: 2024-10-28
-category: 架构基础系列
+tags: [ReadingNotes]
 ---
 
 # 6.系统日志架构设计

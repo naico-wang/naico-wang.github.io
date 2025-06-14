@@ -1,7 +1,7 @@
 ---
 title: IoC vs AOP
 date: 2024-10-23
-category: Spring框架
+tags: [MicroService]
 ---
 
 # 谈谈你对 IoC 和 AOP 的理解

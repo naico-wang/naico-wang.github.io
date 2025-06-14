@@ -1,7 +1,7 @@
 ---
 title: 浏览器的渲染过程
 date: 2024-10-28
-category: 前端面试
+tags: [FrontEnd]
 ---
 
 # 浏览器的渲染过程

@@ -1,7 +1,7 @@
 ---
 title: 创建型 - 工厂方法设计模式
 date: 2024-05-20
-category: 设计模式
+tags: [DesignPattern]
 ---
 
 # 创建型 - 工厂方法设计模式

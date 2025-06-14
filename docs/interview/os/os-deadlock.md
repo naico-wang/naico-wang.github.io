@@ -1,7 +1,7 @@
 ---
 title: 计算机操作系统 - 死锁
 date: 2024-10-19
-category: Operation System
+tags: [Operation System]
 ---
 
 # 计算机操作系统 - 死锁

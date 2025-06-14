@@ -1,7 +1,7 @@
 ---
 title: 结构型 - 适配器模式
 date: 2024-05-19
-category: 设计模式
+tags: [DesignPattern]
 ---
 
 # 结构型模式 - 适配器模式

@@ -1,7 +1,7 @@
 ---
 title: 微服务架构的思想本质
 date: 2024-07-10
-category: 微服务
+tags: [MicroService]
 ---
 
 # 架构与思维：微服务架构的思想本质

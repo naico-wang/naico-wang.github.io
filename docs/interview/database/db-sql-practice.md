@@ -1,7 +1,7 @@
 ---
 title: SQL 经典习题
 date: 2024-10-19
-category: Database
+tags: [Database]
 ---
 
 # SQL 练习

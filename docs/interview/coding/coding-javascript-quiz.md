@@ -1,7 +1,7 @@
 ---
 title: JavaScript 进阶问题列表
 date: 2024-07-17
-category: 编程语言
+tags: [Programming Language]
 ---
 
 # JavaScript 进阶问题列表

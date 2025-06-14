@@ -1,7 +1,7 @@
 ---
 title: 代码可读性
 date: 2024-10-19
-category: 编程语言
+tags: [Programming Language]
 ---
 
 # 代码可读性

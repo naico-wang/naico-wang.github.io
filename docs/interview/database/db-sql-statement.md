@@ -1,7 +1,7 @@
 ---
 title: SQL 语法
 date: 2024-10-19
-category: Database
+tags: [Database]
 ---
 
 # SQL 语法

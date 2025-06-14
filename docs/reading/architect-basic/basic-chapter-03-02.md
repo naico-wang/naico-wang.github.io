@@ -1,7 +1,7 @@
 ---
 title: 3.分布式微服务架构设计(二)
 date: 2024-10-28
-category: 架构基础系列
+tags: [ReadingNotes]
 ---
 
 # 3.分布式微服务架构设计(二)

@@ -1,7 +1,7 @@
 ---
 title: CSS 面试题汇总
 date: 2024-10-21
-category: 前端面试
+tags: [FrontEnd]
 ---
 
 # CSS 面试题汇总

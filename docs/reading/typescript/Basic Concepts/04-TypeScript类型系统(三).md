@@ -1,3 +1,7 @@
+---
+tags: [TypeScript]
+---
+
 # TypeScript 类型系统（三）
 
 ## 类型兼容性

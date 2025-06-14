@@ -1,7 +1,7 @@
 ---
 title: 数据库系统原理
 date: 2024-10-19
-category: Database
+tags: [Database]
 ---
 
 # 数据库系统原理

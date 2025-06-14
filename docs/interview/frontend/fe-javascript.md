@@ -1,7 +1,7 @@
 ---
 title: JavaScript 常见概念
 date: 2024-10-21
-category: 前端面试
+tags: [FrontEnd]
 ---
 
 # Javascript 面试题汇总

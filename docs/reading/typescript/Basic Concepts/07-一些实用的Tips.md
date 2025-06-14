@@ -1,3 +1,7 @@
+---
+tags: [TypeScript]
+---
+
 # 一些Tips
 
 ## 基于字符串的枚举

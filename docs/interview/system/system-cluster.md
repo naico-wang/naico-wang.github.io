@@ -1,7 +1,7 @@
 ---
 title: 集群
 date: 2024-10-19
-category: System Design
+tags: [System Design]
 ---
 
 # 集群

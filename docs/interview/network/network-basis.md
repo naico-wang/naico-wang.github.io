@@ -1,7 +1,7 @@
 ---
 title: 计算机网络 - 概述
 date: 2024-10-19
-category: 计算机网络
+tags: [Computer Network]
 ---
 
 # 计算机网络 - 概述

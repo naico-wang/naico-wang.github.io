@@ -1,7 +1,7 @@
 ---
 title: 面向对象思想
 date: 2024-10-19
-category: 编程语言
+tags: [Programming Language]
 ---
 
 # 面向对象思想

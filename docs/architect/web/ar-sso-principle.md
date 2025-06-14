@@ -1,7 +1,7 @@
 ---
 title: SSO 原理初探
 date: 2024-07-06
-category: 系统架构
+tags: [FrontEnd]
 ---
 
 # SSO 原理初探

@@ -1,7 +1,7 @@
 ---
 title: Redis 相关知识汇总
 date: 2024-10-19
-category: Database
+tags: [Database]
 ---
 
 # Redis 相关知识汇总

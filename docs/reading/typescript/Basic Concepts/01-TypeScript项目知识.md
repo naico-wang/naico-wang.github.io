@@ -1,3 +1,7 @@
+---
+tags: [TypeScript]
+---
+
 # TypeScript项目知识
 
 > 实用的TypeScript Repositories:

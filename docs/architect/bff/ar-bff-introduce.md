@@ -1,7 +1,7 @@
 ---
 title: BFF - BFF模式探究
 date: 2024-07-01
-category: BFF架构
+tags: [BackendForFront]
 ---
 
 # BFF 模式： Backends For Frontends

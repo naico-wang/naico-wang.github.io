@@ -1,7 +1,7 @@
 ---
 title: 结构型 - 装饰模式
 date: 2024-05-19
-category: 设计模式
+tags: [DesignPattern]
 ---
 
 # 结构型模式 - 装饰模式

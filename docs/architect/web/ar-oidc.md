@@ -1,7 +1,7 @@
 ---
 title: OpenID Connect详解
 date: 2024-07-06
-category: 系统架构
+tags: [FrontEnd]
 ---
 
 # OpenID Connect详解

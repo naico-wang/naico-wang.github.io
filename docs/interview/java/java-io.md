@@ -1,7 +1,7 @@
 ---
 title: Java IO
 date: 2024-10-19
-category: Java
+tags: [Java]
 ---
 
 # Java IO

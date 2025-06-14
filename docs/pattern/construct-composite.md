@@ -1,7 +1,7 @@
 ---
 title: 结构型 - 组合模式
 date: 2024-05-19
-category: 设计模式
+tags: [DesignPattern]
 ---
 
 # 结构型模式 - 组合模式

@@ -1,3 +1,7 @@
+---
+tags: [TypeScript]
+---
+
 # TypeScript 类型系统（一）
 
 在讨论[为什么使用 TypeScript](https://jkchao.github.io/typescript-book-chinese/#whys) 时，我们表述了 TypeScript 类型系统的主要功能。以下是一些关键点：
