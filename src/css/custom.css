@@ -1,5 +1,6 @@
 :root {
   --doc-sidebar-width: 20rem;
+  --ifm-alert-border-radius: 0;
 }
 
 a.header-github-link {
