@@ -96,24 +96,33 @@ const config: Config = {
           activeBaseRegex: '^/docs$',
         },
         {
+          to: '/docs/tags',
+          position: 'right',
+          label: '所有标签',
+        },
+        {
           to: '/docs/category/系统架构设计',
           position: 'right',
           label: '系统架构设计',
+          activeBaseRegex: '^/docs/architect',
         },
         {
           to: '/docs/category/经典设计模式',
           position: 'right',
           label: '经典设计模式',
+          activeBaseRegex: '^/docs/pattern',
         },
         {
           to: '/docs/category/日常读书笔记',
           position: 'right',
           label: '日常读书笔记',
+          activeBaseRegex: '^/docs/reading',
         },
         {
           to: '/docs/category/面试八股文',
           position: 'right',
           label: '面试八股文',
+          activeBaseRegex: '^/docs/interview',
         },
         {
           href: 'https://github.com/naico-wang',
