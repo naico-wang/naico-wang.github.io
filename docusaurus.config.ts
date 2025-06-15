@@ -150,6 +150,12 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  scripts: [
+    {
+      src: 'https://sdk.51.la/js-sdk-pro.min.js?id=3ItqjsY11mrrfGg3&ck=3ItqjsY11mrrfGg3&autoTrack=true&hashMode=true',
+      async: true
+    }
+  ],
 };
 
 export default config;
