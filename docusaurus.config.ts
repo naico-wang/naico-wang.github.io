@@ -82,7 +82,7 @@ const config: Config = {
       isCloseable: false,
     },
     navbar: {
-      title: '智库',
+      title: '智库 - naico.wang',
       logo: {
         alt: '智库 - naico.wang',
         src: 'img/logo.png',

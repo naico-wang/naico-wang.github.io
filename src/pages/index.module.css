@@ -1,164 +1,93 @@
-.homeWrapper {
-  align-items: center;
-  justify-content: center;
-}
 .homeContainer {
-  max-width: 55rem;
+  max-width: 60rem;
   padding: 3rem 2rem;
   border: solid 1px #eeeeee;
   box-shadow: 2px 2px 8px #eeeeee;
   border-radius: 1rem;
+}
 
-  & .siteTitle {
-    font-size: 2rem;
-    line-height: 2;
-    font-weight: 700;
-    text-align: center;
-    color: transparent;
-    background-image: -webkit-linear-gradient(90deg, #ff6600, #b30000);
-    background-clip: text;
+.content {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+
+  @media (min-width: 450px) and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  & hr {
-    color: var(--ifm-color-black);
-    border: 0;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 1em 0;
-    margin: 1rem 0;
-    position: relative;
-    background-color: transparent;
-
-    &:before {
-      content: attr(data-content);
-      position: absolute;
-      padding: 0 1ch;
-      line-height: 2px;
-      border: solid #666666;
-      border-width: 0 99vw;
-      width: fit-content;
-      white-space: nowrap;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  @media (min-width: 0) and (max-width: 450px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  & .userInfo {
-    color: var(--ifm-color-black);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    cursor: pointer;
-    padding: 0 2rem;
+  & a {
+    text-decoration: none;
+    color: #222222;
 
-    @media (max-width: 600px) {
-      flex-direction: column-reverse;
-      padding: 20px 0;
-    }
+    & .cardItem {
+      border-radius: 8px;
+      box-shadow: 0 0 2px 0 rgba(24, 24, 24, 0.08), 0 2px 4px 1px rgba(24, 24, 24, 0.16);
+      transition: box-shadow 0.2s ease-in-out;
 
-    & .basicInfo {
-      flex: 1;
-
-      & .name {
-        font-size: 28px;
-        line-height: 2;
-      }
-
-      & ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-      }
-
-      & ul > li {
-        padding: 0.5rem 0 0 1rem;
-        font-size: 14px;
-        position: relative;
-
-        &:before {
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translateY(50%);
-          content: '';
-          display: block;
-          width: 0.25rem;
-          height: 0.25rem;
-          background-color: var(--ifm-color-black);
-          border-radius: 50%;
-        }
-      }
-    }
-
-    & .avatar {
-      margin-right: 36px;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: url("/img/avatar.png") center no-repeat;
-      background-size: 100%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-  }
-
-  & .companyList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 10px 0;
-    align-items: center;
-    justify-content: center;
-
-    & img {
-      height: 24px;
-      width: auto;
-    }
-  }
-
-  & .contentList {
-    padding: 10px;
-    width: 100%;
-    background-size: 300px;
-
-    & .itemList {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-
-      & .item {
-        font-size: 16px;
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: 30px;
-        padding-left: 30px;
+      &:hover {
         cursor: pointer;
+        box-shadow: 0 12px 24px -4px rgba(24, 24, 24, 0.08), 0 16px 32px -4px rgba(24, 24, 24, 0.16);
+      }
 
-        &.number1 {
-          background-image: url("/img/number-1.png");
-        }
-        &.number2 {
-          background-image: url("/img/number-2.png");
-        }
-        &.number3 {
-          background-image: url("/img/number-3.png");
-        }
-        &.number4 {
-          background-image: url("/img/number-4.png");
-        }
-        &.number5 {
-          background-image: url("/img/number-5.png");
-        }
-        &.number6 {
-          background-image: url("/img/number-6.png");
+      & .cardImage {
+        display: flex;
+      }
+
+      & .cardImage > img {
+        width: 100%;
+        height: 128px;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+      }
+
+      & .cardInfo {
+        padding: 1rem;
+
+        & .cardTitle {
+          font-size: 1rem;
+          font-weight: 600;
         }
 
-        & a,
-        & a:hover,
-        & a:focus {
-          color: #000000;
+        & .cardDesc {
+          margin-top: 0.75rem;
+          font-size: 0.75rem;
+          color: #666666;
         }
       }
+    }
+  }
+}
+
+.companyList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+  box-shadow: 4px 4px 10px #dddddd;
+  margin-top: 1.25rem;
+
+  & img {
+    height: 3.25rem;
+    width: auto;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px 0 rgba(24, 24, 24, 0.08), 0 2px 4px 1px rgba(24, 24, 24, 0.16);
+    transition: box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.3), 0 16px 32px -4px rgba(0, 0, 0, 0.3);
     }
   }
 }
