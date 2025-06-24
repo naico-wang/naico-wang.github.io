@@ -73,14 +73,14 @@ const config: Config = {
         autoCollapseCategories: true
       }
     },
-    announcementBar: {
-      id: 'naico-wang',
-      content:
-        '<strong>Too Young, Too Simple, Sometimes Naive.</strong>',
-      backgroundColor: '#f1f1f1',
-      textColor: '#000000',
-      isCloseable: false,
-    },
+    // announcementBar: {
+    //   id: 'naico-wang',
+    //   content:
+    //     '<strong>Too Young, Too Simple, Sometimes Naive.</strong>',
+    //   backgroundColor: '#f1f1f1',
+    //   textColor: '#000000',
+    //   isCloseable: false,
+    // },
     navbar: {
       title: '智库 - naico.wang',
       logo: {

@@ -1,6 +1,11 @@
 :root {
   --doc-sidebar-width: 20rem;
   --ifm-alert-border-radius: 0;
+  --ifm-font-size-base: 16px;
+}
+
+.navbar {
+  font-size: 0.875rem;
 }
 
 a.header-github-link {

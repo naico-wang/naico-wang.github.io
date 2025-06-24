@@ -6,8 +6,9 @@
   background-size: cover;
 
   & .heroContent {
+    max-width: 56rem;
     z-index: 100;
-    padding: 2rem 8rem;
+    padding: 1rem 8rem;
     margin: 0 auto;
 
     @media (min-width: 0) and (max-width: 800px) {
@@ -15,15 +16,15 @@
     }
 
     & .siteTitle {
-      font-size: 2.5rem;
-      line-height: 2;
+      font-size: 1.75rem;
+      /*line-height: 2;*/
       font-weight: 700;
       text-align: center;
       color: #ffffff;
       text-shadow: 2px 2px 5px #000000;
 
       @media (min-width: 0) and (max-width: 800px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
 
@@ -33,29 +34,22 @@
       text-shadow: 2px 2px 5px #000000;
       display: flex;
       align-items: center;
+      justify-content: center;
+      gap: 5rem;
       cursor: pointer;
-      margin: 1rem auto 0;
+      margin: 0.5rem auto 0;
       padding: 0 1.5rem;
 
       @media (max-width: 600px) {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 20px 0;
+        gap: 0.5rem;
       }
 
       & .basicInfo {
-        flex: 1;
 
         @media (min-width: 0) and (max-width: 800px) {
           margin-top: 1rem;
-        }
-
-        & .name {
-          font-size: 1.5rem;
-          line-height: 2;
-
-          @media (min-width: 0) and (max-width: 800px) {
-            font-size: 1.25rem;
-          }
         }
 
         & ul {
@@ -65,13 +59,22 @@
         }
 
         & ul > li {
-          padding: 0.5rem 0 0 1rem;
           font-size: 14px;
           position: relative;
+          padding: 0.5rem 0 0 1rem;
+
+          &:first-child {
+            font-size: 1.25rem;
+            font-weight: 700;
+
+            &:before {
+              top: 1rem;
+            }
+          }
 
           &:before {
             position: absolute;
-            top: 35%;
+            top: 0.7rem;
             left: 0;
             transform: translateY(50%);
             content: '';
@@ -85,8 +88,8 @@
       }
 
       & .avatar {
-        width: 180px;
-        height: 180px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         background: url("/img/avatar.png") center no-repeat;
         background-size: 100%;
