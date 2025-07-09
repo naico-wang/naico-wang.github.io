@@ -1,0 +1,42 @@
+---
+title: 版本更新历史
+position: 0
+---
+
+# 版本更新历史
+
+{{#each releases}}
+{{#if href}}
+## [版本号: {{title}}]({{href}})
+{{#if tag}} 发布日期: {{isoDate}}{{/if}}
+{{else}}
+## 版本号: {{title}}
+
+{{#if tag}} 发布日期: {{isoDate}}{{/if}}
+{{/if}}
+
+{{#if summary}}
+{{summary}}
+{{/if}}
+
+{{#if merges}}
+#### 代码合并
+
+{{#each merges}}
+- {{#if commit.breaking}}**Breaking change:** {{/if}}{{message}} {{#if href}}[`#{{id}}`]({{href}}){{/if}}
+{{/each}}
+{{/if}}
+
+{{#if fixes}}
+#### 问题修复
+
+{{#each fixes}}
+- {{#if commit.breaking}}**Breaking change:** {{/if}}{{commit.subject}}{{#each fixes}} {{#if href}}[`#{{id}}`]({{href}}){{/if}}{{/each}}
+{{/each}}
+{{/if}}
+
+{{#commit-list commits heading='#### 代码更新:'}}
+- {{#if breaking}}**Breaking change:** {{/if}}{{subject}} {{#if href}}[`{{shorthash}}`]({{href}}){{/if}}
+{{/commit-list}}
+
+{{/each}}
