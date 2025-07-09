@@ -4,9 +4,9 @@
 
 ## About This Repo
 
-This is my personal GitPages repo, created using [Docusaurus](https://docusaurus.io/)
+This is my personal GitPages repo, created using [VitePress](https://vitepress.dev/)
 
-For more introduction of Docusaurus, please go to the official website.
+For more introduction of VitePress, please go to the official website.
 
 You can fork or download as you wish.
 
@@ -20,10 +20,10 @@ If you want to create your own website using GitPages, please follow this steps:
 https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site
 ```
 
-### Install Docusaurus and Init Your Own Docusaurus Site and Complete the steps
+### Install VitePress and Init Your Own VitePress Site and Complete the steps
 
 ```shell
-yarn create docusaurus
+yarn vitepress-create
 ```
 
 For more configuration and usage, please refer to VitePress official website.
