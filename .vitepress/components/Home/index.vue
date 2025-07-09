@@ -38,7 +38,7 @@
     }
 
     & .introduction > li {
-      padding: 0.25rem 0;
+      padding: 0;
       font-weight: 500;
       color: #666666;
       font-size: 0.875rem;
