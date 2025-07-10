@@ -6,7 +6,6 @@
 
 .banner {
   padding-top: 2rem;
-  text-align: center;
   margin: 0 auto 2rem;
 
   & fieldset {
@@ -14,35 +13,60 @@
     text-align: center;
     border-width: 3px;
     border-style: dashed;
-    padding: 1rem 0;
+    border-color: #222222;
+    padding-top: 1rem;
 
     & legend {
       font-weight: 600;
       font-size: 1.25rem;
     }
 
-    & img {
-      width: 8rem;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
-
     & .title {
+      text-align: center;
       font-size: 1.25rem;
-      margin-top: 1rem;
       color: #000000;
     }
 
-    & .introduction {
-      margin-top: 1rem;
+    & .content {
+      max-width: 25rem;
+      padding: 1rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      & img {
+        width: 6.5rem;
+        height: 6.5rem;
+        border-radius: 50%;
+        box-shadow: var(--lulu-box-shadow);
+      }
+
+      & .introduction {
+        flex: 1;
+      }
+
+      & .introduction > li {
+        padding: 0.15rem 0.25rem;
+        font-weight: 500;
+        color: #666;
+        font-size: 0.75rem;
+        text-align: left;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: '';
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          background-color: #666;
+          margin-right: 0.5rem;
+        }
+      }
     }
 
-    & .introduction > li {
-      padding: 0;
-      font-weight: 500;
-      color: #666666;
-      font-size: 0.75rem;
-    }
+
   }
 }
 
@@ -54,80 +78,84 @@
   }
 }
 
-.module-title {
-  padding: 0.75rem 0;
-  border-bottom: solid 1px #e1e1e1;
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  font-weight: 700;
-
-  &:before {
-    content: '';
-    width: 4px;
-    height: 20px;
-    background-color: #000000;
-    margin-right: 0.5rem;
-  }
-}
-
-.module-content {
-  margin: 1rem 0;
+.main-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
 
-  & .menu-item {
-    border: solid 1px #e1e1e1;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    transition: all 0.2s ease-in-out;
+  .module-title {
+    padding: 0.75rem 0;
+    border-bottom: solid 1px #222222;
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 700;
 
-    &:hover {
-      box-shadow: var(--lulu-box-shadow);
+    &:before {
+      content: '';
+      width: 4px;
+      height: 20px;
+      background-color: #000000;
+      margin-right: 0.5rem;
+    }
+  }
+  .module-content {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &.image {
+      grid-template-columns: 1fr 1fr;
     }
 
-    & .menu-icon {
-      background-color: #e3e3e3;
+    & .module-item {
+      border: solid 1px #222222;
       border-radius: 0.5rem;
-      padding: 2rem 0;
+      padding: 1rem 0;
+      transition: all 0.2s ease-in-out;
+      text-align: center;
 
-      & .image-src {
-        width: 2rem;
-        height: 2rem;
-        margin: 0 auto;
+      &:hover {
+        box-shadow: var(--lulu-box-shadow);
       }
-    }
-
-    & .menu-text {
-      margin-top: 0.5rem;
 
       & .title {
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 600;
       }
 
       & .desc {
-        font-size: 0.875rem;
-        margin-top: 0.5rem;
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
       }
+    }
+    & img {
+      width: 15rem;
+      height: 86px;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      object-fit: contain;
+      border: solid 1px #222222;
+      box-shadow: var(--lulu-box-shadow);
     }
   }
 }
-.image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  padding: 1rem 0;
 
-  & img {
-    width: 20rem;
-    height: 5rem;
-    padding: 1rem;
-    object-fit: contain;
-    border: solid 1px #e1e1e1;
-    border-radius: 0.5rem;
-    box-shadow: var(--lulu-box-shadow);
+.footer {
+  border-top: solid 1px #222222;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #999999;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: #000000;
+    }
   }
 }
 </style>
@@ -137,62 +165,71 @@
     <div class="banner">
       <fieldset>
         <legend>Naico (Hongyu) Wang</legend>
-        <img src="/images/avatar.png" alt="naico.wang" />
         <div class="title">Too Young, Too Simple, Sometimes Naive.</div>
-        <ul class="introduction">
-          <li>Work as Staff Engineer - Web</li>
-          <li>Talk is Cheap, Show me the CODE</li>
-          <li>PPT Engineer / Confluence Engineer</li>
-          <li>PMP / PMI-ACP</li>
-        </ul>
+        <div class="content">
+          <img src="/images/avatar.png" alt="naico.wang" />
+          <ul class="introduction">
+            <li>Work as Staff Engineer - Web</li>
+            <li>Talk is Cheap, Show me the CODE</li>
+            <li>PPT Engineer / Confluence Engineer</li>
+            <li>PMP / PMI-ACP</li>
+          </ul>
+        </div>
       </fieldset>
     </div>
-    <div class="module-title">推荐内容</div>
-    <div class="module-content">
-      <a
-        v-for="(item, idx) in homeFeatures"
-        class="menu-item"
-        :href="item.link"
-      >
-        <div class="menu-icon" :key="idx">
-          <img class="image-src" :src="item.image"  alt="documents"/>
+    <main class="main-content">
+      <aside>
+        <div class="module-title">推荐内容</div>
+        <div class="module-content">
+          <a
+            v-for="(item, idx) in homeFeatures"
+            :href="item.link"
+          >
+            <div class="module-item" :key="idx">
+              <span class="title">{{item.title}}</span>
+              <p class="desc">{{item.description}}</p>
+            </div>
+          </a>
         </div>
-        <div class="menu-text">
-          <span class="title">{{item.title}}</span>
-          <p class="desc">{{item.description}}</p>
+      </aside>
+      <section>
+        <div class="module-title">过往工作经历</div>
+        <div class="module-content image">
+          <img src="/images/company-grain.png" alt="ChinaSoft" />
+          <img src="/images/company-chinasoft.png" alt="ChinaSoft" />
+          <img src="/images/company-microsoft.png" alt="ChinaSoft" />
+          <img src="/images/company-mercer.png" alt="ChinaSoft" />
+          <img src="/images/company-farfetch.png" alt="ChinaSoft" />
+          <img src="/images/company-marriott.png" alt="ChinaSoft" />
         </div>
-      </a>
-    </div>
-    <div class="module-title">过往工作经历</div>
-    <div class="image-container">
-      <img src="/images/company-grain.png" alt="ChinaSoft" />
-      <img src="/images/company-chinasoft.png" alt="ChinaSoft" />
-      <img src="/images/company-microsoft.png" alt="ChinaSoft" />
-      <img src="/images/company-mercer.png" alt="ChinaSoft" />
-      <img src="/images/company-farfetch.png" alt="ChinaSoft" />
-      <img src="/images/company-marriott.png" alt="ChinaSoft" />
-    </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        Powered by <a href="https://vitepress.dev/">VitePress</a>. Statics by <a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3ItqjsY11mrrfGg3">51la统计</a>
+      </p>
+      <p>
+        Copyright © 2024 <a href="https://github.com/naico-wang">Naico Wang</a>
+      </p>
+    </footer>
   </main>
 </template>
 
 <script setup lang="ts">
 const homeFeatures = [
   {
-    image: '/images/home-icon-documents.svg',
     title: '经典设计模式',
-    description: '21种经典设计模式详解，原书：《深入设计模式》',
+    description: '21种经典设计模式详解',
     link: '/'
   },
   {
-    image: '/images/home-icon-radar.svg',
     title: '面试八股文',
-    description: '让人又恨又爱的八股文，涵盖了算法，前端，后端，操作系统',
+    description: '涵盖了算法，前端，后端，操作系统',
     link: '/'
   },
   {
-    image: '/images/home-icon-swagger.svg',
     title: '系统架构设计',
-    description: '常见的系统架构设计以及结构思想相关文章',
+    description: '常见的系统架构设计相关文章',
     link: '/'
   }
 ]

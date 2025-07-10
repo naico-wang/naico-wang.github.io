@@ -12,8 +12,9 @@
     "@types/node": "^24.0.10",
     "auto-changelog": "^2.5.0",
     "less": "^4.3.0",
+    "mermaid": "^11.8.1",
     "vitepress": "^2.0.0-alpha.8",
-    "vitepress-plugin-diagrams": "^1.0.0"
+    "vitepress-plugin-mermaid": "^2.0.17"
   },
   "browserslist": {
     "production": [

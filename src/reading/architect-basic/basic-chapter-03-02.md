@@ -56,7 +56,7 @@ Spring Cloud微服务中主要使用Zuul和Spring Cloud Gateway两种网关， Z
 
 在微服务架构中，Nginx和微服务网关可以同时使用，形成多级负载架构，如下图所示。
 
-```plantuml
+```mermaid
 @startmindmap
 + 客户端
 ++[#lightgrey] Nginx

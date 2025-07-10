@@ -124,7 +124,7 @@ Percussion is playing...
 
 ## 二、类图
 
-以下类图使用 [PlantUML](https://www.planttext.com/) 绘制，更多语法及使用请参考：http://plantuml.com/ 。
+以下类图使用 [mermaid](https://www.planttext.com/) 绘制，更多语法及使用请参考：http://mermaid.com/ 。
 
 ### 泛化关系 (Generalization)
 
