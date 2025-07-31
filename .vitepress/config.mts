@@ -28,7 +28,10 @@ export default withMermaid(
         provider: 'local',
       },
       nav: [
-        { text: '首页', link: '/' }
+        { text: '首页', link: '/' },
+        { text: '经典设计模式', link: '/pattern/behavior/behavior-chain.html' },
+        { text: '面试八股文', link: '/interview/coding/coding-bundle.html' },
+        { text: '系统架构设计', link: '/architect/bff/ar-bff-avoid.html' },
       ],
       sidebar,
       socialLinks: [

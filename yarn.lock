@@ -2,149 +2,6 @@
 # yarn lockfile v1
 
 
-"@algolia/autocomplete-core@1.17.9":
-  version "1.17.9"
-  resolved "https://registry.npmmirror.com/@algolia/autocomplete-core/-/autocomplete-core-1.17.9.tgz#83374c47dc72482aa45d6b953e89377047f0dcdc"
-  integrity sha512-O7BxrpLDPJWWHv/DLA9DRFWs+iY1uOJZkqUwjS5HSZAGcl0hIVCQ97LTLewiZmZ402JYUrun+8NqFP+hCknlbQ==
-  dependencies:
-    "@algolia/autocomplete-plugin-algolia-insights" "1.17.9"
-    "@algolia/autocomplete-shared" "1.17.9"
-
-"@algolia/autocomplete-plugin-algolia-insights@1.17.9":
-  version "1.17.9"
-  resolved "https://registry.npmmirror.com/@algolia/autocomplete-plugin-algolia-insights/-/autocomplete-plugin-algolia-insights-1.17.9.tgz#74c86024d09d09e8bfa3dd90b844b77d9f9947b6"
-  integrity sha512-u1fEHkCbWF92DBeB/KHeMacsjsoI0wFhjZtlCq2ddZbAehshbZST6Hs0Avkc0s+4UyBGbMDnSuXHLuvRWK5iDQ==
-  dependencies:
-    "@algolia/autocomplete-shared" "1.17.9"
-
-"@algolia/autocomplete-preset-algolia@1.17.9":
-  version "1.17.9"
-  resolved "https://registry.npmmirror.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.17.9.tgz#911f3250544eb8ea4096fcfb268f156b085321b5"
-  integrity sha512-Na1OuceSJeg8j7ZWn5ssMu/Ax3amtOwk76u4h5J4eK2Nx2KB5qt0Z4cOapCsxot9VcEN11ADV5aUSlQF4RhGjQ==
-  dependencies:
-    "@algolia/autocomplete-shared" "1.17.9"
-
-"@algolia/autocomplete-shared@1.17.9":
-  version "1.17.9"
-  resolved "https://registry.npmmirror.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.17.9.tgz#5f38868f7cb1d54b014b17a10fc4f7e79d427fa8"
-  integrity sha512-iDf05JDQ7I0b7JEA/9IektxN/80a2MZ1ToohfmNS3rfeuQnIKI3IJlIafD0xu4StbtQTghx9T3Maa97ytkXenQ==
-
-"@algolia/client-abtesting@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/client-abtesting/-/client-abtesting-5.32.0.tgz#b9ce496665c5385ef09d2297e280381c78598e9d"
-  integrity sha512-HG/6Eib6DnJYm/B2ijWFXr4txca/YOuA4K7AsEU0JBrOZSB+RU7oeDyNBPi3c0v0UDDqlkBqM3vBU/auwZlglA==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/client-analytics@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/client-analytics/-/client-analytics-5.32.0.tgz#844ae80626bdaa1b5a1750b538db585734ec70ee"
-  integrity sha512-8Y9MLU72WFQOW3HArYv16+Wvm6eGmsqbxxM1qxtm0hvSASJbxCm+zQAZe5stqysTlcWo4BJ82KEH1PfgHbJAmQ==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/client-common@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/client-common/-/client-common-5.32.0.tgz#468b36d0ee7c9c64bafc62099475a1889d032196"
-  integrity sha512-w8L+rgyXMCPBKmEdOT+RfgMrF0mT6HK60vPYWLz8DBs/P7yFdGo7urn99XCJvVLMSKXrIbZ2FMZ/i50nZTXnuQ==
-
-"@algolia/client-insights@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/client-insights/-/client-insights-5.32.0.tgz#18c4011a782b8ab8bb73af5afbc8aca1a16474d7"
-  integrity sha512-AdWfynhUeX7jz/LTiFU3wwzJembTbdLkQIOLs4n7PyBuxZ3jz4azV1CWbIP8AjUOFmul6uXbmYza+KqyS5CzOA==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/client-personalization@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/client-personalization/-/client-personalization-5.32.0.tgz#3b3fd95f8c437ed5becfa4ec97f3c3b8396d5a20"
-  integrity sha512-bTupJY4xzGZYI4cEQcPlSjjIEzMvv80h7zXGrXY1Y0KC/n/SLiMv84v7Uy+B6AG1Kiy9FQm2ADChBLo1uEhGtQ==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/client-query-suggestions@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/client-query-suggestions/-/client-query-suggestions-5.32.0.tgz#4582f47f120da89029d3511818342c0a90a22f62"
-  integrity sha512-if+YTJw1G3nDKL2omSBjQltCHUQzbaHADkcPQrGFnIGhVyHU3Dzq4g46uEv8mrL5sxL8FjiS9LvekeUlL2NRqw==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/client-search@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/client-search/-/client-search-5.32.0.tgz#0e3b4775bf98e9215b683d598d0fce2d94b7b062"
-  integrity sha512-kmK5nVkKb4DSUgwbveMKe4X3xHdMsPsOVJeEzBvFJ+oS7CkBPmpfHAEq+CcmiPJs20YMv6yVtUT9yPWL5WgAhg==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/ingestion@1.32.0":
-  version "1.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/ingestion/-/ingestion-1.32.0.tgz#4ab08b4c72205c8727dfafeefc4651a07ea2ed9d"
-  integrity sha512-PZTqjJbx+fmPuT2ud1n4vYDSF1yrT//vOGI9HNYKNA0PM0xGUBWigf5gRivHsXa3oBnUlTyHV9j7Kqx5BHbVHQ==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/monitoring@1.32.0":
-  version "1.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/monitoring/-/monitoring-1.32.0.tgz#6c9343081184e40c3bf0a4c01b96ac3d8c0c2190"
-  integrity sha512-kYYoOGjvNQAmHDS1v5sBj+0uEL9RzYqH/TAdq8wmcV+/22weKt/fjh+6LfiqkS1SCZFYYrwGnirrUhUM36lBIQ==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/recommend@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/recommend/-/recommend-5.32.0.tgz#fb508fc35bc0ad2f549fe520e4961733081f334c"
-  integrity sha512-jyIBLdskjPAL7T1g57UMfUNx+PzvYbxKslwRUKBrBA6sNEsYCFdxJAtZSLUMmw6MC98RDt4ksmEl5zVMT5bsuw==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
-
-"@algolia/requester-browser-xhr@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/requester-browser-xhr/-/requester-browser-xhr-5.32.0.tgz#17617ec3b1ec304f9ff43f7eee482766aa7b49e0"
-  integrity sha512-eDp14z92Gt6JlFgiexImcWWH+Lk07s/FtxcoDaGrE4UVBgpwqOO6AfQM6dXh1pvHxlDFbMJihHc/vj3gBhPjqQ==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-
-"@algolia/requester-fetch@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/requester-fetch/-/requester-fetch-5.32.0.tgz#4d388574c0cce3edcd430d915c136d94c6ea0d4b"
-  integrity sha512-rnWVglh/K75hnaLbwSc2t7gCkbq1ldbPgeIKDUiEJxZ4mlguFgcltWjzpDQ/t1LQgxk9HdIFcQfM17Hid3aQ6Q==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-
-"@algolia/requester-node-http@5.32.0":
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/@algolia/requester-node-http/-/requester-node-http-5.32.0.tgz#ef7d878e62c30d97e7588ad05752bb080f52a90e"
-  integrity sha512-LbzQ04+VLkzXY4LuOzgyjqEv/46Gwrk55PldaglMJ4i4eDXSRXGKkwJpXFwsoU+c1HMQlHIyjJBhrfsfdyRmyQ==
-  dependencies:
-    "@algolia/client-common" "5.32.0"
-
 "@antfu/install-pkg@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@antfu/install-pkg/-/install-pkg-1.1.0.tgz#78fa036be1a6081b5a77a5cf59f50c7752b6ba26"
@@ -168,7 +25,7 @@
   resolved "https://registry.npmmirror.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.27.1.tgz#a7054dcc145a967dd4dc8fee845a57c1316c9df8"
   integrity sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==
 
-"@babel/parser@^7.27.5":
+"@babel/parser@^7.28.0":
   version "7.28.0"
   resolved "https://registry.npmmirror.com/@babel/parser/-/parser-7.28.0.tgz#979829fbab51a29e13901e5a80713dbcb840825e"
   integrity sha512-jVZGvOxOuNSsuQuLRTh13nU0AogFlw32w/MT+LV6D3sP5WdbW61E77RnkbaO2dUvmPAYrBDJXGn5gGS6tH4j8g==
@@ -225,28 +82,15 @@
   resolved "https://registry.yarnpkg.com/@chevrotain/utils/-/utils-11.0.3.tgz#e39999307b102cff3645ec4f5b3665f5297a2224"
   integrity sha512-YslZMgtJUyuMbZ+aKvfF3x1f5liK4mWNxghFRv7jqRR9C3R3fAOGTTKvxXDa2Y1s9zSbcpuO0cAxDYsc9SrXoQ==
 
-"@docsearch/css@3.9.0", "@docsearch/css@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npmmirror.com/@docsearch/css/-/css-3.9.0.tgz#3bc29c96bf024350d73b0cfb7c2a7b71bf251cd5"
-  integrity sha512-cQbnVbq0rrBwNAKegIac/t6a8nWoUAn8frnkLFW6YARaRmAQr5/Eoe6Ln2fqkUCZ40KpdrKbpSAmgrkviOxuWA==
+"@docsearch/css@^4.0.0-beta.5":
+  version "4.0.0-beta.5"
+  resolved "https://registry.npmmirror.com/@docsearch/css/-/css-4.0.0-beta.5.tgz#685844da2a5c65a724a69dc81afb038dcb5ae3b6"
+  integrity sha512-bZy+gIXRZch0KNPC7MLoj4wkEcNVeEHBXOKJtonoJ2EaLw2vbO1PLGIXxtPgW7Ab7TvI0StkrmGuEQqE2q/1QA==
 
-"@docsearch/js@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npmmirror.com/@docsearch/js/-/js-3.9.0.tgz#924036ce7717bc64c6a7d1087bf1181301f90ffe"
-  integrity sha512-4bKHcye6EkLgRE8ze0vcdshmEqxeiJM77M0JXjef7lrYZfSlMunrDOCqyLjiZyo1+c0BhUqA2QpFartIjuHIjw==
-  dependencies:
-    "@docsearch/react" "3.9.0"
-    preact "^10.0.0"
-
-"@docsearch/react@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npmmirror.com/@docsearch/react/-/react-3.9.0.tgz#d0842b700c3ee26696786f3c8ae9f10c1a3f0db3"
-  integrity sha512-mb5FOZYZIkRQ6s/NWnM98k879vu5pscWqTLubLFBO87igYYT4VzVazh4h5o/zCvTIZgEt3PvsCOMOswOUo9yHQ==
-  dependencies:
-    "@algolia/autocomplete-core" "1.17.9"
-    "@algolia/autocomplete-preset-algolia" "1.17.9"
-    "@docsearch/css" "3.9.0"
-    algoliasearch "^5.14.2"
+"@docsearch/js@^4.0.0-beta.5":
+  version "4.0.0-beta.5"
+  resolved "https://registry.npmmirror.com/@docsearch/js/-/js-4.0.0-beta.5.tgz#53175e6ce2a5dfa38aceb1d7307e98df41a64dc9"
+  integrity sha512-FEtkwdblZDrTkd0mYwmfR94Vo/jgkXVIbS6vD2FcKazK/L5RmgNb7KAUDUWW11V/fIcS5XHvHprIxEnoB9gllQ==
 
 "@esbuild/aix-ppc64@0.25.6":
   version "0.25.6"
@@ -378,10 +222,10 @@
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.25.6.tgz#4276edd5c105bc28b11c6a1f76fb9d29d1bd25c1"
   integrity sha512-NgJPHHbEpLQgDH2MjQu90pzW/5vvXIZ7KOnPyNBm92A6WgZ/7b6fJyUBjoumLqeOQQGqY2QjQxRo97ah4Sj0cA==
 
-"@iconify-json/simple-icons@^1.2.42":
-  version "1.2.42"
-  resolved "https://registry.npmmirror.com/@iconify-json/simple-icons/-/simple-icons-1.2.42.tgz#5f0017d1057a3bae04c4fcc16f4c95d286fe2327"
-  integrity sha512-G/EED0hUV1wMNUsWaFdQYLibm6SO7rP2GZP1+CvhszB5WAFYYibD3zoWp3X96xSIWpYQFvccvE17ewpd0Q1hWQ==
+"@iconify-json/simple-icons@^1.2.44":
+  version "1.2.45"
+  resolved "https://registry.npmmirror.com/@iconify-json/simple-icons/-/simple-icons-1.2.45.tgz#9254ab97fd1992790a0c1a310de6b8f0d948d1a2"
+  integrity sha512-POOz+NjYQDy2fy1u+sIZi05N6r6oSooIGBaBcZLh7w8QOmLgJAZ6mBt+7Messp7ku9ucRua61if33BPoOZCwRQ==
   dependencies:
     "@iconify/types" "*"
 
@@ -534,59 +378,59 @@
   resolved "https://registry.npmmirror.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.44.2.tgz#660018c9696ad4f48abe8c5d56db53c81aadba25"
   integrity sha512-3+QZROYfJ25PDcxFF66UEk8jGWigHJeecZILvkPkyQN7oc5BvFo4YEXFkOs154j3FTMp9mn9Ky8RCOwastduEA==
 
-"@shikijs/core@3.7.0", "@shikijs/core@^3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/@shikijs/core/-/core-3.7.0.tgz#5300db80449f3c2d2fad825f3ec8095ea38355af"
-  integrity sha512-yilc0S9HvTPyahHpcum8eonYrQtmGTU0lbtwxhA6jHv4Bm1cAdlPFRCJX4AHebkCm75aKTjjRAW+DezqD1b/cg==
+"@shikijs/core@3.8.1", "@shikijs/core@^3.8.1":
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/@shikijs/core/-/core-3.8.1.tgz#4ae50865a40292119d58254c46be40dd59d54888"
+  integrity sha512-uTSXzUBQ/IgFcUa6gmGShCHr4tMdR3pxUiiWKDm8pd42UKJdYhkAYsAmHX5mTwybQ5VyGDgTjW4qKSsRvGSang==
   dependencies:
-    "@shikijs/types" "3.7.0"
+    "@shikijs/types" "3.8.1"
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
     hast-util-to-html "^9.0.5"
 
-"@shikijs/engine-javascript@3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/@shikijs/engine-javascript/-/engine-javascript-3.7.0.tgz#e37c9568ce1b6694db6cd33927243e897159ab2e"
-  integrity sha512-0t17s03Cbv+ZcUvv+y33GtX75WBLQELgNdVghnsdhTgU3hVcWcMsoP6Lb0nDTl95ZJfbP1mVMO0p3byVh3uuzA==
+"@shikijs/engine-javascript@3.8.1":
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/@shikijs/engine-javascript/-/engine-javascript-3.8.1.tgz#ea1b8bff59c505fbbb725232ff2a48cf419bb88e"
+  integrity sha512-rZRp3BM1llrHkuBPAdYAzjlF7OqlM0rm/7EWASeCcY7cRYZIrOnGIHE9qsLz5TCjGefxBFnwgIECzBs2vmOyKA==
   dependencies:
-    "@shikijs/types" "3.7.0"
+    "@shikijs/types" "3.8.1"
     "@shikijs/vscode-textmate" "^10.0.2"
     oniguruma-to-es "^4.3.3"
 
-"@shikijs/engine-oniguruma@3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/@shikijs/engine-oniguruma/-/engine-oniguruma-3.7.0.tgz#77afe066ed245ae9c3e790ca22344195e974ed54"
-  integrity sha512-5BxcD6LjVWsGu4xyaBC5bu8LdNgPCVBnAkWTtOCs/CZxcB22L8rcoWfv7Hh/3WooVjBZmFtyxhgvkQFedPGnFw==
+"@shikijs/engine-oniguruma@3.8.1":
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/@shikijs/engine-oniguruma/-/engine-oniguruma-3.8.1.tgz#318a4405c3b524065a163b5adbb10cc5705a3050"
+  integrity sha512-KGQJZHlNY7c656qPFEQpIoqOuC4LrxjyNndRdzk5WKB/Ie87+NJCF1xo9KkOUxwxylk7rT6nhlZyTGTC4fCe1g==
   dependencies:
-    "@shikijs/types" "3.7.0"
+    "@shikijs/types" "3.8.1"
     "@shikijs/vscode-textmate" "^10.0.2"
 
-"@shikijs/langs@3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/@shikijs/langs/-/langs-3.7.0.tgz#c201d0218e9f3a74d92bd3f53167f0fb897c5b6e"
-  integrity sha512-1zYtdfXLr9xDKLTGy5kb7O0zDQsxXiIsw1iIBcNOO8Yi5/Y1qDbJ+0VsFoqTlzdmneO8Ij35g7QKF8kcLyznCQ==
+"@shikijs/langs@3.8.1":
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/@shikijs/langs/-/langs-3.8.1.tgz#ebf04cc68e0a4dfbbdaa122042af0c5ad41f1361"
+  integrity sha512-TjOFg2Wp1w07oKnXjs0AUMb4kJvujML+fJ1C5cmEj45lhjbUXtziT1x2bPQb9Db6kmPhkG5NI2tgYW1/DzhUuQ==
   dependencies:
-    "@shikijs/types" "3.7.0"
+    "@shikijs/types" "3.8.1"
 
-"@shikijs/themes@3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/@shikijs/themes/-/themes-3.7.0.tgz#e4fb08ca56826dd3b0a48a555140cb090ce0a639"
-  integrity sha512-VJx8497iZPy5zLiiCTSIaOChIcKQwR0FebwE9S3rcN0+J/GTWwQ1v/bqhTbpbY3zybPKeO8wdammqkpXc4NVjQ==
+"@shikijs/themes@3.8.1":
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/@shikijs/themes/-/themes-3.8.1.tgz#41220312a1eab3959f146856a48bca25a4b61231"
+  integrity sha512-Vu3t3BBLifc0GB0UPg2Pox1naTemrrvyZv2lkiSw3QayVV60me1ujFQwPZGgUTmwXl1yhCPW8Lieesm0CYruLQ==
   dependencies:
-    "@shikijs/types" "3.7.0"
+    "@shikijs/types" "3.8.1"
 
-"@shikijs/transformers@^3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/@shikijs/transformers/-/transformers-3.7.0.tgz#c0665f12cc27a3a5a7cec04e49d6a1393a16d9d0"
-  integrity sha512-VplaqIMRNsNOorCXJHkbF5S0pT6xm8Z/s7w7OPZLohf8tR93XH0krvUafpNy/ozEylrWuShJF0+ftEB+wFRwGA==
+"@shikijs/transformers@^3.8.1":
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/@shikijs/transformers/-/transformers-3.8.1.tgz#794ce2912eaa057ddf3b3b9bff1c833e51143136"
+  integrity sha512-nmTyFfBrhJk6HJi118jes0wuWdfKXeVUq1Nq+hm8h6wbk1KUfvtg+LY/uDfxZD2VDItHO3QoINIs3NtoKBmgxw==
   dependencies:
-    "@shikijs/core" "3.7.0"
-    "@shikijs/types" "3.7.0"
+    "@shikijs/core" "3.8.1"
+    "@shikijs/types" "3.8.1"
 
-"@shikijs/types@3.7.0", "@shikijs/types@^3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/@shikijs/types/-/types-3.7.0.tgz#265641647708663ec8a18a9fab29449076da5a17"
-  integrity sha512-MGaLeaRlSWpnP0XSAum3kP3a8vtcTsITqoEPYdt3lQG3YCdQH4DnEhodkYcNMcU0uW0RffhoD1O3e0vG5eSBBg==
+"@shikijs/types@3.8.1", "@shikijs/types@^3.8.1":
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/@shikijs/types/-/types-3.8.1.tgz#6d1d4260ab07597cad7a6fea4933a7b860229c3c"
+  integrity sha512-5C39Q8/8r1I26suLh+5TPk1DTrbY/kn3IdWA5HdizR0FhlhD05zx5nKCqhzSfDHH3p4S0ZefxWd77DLV+8FhGg==
   dependencies:
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
@@ -864,47 +708,47 @@
   dependencies:
     "@rolldown/pluginutils" "1.0.0-beta.19"
 
-"@vue/compiler-core@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.5.17.tgz#23d291bd01b863da3ef2e26e7db84d8e01a9b4c5"
-  integrity sha512-Xe+AittLbAyV0pabcN7cP7/BenRBNcteM4aSDCtRvGw0d9OL+HG1u/XHLY/kt1q4fyMeZYXyIYrsHuPSiDPosA==
+"@vue/compiler-core@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.5.18.tgz#521a138cdd970d9bfd27e42168d12f77a04b2074"
+  integrity sha512-3slwjQrrV1TO8MoXgy3aynDQ7lslj5UqDxuHnrzHtpON5CBinhWjJETciPngpin/T3OuW3tXUf86tEurusnztw==
   dependencies:
-    "@babel/parser" "^7.27.5"
-    "@vue/shared" "3.5.17"
+    "@babel/parser" "^7.28.0"
+    "@vue/shared" "3.5.18"
     entities "^4.5.0"
     estree-walker "^2.0.2"
     source-map-js "^1.2.1"
 
-"@vue/compiler-dom@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.5.17.tgz#7bc19a20e23b670243a64b47ce3a890239b870be"
-  integrity sha512-+2UgfLKoaNLhgfhV5Ihnk6wB4ljyW1/7wUIog2puUqajiC29Lp5R/IKDdkebh9jTbTogTbsgB+OY9cEWzG95JQ==
+"@vue/compiler-dom@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.5.18.tgz#e13504492c3061ec5bbe6a2e789f15261d4f03a7"
+  integrity sha512-RMbU6NTU70++B1JyVJbNbeFkK+A+Q7y9XKE2EM4NLGm2WFR8x9MbAtWxPPLdm0wUkuZv9trpwfSlL6tjdIa1+A==
   dependencies:
-    "@vue/compiler-core" "3.5.17"
-    "@vue/shared" "3.5.17"
+    "@vue/compiler-core" "3.5.18"
+    "@vue/shared" "3.5.18"
 
-"@vue/compiler-sfc@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.5.17.tgz#c518871276e26593612bdab36f3f5bcd053b13bf"
-  integrity sha512-rQQxbRJMgTqwRugtjw0cnyQv9cP4/4BxWfTdRBkqsTfLOHWykLzbOc3C4GGzAmdMDxhzU/1Ija5bTjMVrddqww==
+"@vue/compiler-sfc@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.5.18.tgz#ba1e849561337d809937994cdaf900539542eeca"
+  integrity sha512-5aBjvGqsWs+MoxswZPoTB9nSDb3dhd1x30xrrltKujlCxo48j8HGDNj3QPhF4VIS0VQDUrA1xUfp2hEa+FNyXA==
   dependencies:
-    "@babel/parser" "^7.27.5"
-    "@vue/compiler-core" "3.5.17"
-    "@vue/compiler-dom" "3.5.17"
-    "@vue/compiler-ssr" "3.5.17"
-    "@vue/shared" "3.5.17"
+    "@babel/parser" "^7.28.0"
+    "@vue/compiler-core" "3.5.18"
+    "@vue/compiler-dom" "3.5.18"
+    "@vue/compiler-ssr" "3.5.18"
+    "@vue/shared" "3.5.18"
     estree-walker "^2.0.2"
     magic-string "^0.30.17"
     postcss "^8.5.6"
     source-map-js "^1.2.1"
 
-"@vue/compiler-ssr@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.5.17.tgz#14ba3b7bba6e0e1fd02002316263165a5d1046c7"
-  integrity sha512-hkDbA0Q20ZzGgpj5uZjb9rBzQtIHLS78mMilwrlpWk2Ep37DYntUz0PonQ6kr113vfOEdM+zTBuJDaceNIW0tQ==
+"@vue/compiler-ssr@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.5.18.tgz#aecde0b0bff268a9c9014ba66799307c4a784328"
+  integrity sha512-xM16Ak7rSWHkM3m22NlmcdIM+K4BMyFARAfV9hYFl+SFuRzrZ3uGMNW05kA5pmeMa0X9X963Kgou7ufdbpOP9g==
   dependencies:
-    "@vue/compiler-dom" "3.5.17"
-    "@vue/shared" "3.5.17"
+    "@vue/compiler-dom" "3.5.18"
+    "@vue/shared" "3.5.18"
 
 "@vue/devtools-api@^7.7.7":
   version "7.7.7"
@@ -933,43 +777,43 @@
   dependencies:
     rfdc "^1.4.1"
 
-"@vue/reactivity@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.5.17.tgz#169b5dcf96c7f23788e5ed9745ec8a7227f2125e"
-  integrity sha512-l/rmw2STIscWi7SNJp708FK4Kofs97zc/5aEPQh4bOsReD/8ICuBcEmS7KGwDj5ODQLYWVN2lNibKJL1z5b+Lw==
+"@vue/reactivity@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.5.18.tgz#fe32166e3938832c54b4134e60e9b58ca7d9bdb4"
+  integrity sha512-x0vPO5Imw+3sChLM5Y+B6G1zPjwdOri9e8V21NnTnlEvkxatHEH5B5KEAJcjuzQ7BsjGrKtfzuQ5eQwXh8HXBg==
   dependencies:
-    "@vue/shared" "3.5.17"
+    "@vue/shared" "3.5.18"
 
-"@vue/runtime-core@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.5.17.tgz#b17bd41e13011e85e9b1025545292d43f5512730"
-  integrity sha512-QQLXa20dHg1R0ri4bjKeGFKEkJA7MMBxrKo2G+gJikmumRS7PTD4BOU9FKrDQWMKowz7frJJGqBffYMgQYS96Q==
+"@vue/runtime-core@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.5.18.tgz#9e9ae8b9491548b53d0cea2bf25746d27c52e191"
+  integrity sha512-DUpHa1HpeOQEt6+3nheUfqVXRog2kivkXHUhoqJiKR33SO4x+a5uNOMkV487WPerQkL0vUuRvq/7JhRgLW3S+w==
   dependencies:
-    "@vue/reactivity" "3.5.17"
-    "@vue/shared" "3.5.17"
+    "@vue/reactivity" "3.5.18"
+    "@vue/shared" "3.5.18"
 
-"@vue/runtime-dom@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.5.17.tgz#8e325e29cd03097fe179032fc8df384a426fc83a"
-  integrity sha512-8El0M60TcwZ1QMz4/os2MdlQECgGoVHPuLnQBU3m9h3gdNRW9xRmI8iLS4t/22OQlOE6aJvNNlBiCzPHur4H9g==
+"@vue/runtime-dom@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.5.18.tgz#1150952d1048b5822e4f1dd8aed24665cbb22107"
+  integrity sha512-YwDj71iV05j4RnzZnZtGaXwPoUWeRsqinblgVJwR8XTXYZ9D5PbahHQgsbmzUvCWNF6x7siQ89HgnX5eWkr3mw==
   dependencies:
-    "@vue/reactivity" "3.5.17"
-    "@vue/runtime-core" "3.5.17"
-    "@vue/shared" "3.5.17"
+    "@vue/reactivity" "3.5.18"
+    "@vue/runtime-core" "3.5.18"
+    "@vue/shared" "3.5.18"
     csstype "^3.1.3"
 
-"@vue/server-renderer@3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.5.17.tgz#9b8fd6a40a3d55322509fafe78ac841ede649fbe"
-  integrity sha512-BOHhm8HalujY6lmC3DbqF6uXN/K00uWiEeF22LfEsm9Q93XeJ/plHTepGwf6tqFcF7GA5oGSSAAUock3VvzaCA==
+"@vue/server-renderer@3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.5.18.tgz#e9fa267b95b3a1d8cddca762377e5de2ae9122bd"
+  integrity sha512-PvIHLUoWgSbDG7zLHqSqaCoZvHi6NNmfVFOqO+OnwvqMz/tqQr3FuGWS8ufluNddk7ZLBJYMrjcw1c6XzR12mA==
   dependencies:
-    "@vue/compiler-ssr" "3.5.17"
-    "@vue/shared" "3.5.17"
+    "@vue/compiler-ssr" "3.5.18"
+    "@vue/shared" "3.5.18"
 
-"@vue/shared@3.5.17", "@vue/shared@^3.5.17":
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/@vue/shared/-/shared-3.5.17.tgz#e8b3a41f0be76499882a89e8ed40d86a70fa4b70"
-  integrity sha512-CabR+UN630VnsJO/jHWYBC1YVXyMq94KKp6iF5MQgZJs5I8cmjw6oVMO1oDbtBkENSHSSn/UadWlW/OAgdmKrg==
+"@vue/shared@3.5.18", "@vue/shared@^3.5.18":
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/@vue/shared/-/shared-3.5.18.tgz#529f24a88d3ed678d50fd5c07455841fbe8ac95e"
+  integrity sha512-cZy8Dq+uuIXbxCZpuLd2GJdeSO/lIzIspC2WtkqIpje5QyFbvLaI5wZtdUjLHjGZrlVX6GilejatWwVYYRc8tA==
 
 "@vueuse/core@13.5.0", "@vueuse/core@^13.5.0":
   version "13.5.0"
@@ -1002,25 +846,6 @@ acorn@^8.14.0:
   version "8.15.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.15.0.tgz#a360898bc415edaac46c8241f6383975b930b816"
   integrity sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==
-
-algoliasearch@^5.14.2:
-  version "5.32.0"
-  resolved "https://registry.npmmirror.com/algoliasearch/-/algoliasearch-5.32.0.tgz#2b9d17c4592b573146e3a2322a563aef68d473e3"
-  integrity sha512-84xBncKNPBK8Ae89F65+SyVcOihrIbm/3N7to+GpRBHEUXGjA3ydWTMpcRW6jmFzkBQ/eqYy/y+J+NBpJWYjBg==
-  dependencies:
-    "@algolia/client-abtesting" "5.32.0"
-    "@algolia/client-analytics" "5.32.0"
-    "@algolia/client-common" "5.32.0"
-    "@algolia/client-insights" "5.32.0"
-    "@algolia/client-personalization" "5.32.0"
-    "@algolia/client-query-suggestions" "5.32.0"
-    "@algolia/client-search" "5.32.0"
-    "@algolia/ingestion" "1.32.0"
-    "@algolia/monitoring" "1.32.0"
-    "@algolia/recommend" "5.32.0"
-    "@algolia/requester-browser-xhr" "5.32.0"
-    "@algolia/requester-fetch" "5.32.0"
-    "@algolia/requester-node-http" "5.32.0"
 
 auto-changelog@^2.5.0:
   version "2.5.0"
@@ -1931,6 +1756,11 @@ picomatch@^4.0.2:
   resolved "https://registry.npmmirror.com/picomatch/-/picomatch-4.0.2.tgz#77c742931e8f3b8820946c76cd0c1f13730d1dab"
   integrity sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==
 
+picomatch@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npmmirror.com/picomatch/-/picomatch-4.0.3.tgz#796c76136d1eead715db1e7bad785dedd695a042"
+  integrity sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==
+
 pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmmirror.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
@@ -1975,11 +1805,6 @@ postcss@^8.5.6:
     nanoid "^3.3.11"
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
-
-preact@^10.0.0:
-  version "10.26.9"
-  resolved "https://registry.npmmirror.com/preact/-/preact-10.26.9.tgz#b3898d1b65140640799062ad73b89846c293b6a7"
-  integrity sha512-SSjF9vcnF27mJK1XyFMNJzFd5u3pQiATFqoaDy03XuN00u4ziveVVEGt5RKJrDR8MHE/wJo9Nnad56RLzS2RMA==
 
 property-information@^7.0.0:
   version "7.1.0"
@@ -2094,17 +1919,17 @@ semver@^7.3.5:
   resolved "https://registry.npmmirror.com/semver/-/semver-7.7.2.tgz#67d99fdcd35cec21e6f8b87a7fd515a33f982b58"
   integrity sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==
 
-shiki@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.npmmirror.com/shiki/-/shiki-3.7.0.tgz#c27e214e48151ea0fca813d84cf2db87858a52d7"
-  integrity sha512-ZcI4UT9n6N2pDuM2n3Jbk0sR4Swzq43nLPgS/4h0E3B/NrFn2HKElrDtceSf8Zx/OWYOo7G1SAtBLypCp+YXqg==
+shiki@^3.8.1:
+  version "3.8.1"
+  resolved "https://registry.npmmirror.com/shiki/-/shiki-3.8.1.tgz#f8b7d126ad51e388835ff0c419be052f79f2dc91"
+  integrity sha512-+MYIyjwGPCaegbpBeFN9+oOifI8CKiKG3awI/6h3JeT85c//H2wDW/xCJEGuQ5jPqtbboKNqNy+JyX9PYpGwNg==
   dependencies:
-    "@shikijs/core" "3.7.0"
-    "@shikijs/engine-javascript" "3.7.0"
-    "@shikijs/engine-oniguruma" "3.7.0"
-    "@shikijs/langs" "3.7.0"
-    "@shikijs/themes" "3.7.0"
-    "@shikijs/types" "3.7.0"
+    "@shikijs/core" "3.8.1"
+    "@shikijs/engine-javascript" "3.8.1"
+    "@shikijs/engine-oniguruma" "3.8.1"
+    "@shikijs/langs" "3.8.1"
+    "@shikijs/themes" "3.8.1"
+    "@shikijs/types" "3.8.1"
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
 
@@ -2260,14 +2085,14 @@ vfile@^6.0.0:
     "@types/unist" "^3.0.0"
     vfile-message "^4.0.0"
 
-vite@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.npmmirror.com/vite/-/vite-7.0.3.tgz#3bf15e1a6d054960406a70fa1052043938b39c5a"
-  integrity sha512-y2L5oJZF7bj4c0jgGYgBNSdIu+5HF+m68rn2cQXFbGoShdhV1phX9rbnxy9YXj82aS8MMsCLAAFkRxZeWdldrQ==
+vite@^7.0.6:
+  version "7.0.6"
+  resolved "https://registry.npmmirror.com/vite/-/vite-7.0.6.tgz#7866ccb176db4bbeec0adfb3f907f077881591d0"
+  integrity sha512-MHFiOENNBd+Bd9uvc8GEsIzdkn1JxMmEeYX35tI3fv0sJBUTfW5tQsoaOwuY4KhBI09A3dUJ/DXf2yxPVPUceg==
   dependencies:
     esbuild "^0.25.0"
     fdir "^6.4.6"
-    picomatch "^4.0.2"
+    picomatch "^4.0.3"
     postcss "^8.5.6"
     rollup "^4.40.0"
     tinyglobby "^0.2.14"
@@ -2281,28 +2106,28 @@ vitepress-plugin-mermaid@^2.0.17:
   optionalDependencies:
     "@mermaid-js/mermaid-mindmap" "^9.3.0"
 
-vitepress@^2.0.0-alpha.8:
-  version "2.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-2.0.0-alpha.8.tgz#c4589375831907ff45615dfbf96888908b28882c"
-  integrity sha512-4LJZ7c/b68ch69gh6WaQgQGqkha/KxCFlSN7vCyIjxW7WbdI+pWe110+nnxXpvN43OH/3EoYNEPkV28z0WPSYA==
+vitepress@^2.0.0-alpha.9:
+  version "2.0.0-alpha.9"
+  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-2.0.0-alpha.9.tgz#4a5d0b4c6c418d76b2a4bbcf3c65b4afe4a2b075"
+  integrity sha512-oUdZiT8ZCLf80Nw02Ha+v25aaabwik6iSMTEBXg46bMypNS/5i6AfMgFqpTuR5l3qG9XfNmau/SLT0sRiks2Zg==
   dependencies:
-    "@docsearch/css" "^3.9.0"
-    "@docsearch/js" "^3.9.0"
-    "@iconify-json/simple-icons" "^1.2.42"
-    "@shikijs/core" "^3.7.0"
-    "@shikijs/transformers" "^3.7.0"
-    "@shikijs/types" "^3.7.0"
+    "@docsearch/css" "^4.0.0-beta.5"
+    "@docsearch/js" "^4.0.0-beta.5"
+    "@iconify-json/simple-icons" "^1.2.44"
+    "@shikijs/core" "^3.8.1"
+    "@shikijs/transformers" "^3.8.1"
+    "@shikijs/types" "^3.8.1"
     "@vitejs/plugin-vue" "^6.0.0"
     "@vue/devtools-api" "^7.7.7"
-    "@vue/shared" "^3.5.17"
+    "@vue/shared" "^3.5.18"
     "@vueuse/core" "^13.5.0"
     "@vueuse/integrations" "^13.5.0"
     focus-trap "^7.6.5"
     mark.js "8.11.1"
     minisearch "^7.1.2"
-    shiki "^3.7.0"
-    vite "^7.0.3"
-    vue "^3.5.17"
+    shiki "^3.8.1"
+    vite "^7.0.6"
+    vue "^3.5.18"
 
 vscode-jsonrpc@8.2.0:
   version "8.2.0"
@@ -2339,16 +2164,16 @@ vscode-uri@~3.0.8:
   resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.8.tgz#1770938d3e72588659a172d0fd4642780083ff9f"
   integrity sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==
 
-vue@^3.5.17:
-  version "3.5.17"
-  resolved "https://registry.npmmirror.com/vue/-/vue-3.5.17.tgz#ea8a6a45abb2b0620e7d479319ce8434b55650cf"
-  integrity sha512-LbHV3xPN9BeljML+Xctq4lbz2lVHCR6DtbpTf5XIO6gugpXUN49j2QQPcMj086r9+AkJ0FfUT8xjulKKBkkr9g==
+vue@^3.5.18:
+  version "3.5.18"
+  resolved "https://registry.npmmirror.com/vue/-/vue-3.5.18.tgz#3d622425ad1391a2b0138323211ec784f4415686"
+  integrity sha512-7W4Y4ZbMiQ3SEo+m9lnoNpV9xG7QVMLa+/0RFwwiAVkeYoyGXqWE85jabU4pllJNUzqfLShJ5YLptewhCWUgNA==
   dependencies:
-    "@vue/compiler-dom" "3.5.17"
-    "@vue/compiler-sfc" "3.5.17"
-    "@vue/runtime-dom" "3.5.17"
-    "@vue/server-renderer" "3.5.17"
-    "@vue/shared" "3.5.17"
+    "@vue/compiler-dom" "3.5.18"
+    "@vue/compiler-sfc" "3.5.18"
+    "@vue/runtime-dom" "3.5.18"
+    "@vue/server-renderer" "3.5.18"
+    "@vue/shared" "3.5.18"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
