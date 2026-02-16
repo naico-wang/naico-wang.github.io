@@ -36,9 +36,14 @@ const expertise = [
 
 // 本站内容链接（placeholder，后续替换为真实路径）
 const siteLinks = [
-  { title: 'AI Engineering', link: '/ai' },
-  { title: '建设中...', link: '#' },
+  { title: 'AI 开发与工程化', link: '/ai-engineering' },
+  { title: '经典设计模式', link: '/design-pattern' },
 ]
+
+// 图标：按 item.icon 从 .vitepress/components/icons/*.svg 加载，缺省用 default.svg
+const iconMap = (import.meta as unknown as { glob: (p: string, o?: { query?: string; import?: string; eager?: boolean }) => Record<string, string> }).glob('./icons/*.svg', { query: '?raw', import: 'default', eager: true })
+const getIcon = (name: string): string =>
+  iconMap[`./icons/${name}.svg`] ?? iconMap['./icons/default.svg'] ?? ''
 </script>
 
 <template>
@@ -111,7 +116,7 @@ const siteLinks = [
     <main class="home-main">
       <!-- 01 Introduction：简介与联系方式写死在组件内，便于控制样式 -->
       <section class="home-section home-section-intro">
-        <h2 class="section-title section-title-mono">01 / Introduction</h2>
+        <h2 class="section-title section-title-mono">01 - Introduction</h2>
         <div class="intro-content">
           <p class="intro-p">
             擅长全栈应用开发以及现有软件应用架构治理，在几家外企和互联网公司经历过从 0 到 1 的产品与团队建设。日常会关注工程化、性能与稳定性、以及如何把技术方案讲清楚、落下去。
@@ -120,7 +125,7 @@ const siteLinks = [
             近几年花了不少时间在 AI 工程上：LLM 应用、RAG、Agent 等怎么在实际业务里用起来，模型选型和成本、效果之间的平衡，这些都会在笔记里慢慢写。同时也在持续琢磨架构和协作：微前端、BFF、领域建模、跨团队需求拆解与交付节奏，算是「既写代码也管项目」的那一类。
           </p>
           <p class="intro-p">
-            这个站是个人知识库，用来沉淀技术笔记和思考。写下来的东西会先服务自己的复盘与检索，若恰好对你有用，欢迎一起交流。
+            这个网站是个人知识库，用来沉淀技术笔记和思考。写下来的东西会先服务自己的复盘与检索，若恰好对你有用，欢迎一起交流。
           </p>
           <p class="intro-contact-label"><strong>联系方式</strong></p>
           <ul class="intro-contact-list">
@@ -131,34 +136,24 @@ const siteLinks = [
       </section>
       <!-- 02 擅长领域 -->
       <section class="home-section">
-        <h2 class="section-title section-title-mono">02 / Skills</h2>
+        <h2 class="section-title section-title-mono">02 - Skills</h2>
         <div class="cards-expertise">
           <article
             v-for="(item, i) in expertise"
             :key="i"
             class="card card-expertise"
           >
-            <div class="card-expertise-icon">
-              <!-- 前后端/代码 -->
-              <svg v-if="item.icon === 'code'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
-              <!-- 架构 -->
-              <svg v-else-if="item.icon === 'layers'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
-              <!-- AI -->
-              <svg v-else-if="item.icon === 'sparkles'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7.5H22l-6 4.5 2.5 7.5L12 15l-6.5 4.5 2.5-7.5-6-4.5h7.5L12 2z"/></svg>
-              <!-- 项目管理 -->
-              <svg v-else-if="item.icon === 'clipboard'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 14h6"/><path d="M9 18h6"/><path d="M9 10h6"/></svg>
-              <!-- 知识传播/文档 -->
-              <svg v-else-if="item.icon === 'book'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8"/><path d="M8 11h8"/></svg>
-              <svg v-else viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
+            <div class="card-expertise-header">
+              <div class="card-expertise-icon" v-html="getIcon(item.icon)" />
+              <h3 class="card-expertise-title">{{ item.title }}</h3>
             </div>
-            <h3 class="card-expertise-title">{{ item.title }}</h3>
             <p class="card-expertise-desc">{{ item.desc }}</p>
           </article>
         </div>
       </section>
       <!-- 03 本站内容 -->
       <section class="home-section">
-        <h2 class="section-title section-title-mono">03 / Contents</h2>
+        <h2 class="section-title section-title-mono">03 - Site Contents</h2>
         <div class="site-links">
           <a
             v-for="(item, i) in siteLinks"
@@ -355,6 +350,7 @@ const siteLinks = [
 }
 
 .intro-content {
+  font-size: 0.875rem;
   border: solid 1px var(--vp-c-divider);
   border-radius: 16px;
   color: var(--vp-c-text-2);
@@ -404,14 +400,13 @@ const siteLinks = [
 
 .section-title {
   margin: 0 0 1rem;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   color: var(--vp-c-text-1);
 }
 
 .section-title-mono {
   font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', Consolas, monospace;
-  font-variant-numeric: tabular-nums;
 }
 
 /* 03 本站内容链接：默认两列，窄屏一列 */
@@ -473,24 +468,26 @@ const siteLinks = [
   text-align: left;
 }
 
+.card-expertise-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
 .card-expertise-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 0.75rem;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
   color: var(--vp-c-brand-1);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card-expertise-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
 .card-expertise-title {
-  margin: 0 0 0.35rem;
-  font-size: 1rem;
+  margin: 0;
+  font-size: 1.125rem;
   font-weight: 600;
   color: var(--vp-c-text-1);
   line-height: 1.3;

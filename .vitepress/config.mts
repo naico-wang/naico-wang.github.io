@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import sidebar from './utils/generateSidebar'
+import { generateSidebarForPath } from './utils/generateSidebar';
 import { vitepressMermaidPreview } from 'vitepress-mermaid-preview'
 
 export default defineConfig({
@@ -27,9 +27,13 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: 'AI 工程化', link: '/ai' },
+      { text: '经典设计模式', link: '/design-pattern' },
+      { text: 'AI 工程化', link: '/ai-engineering' },
     ],
-    sidebar,
+    sidebar: {
+      '/design-pattern/': generateSidebarForPath('design-pattern'),
+      '/ai-engineering/': generateSidebarForPath('ai-engineering')
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/naico-wang/naico-wang.github.io' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/naico-wang-49554891/' }
@@ -50,8 +54,8 @@ export default defineConfig({
       next: '下一篇'
     },
     footer: {
-      message: 'Powered by <a href="https://vitepress.dev/">VitePress</a>. Statics by <a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3ItqjsY11mrrfGg3">51la统计</a>',
-      copyright: 'Copyright © 2024 <a href="https://github.com/naico-wang">Naico Wang</a>'
+      message: 'Powered by <a href="https://vitepress.dev/">VitePress</a>.',
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/naico-wang">Naico Wang</a>. Statics by <a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3ItqjsY11mrrfGg3">51La</a>.`
     },
     returnToTopLabel: '回顶部',
     sidebarMenuLabel: '菜单',

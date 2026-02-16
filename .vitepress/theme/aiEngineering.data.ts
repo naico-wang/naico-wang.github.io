@@ -9,7 +9,7 @@ interface Post {
 declare const data: Post[]
 export { data }
 
-export default createContentLoader('ai/**/*.md', {
+export default createContentLoader('ai-engineering/**/*.md', {
   transform(raw): Post[] {
     return raw
       .map(({ url, frontmatter }) => ({

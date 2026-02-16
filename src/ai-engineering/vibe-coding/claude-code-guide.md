@@ -1241,7 +1241,7 @@ claude --debug
 
 ```bash
 # 在命令行中执行安装命令
-npm install -g @anthropic-ai/claude-code
+npm install -g @anthropic-ai-engineering/claude-code
 
 # 验证安装是否成功
 claude --version

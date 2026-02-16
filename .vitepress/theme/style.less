@@ -52,8 +52,8 @@
   border-bottom-color: transparent !important;
 }
 
-.VPDoc.has-sidebar {
-  border-left: solid 1px var(--vp-c-divider);
+.VPSidebar {
+  border-right: solid 1px var(--vp-c-divider);
 }
 
 @media (min-width: 960px) {
@@ -87,6 +87,10 @@
   background: url("/images/icon-document.svg") left center no-repeat;
   background-size: 1rem;
   padding-left: 1.5rem;
+}
+
+.dark .VPSidebarItem.level-0 > .item h2.text {
+  background-image: url("/images/icon-document-light.svg");
 }
 
 .VPSidebarItem.level-1 > .item h3.text {
@@ -159,17 +163,24 @@
   font-size: 1rem;
 }
 
-.nav .VPLink[href="/docs/coding-standard/index.html"] .text,
-.nav a[href="/docs/coding-standard/index.html"] .text,
-.nav .VPLink[href="/docs/developer/index.html"] .text,
-.nav a[href="/docs/developer/index.html"] .text {
+.nav .VPLink[href="/ai-engineering/index.html"] .text,
+.nav a[href="/ai-engineering/index.html"] .text,
+.nav .VPLink[href="/design-pattern/index.html"] .text,
+.nav a[href="/design-pattern/index.html"] .text {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand);
   background: url("/images/icon-document.svg") left center no-repeat;
   background-size: 1rem;
   padding-left: 1.5rem;
   margin-top: 0.625rem;
+}
+
+.dark .nav .VPLink[href="/ai-engineering/index.html"] .text,
+.dark .nav a[href="/ai-engineering/index.html"] .text,
+.dark .nav .VPLink[href="/design-pattern/index.html"] .text,
+.dark .nav a[href="/design-pattern/index.html"] .text {
+  background-image: url("/images/icon-document-light.svg");
 }
 
 .VPDocOutlineItem.root > li > .outline-link:first-child {

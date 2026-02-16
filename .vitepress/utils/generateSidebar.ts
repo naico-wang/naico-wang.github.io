@@ -1,6 +1,19 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+/**
+ * 侧边栏生成工具
+ *
+ * 这个模块提供了自动生成VitePress侧边栏配置的功能。
+ * 它会递归扫描指定目录，根据文件结构和分类配置生成侧边栏菜单。
+ *
+ * 主要功能：
+ * - 自动解析目录结构和Markdown文件
+ * - 支持通过 _category_.json 文件配置目录属性
+ * - 支持通过 frontmatter 配置页面属性
+ * - 支持通过 frontmatter 的 hide 属性隐藏页面
+ */
 
 interface CategoryInfo {
   label?: string;
@@ -11,20 +24,9 @@ interface CategoryInfo {
 interface Frontmatter {
   title?: string;
   position?: number;
+  sidebar_position?: number;
+  hide?: boolean;
   [key: string]: any;
-}
-
-interface FileItem {
-  name: string;
-  path: string;
-  relativePath: string;
-  frontmatter: Frontmatter;
-}
-
-interface DirectoryItem {
-  name: string;
-  path: string;
-  relativePath: string;
 }
 
 interface SidebarItem {
@@ -35,17 +37,12 @@ interface SidebarItem {
   collapsed?: boolean;
 }
 
-interface DirectoryResult {
-  label?: string;
-  position?: number;
-  items: SidebarItem[];
-}
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const srcDir = path.join(__dirname, '../../src');
-const excludeDirs = ['public', 'markdown-assets'];
-const excludeFiles = ['index', 'tech-radar'];
+const srcRoot = path.join(__dirname, '../../src');
 const DEFAULT_POSITION = 999;
+const DEFAULT_COLLAPSED = true;
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 /**
  * 解析frontmatter内容
@@ -92,153 +89,115 @@ function readCategoryInfo(dirPath: string): CategoryInfo | null {
   try {
     return JSON.parse(fs.readFileSync(categoryPath, 'utf8'));
   } catch (error) {
-    console.error(`Error parsing _category_.json in ${dirPath}:`, error);
+    if (!isProduction) {
+      console.error(`Error parsing _category_.json in ${dirPath}:`, error);
+    }
     return null;
   }
 }
 
 /**
- * 检查是否应该排除该项目
+ * 递归读取目录并生成侧边栏项
  */
-function shouldExcludeItem(name: string, isDirectory: boolean): boolean {
-  if (name.startsWith('.') || name.startsWith('_')) return true;
-  if (isDirectory && excludeDirs.includes(name)) return true;
-  if (!isDirectory) {
-    if (!name.endsWith('.md')) return true;
-
-    const nameWithoutExt = name.replace(/\.md$/, '');
-
-    if (excludeFiles.includes(nameWithoutExt)) return true;
-  }
-  return false;
-}
-
-function readDirectory(dirPath: string, relativePath = ''): DirectoryResult {
+function readDirectory(dirPath: string, relativePath = ''): SidebarItem[] {
   const items = fs.readdirSync(dirPath, { withFileTypes: true });
-  const categoryInfo = readCategoryInfo(dirPath);
 
-  const files: FileItem[] = [];
-  const directories: DirectoryItem[] = [];
+  const fileItems: SidebarItem[] = [];
+  const dirItems: SidebarItem[] = [];
 
   for (const item of items) {
-    if (shouldExcludeItem(item.name, item.isDirectory())) continue;
-
     const itemPath = path.join(dirPath, item.name);
     const itemRelativePath = path.join(relativePath, item.name);
 
     if (item.isDirectory()) {
-      directories.push({
-        name: item.name,
-        path: itemPath,
-        relativePath: itemRelativePath
-      });
-    } else if (item.isFile()) {
+      // 递归处理子目录
+      const subItems = readDirectory(itemPath, itemRelativePath);
+      
+      if (subItems.length > 0) {
+        // 读取子目录的分类信息
+        const subCategoryInfo = readCategoryInfo(itemPath);
+        
+        dirItems.push({
+          text: subCategoryInfo?.label || item.name,
+          items: subItems,
+          position: subCategoryInfo?.position ?? DEFAULT_POSITION,
+          collapsed: subCategoryInfo?.collapsed ?? DEFAULT_COLLAPSED
+        });
+      }
+    } else if (item.isFile() && item.name.endsWith('.md')) {
+      // 处理 Markdown 文件
       try {
         const content = fs.readFileSync(itemPath, 'utf8');
         const frontmatter = parseFrontmatter(content);
 
-        files.push({
-          name: item.name,
-          path: itemPath,
-          relativePath: itemRelativePath,
-          frontmatter
+        // 如果 frontmatter 中设置了 hide: true，则跳过该文件
+        if (frontmatter.hide === true) {
+          continue;
+        }
+
+        // 生成相对于 src 目录的路径作为链接
+        const relativeToSrc = path.relative(srcRoot, itemPath).replace(/\\/g, '/');
+        
+        // 从 frontmatter 获取 title 和 position
+        // 支持 position 和 sidebar_position 两种字段名（保持兼容性）
+        let filePosition = frontmatter.position ?? frontmatter.sidebar_position ?? DEFAULT_POSITION;
+        // 如果是 index.md，则 position 设置为 -1
+        if (item.name === 'index.md') {
+          filePosition = -1;
+        }
+        const fileTitle = frontmatter.title || item.name.replace(/\.md$/, '');
+
+        fileItems.push({
+          text: fileTitle,
+          link: `/${relativeToSrc.replace(/\.md$/, '')}`,
+          position: filePosition
         });
       } catch (error) {
-        console.error(`Error reading file ${itemPath}:`, error);
+        if (!isProduction) {
+          console.error(`Error reading file ${itemPath}:`, error);
+        }
       }
     }
   }
 
-  const subDirs: (DirectoryItem & DirectoryResult)[] = [];
-  for (const dir of directories) {
-    const subDir = readDirectory(dir.path, dir.relativePath);
-    if (subDir.items.length > 0) {
-      subDirs.push({ ...dir, ...subDir });
-    }
-  }
-
-  const fileItems: SidebarItem[] = files.map(file => ({
-    text: file.frontmatter.title || file.name.replace(/\.md$/, ''),
-    link: '/' + file.relativePath.replace(/\.md$/, ''),
-    position: file.frontmatter.position ?? DEFAULT_POSITION
-  }));
-
-  // 处理目录项
-  const dirItems: SidebarItem[] = subDirs.map(dir => {
-    const dirCategoryInfo = readCategoryInfo(dir.path);
-
-    return {
-      text: dirCategoryInfo?.label || dir.name,
-      items: dir.items,
-      position: dirCategoryInfo?.position ?? DEFAULT_POSITION,
-      collapsed: dirCategoryInfo?.collapsed
-    };
-  });
-
-  // 合并并排序所有项目
-  const allItems = [...fileItems, ...dirItems].sort((a, b) => a.position - b.position);
-
-  return {
-    label: categoryInfo?.label,
-    position: categoryInfo?.position,
-    items: allItems
-  };
+  return [...fileItems, ...dirItems].sort((a, b) => a.position - b.position);
 }
 
 /**
- * 递归转换侧边栏项目，添加collapsed属性
- * @param item 侧边栏项目
+ * 为指定路径生成侧边栏配置
+ * @param section 相对于src目录的路径（目录名字）
+ * @returns 侧边栏项目数组
  */
-function transformSidebarItem(item: SidebarItem): SidebarItem {
-  const transformed: SidebarItem = {
-    text: item.text,
-    position: item.position
-  };
-
-  if (item.link) {
-    transformed.link = item.link;
-  }
-
-  if (item.items && item.items.length > 0) {
-    transformed.items = item.items.map(transformSidebarItem);
-    // 使用item中已设置的collapsed属性，默认为false
-    transformed.collapsed = item.collapsed;
-  }
-
-  return transformed;
-}
-
-/**
- * 生成侧边栏配置
- * @returns 侧边栏配置数组
- */
-export function generateSidebar(): SidebarItem[] {
-  console.log('正在生成侧边栏配置...');
-
+export function generateSidebarForPath(section: string): SidebarItem[] {
   try {
-    const result = readDirectory(srcDir);
-    const sidebar = result.items.map(transformSidebarItem);
+    const baseDir = path.join(srcRoot, section);
+    
+    // 检查目录是否存在
+    if (!fs.existsSync(baseDir)) {
+      if (!isProduction) {
+        console.error(`x 目录不存在: ${baseDir}`);
+      }
+      return [];
+    }
 
-    console.log('侧边栏配置已生成，共', sidebar.length, '个顶级项目');
-    return sidebar;
+    if (!fs.statSync(baseDir).isDirectory()) {
+      if (!isProduction) {
+        console.error(`x 路径不是目录: ${baseDir}`);
+      }
+      return [];
+    }
+
+    const result = readDirectory(baseDir, section);
+
+    if (!isProduction) {
+      console.log(` ➜ 生成 ${section} 目录的侧边栏配置成功，共 ${result.length} 项`);
+    }
+
+    return result;
   } catch (error) {
-    console.error('生成侧边栏配置时出错:', error);
-    return defaultSidebar;
+    if (!isProduction) {
+      console.error(`x 生成 ${section} 目录的侧边栏配置时出错:`, error);
+    }
+    return [];
   }
 }
-
-/**
- * 默认侧边栏配置
- */
-export const defaultSidebar: SidebarItem[] = [];
-
-let sidebar: SidebarItem[]
-try {
-  sidebar = generateSidebar()
-} catch (error) {
-  console.error('生成侧边栏时出错:', error)
-
-  sidebar = defaultSidebar
-}
-
-export default sidebar

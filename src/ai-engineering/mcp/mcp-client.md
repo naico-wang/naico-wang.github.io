@@ -225,7 +225,7 @@ mkdir mcp-client-demo && cd mcp-client-demo
 npm init -y
 
 # 安装依赖
-npm install @anthropic-ai/sdk @modelcontextprotocol/sdk dotenv
+npm install @anthropic-ai-engineering/sdk @modelcontextprotocol/sdk dotenv
 
 # 安装开发依赖
 npm install -D @types/node typescript
@@ -287,7 +287,7 @@ build/
 #### 客户端类结构
 
 ```typescript
-import { Anthropic } from "@anthropic-ai/sdk";
+import { Anthropic } from "@anthropic-ai-engineering/sdk";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
 import dotenv from "dotenv";

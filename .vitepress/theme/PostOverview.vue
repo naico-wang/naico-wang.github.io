@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, onMounted, onUnmounted } from 'vue';
+import { computed, ref } from 'vue';
 import { withBase } from 'vitepress';
 
 interface Item {
@@ -146,7 +146,7 @@ const collapsedGroups = ref<string[]>([]);
 const toggleGroup = (groupName: string) => {
   const index = collapsedGroups.value.indexOf(groupName);
   if (index > -1) {
-    collapsedGroups.value = collapsedGroups.value.filter(name => name !== groupName);
+    collapsedGroups.value = collapsedGroups.value.filter((name: string) => name !== groupName);
   } else {
     collapsedGroups.value = [...collapsedGroups.value, groupName];
   }
@@ -155,115 +155,19 @@ const toggleGroup = (groupName: string) => {
 const isGroupExpanded = (groupName: string): boolean => {
   return !collapsedGroups.value.includes(groupName);
 };
-
-const isGuideSection = (group: SecondLevelGroup): boolean => {
-  // const guideNames = ['操作指南', 'guide', '操作', 'guides', 'AI 工程化', 'ai-engineering'];
-  const guideNames = ['操作指南', 'guide', '操作', 'guides'];
-  return guideNames.some((name: string) =>
-    group.name.toLowerCase().includes(name.toLowerCase()) || 
-    group.displayName.includes(name)
-  );
-};
-
-const separatedGroups = computed(() => {
-  const guideSection = groupedData.value.find(group => isGuideSection(group));
-  const otherSections = groupedData.value.filter(group => !isGuideSection(group));
-  return { guideSection, otherSections };
-});
-
-const guideColumnCount = ref(3);
-
-const updateGuideColumnCount = () => {
-  const width = window.innerWidth;
-  if (width < 768) {
-    guideColumnCount.value = 1;
-  } else if (width < 1024) {
-    guideColumnCount.value = 2;
-  } else {
-    guideColumnCount.value = 3;
-  }
-};
-
-const distributeToColumns = (items: Array<[string, Item[]]>, isGuide: boolean = false) => {
-  const columns: Array<Array<[string, Item[]]>> = [];
-  const count = isGuide ? guideColumnCount.value : 1;
-  
-  for (let i = 0; i < count; i++) {
-    columns.push([]);
-  }
-  
-  items.forEach((item, index) => {
-    const columnIndex = index % count;
-    columns[columnIndex].push(item);
-  });
-  
-  return columns;
-};
-
-onMounted(() => {
-  updateGuideColumnCount();
-  window.addEventListener('resize', updateGuideColumnCount);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('resize', updateGuideColumnCount);
-});
 </script>
 
 <template>
   <div class="developer-posts-container">
     <h1 class="title">{{ pageTitle }}</h1>
-    
-    <!-- 操作指南部分 - 单列布局 -->
-    <div v-if="separatedGroups.guideSection" class="guide-section">
-      <div class="group-card" @click="toggleGroup(separatedGroups.guideSection!.name)">
-        <h2 class="second-level-title expandable">
-          {{ separatedGroups.guideSection.displayName }}
-          <span class="expand-icon" :class="{ 'expanded': isGroupExpanded(separatedGroups.guideSection!.name) }" />
-        </h2>
 
-        <div v-if="isGroupExpanded(separatedGroups.guideSection!.name)" class="content-wrapper">
-          <template v-if="separatedGroups.guideSection.hasThirdLevel && separatedGroups.guideSection.thirdLevelGroups">
-            <div class="third-level-container guide-waterfall">
-              <div
-                  v-for="(column, columnIndex) in distributeToColumns(Object.entries(separatedGroups.guideSection.thirdLevelGroups), true)"
-                  :key="columnIndex"
-                  class="waterfall-column"
-              >
-                <div
-                    v-for="([thirdLevelName, items]) in column"
-                    :key="thirdLevelName"
-                    class="third-level-card"
-                >
-                  <h3 class="third-level-title">{{ getDisplayName(thirdLevelName) }}</h3>
-                  <ul class="items-list">
-                    <li v-for="item in items" :key="item.url" class="item">
-                      <a :href="withBase(item.url)" class="item-link" :title="item.title">{{ item.title }}</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </template>
-
-          <template v-else>
-            <ul class="items-list">
-              <li v-for="item in separatedGroups.guideSection.items" :key="item.url" class="item">
-                <a :href="withBase(item.url)" class="item-link" :title="item.title">{{ item.title }}</a>
-              </li>
-            </ul>
-          </template>
-        </div>
-      </div>
-    </div>
-
-    <!-- 其他部分 - 2列瀑布流布局 -->
-    <div v-if="separatedGroups.otherSections.length > 0" class="other-sections-container">
-      <template v-for="group in separatedGroups.otherSections" :key="group.name">
-        <div class="group-card">
+    <!-- 2列网格布局 -->
+    <div v-if="groupedData.length > 0" class="other-sections-container">
+      <template v-for="group in groupedData" :key="group.name">
+        <div class="group-card" @click="toggleGroup(group.name)">
           <h2 class="second-level-title expandable">
             {{ group.displayName }}
-            <span class="expand-icon static" />
+            <span class="expand-icon" :class="{ 'expanded': isGroupExpanded(group.name) }" />
           </h2>
 
           <div v-if="isGroupExpanded(group.name)" class="content-wrapper">
@@ -305,25 +209,15 @@ onUnmounted(() => {
   padding-top: 2rem;
   gap: 2rem;
   padding-right: calc((100vw - var(--vp-layout-max-width)) / 5);
-  border-left: solid 1px var(--vp-c-divider);
+  //border-left: solid 1px var(--vp-c-divider);
   min-height: calc(100vh - var(--vp-nav-height));
-}
-
-.guide-section {
-  padding: 0 2rem;
 }
 
 .other-sections-container {
   padding: 0 2rem 2rem;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media (max-width: 767px) {
-  .other-sections-container {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
 }
 
 .title {
@@ -373,12 +267,6 @@ onUnmounted(() => {
   border-bottom: 1px solid var(--vp-c-divider);
 }
 
-.second-level-title:has(.static) {
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--vp-c-divider);
-}
-
 .expand-icon {
   font-size: 0.75rem;
   transition: transform 0.3s ease;
@@ -394,10 +282,6 @@ onUnmounted(() => {
   transform: rotate(90deg);
 }
 
-.expand-icon.static {
-  background: none;
-}
-
 .content-wrapper {
   overflow: hidden;
   width: 100%;
@@ -411,12 +295,6 @@ onUnmounted(() => {
   box-sizing: border-box;
 }
 
-.third-level-container.guide-waterfall {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-}
-
 .third-level-container.normal-layout {
   display: flex;
   flex-direction: column;
@@ -428,44 +306,21 @@ onUnmounted(() => {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   width: 100%;
   min-width: 0;
 }
 
+@media (max-width: 768px) {
+  .third-level-container.normal-layout .third-level-card .items-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 479px) {
   .third-level-container.normal-layout .third-level-card .items-list {
     grid-template-columns: 1fr;
-  }
-}
-
-.waterfall-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  min-width: 0;
-  box-sizing: border-box;
-}
-
-@media (max-width: 1023px) {
-  .third-level-container.guide-waterfall {
-    flex-wrap: wrap;
-  }
-  
-  .guide-waterfall .waterfall-column {
-    flex: 1 1 calc(50% - 0.5rem);
-    min-width: 0;
-    max-width: calc(50% - 0.5rem);
-  }
-}
-
-@media (max-width: 767px) {
-  .guide-waterfall .waterfall-column {
-    flex: 1 1 100%;
-    min-width: 0;
-    max-width: 100%;
   }
 }
 
@@ -501,10 +356,16 @@ onUnmounted(() => {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   width: 100%;
   min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .items-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 479px) {
