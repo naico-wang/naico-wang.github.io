@@ -118,6 +118,7 @@ const getIcon = (name: string): string =>
       <section class="home-section home-section-intro">
         <h2 class="section-title section-title-mono">01 - Introduction</h2>
         <div class="intro-content">
+          <p class="intro-contact-label"><strong>关于我</strong></p>
           <p class="intro-p">
             擅长全栈应用开发以及现有软件应用架构治理，在几家外企和互联网公司经历过从 0 到 1 的产品与团队建设。日常会关注工程化、性能与稳定性、以及如何把技术方案讲清楚、落下去。
           </p>
@@ -127,6 +128,12 @@ const getIcon = (name: string): string =>
           <p class="intro-p">
             这个网站是个人知识库，用来沉淀技术笔记和思考。写下来的东西会先服务自己的复盘与检索，若恰好对你有用，欢迎一起交流。
           </p>
+          <p class="intro-contact-label"><strong>最近在做的事情</strong></p>
+          <ul class="intro-contact-list">
+            <li>AI Workflow 选型与POC， Dify 与 n8n 的终极对决</li>
+            <li>AI Agent 的开发相关技术与实践</li>
+            <li>AI Skills 的完善与应用</li>
+          </ul>
           <p class="intro-contact-label"><strong>联系方式</strong></p>
           <ul class="intro-contact-list">
             <li>邮箱：<a href="mailto:naico.wang@gmail.com" class="intro-link">naico.wang@gmail.com</a></li>
