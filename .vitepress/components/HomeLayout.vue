@@ -208,6 +208,7 @@ const getIcon = (name: string): string =>
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
+  border: solid 1px var(--vp-c-divider);
 }
 
 .profile-avatar-placeholder {
