@@ -7,9 +7,9 @@ const { site, theme, page } = useData()
 const fm = page.value?.frontmatter ?? {}
 const profile = {
   name: fm.profileName ?? site.value.title ?? 'Naico Wang',
-  username: fm.profileUsername ?? 'naico-wang',
+  username: fm.profileUsername ?? 'Naico Wang',
   bio: fm.profileBio ?? theme.value?.description ?? site.value.description ?? '苟利国家生死以，岂因祸福避趋之',
-  avatar: fm.profileAvatar ?? '/images/avatar.png',
+  avatar: fm.profileAvatar ?? '/images/avatar-new.png',
   location: fm.profileLocation ?? '',
   blog: fm.profileBlog ?? '',
   email: fm.profileEmail ?? 'naico.wang@gmail.com',
@@ -58,7 +58,6 @@ const siteLinks = [
           </div>
         </div>
         <h1 class="profile-name">{{ profile.name }}</h1>
-        <p v-if="profile.username" class="profile-username">{{ profile.username }}</p>
         <p v-if="profile.bio" class="profile-bio">{{ profile.bio }}</p>
         <div v-if="profile.location || profile.blog" class="profile-details">
           <span v-if="profile.location" class="profile-detail">
@@ -205,12 +204,12 @@ const siteLinks = [
 }
 
 .profile-avatar-wrap {
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
 }
 
 .profile-avatar {
   width: 100%;
-  max-width: 200px;
+  max-width: 160px;
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
@@ -228,22 +227,16 @@ const siteLinks = [
 }
 
 .profile-name {
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.75rem;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.25;
   color: var(--vp-c-text-1);
 }
 
-.profile-username {
-  margin: 0 0 0.75rem;
-  font-size: 1rem;
-  color: var(--vp-c-text-2);
-}
-
 .profile-bio {
-  margin: 0 0 1rem;
-  font-size: 0.875rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   color: var(--vp-c-text-2);
 }
