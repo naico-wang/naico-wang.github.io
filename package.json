@@ -2,6 +2,7 @@
   "name": "@lululemon/developer-portal-docs",
   "version": "0.9.1",
   "private": true,
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
