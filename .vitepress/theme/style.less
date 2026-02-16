@@ -1,262 +1,169 @@
-/**
- * Customize default theme styling by overriding CSS variables:
- * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
- */
-
-/**
- * Colors
- *
- * Each colors have exact same color scale system with 3 levels of solid
- * colors with different brightness, and 1 soft color.
- *
- * - `XXX-1`: The most solid color used mainly for colored text. It must
- *   satisfy the contrast ratio against when used on top of `XXX-soft`.
- *
- * - `XXX-2`: The color used mainly for hover state of the button.
- *
- * - `XXX-3`: The color for solid background, such as bg color of the button.
- *   It must satisfy the contrast ratio with pure white (#ffffff) text on
- *   top of it.
- *
- * - `XXX-soft`: The color used for subtle background such as custom container
- *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
- *   on top of it.
- *
- *   The soft color must be semi transparent alpha channel. This is crucial
- *   because it allows adding multiple "soft" colors on top of each other
- *   to create a accent, such as when having inline code block inside
- *   custom containers.
- *
- * - `default`: The color used purely for subtle indication without any
- *   special meanings attached to it such as bg color for menu hover state.
- *
- * - `brand`: Used for primary brand colors, such as link text, button with
- *   brand theme, etc.
- *
- * - `tip`: Used to indicate useful information. The default theme uses the
- *   brand color for this by default.
- *
- * - `warning`: Used to indicate warning to the users. Used in custom
- *   container, badges, etc.
- *
- * - `danger`: Used to show error, or dangerous message to the users. Used
- *   in custom container, badges, etc.
- * -------------------------------------------------------------------------- */
-
 :root {
-  --vp-c-default-1: var(--vp-c-gray-1);
-  --vp-c-default-2: var(--vp-c-gray-2);
-  --vp-c-default-3: var(--vp-c-gray-3);
-  --vp-c-default-soft: var(--vp-c-gray-soft);
-
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
-
-  --vp-c-tip-1: var(--vp-c-brand-1);
-  --vp-c-tip-2: var(--vp-c-brand-2);
-  --vp-c-tip-3: var(--vp-c-brand-3);
-  --vp-c-tip-soft: var(--vp-c-brand-soft);
-
-  --vp-c-warning-1: var(--vp-c-yellow-1);
-  --vp-c-warning-2: var(--vp-c-yellow-2);
-  --vp-c-warning-3: var(--vp-c-yellow-3);
-  --vp-c-warning-soft: var(--vp-c-yellow-soft);
-
-  --vp-c-danger-1: var(--vp-c-red-1);
-  --vp-c-danger-2: var(--vp-c-red-2);
-  --vp-c-danger-3: var(--vp-c-red-3);
-  --vp-c-danger-soft: var(--vp-c-red-soft);
+  --vp-c-brand-1: #D31334;
+  --vp-c-brand-2: #e60000;
+  --vp-c-brand-3: #ff5555;
+  --vp-c-brand-soft: rgba(255, 0, 0, 0.15);
+  --vp-nav-logo-height: 2rem;
+  --docsearch-search-button-background: var(--vp-c-bg-alt);
+  --docsearch-search-button-text-color: var(--vp-c-text-1);
+  --vp-code-block-bg: var(--vp-c-bg);
+  --vp-sidebar-bg-color: var(--vp-c-bg);
+  --vp-code-line-number-color: var(--vp-c-gray-1);
+  --vp-custom-block-info-bg: var(--vp-c-indigo-soft);
+  --vp-custom-block-tip-bg: var(--vp-c-green-soft);
+  --vp-custom-block-details-bg: var(--vp-c-purple-soft);
+  --vp-sidebar-width: 20rem;
+  --shiki-light: var(--vp-c-text-1);
 }
 
-/**
- * Component: Button
- * -------------------------------------------------------------------------- */
-
-:root {
-  --vp-button-brand-border: transparent;
-  --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: var(--vp-c-brand-3);
-  --vp-button-brand-hover-border: transparent;
-  --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
-  --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+::-webkit-scrollbar {
+  display: none;
 }
 
-/**
- * Component: Home
- * -------------------------------------------------------------------------- */
-
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
-
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
-  --vp-home-hero-image-filter: blur(44px);
+.vp-doc div[class*='language-'] {
+  border: solid 1px var(--vp-c-gray-2);
+  box-shadow: var(--vp-shadow-2);
 }
 
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
+.vp-doc p img {
+  border: solid 1px var(--vp-c-divider);
+  box-shadow: var(--vp-shadow-2);
+}
+
+.VPNavBar.has-sidebar .divider {
+  padding-left: 0 !important;
+}
+
+.VPNavBarTitle.has-sidebar .title {
+  border-bottom-color: transparent !important;
+}
+
+.VPDoc.has-sidebar {
+  border-left: solid 1px var(--vp-c-divider);
 }
 
 @media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(68px);
+  .VPLocalNavOutlineDropdown {
+    border-left: solid 1px var(--vp-c-divider);
   }
 }
 
-/**
- * Component: Custom Block
- * -------------------------------------------------------------------------- */
-
-:root {
-  --vp-custom-block-tip-border: transparent;
-  --vp-custom-block-tip-text: var(--vp-c-text-1);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
-  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
-  --vp-sidebar-width: 300px;
-  --vp-layout-max-width: 1400px;
-  --lulu-box-shadow: 0.25rem 0.25rem 0.625rem #dddddd;
+.VPSidebarItem.collapsible>.item {
+  align-items: center;
 }
 
-/**
- * Component: SideBar
- * -------------------------------------------------------------------------- */
+.group section.VPSidebarItem.level-0 {
+  padding-bottom: 1rem;
+}
 
 .group:has([role='button']) .VPSidebarItem.level-0 .items {
   padding-left: 1rem !important;
-  border-left: 1px solid var(--vp-c-divider);
-  border-radius: 2px;
-  transition: background-color 0.25s;
+  border-left: 2px solid var(--vp-c-divider);
 }
 
-.nav .group:has([role='button']) {
-  & .VPSidebarItem.level-0 > .item {
-    background-size: 0.875rem;
-    padding-left: 1.5rem;
-    background-position: left center;
-    background-repeat: no-repeat;
+.VPSidebarItem.is-active .indicator {
+  background-color: var(--vp-c-brand-1);
+  left: -18px;
+}
 
-    & h2.text {
-      font-size: 1rem;
-      line-height: 1.75;
-    }
-  }
+.VPSidebarItem.level-0 > .item h2.text {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 700;
+  background: url("/images/icon-document.svg") left center no-repeat;
+  background-size: 1rem;
+  padding-left: 1.5rem;
+}
 
-  &:nth-child(2) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-blogger.svg");
-    }
-  }
-  &:nth-child(3) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-onboard.svg");
-    }
-  }
-  &:nth-child(4) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-tour.svg");
-    }
-  }
-  &:nth-child(5) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-question.svg");
-    }
-  }
-  &:nth-child(6) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-fix.svg");
-    }
-  }
-  &:nth-child(7) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-tools.svg");
-    }
-  }
-  
-  // 为更多元素提供默认图标
-  &:nth-child(n+8) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-tools.svg");
-    }
+.VPSidebarItem.level-1 > .item h3.text {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.VPDoc.has-aside .content .content-container {
+  max-width: initial;
+}
+
+@media (min-width: 1440px) {
+  #VPContent.VPContent.has-sidebar {
+    padding-right: calc((100vw - var(--vp-layout-max-width)) / 3);
   }
 }
 
-.dark .nav .group:has([role='button']) {
-  &:nth-child(2) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-blogger-light.svg");
-    }
-  }
-  &:nth-child(3) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-onboard-light.svg");
-    }
-  }
-  &:nth-child(4) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-tour-light.svg");
-    }
-  }
-  &:nth-child(5) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-question-light.svg");
-    }
-  }
-  &:nth-child(6) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-fix-light.svg");
-    }
-  }
-  &:nth-child(7) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-tools-light.svg");
-    }
-  }
+.vp-doc .custom-block {
+  padding: 1.5rem;
+}
 
-  // 为更多元素提供默认图标
-  &:nth-child(n+7) {
-    & .VPSidebarItem.level-0 > .item {
-      background-image: url("/images/icon-tools-light.svg");
-    }
+.vp-doc .custom-block p:first-child {
+  position: relative;
+  font-weight: 700;
+}
+
+.vp-doc .custom-block.tip p:first-child {
+  color: var(--vp-c-green-1);
+
+  &:before {
+    background-color: var(--vp-c-green-1);
   }
 }
 
-.VPSidebarItem:not(.level-0) .item:hover .indicator {
-  background-color: #222222;
+.vp-doc .custom-block.info p:first-child {
+  color: var(--vp-c-indigo-1);
+
+  &:before {
+    background-color: var(--vp-c-indigo-1);
+  }
 }
 
+.vp-doc .custom-block.warning p:first-child {
+  color: var(--vp-c-yellow-1);
 
-/**
- * Component: Algolia
- * -------------------------------------------------------------------------- */
-
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+  &:before {
+    background-color: var(--vp-c-yellow-1);
+  }
 }
 
-.VPNavBarSearch {
-  padding-left: 1rem;
+.vp-doc .custom-block.danger p:first-child {
+  color: var(--vp-c-red-1);
+
+  &:before {
+    background-color: var(--vp-c-red-1);
+  }
 }
 
-.VPImage.logo {
-  height: 1.25rem;
+.vp-doc .custom-block p:first-child:before {
+  position: absolute;
+  left: -1.5rem;
+  top: -4px;
+  content: '';
+  width: 6px;
+  height: 2rem;
+  background: #000;
 }
 
-.VPNavBarTitle {
-  display: flex;
-  align-items: center;
+.vp-doc .custom-block p:first-child {
+  font-size: 1rem;
+}
+
+.nav .VPLink[href="/docs/coding-standard/index.html"] .text,
+.nav a[href="/docs/coding-standard/index.html"] .text,
+.nav .VPLink[href="/docs/developer/index.html"] .text,
+.nav a[href="/docs/developer/index.html"] .text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  background: url("/images/icon-document.svg") left center no-repeat;
+  background-size: 1rem;
+  padding-left: 1.5rem;
+  margin-top: 0.625rem;
+}
+
+.VPDocOutlineItem.root > li > .outline-link:first-child {
+  font-weight: 550;
+}
+
+.mermaid-container .mermaid {
+  width: 100%;
+  height: auto;
+  /*max-height: 650px;*/
 }

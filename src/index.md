@@ -1,4 +1,4 @@
 ---
-layout: HomePage
-outline: false
+layout: HomeLayout
+sidebar: false
 ---
