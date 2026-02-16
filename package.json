@@ -8,6 +8,13 @@
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "less"
+    ]
+  },
   "devDependencies": {
     "@types/node": "^24.0.10",
     "less": "^4.3.0",
