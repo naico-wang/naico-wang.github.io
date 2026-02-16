@@ -327,6 +327,11 @@ const getIcon = (name: string): string =>
   background: #fff;
   border: 1px solid var(--vp-c-divider);
   border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--vp-c-brand);
+  }
 }
 
 .work-logo {
@@ -446,6 +451,7 @@ const getIcon = (name: string): string =>
   border: 1px solid var(--vp-c-divider);
   border-radius: 16px;
   transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .card:hover {
