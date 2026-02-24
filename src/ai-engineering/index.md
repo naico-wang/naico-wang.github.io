@@ -25,5 +25,5 @@ const standardTitleMap: Record<string, string> = {
   :items="data" 
   path-prefix="/ai-engineering"
   :title-map="standardTitleMap"
-  page-title="AI 工程化"
+  page-title="AI 工程化文章总览"
 />
