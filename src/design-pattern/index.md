@@ -1,5 +1,5 @@
 ---
-title: 经典设计模式
+title: 经典设计模式 - 文章总览
 outline: false
 layout: page
 ---
