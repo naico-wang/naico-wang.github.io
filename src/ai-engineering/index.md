@@ -14,6 +14,10 @@ const standardTitleMap: Record<string, string> = {
   'agent': '人工智能体',
   'vibe-coding': '氛围编程',
   'basic': '人工智能基础知识',
+  'prompt': '提示词工程',
+  'context': '上下文工程',
+  'rag': 'RAG 工程',
+  'sdd': '规范驱动开发',
 };
 </script>
 
