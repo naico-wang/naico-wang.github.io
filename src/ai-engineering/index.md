@@ -9,7 +9,7 @@ import PostOverview from '../../.vitepress/theme/PostOverview.vue';
 import { data } from '../../.vitepress/theme/aiEngineering.data';
 
 const standardTitleMap: Record<string, string> = {
-  'ai-engineering': 'AI 工程化',
+  'ai-engineering': 'AI 工程化文章总览',
   'mcp': '模型上下文协议',
   'agent': '人工智能体',
   'vibe-coding': '氛围编程',
