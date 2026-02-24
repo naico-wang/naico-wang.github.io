@@ -13,6 +13,7 @@ const standardTitleMap: Record<string, string> = {
   'mcp': '模型上下文协议',
   'agent': '人工智能体',
   'vibe-coding': '氛围编程',
+  'basic': '人工智能基础知识',
 };
 </script>
 

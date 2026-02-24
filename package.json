@@ -1,6 +1,6 @@
 {
-  "name": "@lululemon/developer-portal-docs",
-  "version": "0.9.1",
+  "name": "naico.wang",
+  "version": "2.0.0",
   "private": true,
   "packageManager": "pnpm@9.15.4",
   "scripts": {

@@ -109,7 +109,7 @@
 }
 
 .vp-doc .custom-block {
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem 1rem;
 }
 
 .vp-doc .custom-block p:first-child {
@@ -163,6 +163,14 @@
   font-size: 1rem;
 }
 
+.vp-doc blockquote {
+  border-left: 0.5rem solid var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg-soft);
+  padding: 1rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  color: var(--vp-c-text-1);
+}
+
 .nav .VPLink[href="/ai-engineering/index.html"] .text,
 .nav a[href="/ai-engineering/index.html"] .text,
 .nav .VPLink[href="/design-pattern/index.html"] .text,
@@ -185,10 +193,4 @@
 
 .VPDocOutlineItem.root > li > .outline-link:first-child {
   font-weight: 550;
-}
-
-.mermaid-container .mermaid {
-  width: 100%;
-  height: auto;
-  /*max-height: 650px;*/
 }
