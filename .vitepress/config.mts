@@ -36,7 +36,7 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/naico-wang/naico-wang.github.io' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/naico-wang-49554891/' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/naico-wang' }
     ],
     outline: {
       label: '页面导航'
