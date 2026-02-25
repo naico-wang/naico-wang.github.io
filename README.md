@@ -4,7 +4,7 @@
 
 ## About This Repo
 
-This is my personal GitPages repo, created using [VitePress](https://vitepress.dev/)
+This is my personal Git-Pages repo, created using [VitePress](https://vitepress.dev/)
 
 For more introduction of VitePress, please go to the official website.
 
