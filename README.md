@@ -23,7 +23,7 @@ https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-gi
 ### Install VitePress and Init Your Own VitePress Site and Complete the steps
 
 ```shell
-yarn vitepress-create
+pnpm vitepress-create
 ```
 
 For more configuration and usage, please refer to VitePress official website.
